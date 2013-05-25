@@ -17,28 +17,28 @@ This website is very much work in progress with content for the 1st year program
                  """)
 index_file.write("\n")
 
-## Write course notes
-#
-#target_dir = "../Course_Notes"
-#
-#list_of_chapters = os.listdir(target_dir)
-#list_of_md_chapters = [p for p in list_of_chapters if p[-3:] == ".md"]
-#number_of_chapters = len(list_of_md_chapters)
-#print "%s chapters read." % number_of_chapters
-#
-#index_file.write("\n")
-#index_file.write("\n## Course Chapters")
-#index_file.write("\n")
-#
-#for i in range(len(list_of_md_chapters)):
-#    outfile = open(target_dir + "/" + list_of_md_chapters[i])
-#    data = outfile.read().split("\n")
-#    outfile.close()
-#    file_name = list_of_md_chapters[i][:-3]
-#    index_file.write("\n%s. Chapter %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
-#    index_file.write("\n")
-#    index_file.write("\n\t[pdf (recommended)](./Course_Notes/%s.pdf), [html](./Course_Notes/%s.html), [docx](./Course_Notes/%s.docx)" % (file_name, file_name, file_name))
-#    index_file.write("\n")
+# Write course notes
+
+target_dir = "../Lab_Sheets"
+
+list_of_lab_sheets = os.listdir(target_dir)
+list_of_md_sheets = [p for p in list_of_lab_sheets if p[-3:] == ".md"]
+number_of_lab_sheets = len(list_of_lab_sheets)
+print "%s lab sheets read." % number_of_lab_sheets
+
+index_file.write("\n")
+index_file.write("\n## Lab Sheets")
+index_file.write("\n")
+
+for i in range(len(list_of_md_sheets)):
+    outfile = open(target_dir + "/" + list_of_lab_sheets[i])
+    data = outfile.read().split("\n")
+    outfile.close()
+    file_name = list_of_lab_sheets[i][:-3]
+    index_file.write("\n%s. Lab Sheets %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
+    index_file.write("\n")
+    index_file.write("\n\t[pdf (recommended)](./Course_Notes/%s.pdf), [html](./Course_Notes/%s.html), [docx](./Course_Notes/%s.docx)" % (file_name, file_name, file_name))
+    index_file.write("\n")
 #
 ## Write homeworks
 #

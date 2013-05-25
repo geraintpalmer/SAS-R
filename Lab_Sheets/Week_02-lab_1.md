@@ -1,4 +1,4 @@
-# Conditional Statements, flow control and functions
+# Week 1 - Conditional Statements, flow control and functions
 
 This lab sheet will serve as a basic introduction to programming. After this session you will know the basic python syntax to carry out the following:
 
