@@ -1,4 +1,4 @@
-# Computing for mathematics: week 5
+# Computing for mathematics: week 4
 ## Sorting and Searching Algorithms
 
 ### Aims of this week
