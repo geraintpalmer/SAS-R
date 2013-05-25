@@ -79,7 +79,7 @@ for i in range(len(list_of_plans)):
     data = outfile.read().split("\n")
     outfile.close()
 
-    index_file.write("\n%s. Lecture %s: [%s](./Lesson_Plans/Lesson_%.02d.html)" % (i + 1, i + 1, data[1][2:], i + 1))
+    index_file.write("\n%s. Week %s: [%s](./Lesson_Plans/Week_%.02d.html)" % (i + 1, i + 1, data[1][2:], i + 1))
 
 index_file.write("\n")
 

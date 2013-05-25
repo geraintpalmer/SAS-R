@@ -1,54 +1,31 @@
-# OR 3: Lesson Plan Lecture 1
+# Computing for mathematics: week 1
 ## Introduction
 
-### Aims of lecture
+### Aims of this week
 
-At the end of this lecture students will be to:
+At the end of this lecture students will be:
 
-- Represent a game in extensive form;
-- Represent lack of information withing an extensive form game;
+- Familiar with the structure of the initial first 11 weeks of the module;
+- Familiar with Python
 
 ### Timeline
 
-#### Before the lecture
+#### Before the Lecture
 
-- NA
+Students to find out what groups they are in.
 
-#### During the lecture
+#### Lecture
 
-- 0:20 mins
-
-    - VK: Introduction (what is game theory and 2/3rds of average game.)
-    - Students: Listen
-
-- 20:30 mins
-
-    - VK: Lecture on Normal Form representations
-    - Students: Listen
-
-- 30:35 mins
-
-    - VK: Solution to 2/3rds of average game
-    - Students: Listen (recieve chocolat)
-
-- 35:40 mins
-
-    - VK: Whole class activity (what about lack of information?)
-    - Students to try and figure out how to deal with lack of information.
-
-- 40:45 mins
-
-    - VK: Lecture on lack of information.
-    - Students: Listen
-
-- 45:50 mins
-
-    - VK: Conclusions
+- 0 - 5 mins: Introduction and description of resources
+- 5 - 25 mins: Demonstration of what python can do (Show game theory, show estimating pie, show online game: get students to play on their phones?).
+- 25 - 30 mins: Description of timetable
+- 30 - 40 mins: Description of `tickables`
+- 40 - 50 mins: Any questions?
 
 #### After the lecture
 
-Students will be given reading and have access to example sheets.
+Students will be given access to lab sheets and pointed towards reading.
 
 ### Assessment
 
-Assessment of the content covered in this lecture will be through examination questions asking student to write out extensive form game representations of games and interpret such representations.
+NA, this is an introductory lecture.
