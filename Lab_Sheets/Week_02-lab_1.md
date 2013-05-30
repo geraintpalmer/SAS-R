@@ -29,4 +29,9 @@ Describe basic if statements.
 Describe type of if statements in general.
 
 ## Functions
+
+Explain functions. Explain how to write functions.
+
 ## Writing clear code
+
+Point towards PEP8.
