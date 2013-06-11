@@ -37,7 +37,7 @@ for i in range(len(list_of_md_sheets)):
     file_name = list_of_md_sheets[i][:-3]
     index_file.write("\n%s. Lab Sheets %s: %s" % (i + 1, i + 1, data[0][data[0].index("-") + 2:]))
     index_file.write("\n")
-    index_file.write("\n\t[pdf (recommended)](./Lab_Sheets/%s.pdf), [html](./Lab_Sheets/%s.html), [docx](./Lab_Sheets/%s.docx)" % (file_name, file_name, file_name))
+    index_file.write("\n\t[html (recommended)](./Lab_Sheets/%s.html), [pdf](./Lab_Sheets/%s.pdf), [docx](./Lab_Sheets/%s.docx)" % (file_name, file_name, file_name))
     index_file.write("\n")
 #
 ## Write homeworks

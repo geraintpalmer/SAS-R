@@ -10,7 +10,7 @@ This website is very much work in progress with content for the 1st year program
 
 1. Lab Sheets 1: Conditional Statements, flow control and functions
 
-	[pdf (recommended)](./Lab_Sheets/Week_02-lab_1.pdf), [html](./Lab_Sheets/Week_02-lab_1.html), [docx](./Lab_Sheets/Week_02-lab_1.docx)
+	[html (recommended)](./Lab_Sheets/Week_02.html), [pdf](./Lab_Sheets/Week_02.pdf), [docx](./Lab_Sheets/Week_02.docx)
 
 ## Lesson plans
 1. Week 1: [ Introduction](./Lesson_Plans/Week_01.html)
