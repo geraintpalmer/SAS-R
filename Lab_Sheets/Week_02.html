@@ -73,11 +73,11 @@ print num</code></pre></li>
     num += 3
     print num</code></pre>
 <p>Simlarly, <code>-</code>, <code>*</code>, <code>/</code> and <code>**</code> can be used for:</p>
+<pre><code>- subtraction;
+- multiplication;
+- division;
+- exponentiation.</code></pre>
 <ul>
-<li>subtraction;</li>
-<li>multiplication;</li>
-<li>division;</li>
-<li><p>exponentiation.</p></li>
 <li><p><strong>T5</strong>: Assign the variable <code>num</code> to a value of 5.2, what is the result of adding 7 to <code>num</code> then muliplying <code>num</code> by 300 then dividing <code>num</code> by 4 and finally raising <code>num</code> to the power of 3?</p></li>
 <li><p><strong>T6</strong>: We can carry also manipulate strings. Try out the following:</p>
 <pre><code>str1 = &quot;This is a string that I will learn to manipulate&quot;
@@ -168,8 +168,13 @@ else:
 <p>We can in fact iterate over anything in a list:</p>
 <pre><code>    for e in [&quot;dog&quot;, &quot;cat&quot;, 3, &quot;I love mathematics&quot;]:
         print e</code></pre>
+<p>This allows us to do various interesting things. Try the following:</p>
+<pre><code>    s = 0
+    for i in range(1001):
+        s += i
+    print s</code></pre>
 <ul>
-<li><p><strong>T11</strong>: Write some code that calculates the total of the first 1000 integers. Modify the code so that it calculates the sum of the first integers lss than 1000 that are not divisable by 3.</p></li>
+<li><p><strong>T11</strong>: Modify the above code so that it calculates the sum of the first integers lss than 1000 that are not divisable by 3.</p></li>
 <li><p><strong>12</strong>: Event based loops are implimented in python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
 <pre><code>k = 0
 while k &lt; 10:

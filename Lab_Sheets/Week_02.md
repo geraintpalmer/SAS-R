@@ -75,10 +75,10 @@ this can however also be written:
 
 Simlarly, `-`, `*`, `/` and `**` can be used for:
 
-- subtraction;
-- multiplication;
-- division;
-- exponentiation.
+    - subtraction;
+    - multiplication;
+    - division;
+    - exponentiation.
 
 - **T5**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
 
@@ -197,7 +197,14 @@ We can in fact iterate over anything in a list:
         for e in ["dog", "cat", 3, "I love mathematics"]:
             print e
 
-- **T11**: Write some code that calculates the total of the first 1000 integers. Modify the code so that it calculates the sum of the first integers lss than 1000 that are not divisable by 3.
+This allows us to do various interesting things. Try the following:
+
+        s = 0
+        for i in range(1001):
+            s += i
+        print s
+
+- **T11**: Modify the above code so that it calculates the sum of the first integers lss than 1000 that are not divisable by 3.
 
 - **12**: Event based loops are implimented in python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
 
