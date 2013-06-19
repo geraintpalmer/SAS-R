@@ -128,11 +128,11 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
     One way to do this would be:
 
-        str = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
+        string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
 
     Python (and most other languages) has a nicer way of doing this:
 
-        str = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
+        string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
 
     The `%` is used to denote that a value must be input in to the string. The symbols after the `%` say what type of value is to be included:
 
@@ -148,11 +148,11 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
 8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
 
-        bool = True
-        if bool:
-            print "bool is %s" % bool
+        boolean = True
+        if boolean:
+            print "boolean is %s" % boolean
 
-    Try typying the above code but change `bool` to `False`. **Note: in python, indentation is important! In all languages it is good practive, in python it is a requirement**.
+    Try typying the above code but change `boolean` to `False`. **Note: in python, indentation is important! In all languages it is good practive, in python it is a requirement**.
 
     It is easy to create boolean variables using the following:
 
@@ -160,6 +160,7 @@ A value is one of the basic building blocks used by a program. Values may be of 
     - `>`: strictly greater than
     - `<=`: less than or equal
     - `>=`: greater than or equal
+    - `!=`: not equal
     - `==`: equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
 
     It is also possible to give alternatives to an `if statement`:
@@ -177,7 +178,7 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
     **Spend some time understanding the `elif` statement.**
 
-9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length more than 10" otherwise "that string has length less than 9".
+9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length strictly more than 10" otherwise "that string has length less than 9".
 
     [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
 
