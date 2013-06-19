@@ -34,7 +34,7 @@ and many more. We will be using the simplest IDE available: IDLE which comes bun
 
         print "Hello world"
 
-    ![\text{Hello world.}\label{W02-S01}](./screenshots/W02-S01.png)    
+    ![\text{Hello world.}\label{W02-S01}](./screenshots/W02-S01.png)
 
 2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above\text{ (as shown in Figure \ref{W02-S02})}:
 
@@ -50,7 +50,7 @@ and many more. We will be using the simplest IDE available: IDLE which comes bun
 
 A value is one of the basic building blocks used by a program. Values may be of various types.
 
-3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function. 
+3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
 
         num1 = 23
         print type(num1)
@@ -239,26 +239,26 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
 16. The following code defines a very simple function (with no arguments):
 
-        def PrintHello():
+        def printhello():
             print "Hello"
 
     The name of the function is `PrintHello` and `def` is the python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
 
-        PrintHello()
+        printhello()
 
     We can modify our function to take an argument:
 
-        def PrintHello(name):
+        def printhello(name):
             print "Hello, " + name
 
 17.  The following function makes use of the `return` call to actually return a result of the function:
 
-        def MyDiv(a, b):
+        def mydiv(a, b):
             return a/b
 
 18. **TICKABLE**: Include a check in the `MyDiv` function to ensure that no division by 0 is attempted.
 
-19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively. 
+19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
 
 20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
 
@@ -279,13 +279,13 @@ There are two ways of writing comments in python:
 22. The following is an example of a single line comment in the middle of some code:
 
         num = 2
-        num += 3  # Add 3 to num 
+        num += 3  # Add 3 to num
         print num
 
 23. The following is an example of a multilined comment in the definition of a function:
 
 
-        def MyFunc(a,b):
+        def myfunc(a,b):
         """
         This function calculates the ratio of two numbers raised to the sum of the two numbers.
 
@@ -299,53 +299,39 @@ There are two ways of writing comments in python:
 
 24. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for python is [PEP8](http://www.python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
 
-    - Variable names
+    - Variable and function names
 
-    Use a descriptive `lowercase` (all lowercase characters) for variable names.
+    Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
 
     Yes:
 
         myvariable
         sqrtvar
         var
+        myfunction
 
     No:
 
         my_variable
         SqrtVAR
+        MyFunction
+        MYFUNCTION
 
     On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
-
-    - Function names
-
-    Use a descriptive `CamelCase` (all words together with new words starting with a capital).
-
-    Yes:
-        
-        MyFunc()
-        CalculateSqrtOfNumber()
-
-    No:
-
-        My_Func()
-        Myfunc()
-        MYFUNC()
-
-    Again on some occasions it might be appropriate to make exceptions.
 
     - White spaces
 
     Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
 
     Yes:
-    
+
         print 2 + 2
-        MyFunc(3, 4)
+        myfunc(3, 4)
 
     No:
 
         print 2+2
-        MyFunc(3,4)
+        myfunc(3,4)
 
     Include 2 whitspaces before an inline comment `#` at the end of a line of code.
 
@@ -355,7 +341,7 @@ There are two ways of writing comments in python:
         print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
 
     No:
-    
+
         print 2 + 2 # So this is not enough space.
 
     Also include two blank lines before the definition of a function.
@@ -365,29 +351,29 @@ There are two ways of writing comments in python:
         print 2 + 2
 
 
-        def MyFunc():
+        def myfunc():
             print 2 + 2
 
     No:
 
         print 2 + 2
 
-        def MyFunc():
+        def myfunc():
             print 2 + 2
 
     - Comments
 
     Comment well and comment often. In particular use the following convention for functions:
 
-        AFunc():
+        afunc():
         """
         Always start a function with a multiline comment to describe what it does.
 
         Arguments: List the arguments and what format they should be in.
-        
+
         Output: List the expected output of the function.
         """
 
-    As and when we see new topics on this course we will also discuss the corresponding conventions. 
+    As and when we see new topics on this course we will also discuss the corresponding conventions.
 
     Go back through your script and ensure that you have used the above convention.

@@ -1,4 +1,4 @@
-SUBDIRS = Lab_Sheets/images Lab_Sheets 
+SUBDIRS = LabSheets/images LabSheets
 
 subdirs:
 		for dir in $(SUBDIRS); do \
