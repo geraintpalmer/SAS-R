@@ -36,6 +36,8 @@ and many more. We will be using the simplest IDE available: IDLE which comes bun
 
     ![\text{Hello world.}\label{W02-S01}](./screenshots/W02-S01.png)
 
+    [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
+
 2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above\text{ (as shown in Figure \ref{W02-S02})}:
 
         print "Hello world"
@@ -43,8 +45,6 @@ and many more. We will be using the simplest IDE available: IDLE which comes bun
     ![\text{Hello world in a file.}\label{W02-S02}](./screenshots/W02-S02.png)
 
     Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
-
-**INCLUDE VIDEO HERE**
 
 ## Basic variables
 
@@ -60,6 +60,8 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
         str1 = "Hello world!"
         print type(str1)
+
+    [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
 
 4. We can carry out basic arithmetic operations using python. Take a look at the following:
 
@@ -80,7 +82,11 @@ A value is one of the basic building blocks used by a program. Values may be of 
     + division;
     + exponentiation.
 
+    [Video hint](http://www.youtube.com/watch?v=A_Pa6Ov60T8)
+
 5. **TICKABLE**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
+
+    [Video hint](http://www.youtube.com/watch?v=ihBpyMpDy-M)
 
 6. **TICKABLE**: We can carry also manipulate strings. Try out the following:
 
@@ -100,6 +106,8 @@ A value is one of the basic building blocks used by a program. Values may be of 
         print str1[index:index + len("string")]
 
     There are various other things that can be done "on" strings, be sure to research these.
+
+    [Video hint](http://www.youtube.com/watch?v=IW6AGodpmSc)
 
 7. It is possible to go from one type of variable to another.
 
@@ -134,6 +142,8 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
     There are other types that can be used as well.
 
+    [Video hint](http://www.youtube.com/watch?v=LlQ7q-EaDnc)
+
 ## If statements
 
 8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
@@ -163,9 +173,13 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
     (The `%` operator gives the remainder of one number when divided by another.)
 
+    [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
+
     **Spend some time understanding the `elif` statement.**
 
 9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length more than 10" otherwise "that string has length less than 9".
+
+    [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
 
 ## Loops
 
@@ -204,7 +218,11 @@ An important type of programming instruction allows us to make a program repeat 
             s += i
         print s
 
+    [Video hint](http://www.youtube.com/watch?v=3ht1mNULJC0)
+
 11. **TICKABLE**: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.
+
+    [Video hint](http://www.youtube.com/watch?v=1PvEXo0l1NE)
 
 12. Event based loops are implemented in python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
 
@@ -217,7 +235,11 @@ An important type of programming instruction allows us to make a program repeat 
 
     ![\text{A basic while loop}\label{W02-img02}](./images/W02-img02.png)
 
+    [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
+
 13. **TICKABLE**: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.
+
+    [Video hint](http://www.youtube.com/watch?v=tzc4uaJaYHU)
 
 14. It can be shown (you are not required to check this) that the following sequence:
 
@@ -225,11 +247,15 @@ An important type of programming instruction allows us to make a program repeat 
 
     approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.
 
+    [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
+
 15. Take a look at the `random` python library (we will talk about libraries in detail later) and write some code that uses the `input` function to code a simple game:
 
     - The program chooses a random integer;
     - The user tries to guess the integer;
     - At every guess the program indicates if the guess is too high or too low.
+
+    [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
 
 ## Functions
 
@@ -251,14 +277,22 @@ To be able to make progress from the basic on this sheet we need a way to write 
         def printhello(name):
             print "Hello, " + name
 
+    [Video hint](http://www.youtube.com/watch?v=I_DXaP-mrRA)
+
 17.  The following function makes use of the `return` call to actually return a result of the function:
 
         def mydiv(a, b):
             return a/b
 
+    [Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
+
 18. **TICKABLE**: Include a check in the `MyDiv` function to ensure that no division by 0 is attempted.
 
+    [Video hint](http://www.youtube.com/watch?v=KxdJVw-06KE)
+
 19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
+
+    [Video hint](http://www.youtube.com/watch?v=asCgj1tXqu8)
 
 20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
 
@@ -266,6 +300,8 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
     $$X_n=\begin{cases}1,& n=0,1\\
     X_{n-1}+X_{n-2}\end{cases}$$
+
+    [Video hint](http://www.youtube.com/watch?v=4ZxBLkLRPXQ)
 
 ## Writing clear code
 
