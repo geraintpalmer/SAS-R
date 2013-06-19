@@ -92,16 +92,16 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
         str1 = "This is a string that I will learn to manipulate"
         str2 = ", string manipulation is very useful."
-        str = str1 + str2
-        print str
-        print len(str)
-        print str[0]
-        print str[-1]
-        print str[3:7]
+        string = str1 + str2
+        print string
+        print len(string)
+        print string[0]
+        print string[-1]
+        print string[3:7]
 
-    We see that python index a string, starting at 0, we can also use negative values to start from the end.
+    We see that python indexes a string, starting at 0, we can also use negative values to start from the end.
 
-        index = str.index("string")
+        index = str1.index("string")
         print index
         print str1[index:index + len("string")]
 
