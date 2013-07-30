@@ -11,5 +11,5 @@
 
 - "Python for Kids: A Playful Introduction to Programming" by Jason Briggs
 - "Computer Science Illuminated" by Nell Dale and John Lewis
-- "Sage Beginner’s Guide" by Craig Finch
+- "Sage Beginner's Guide" by Craig Finch
 - "More Math Into LaTeX: A Guide for Documentation and Presentation" by George Gratzer

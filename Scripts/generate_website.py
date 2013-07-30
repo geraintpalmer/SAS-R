@@ -96,6 +96,11 @@ index_file.write("\n")
 # Add analytics tracking script
 
 index_file.write("""
+
+### Reading List
+
+The reading list can be found [here](./Reading_list.html).
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
