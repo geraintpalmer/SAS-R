@@ -8,7 +8,11 @@ This website is very much work in progress with content for the 1st year program
 
 ## Lab Sheets
 
-1. Lab Sheets 1: Conditional Statements, flow control and functions
+1. Lab Sheets 1:  Data Structurs and Recurrence
+
+	[html (recommended)](./LabSheets/Week_03.html), [pdf](./LabSheets/Week_03.pdf), [docx](./LabSheets/Week_03.docx)
+
+2. Lab Sheets 2: Conditional Statements, flow control and functions
 
 	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
 

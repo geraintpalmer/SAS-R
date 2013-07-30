@@ -1,50 +1,31 @@
-# Week 1 - Conditional Statements, flow control and functions
+# Week 3 -  Data Structurs and Recurrence
 
-This lab sheet will serve as a basic introduction to programming. After this session you will know the basic python syntax to carry out the following:
+This lab sheet will introduce various data structures and also and important concept called 'recurrence'. After this session you will know how to:
 
-+ Set up basic variables;
-+ Write if statements (so called: 'Conditional statements');
-+ Write while and for loops (so call: 'flow control');
-+ Define functions;
-+ Write clear and consistent code.
++ Create and manipulate lists;
++ Create and manipulate dictionaries (hash tables);
++ Write data to a file using the `write` and `read` functions;
++ Use the csv python module to read and write csv files;
++ Program some basic algorithms using recurrence.
 
+## Lists in Python
+
+Lists are a particular object in Python that hold ordered collection of other objects. In other languages they are sometimes called 'arrays'. You can think of these as baskets that allow you to hold objects. You can put anything in lists:
+
++ Numeric variables;
++ Character variables;
++ Other lists;
++ and various other things.
+
+1. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
+
+
+
+## Dictionaries in Python
+## Writing data to files
+## Recurrence
 ## Programming in Python
 
-Python is a programming language. There are various other programming languages:
-
-+ Java
-+ C
-+ C++
-+ Ruby
-+ VBA
-
-and many more.
-
-A programming language allows you to write a **program** which is a **sequence of instructions that specifies how to perform a computation**.
-
-When writing a program one makes use of an Integrated Development Environment: **IDE**. There are various (freely available) IDE's:
-
-+ Eclipse
-+ IDLE
-+ Vim
-
-and many more. We will be using the simplest IDE available: IDLE which comes bundled with python (in your own time be sure to investigate others as it is a question of personal choice).
-
-1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code\text{ (as shown in Figure \ref{W02-S01})} and press `ENTER`:
-
-        print "Hello world"
-
-    ![\text{Hello world.}\label{W02-S01}](./Screenshots/W02-S01.png)
-
-    [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
-
-2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above\text{ (as shown in Figure \ref{W02-S02})}:
-
-        print "Hello world"
-
-    ![\text{Hello world in a file.}\label{W02-S02}](./Screenshots/W02-S02.png)
-
-    Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
 
 ## Basic variables
 
