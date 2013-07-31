@@ -99,7 +99,7 @@ index_file.write("""
 
 ### Reading List
 
-The reading list can be found [here](./Reading_list.html).
+The reading list can be found [here](./readinglist.html).
 
 <script type="text/javascript">
 
