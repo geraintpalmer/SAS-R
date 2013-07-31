@@ -19,7 +19,35 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 1. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
 
+        alist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+    We can manipulate lists in a similar way to strings. Try the following:
+
+        blist = [30, 40, 50, 60]
+        clist = alist + blist
+        print clist
+        print len(clist)
+        print clist[0]
+        print clist[-1]
+        print clist[3:12]
+
+    We see that python indexes lists just like strings: starting at 0. We can also use the `index` function as for strings. Try:
+
+        index = clist.index(40)
+        print index
+        print clist[index:index + 2]
+
+2. We have seen how to combine two list `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
+
+        mylist = []
+        for i in range(11):
+            if i % 2 == 0:
+                mylist.append(i)
+        print mylist
+
+   This makes use of the range function that we see in the previous lab sheet.
+
+3. **TICKABLE** Create a list with the first 1300 integers divisible by 3.
 
 ## Dictionaries in Python
 ## Writing data to files

@@ -27,7 +27,30 @@
 <li>and various other things.</li>
 </ul>
 <ol style="list-style-type: decimal">
-<li><strong>TICKABLE</strong>: The following code creates a list with the numbers from 1, to 10.</li>
+<li><p><strong>TICKABLE</strong>: The following code creates a list with the numbers from 1, to 10.</p>
+<pre><code>alist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</code></pre>
+<p>We can manipulate lists in a similar way to strings. Try the following:</p>
+<pre><code>blist = [30, 40, 50, 60]
+clist = alist + blist
+print clist
+print len(clist)
+print clist[0]
+print clist[-1]
+print clist[3:12]</code></pre>
+<p>We see that python indexes lists just like strings: starting at 0. We can also use the <code>index</code> function as for strings. Try:</p>
+<pre><code>index = clist.index(40)
+print index
+print clist[index:index + 2]</code></pre></li>
+<li><p>We have seen how to combine two list <code>+</code> but there is a very useful method on lists called the <code>append</code> method. With this we can easily add elements to lists:</p>
+<pre><code>mylist = []
+for i in range(11):
+    if i % 2 == 0:
+        mylist.append(i)
+print mylist</code></pre></li>
+</ol>
+<p>This makes use of the range function that we see in the previous lab sheet.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3.</li>
 </ol>
 <h2 id="dictionaries-in-python">Dictionaries in Python</h2>
 <h2 id="writing-data-to-files">Writing data to files</h2>
