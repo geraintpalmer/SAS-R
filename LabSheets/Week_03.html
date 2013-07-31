@@ -50,9 +50,43 @@ print mylist</code></pre></li>
 </ol>
 <p>This makes use of the range function that we see in the previous lab sheet.</p>
 <ol start="3" style="list-style-type: decimal">
-<li><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3.</li>
+<li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3.</p></li>
+<li><p>QUESTION ABOUT COMPREHENSIVE LIST THINGS</p></li>
 </ol>
 <h2 id="dictionaries-in-python">Dictionaries in Python</h2>
+<ol start="5" style="list-style-type: decimal">
+<li><p><strong>TICKABLE</strong> In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:</p>
+<pre><code>badphonebook = [[&quot;Vince&quot;, 3], [&quot;Zoe&quot;, 2], [&quot;Julien&quot;, 6], [&quot;Thomas&quot;, 10], [&quot;Mike&quot;, 1], [&quot;Matt&quot;, 4]]</code></pre>
+<p>To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one:</p>
+<pre><code>def searchpb(target):
+    for e in badphonebook:
+        print &quot;Checking %s&quot; % e
+        if e[0] == target:
+            return e[1]
+    return &quot;%s not in phonebook&quot; % target</code></pre>
+<p>Code this function and use it to find all the phone numbers in the above phone book. Try to find some strings that are not in the phone book.</p>
+<p><strong>In reality this is not how a phone book is designed.</strong> Names are in a given order (alphabetical) and so it is easier to know <em>where a name is supposed to be</em>. This is implemented in python using 'dictionaries' which are an <strong>unordered set of <em>key:value</em> pairs</strong>. This code creates the above phone book as a dictionary with the names as <em>keys</em> and the numbers as their <em>values</em>:</p>
+<pre><code>goodphonebook = {&quot;Vince&quot;: 3, &quot;Zoe&quot;: 2, &quot;Julien&quot;: 6, &quot;Thomas&quot;: 10, &quot;Mike&quot;: 1, &quot;Matt&quot;: 4}</code></pre>
+<p>To query a dictionary we can use the <code>get</code> method:</p>
+<pre><code>goodphonebook.get(&quot;Thomas&quot;)
+goodphonebook.get(&quot;Brayden&quot;)
+goodphonebook.get(&quot;Brayden&quot;, &#39;Not in book&#39;)
+goodphonebook.get(&quot;Thomas&quot;, &#39;Not in book&#39;)</code></pre>
+<p>We can also modify an element of a dictionary as follows:</p>
+<pre><code>print goodphonebook[&#39;Vince&#39;]
+goodphonebook[&#39;Vince&#39;] = 8
+print goodphonebook[&#39;Vince&#39;]</code></pre>
+<p>We must just be careful as if we use square brackets for a value that is not in a dictionary we will obtain an error:</p>
+<pre><code>print goodphonebook[&#39;Brayden&#39;]
+goodphonebook[&#39;Brayden&#39;] = 12
+print goodphonebook[&#39;Brayden&#39;]</code></pre></li>
+</ol>
+<p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p>
+<ol start="6" style="list-style-type: decimal">
+<li><p>Iterate over the list <code>badphonebook</code> to initiate the <code>pb</code> as the equivalent dictionary:</p>
+<pre><code>pb = {}</code></pre></li>
+<li><p>Iterating over values in a dictionary.</p></li>
+</ol>
 <h2 id="writing-data-to-files">Writing data to files</h2>
 <h2 id="recurrence">Recurrence</h2>
 <h2 id="programming-in-python">Programming in Python</h2>

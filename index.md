@@ -31,7 +31,7 @@ This website is very much work in progress with content for the 1st year program
 
 ### Reading List
 
-The reading list can be found [here](./Reading_list.html).
+The reading list can be found [here](./readinglist.html).
 
 <script type="text/javascript">
 

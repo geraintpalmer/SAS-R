@@ -49,7 +49,57 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 3. **TICKABLE** Create a list with the first 1300 integers divisible by 3.
 
+4. QUESTION ABOUT COMPREHENSIVE LIST THINGS
+
 ## Dictionaries in Python
+
+5. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
+
+        badphonebook = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas", 10], ["Mike", 1], ["Matt", 4]]
+
+    To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one:
+
+        def searchpb(target):
+            for e in badphonebook:
+                print "Checking %s" % e
+                if e[0] == target:
+                    return e[1]
+            return "%s not in phonebook" % target
+
+    Code this function and use it to find all the phone numbers in the above phone book. Try to find some strings that are not in the phone book.
+
+    **In reality this is not how a phone book is designed.** Names are in a given order (alphabetical) and so it is easier to know _where a name is supposed to be_. This is implemented in python using 'dictionaries' which are an **unordered set of _key:value_ pairs**. This code creates the above phone book as a dictionary with the names as _keys_ and the numbers as their _values_:
+
+        goodphonebook = {"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
+
+    To query a dictionary we can use the `get` method:
+
+        goodphonebook.get("Thomas")
+        goodphonebook.get("Brayden")
+        goodphonebook.get("Brayden", 'Not in book')
+        goodphonebook.get("Thomas", 'Not in book')
+
+    We can also modify an element of a dictionary as follows:
+
+        print goodphonebook['Vince']
+        goodphonebook['Vince'] = 8
+        print goodphonebook['Vince']
+
+    We must just be careful as if we use square brackets for a value that is not in a dictionary we will obtain an error:
+
+        print goodphonebook['Brayden']
+        goodphonebook['Brayden'] = 12
+        print goodphonebook['Brayden']
+
+   **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
+
+6. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
+
+        pb = {}
+
+7. Iterating over values in a dictionary.
+
+
 ## Writing data to files
 ## Recurrence
 ## Programming in Python
