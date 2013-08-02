@@ -141,7 +141,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Note that the string we are writing at each step of the loop ends with a `\n`. This is a special character that tells the writer to write a new line. There are other special characters such as `\t` which tells the writer to include a tabulated space.
 
-9. To read data from a file, we need to open the file in 'read mode':
+11. To read data from a file, we need to open the file in 'read mode':
 
         textfile = open('mytextfile.txt', 'r')
         string = textfile.read()
@@ -156,11 +156,63 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
         data = [int(e) for e in data[:-1]]
 
-11. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
+12. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
 
         def isprime(n):
             return max([e % n for e in range(2, n)]) != 0
 
     The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these files and prnit to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
 
+13. There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.
+
 ## Recurrence
+
+14. **TICKABLE** Recurrence is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
+
+$$X_n=\begin{cases}
+        1,& n=1\\
+        2X_{n-1},& n>1
+    \end{cases}$$
+
+    To calculate $X_3$, we apply the formula and get:
+
+    $$X_3=2X_2$$
+
+    at this point we must calculate $X_2$:
+
+    $$X_2=2X_1$$
+
+    and we now apply the formula to calculate $X_1$:
+
+    $$X_1=1$$
+
+    so by substituting all this in to our previous equation we get
+
+    $$X_3=4$$
+
+    Here is an iterative approach to programming this:
+
+        def iterX(n):
+            if n == 1:
+                return 1
+            r = 1
+            for i in range(n - 1):
+                r *= 2
+            return r
+
+    Experiment and understand this function to verify that it is giving the correct results.
+
+    The following code is a **recursive** approach to programming this:
+
+        def recX(n):
+            if n == 1:
+                return 1
+            return 2 * recX(n - 1)
+
+    Note that this approach is much more closely related to the actual definition of what we are trying to compute.
+
+    [PIC]
+
+15. **TICKABLE** Program two functio that return $n!$ in both an iterative approach and a recursive approach.
+
+16. Write a recursive program for the Fibonacci sequence.
