@@ -49,11 +49,34 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 3. **TICKABLE** Create a list with the first 1300 integers divisible by 3.
 
-4. QUESTION ABOUT COMPREHENSIVE LIST THINGS
+4. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
+
+        squares = [e ** 2 for e in range(1, 11)]
+        print squares
+
+    We can include logical statements to only give the squares of odd numbers:
+
+        squares = [e ** 2 for e in range(1, 11) if e %% 2 == 1]
+        print squares
+
+5. **TICKABLE** By creating a function and using list comprehensions, create a list of $f(n)$ for all integers $n\leq 100$ where $f(n)$ is given below:
+
+    $$f(n) = \begin{cases}
+       n ^ 3,& \text{ if $n$ odd}\\
+       n ^ 2 + 1,& \text{ if $n$ is divisible by }4\\
+       n - 1,& \text{otherwise}
+    \end{cases}$$
+
+6. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
+
+    alist = [1,74,2,100,-123]
+    print max(alist)
+    print min(alist)
+    print len(alist)
 
 ## Dictionaries in Python
 
-5. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
+7. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
 
         badphonebook = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas", 10], ["Mike", 1], ["Matt", 4]]
 
@@ -93,383 +116,51 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
    **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
 
-6. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
+8. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
 
         pb = {}
+        for e in badphonebook:
+            ...
 
-7. Iterating over values in a dictionary.
+9. Iterating over values in a dictionary. Note that it is also possible to iterate over keys in a dictionary:
+
+        for e in goodphonebook:
+            print goodphonebook[e]
 
 
 ## Writing data to files
-## Recurrence
-## Programming in Python
 
+10. **TICKABLE** All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).
 
-## Basic variables
+    To do this we need to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creats a) text file in 'write mode' (that's what the `w` is for) and write the number 1 to 10 to it:
 
-A value is one of the basic building blocks used by a program. Values may be of various types.
+        textfile = open('mytextfile.txt', 'w')
+        for i in range(1, 11):
+            textfile.write("%s\n" % i)
+        textfile.close()
 
-3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
+    Note that the string we are writing at each step of the loop ends with a `\n`. This is a special character that tells the writer to write a new line. There are other special characters such as `\t` which tells the writer to include a tabulated space.
 
-        num1 = 23
-        print type(num1)
+9. To read data from a file, we need to open the file in 'read mode':
 
-        num2 = 23.5
-        print type(num2)
-
-        str1 = "Hello world!"
-        print type(str1)
-
-    [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
-
-4. We can carry out basic arithmetic operations using python. Take a look at the following:
-
-        num = 2
-        num = num +3
-        print num
-
-    this can however also be written:
-
-        num = 2
-        num += 3
-        print num
-
-    Simlarly, `-`, `*`, `/` and `**` can be used for:
-
-    + subtraction;
-    + multiplication;
-    + division;
-    + exponentiation.
-
-    [Video hint](http://www.youtube.com/watch?v=A_Pa6Ov60T8)
-
-5. **TICKABLE**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
-
-    [Video hint](http://www.youtube.com/watch?v=ihBpyMpDy-M)
-
-6. **TICKABLE**: We can carry also manipulate strings. Try out the following:
-
-        str1 = "This is a string that I will learn to manipulate"
-        str2 = ", string manipulation is very useful."
-        string = str1 + str2
+        textfile = open('mytextfile.txt', 'r')
+        string = textfile.read()
         print string
-        print len(string)
-        print string[0]
-        print string[-1]
-        print string[3:7]
 
-    We see that python indexes a string, starting at 0, we can also use negative values to start from the end.
+   This string is not particularly helpful. To transform the string to a list we can use the `split` method which seperates a string on a given character:
 
-        index = str1.index("string")
-        print index
-        print str1[index:index + len("string")]
+        data = string.split('\n')
+        print data
 
-    There are various other things that can be done "on" strings, be sure to research these.
+   All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:
 
-    [Video hint](http://www.youtube.com/watch?v=IW6AGodpmSc)
+        data = [int(e) for e in data[:-1]]
 
-7. It is possible to go from one type of variable to another.
+11. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
 
-        f = 10.2
-        print int(f)
-        print float(int(f))
+        def isprime(n):
+            return max([e % n for e in range(2, n)]) != 0
 
-        s = str(f)
-        print s
-        print type(s)
+    The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these files and prnit to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
 
-    It is also possible to write strings using other variables.
-
-        numberofcats = 2
-        name = "Vince"
-        height = 1.7
-        notborn = "the UK"
-
-    One way to do this would be:
-
-        string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
-
-    Python (and most other languages) has a nicer way of doing this:
-
-        string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
-
-    The `%` is used to denote that a value must be input in to the string. The symbols after the `%` say what type of value is to be included:
-
-    - `s`: A String
-    - `.`_x_`f`: A float rounded to _x_ decimal places
-    - `i`: An integer
-
-    There are other types that can be used as well.
-
-    [Video hint](http://www.youtube.com/watch?v=LlQ7q-EaDnc)
-
-## If statements
-
-8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
-
-        boolean = True
-        if boolean:
-            print "boolean is %s" % boolean
-
-    Try typying the above code but change `boolean` to `False`. **Note: in python, indentation is important! In all languages it is good practive, in python it is a requirement**.
-
-    It is easy to create boolean variables using the following:
-
-    - `<`: strictly less than
-    - `>`: strictly greater than
-    - `<=`: less than or equal
-    - `>=`: greater than or equal
-    - `!=`: not equal
-    - `==`: equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
-
-    It is also possible to give alternatives to an `if statement`:
-
-        num = 11
-        print num % 2 == 0
-        if num % 2 == 0:
-            print "num is an even number"
-        else:
-            print "num is an odd number"
-
-    (The `%` operator gives the remainder of one number when divided by another.)
-
-    [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
-
-    **Spend some time understanding the `elif` statement.**
-
-9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length strictly more than 10" otherwise "that string has length less than 9".
-
-    [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
-
-## Loops
-
-An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops "count controlled loops" and "event controlled loops".
-
-10. The `range()` function in python allows us to create a list of integers easily. **A list is a new type of variable that we will look at more closely next week**:
-
-        print range(10)
-
-    Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:
-
-        print range(3,10)
-
-    We can also include 3 arguments:
-
-        print range(0,10,2)
-
-    Using `range()` we can use the basic `for` loop in python (a type of count controlled loop):
-
-        for i in range(10):
-            print i
-
-    The first line of the above defines the iterator `i` and tells it the values it will go through\text{ as shown in Figure \ref{W02-img01}}.
-
-    ![\text{A basic For loop}\label{W02-img01}](./Images/W02-img01.png)
-
-    We can in fact iterate over anything in a list:
-
-        for e in ["dog", "cat", 3, "I love mathematics"]:
-            print e
-
-    This allows us to do various interesting things. Try the following:
-
-        s = 0
-        for i in range(1001):
-            s += i
-        print s
-
-    [Video hint](http://www.youtube.com/watch?v=3ht1mNULJC0)
-
-11. **TICKABLE**: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.
-
-    [Video hint](http://www.youtube.com/watch?v=1PvEXo0l1NE)
-
-12. Event based loops are implemented in python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
-
-        k = 0
-        while k < 10:
-            print k
-            k += 1
-
-    The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands\text{ as shown in Figure \ref{W02-img01}}:
-
-    ![\text{A basic while loop}\label{W02-img02}](./Images/W02-img02.png)
-
-    [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
-
-13. **TICKABLE**: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.
-
-    [Video hint](http://www.youtube.com/watch?v=tzc4uaJaYHU)
-
-14. It can be shown (you are not required to check this) that the following sequence:
-
-    $$x_{n+1} = \frac{x_n+K/x_n}{2}$$
-
-    approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.
-
-    [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
-
-15. Take a look at the `random` python library (we will talk about libraries in detail later) and write some code that uses the `input` function to code a simple game:
-
-    - The program chooses a random integer;
-    - The user tries to guess the integer;
-    - At every guess the program indicates if the guess is too high or too low.
-
-    [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
-
-## Functions
-
-To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments\text{ as shown diagramaticaly in Figure \ref{W02-img03}}.
-
-![\text{A diagram of a function}\label{W02-img03}](./Images/W02-img03.png)
-
-16. The following code defines a very simple function (with no arguments):
-
-        def printhello():
-            print "Hello"
-
-    The name of the function is `PrintHello` and `def` is the python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
-
-        printhello()
-
-    We can modify our function to take an argument:
-
-        def printhello(name):
-            print "Hello, " + name
-
-    [Video hint](http://www.youtube.com/watch?v=I_DXaP-mrRA)
-
-17.  The following function makes use of the `return` call to actually return a result of the function:
-
-        def mydiv(a, b):
-            return a/b
-
-    [Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
-
-18. **TICKABLE**: Include a check in the `MyDiv` function to ensure that no division by 0 is attempted.
-
-    [Video hint](http://www.youtube.com/watch?v=KxdJVw-06KE)
-
-19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
-
-    [Video hint](http://www.youtube.com/watch?v=asCgj1tXqu8)
-
-20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
-
-21. **TICKABLE**: Write a function `Fibonacci` that uses loops to calculate the $n$th number of the Fibonacci sequence:
-
-    $$X_n=\begin{cases}1,& n=0,1\\
-    X_{n-1}+X_{n-2}\end{cases}$$
-
-    [Video hint](http://www.youtube.com/watch?v=4ZxBLkLRPXQ)
-
-## Writing clear code
-
-When writing code it is **very important** to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.
-
-There are two ways of writing comments in python:
-
-- Use the `#` to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.
-- Use `"""` to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).
-
-22. The following is an example of a single line comment in the middle of some code:
-
-        num = 2
-        num += 3  # Add 3 to num
-        print num
-
-23. The following is an example of a multilined comment in the definition of a function:
-
-
-        def myfunc(a,b):
-        """
-        This function calculates the ratio of two numbers raised to the sum of the two numbers.
-
-        Arguments:
-            a: the first number
-            b: the second number
-
-        Output: (a / b) ** (a + b)
-        """
-            return (a / float(b)) ** (a + b)
-
-24. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for python is [PEP8](http://www.python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
-
-    - Variable and function names
-
-    Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
-
-    Yes:
-
-        myvariable
-        sqrtvar
-        var
-        myfunction
-
-    No:
-
-        my_variable
-        SqrtVAR
-        MyFunction
-        MYFUNCTION
-
-    On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
-
-    - White spaces
-
-    Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
-
-    Yes:
-
-        print 2 + 2
-        myfunc(3, 4)
-
-    No:
-
-        print 2+2
-        myfunc(3,4)
-
-    Include 2 whitspaces before an inline comment `#` at the end of a line of code.
-
-    Yes:
-
-        # Just leave a space after the comment symbol if on a single line
-        print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
-
-    No:
-
-        print 2 + 2 # So this is not enough space.
-
-    Also include two blank lines before the definition of a function.
-
-    Yes:
-
-        print 2 + 2
-
-
-        def myfunc():
-            print 2 + 2
-
-    No:
-
-        print 2 + 2
-
-        def myfunc():
-            print 2 + 2
-
-    - Comments
-
-    Comment well and comment often. In particular use the following convention for functions:
-
-        afunc():
-        """
-        Always start a function with a multiline comment to describe what it does.
-
-        Arguments: List the arguments and what format they should be in.
-
-        Output: List the expected output of the function.
-        """
-
-    As and when we see new topics on this course we will also discuss the corresponding conventions.
-
-    Go back through your script and ensure that you have used the above convention.
+## Recurrence

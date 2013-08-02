@@ -5,8 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="week-3---data-structurs-and-recurrence">Week 3 - Data Structurs and Recurrence</h1>
@@ -51,10 +50,21 @@ print mylist</code></pre></li>
 <p>This makes use of the range function that we see in the previous lab sheet.</p>
 <ol start="3" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3.</p></li>
-<li><p>QUESTION ABOUT COMPREHENSIVE LIST THINGS</p></li>
+<li><p>There is another way of creating/manipulating lists in python called list <em>comprehensions</em>. The following code give the squares of the first 10 integers:</p>
+<pre><code>squares = [e ** 2 for e in range(1, 11)]
+print squares</code></pre>
+<p>We can include logical statements to only give the squares of odd numbers:</p>
+<pre><code>squares = [e ** 2 for e in range(1, 11) if e %% 2 == 1]
+print squares</code></pre></li>
+<li><p><strong>TICKABLE</strong> By creating a function and using list comprehensions, create a list of \(f(n)\) for all integers \(n\leq 100\) where \(f(n)\) is given below:</p>
+<p>\[f(n) = \begin{cases}
+   n ^ 3,&amp; \text{ if $n$ odd}\\
+   n ^ 2 + 1,&amp; \text{ if $n$ is divisible by }4\\
+   n - 1,&amp; \text{otherwise}
+\end{cases}\]</p></li>
 </ol>
 <h2 id="dictionaries-in-python">Dictionaries in Python</h2>
-<ol start="5" style="list-style-type: decimal">
+<ol start="6" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:</p>
 <pre><code>badphonebook = [[&quot;Vince&quot;, 3], [&quot;Zoe&quot;, 2], [&quot;Julien&quot;, 6], [&quot;Thomas&quot;, 10], [&quot;Mike&quot;, 1], [&quot;Matt&quot;, 4]]</code></pre>
 <p>To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one:</p>
@@ -84,10 +94,31 @@ print goodphonebook[&#39;Brayden&#39;]</code></pre></li>
 <p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p>
 <ol start="6" style="list-style-type: decimal">
 <li><p>Iterate over the list <code>badphonebook</code> to initiate the <code>pb</code> as the equivalent dictionary:</p>
-<pre><code>pb = {}</code></pre></li>
-<li><p>Iterating over values in a dictionary.</p></li>
+<pre><code>pb = {}
+for e in badphonebook:
+    ...</code></pre></li>
+<li><p>Iterating over values in a dictionary. Note that it is also possible to iterate over keys in a dictionary:</p>
+<pre><code>for e in goodphonebook:
+    print goodphonebook[e]</code></pre></li>
 </ol>
 <h2 id="writing-data-to-files">Writing data to files</h2>
+<ol start="8" style="list-style-type: decimal">
+<li><p><strong>TICKABLE</strong> All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).</p>
+<p>To do this we need to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creats a) text file in 'write mode' (that's what the <code>w</code> is for) and write the number 1 to 10 to it:</p>
+<pre><code>textfile = open(&#39;mytextfile.txt&#39;, &#39;w&#39;)
+for i in range(1, 11):
+    textfile.write(&quot;%s\n&quot; % i)
+textfile.close()</code></pre>
+<p>Note that the string we are writing at each step of the loop ends with a <code>\n</code>. This is a special character that tells the writer to write a new line. There are other special characters such as <code>\t</code> which tells the writer to include a tabulated space.</p></li>
+<li><p>To read data from a file, we need to open the file in 'read mode':</p>
+<pre><code>textfile = open(&#39;mytextfile.txt&#39;, &#39;r&#39;)
+string = textfile.read()
+print string</code></pre></li>
+<li><p><strong>TICKABLE</strong> The following function checks if a number is prime or not. Read through the function and ensure that you understand it.</p>
+<pre><code>def isprime(n):
+    return max([e % n for e in range(2, n)]) != 0</code></pre>
+<p>In t</p></li>
+</ol>
 <h2 id="recurrence">Recurrence</h2>
 <h2 id="programming-in-python">Programming in Python</h2>
 <h2 id="basic-variables">Basic variables</h2>
@@ -228,11 +259,11 @@ while k &lt; 10:
 <img src="./Images/W02-img02.png" alt="" /><p class="caption"></p>
 </div>
 <p><a href="http://www.youtube.com/watch?v=Rog3YAETP-Q">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong>: Write some code to find <span class="math">\(N\)</span> such that <span class="math">\(\sum_{i=0}^Ni^2\)</span> is more than 20000.</p>
+<li><p><strong>TICKABLE</strong>: Write some code to find \(N\) such that \(\sum_{i=0}^Ni^2\) is more than 20000.</p>
 <p><a href="http://www.youtube.com/watch?v=tzc4uaJaYHU">Video hint</a></p></li>
 <li><p>It can be shown (you are not required to check this) that the following sequence:</p>
-<p><span class="math">\[x_{n+1} = \frac{x_n+K/x_n}{2}\]</span></p>
-<p>approaches <span class="math">\(\sqrt{K}\)</span> as <span class="math">\(n\)</span> increases. Write some code to verify this to any given level of precision.</p>
+<p>\[x_{n+1} = \frac{x_n+K/x_n}{2}\]</p>
+<p>approaches \(\sqrt{K}\) as \(n\) increases. Write some code to verify this to any given level of precision.</p>
 <p><a href="http://www.youtube.com/watch?v=bHv2vqPliL0">Video hint</a></p></li>
 <li><p>Take a look at the <code>random</code> python library (we will talk about libraries in detail later) and write some code that uses the <code>input</code> function to code a simple game:</p>
 <ul>
@@ -263,12 +294,12 @@ while k &lt; 10:
 <p><a href="http://www.youtube.com/watch?v=0cA2VNcc54A">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong>: Include a check in the <code>MyDiv</code> function to ensure that no division by 0 is attempted.</p>
 <p><a href="http://www.youtube.com/watch?v=KxdJVw-06KE">Video hint</a></p></li>
-<li><p><strong>TICKABLE</strong>: Create a function that returns the sum of the first <span class="math">\(K\)</span> integers not divisiable by <span class="math">\(B\)</span>. Investigate &quot;using optional arguments&quot; and set <span class="math">\(K\)</span> and <span class="math">\(B\)</span> to have default values 10000 and 3 respectively.</p>
+<li><p><strong>TICKABLE</strong>: Create a function that returns the sum of the first \(K\) integers not divisiable by \(B\). Investigate &quot;using optional arguments&quot; and set \(K\) and \(B\) to have default values 10000 and 3 respectively.</p>
 <p><a href="http://www.youtube.com/watch?v=asCgj1tXqu8">Video hint</a></p></li>
 <li><p>Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.</p></li>
-<li><p><strong>TICKABLE</strong>: Write a function <code>Fibonacci</code> that uses loops to calculate the <span class="math">\(n\)</span>th number of the Fibonacci sequence:</p>
-<p><span class="math">\[X_n=\begin{cases}1,&amp; n=0,1\\
-X_{n-1}+X_{n-2}\end{cases}\]</span></p>
+<li><p><strong>TICKABLE</strong>: Write a function <code>Fibonacci</code> that uses loops to calculate the \(n\)th number of the Fibonacci sequence:</p>
+<p>\[X_n=\begin{cases}1,&amp; n=0,1\\
+X_{n-1}+X_{n-2}\end{cases}\]</p>
 <p><a href="http://www.youtube.com/watch?v=4ZxBLkLRPXQ">Video hint</a></p></li>
 </ol>
 <h2 id="writing-clear-code">Writing clear code</h2>
