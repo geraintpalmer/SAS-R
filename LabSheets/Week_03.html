@@ -41,15 +41,13 @@ print clist[3:12]</code></pre>
 <pre><code>index = clist.index(40)
 print index
 print clist[index:index + 2]</code></pre></li>
-<li><p>We have seen how to combine two list <code>+</code> but there is a very useful method on lists called the <code>append</code> method. With this we can easily add elements to lists:</p>
+<li><p>We have seen how to combine two lists using <code>+</code> but there is a very useful method on lists called the <code>append</code> method. With this we can easily add elements to lists:</p>
 <pre><code>mylist = []
 for i in range(11):
     if i % 2 == 0:
         mylist.append(i)
-print mylist</code></pre></li>
-</ol>
-<p>This makes use of the range function that we see in the previous lab sheet.</p>
-<ol start="3" style="list-style-type: decimal">
+print mylist</code></pre>
+<p>This makes use of the range function that we see in the previous lab sheet.</p></li>
 <li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3.</p></li>
 <li><p>There is another way of creating/manipulating lists in python called list <em>comprehensions</em>. The following code give the squares of the first 10 integers:</p>
 <pre><code>squares = [e ** 2 for e in range(1, 11)]
@@ -64,7 +62,10 @@ print squares</code></pre></li>
    n - 1,&amp; \text{otherwise}
 \end{cases}\]</span></p></li>
 <li><p>There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:</p>
-<p>alist = [1,74,2,100,-123] print max(alist) print min(alist) print len(alist)</p></li>
+<pre><code>alist = [1,74,2,100,-123]
+print max(alist)
+print min(alist)
+print len(alist)</code></pre></li>
 </ol>
 <h2 id="dictionaries-in-python">Dictionaries in Python</h2>
 <ol start="7" style="list-style-type: decimal">
@@ -92,10 +93,8 @@ print goodphonebook[&#39;Vince&#39;]</code></pre>
 <p>We must just be careful as if we use square brackets for a value that is not in a dictionary we will obtain an error:</p>
 <pre><code>print goodphonebook[&#39;Brayden&#39;]
 goodphonebook[&#39;Brayden&#39;] = 12
-print goodphonebook[&#39;Brayden&#39;]</code></pre></li>
-</ol>
-<p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p>
-<ol start="8" style="list-style-type: decimal">
+print goodphonebook[&#39;Brayden&#39;]</code></pre>
+<p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p></li>
 <li><p>Iterate over the list <code>badphonebook</code> to initiate the <code>pb</code> as the equivalent dictionary:</p>
 <pre><code>pb = {}
 for e in badphonebook:
@@ -116,14 +115,12 @@ textfile.close()</code></pre>
 <li><p>To read data from a file, we need to open the file in 'read mode':</p>
 <pre><code>textfile = open(&#39;mytextfile.txt&#39;, &#39;r&#39;)
 string = textfile.read()
-print string</code></pre></li>
-</ol>
+print string</code></pre>
 <p>This string is not particularly helpful. To transform the string to a list we can use the <code>split</code> method which seperates a string on a given character:</p>
-<pre><code>    data = string.split(&#39;\n&#39;)
-    print data</code></pre>
+<pre><code>data = string.split(&#39;\n&#39;)
+print data</code></pre>
 <p>All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:</p>
-<pre><code>    data = [int(e) for e in data[:-1]]</code></pre>
-<ol start="12" style="list-style-type: decimal">
+<pre><code>data = [int(e) for e in data[:-1]]</code></pre></li>
 <li><p><strong>TICKABLE</strong> The following function checks if a number is prime or not. Read through the function and ensure that you understand it.</p>
 <pre><code>def isprime(n):
     return max([e % n for e in range(2, n)]) != 0</code></pre>
@@ -132,52 +129,38 @@ print string</code></pre></li>
 </ol>
 <h2 id="recurrence">Recurrence</h2>
 <ol start="14" style="list-style-type: decimal">
-<li><strong>TICKABLE</strong> Recurrence is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:</li>
-</ol>
+<li><p><strong>TICKABLE</strong> Recurrence is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:</p>
 <p><span class="math">\[X_n=\begin{cases}
-        1,&amp; n=1\\
-        2X_{n-1},&amp; n&gt;1
-    \end{cases}\]</span></p>
-<pre><code>To calculate $X_3$, we apply the formula and get:
-
-$$X_3=2X_2$$
-
-at this point we must calculate $X_2$:
-
-$$X_2=2X_1$$
-
-and we now apply the formula to calculate $X_1$:
-
-$$X_1=1$$
-
-so by substituting all this in to our previous equation we get
-
-$$X_3=4$$
-
-Here is an iterative approach to programming this:
-
-    def iterX(n):
-        if n == 1:
-            return 1
-        r = 1
-        for i in range(n - 1):
-            r *= 2
-        return r
-
-Experiment and understand this function to verify that it is giving the correct results.
-
-The following code is a **recursive** approach to programming this:
-
-    def recX(n):
-        if n == 1:
-            return 1
-        return 2 * recX(n - 1)
-
-Note that this approach is much more closely related to the actual definition of what we are trying to compute.
-
-[PIC]</code></pre>
-<ol start="15" style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> Program two functio that return <span class="math">\(n!\)</span> in both an iterative approach and a recursive approach.</p></li>
+1,&amp; n=1\\
+2X_{n-1},&amp; n&gt;1
+\end{cases}\]</span></p>
+<p>To calculate <span class="math">\(X_3\)</span>, we apply the formula and get:</p>
+<p><span class="math">\[X_3=2X_2\]</span></p>
+<p>at this point we must calculate <span class="math">\(X_2\)</span>:</p>
+<p><span class="math">\[X_2=2X_1\]</span></p>
+<p>and we now apply the formula to calculate <span class="math">\(X_1\)</span>:</p>
+<p><span class="math">\[X_1=1\]</span></p>
+<p>so by substituting all this in to our previous equation we get</p>
+<p><span class="math">\[X_3=4\]</span></p>
+<p>Here is an iterative approach to programming this:</p>
+<pre><code>def iterX(n):
+    if n == 1:
+        return 1
+    r = 1
+    for i in range(n - 1):
+        r *= 2
+    return r</code></pre>
+<p>Experiment and understand this function to verify that it is giving the correct results.</p>
+<p>The following code is a <strong>recursive</strong> approach to programming this:</p>
+<pre><code>def recX(n):
+    if n == 1:
+        return 1
+    return 2 * recX(n - 1)</code></pre>
+<p>Note that this approach is much more closely related to the actual definition of what we are trying to compute.  In general we will always either be considering a <em>base</em> case or a case than can be reduced.</p>
+<div class="figure">
+<img src="./Images/W03-img01.png" alt="" /><p class="caption"></p>
+</div></li>
+<li><p><strong>TICKABLE</strong> Program two functions that return <span class="math">\(n!\)</span> in both an iterative approach and a recursive approach.</p></li>
 <li><p>Write a recursive program for the Fibonacci sequence.</p></li>
 </ol>
 </body>

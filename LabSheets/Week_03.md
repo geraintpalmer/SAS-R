@@ -37,7 +37,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
         print index
         print clist[index:index + 2]
 
-2. We have seen how to combine two list `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
+2. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
 
         mylist = []
         for i in range(11):
@@ -45,7 +45,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
                 mylist.append(i)
         print mylist
 
-   This makes use of the range function that we see in the previous lab sheet.
+    This makes use of the range function that we see in the previous lab sheet.
 
 3. **TICKABLE** Create a list with the first 1300 integers divisible by 3.
 
@@ -69,10 +69,10 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 6. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
 
-    alist = [1,74,2,100,-123]
-    print max(alist)
-    print min(alist)
-    print len(alist)
+        alist = [1,74,2,100,-123]
+        print max(alist)
+        print min(alist)
+        print len(alist)
 
 ## Dictionaries in Python
 
@@ -114,7 +114,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
         goodphonebook['Brayden'] = 12
         print goodphonebook['Brayden']
 
-   **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
+    **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
 
 8. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
 
@@ -147,12 +147,12 @@ Lists are a particular object in Python that hold ordered collection of other ob
         string = textfile.read()
         print string
 
-   This string is not particularly helpful. To transform the string to a list we can use the `split` method which seperates a string on a given character:
+    This string is not particularly helpful. To transform the string to a list we can use the `split` method which seperates a string on a given character:
 
         data = string.split('\n')
         print data
 
-   All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:
+    All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:
 
         data = [int(e) for e in data[:-1]]
 
@@ -169,9 +169,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 14. **TICKABLE** Recurrence is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
 
-$$X_n=\begin{cases}
-        1,& n=1\\
-        2X_{n-1},& n>1
+    $$X_n=\begin{cases}
+    1,& n=1\\
+    2X_{n-1},& n>1
     \end{cases}$$
 
     To calculate $X_3$, we apply the formula and get:
@@ -209,10 +209,10 @@ $$X_n=\begin{cases}
                 return 1
             return 2 * recX(n - 1)
 
-    Note that this approach is much more closely related to the actual definition of what we are trying to compute.
+    Note that this approach is much more closely related to the actual definition of what we are trying to compute. \text{The basic idea behind recursion is shown in Figure \ref{W03_img01}.} In general we will always either be considering a _base_ case or a case than can be reduced.
 
-    [PIC]
+    ![\text{Basic idea behind recursion}\label{W03_img01}](./Images/W03-img01.png)
 
-15. **TICKABLE** Program two functio that return $n!$ in both an iterative approach and a recursive approach.
+15. **TICKABLE** Program two functions that return $n!$ in both an iterative approach and a recursive approach.
 
 16. Write a recursive program for the Fibonacci sequence.
