@@ -72,6 +72,9 @@ print len(alist)</code></pre></li>
 <li><p><strong>TICKABLE</strong> In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:</p>
 <pre><code>badphonebook = [[&quot;Vince&quot;, 3], [&quot;Zoe&quot;, 2], [&quot;Julien&quot;, 6], [&quot;Thomas&quot;, 10], [&quot;Mike&quot;, 1], [&quot;Matt&quot;, 4]]</code></pre>
 <p>To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one:</p>
+<div class="figure">
+<img src="./Images/W03-img01.png" alt="" /><p class="caption"></p>
+</div>
 <pre><code>def searchpb(target):
     for e in badphonebook:
         print &quot;Checking %s&quot; % e
@@ -79,7 +82,11 @@ print len(alist)</code></pre></li>
             return e[1]
     return &quot;%s not in phonebook&quot; % target</code></pre>
 <p>Code this function and use it to find all the phone numbers in the above phone book. Try to find some strings that are not in the phone book.</p>
-<p><strong>In reality this is not how a phone book is designed.</strong> Names are in a given order (alphabetical) and so it is easier to know <em>where a name is supposed to be</em>. This is implemented in python using 'dictionaries' which are an <strong>unordered set of <em>key:value</em> pairs</strong>. This code creates the above phone book as a dictionary with the names as <em>keys</em> and the numbers as their <em>values</em>:</p>
+<p><strong>In reality this is not how a phone book is designed.</strong> Names are in a given order (alphabetical) and so it is easier to know <em>where a name is supposed to be</em>. This is implemented in python using 'dictionaries' which are an <strong>unordered set of <em>key:value</em> pairs</strong>.</p>
+<div class="figure">
+<img src="./Images/W03-img02.png" alt="" /><p class="caption"></p>
+</div>
+<p>This code creates the above phone book as a dictionary with the names as <em>keys</em> and the numbers as their <em>values</em>:</p>
 <pre><code>goodphonebook = {&quot;Vince&quot;: 3, &quot;Zoe&quot;: 2, &quot;Julien&quot;: 6, &quot;Thomas&quot;: 10, &quot;Mike&quot;: 1, &quot;Matt&quot;: 4}</code></pre>
 <p>To query a dictionary we can use the <code>get</code> method:</p>
 <pre><code>goodphonebook.get(&quot;Thomas&quot;)
@@ -158,7 +165,7 @@ print data</code></pre>
     return 2 * recX(n - 1)</code></pre>
 <p>Note that this approach is much more closely related to the actual definition of what we are trying to compute.  In general we will always either be considering a <em>base</em> case or a case than can be reduced.</p>
 <div class="figure">
-<img src="./Images/W03-img01.png" alt="" /><p class="caption"></p>
+<img src="./Images/W03-img03.png" alt="" /><p class="caption"></p>
 </div></li>
 <li><p><strong>TICKABLE</strong> Program two functions that return <span class="math">\(n!\)</span> in both an iterative approach and a recursive approach.</p></li>
 <li><p>Write a recursive program for the Fibonacci sequence.</p></li>

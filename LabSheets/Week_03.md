@@ -80,7 +80,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
         badphonebook = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas", 10], ["Mike", 1], ["Matt", 4]]
 
-    To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one:
+    To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
+
+    ![\text{A bad phone book}\label{W03-img01}](./Images/W03-img01.png)
 
         def searchpb(target):
             for e in badphonebook:
@@ -91,7 +93,12 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Code this function and use it to find all the phone numbers in the above phone book. Try to find some strings that are not in the phone book.
 
-    **In reality this is not how a phone book is designed.** Names are in a given order (alphabetical) and so it is easier to know _where a name is supposed to be_. This is implemented in python using 'dictionaries' which are an **unordered set of _key:value_ pairs**. This code creates the above phone book as a dictionary with the names as _keys_ and the numbers as their _values_:
+    **In reality this is not how a phone book is designed.** Names are in a given order (alphabetical) and so it is easier to know _where a name is supposed to be_\text{ (as shown in Figure \ref{W03-img02)}}. This is implemented in python using 'dictionaries' which are an **unordered set of _key:value_ pairs**.
+
+    ![\text{A good phone book}\label{W03-img02}](./Images/W03-img02.png)
+
+
+    This code creates the above phone book as a dictionary with the names as _keys_ and the numbers as their _values_:
 
         goodphonebook = {"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
 
@@ -211,7 +218,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Note that this approach is much more closely related to the actual definition of what we are trying to compute. \text{The basic idea behind recursion is shown in Figure \ref{W03_img01}.} In general we will always either be considering a _base_ case or a case than can be reduced.
 
-    ![\text{Basic idea behind recursion}\label{W03_img01}](./Images/W03-img01.png)
+    ![\text{Basic idea behind recursion}\label{W03_img01}](./Images/W03-img03.png)
 
 15. **TICKABLE** Program two functions that return $n!$ in both an iterative approach and a recursive approach.
 
