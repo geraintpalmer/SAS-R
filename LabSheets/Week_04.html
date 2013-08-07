@@ -31,7 +31,37 @@ print l
 l.sort()
 print l</code></pre>
 <p>In this question we will take a look at one type of algorithm that can be used to sort a list: &quot;Selection sort&quot;.</p>
-<p>IDEA (WITH PICTURE) PSEUDOCODE CODE</p></li>
+<p>The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.</p>
+<div class="figure">
+<img src="./Images/W04-img01.png" />
+</div>
+<p>Here is some <strong>pseudo code</strong> that describes this:</p>
+<pre><code>INITIATE NEWLIST
+WHILE MORE ELEMENTS IN NEWLIST THAN IN OLDLIST:
+    FIND SMALLEST ELEMENT IN OLDLIST
+    MOVE THAT ELEMENT TO NEWLIST</code></pre>
+<p>It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.</p>
+<div class="figure">
+<img src="./Images/W04-img02.png" />
+</div>
+<p>Here is some <strong>pseudo code</strong> that describes the 'insertion sort' algorithm:</p>
+<pre><code>SET FIRSTUNSORTED TO 0
+WHILE NOT SORTED:
+    FIND SMALLEST UNSORTED ITEM
+    SWAP FIRST UNSORTED ITEM WITH EARLIEST UNSORTED ITEM
+    SET FIRSTUNSORTED TO FIRSTUNSORTED + 1</code></pre>
+<p>Here is some python code that carries out the above algorithm, experiment with it and include comments:</p>
+<pre><code>def insertionsort(data):
+    firstunsorted = 0
+    while firstUnsorted &lt; len(data) - 1:
+        indexOfSmallest = firstUnsorted
+        index = firstUnsorted + 1
+        while index &lt;= len(data) - 1:
+            if data[index] &lt; data[indexOfSmallest]:
+                indexOfSmallest = index
+            index += 1
+        data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
+        firstUnsorted += 1</code></pre></li>
 <li>Pseudo code for bubble sort asking student to code it themselves.</li>
 <li><p>Timeing module to compare both of the above algorithms on a series of data files...</p></li>
 </ol>

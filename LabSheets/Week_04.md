@@ -33,7 +33,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.
 
-    ![](/Images/W04-img01.png)
+    ![](./Images/W04-img01.png)
 
     Here is some **pseudo code** that describes this:
 
@@ -44,7 +44,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.
 
-    ![](/Images/W04-img02.png)
+    ![](./Images/W04-img02.png)
 
     Here is some **pseudo code** that describes the 'insertion sort' algorithm:
 
