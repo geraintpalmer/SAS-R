@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
 <h1 id="week-4---sorting-and-searching-algorithms">Week 4 - Sorting and Searching Algorithms</h1>
@@ -33,7 +32,7 @@ print l</code></pre>
 <p>In this question we will take a look at one type of algorithm that can be used to sort a list: &quot;Selection sort&quot;.</p>
 <p>The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.</p>
 <div class="figure">
-<img src="./Images/W04-img01.png" />
+<img src="./Images/W04-img01.png" /><p class="caption"></p>
 </div>
 <p>Here is some <strong>pseudo code</strong> that describes this:</p>
 <pre><code>INITIATE NEWLIST
@@ -42,7 +41,7 @@ WHILE MORE ELEMENTS IN NEWLIST THAN IN OLDLIST:
     MOVE THAT ELEMENT TO NEWLIST</code></pre>
 <p>It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.</p>
 <div class="figure">
-<img src="./Images/W04-img02.png" />
+<img src="./Images/W04-img02.png" /><p class="caption"></p>
 </div>
 <p>Here is some <strong>pseudo code</strong> that describes the 'insertion sort' algorithm:</p>
 <pre><code>SET FIRSTUNSORTED TO 0
@@ -62,8 +61,35 @@ WHILE NOT SORTED:
             index += 1
         data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
         firstUnsorted += 1</code></pre></li>
-<li>Pseudo code for bubble sort asking student to code it themselves.</li>
-<li><p>Timeing module to compare both of the above algorithms on a series of data files...</p></li>
+<li><p>There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:</p>
+<pre><code>SET FIRSTUNSORTED TO 0
+SET SWAP TO TRUE
+WHILE FIRSTUNSORTED &lt; LENGTH - 1 AND SWAP:
+    SET SWAP TO FALSE
+    &quot;BUBBLE UP&quot; THE SMALLEST ITEM IN AN UNSORTED LIST
+    SET FIRSTUNSORTED TO FIRSTUNSORTED + 1</code></pre>
+<p>Here's the pseudo code for the &quot;BUBBLE UP&quot; part of the above code:</p>
+<pre><code>SET INDEX TO LENGTH - 1
+WHILE INDEX &gt;  FIRSTUNSORTED + 1:
+    IF DATA[INDEX] &lt; DATA[INDEX - 1]
+        SWAP DATA[INDEX] AND DATA[INDEX - 1]
+        SET SWAP TO TRUE
+    SET INDEX TO INDEX - 1</code></pre></li>
+<li><p>The 'time' module allows you to get the current system time on your machine:</p>
+<pre><code>import time
+print time.time()</code></pre>
+<p>Using this we can write a function that will evaluate how long it takes to run a particular function:</p>
+<pre><code>timing(string):
+    starttime = time.time()
+    eval(string)
+    return time.time() - starttime</code></pre>
+<p>This uses the <code>eval</code> function which runs any string of code. We can define the following test function:</p>
+<pre><code>def testfunction():
+    return 10 ** 1000</code></pre>
+<p>We see how long a single run of this testfunction takes using our timing function:</p>
+<pre><code>print timing(&quot;testfunction&quot;)</code></pre>
+<p>Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.</p>
+<p>(Note that python also has a timeit library which offers timing functionality.)</p></li>
 </ol>
 <h2 id="searching-algorithms">Searching algorithms</h2>
 <ol start="5" style="list-style-type: decimal">

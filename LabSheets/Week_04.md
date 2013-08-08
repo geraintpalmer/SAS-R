@@ -69,8 +69,48 @@ This lab sheet will introduce two algorithms from computer science. After this s
                 firstUnsorted += 1
 
 
-3. Pseudo code for bubble sort asking student to code it themselves.
-4. Timeing module to compare both of the above algorithms on a series of data files...
+3. There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:
+
+        SET FIRSTUNSORTED TO 0
+        SET SWAP TO TRUE
+        WHILE FIRSTUNSORTED < LENGTH - 1 AND SWAP:
+            SET SWAP TO FALSE
+            "BUBBLE UP" THE SMALLEST ITEM IN AN UNSORTED LIST
+            SET FIRSTUNSORTED TO FIRSTUNSORTED + 1
+
+    Here's the pseudo code for the "BUBBLE UP" part of the above code:
+
+        SET INDEX TO LENGTH - 1
+        WHILE INDEX >  FIRSTUNSORTED + 1:
+            IF DATA[INDEX] < DATA[INDEX - 1]
+                SWAP DATA[INDEX] AND DATA[INDEX - 1]
+                SET SWAP TO TRUE
+            SET INDEX TO INDEX - 1
+
+4. The 'time' module allows you to get the current system time on your machine:
+
+        import time
+        print time.time()
+
+    Using this we can write a function that will evaluate how long it takes to run a particular function:
+
+        timing(string):
+            starttime = time.time()
+            eval(string)
+            return time.time() - starttime
+
+    This uses the `eval` function which runs any string of code. We can define the following test function:
+
+        def testfunction():
+            return 10 ** 1000
+
+    We see how long a single run of this testfunction takes using our timing function:
+        
+        print timing("testfunction")
+
+    Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.
+
+    (Note that python also has a timeit library which offers timing functionality.)
 
 ## Searching algorithms
 
