@@ -145,4 +145,41 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
 
-8. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
+    ![](Images/W04-img03.png)
+
+    Here is some pseudo code that describes this:
+
+        SORT THE LIST
+        SET INDEX TO 0
+        SET LAST TO LENGTH - 1
+        SET FOUND TO FALSE
+        WHILE FIRST <= LAST AND NOT FOUND:
+            SET MIDDLE TO (FIRST + LAST) / 2
+            IF DATA[MIDDLE] = ITEM:
+                SET FOUND TO TRUE
+            ELSE:
+                IF DATA[MIDDLE] > ITEM:
+                    SET LAST TO MIDDLE - 1
+                ELSE:
+                    SET FIRST TO MIDDLE + 1
+        RETURN MIDDLE
+
+    Here is some python code that carries out the above algorithm, experiment with it and include comments:
+
+        def binarysearch(data, item):
+            first = 0
+            last = len(data) - 1
+            found = False
+            while first <= last and not found:
+                middle = int((first + last) / 2)
+                if item == data[middle]:
+                    found = True
+                elif item < data[middle]:
+                    last = middle - 1
+                else:
+                    first = middle + 1
+            return middle
+
+8. Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.
+
+9. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
