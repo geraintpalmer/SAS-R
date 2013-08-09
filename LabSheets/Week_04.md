@@ -105,7 +105,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
             return 10 ** 1000
 
     We see how long a single run of this testfunction takes using our timing function:
-        
+
         print timing("testfunction")
 
     Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.
@@ -114,6 +114,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 ## Searching algorithms
 
-5. **TICKABLE** Search a list by hand.
+5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Sort this file and then search for the index of 2536. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
+
 6. **TICKABLE** Code for iterative binary search.
-7. Code for recursive binary search.
+7. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
