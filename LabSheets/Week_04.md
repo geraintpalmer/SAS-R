@@ -114,7 +114,35 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 ## Searching algorithms
 
-5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Sort this file and then search for the index of 2536. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
+5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Search this file for the index of 2536. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
 
-6. **TICKABLE** Code for iterative binary search.
-7. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
+6. One searching algorithm we will look at is called "sequential search". This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question **should** be at.
+
+        SORT THE LIST
+        SET INDEX TO 0
+        SET FOUND TO FALSE
+        WHILE INDEX < LENGTH and NOT FOUND:
+            IF DATA[INDEX] = ITEM:
+                FOUND = TRUE
+            ELSE IF DATA[INDEX] > ITEM:
+                INDEX = LENGTH
+            ELSE:
+                INDEX = INDEX + 1
+        IF FOUND:
+            RETURN INDEX
+        ELSE:
+            RETURN "ITEM NOT IN LIST"
+
+    Write some python code for this and use it to find the index of following numbers:
+
+        targets = [12,
+                   593,
+                   9402,
+                   4320]
+
+    in the file [W04_D01.txt](./Data/W04_D01.txt).
+
+
+7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
+
+8. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
