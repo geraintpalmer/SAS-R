@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
 <h1 id="week-4---sorting-and-searching-algorithms">Week 4 - Sorting and Searching Algorithms</h1>
@@ -32,7 +33,7 @@ print l</code></pre>
 <p>In this question we will take a look at one type of algorithm that can be used to sort a list: &quot;Selection sort&quot;.</p>
 <p>The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.</p>
 <div class="figure">
-<img src="./Images/W04-img01.png" /><p class="caption"></p>
+<img src="./Images/W04-img01.png" />
 </div>
 <p>Here is some <strong>pseudo code</strong> that describes this:</p>
 <pre><code>INITIATE NEWLIST
@@ -41,7 +42,7 @@ WHILE MORE ELEMENTS IN NEWLIST THAN IN OLDLIST:
     MOVE THAT ELEMENT TO NEWLIST</code></pre>
 <p>It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.</p>
 <div class="figure">
-<img src="./Images/W04-img02.png" /><p class="caption"></p>
+<img src="./Images/W04-img02.png" />
 </div>
 <p>Here is some <strong>pseudo code</strong> that describes the 'insertion sort' algorithm:</p>
 <pre><code>SET FIRSTUNSORTED TO 0
@@ -117,7 +118,7 @@ ELSE:
 <p>in the file <a href="./Data/W04_D01.txt">W04_D01.txt</a>.</p></li>
 <li><p><strong>TICKABLE</strong> Another searching algorithm is called 'binary search'. In this algorithm, a <strong>sorted</strong> list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.</p>
 <div class="figure">
-<img src="Images/W04-img03.png" /><p class="caption"></p>
+<img src="Images/W04-img03.png" />
 </div>
 <p>Here is some pseudo code that describes this:</p>
 <pre><code>SORT THE LIST
