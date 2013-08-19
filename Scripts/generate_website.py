@@ -23,7 +23,8 @@ target_dir = "../LabSheets"
 
 list_of_lab_sheets = os.listdir(target_dir)
 list_of_md_sheets = [p for p in list_of_lab_sheets if p[-3:] == ".md"]
-number_of_lab_sheets = len(list_of_lab_sheets)
+list_of_md_sheets.sort()
+number_of_lab_sheets = len(list_of_md_sheets)
 print "%s lab sheets read." % number_of_lab_sheets
 
 index_file.write("\n")
@@ -71,6 +72,7 @@ index_file.write("\n## Lesson plans")
 
 list_of_plans = os.listdir(target_dir)
 list_of_plans = [p for p in list_of_plans if p[-3:] == ".md"]
+list_of_plans.sort()
 number_of_plans = len(list_of_plans)
 print "%s lesson plans read." % number_of_plans
 

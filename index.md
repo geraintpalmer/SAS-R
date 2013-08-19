@@ -8,33 +8,49 @@ This website is very much work in progress with content for the 1st year program
 
 ## Lab Sheets
 
-1. Lab Sheets 1:  Sorting and Searching Algorithms
+1. Lab Sheets 1: Conditional Statements, flow control and functions
 
-	[html (recommended)](./LabSheets/Week_04.html), [pdf](./LabSheets/Week_04.pdf), [docx](./LabSheets/Week_04.docx)
+	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
 
 2. Lab Sheets 2:  Data Structurs and Recurrence
 
 	[html (recommended)](./LabSheets/Week_03.html), [pdf](./LabSheets/Week_03.pdf), [docx](./LabSheets/Week_03.docx)
 
-3. Lab Sheets 3:  Object Orientated Programming
+3. Lab Sheets 3:  Sorting and Searching Algorithms
+
+	[html (recommended)](./LabSheets/Week_04.html), [pdf](./LabSheets/Week_04.pdf), [docx](./LabSheets/Week_04.docx)
+
+4. Lab Sheets 4:  Object Orientated Programming
 
 	[html (recommended)](./LabSheets/Week_05.html), [pdf](./LabSheets/Week_05.pdf), [docx](./LabSheets/Week_05.docx)
 
-4. Lab Sheets 4: Conditional Statements, flow control and functions
+5. Lab Sheets 5: Algebra, Series and Plots
 
-	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
+	[html (recommended)](./LabSheets/Week_06.html), [pdf](./LabSheets/Week_06.pdf), [docx](./LabSheets/Week_06.docx)
+
+6. Lab Sheets 6: Symbolic Calculus
+
+	[html (recommended)](./LabSheets/Week_07.html), [pdf](./LabSheets/Week_07.pdf), [docx](./LabSheets/Week_07.docx)
+
+7. Lab Sheets 7: Differential Equations
+
+	[html (recommended)](./LabSheets/Week_08.html), [pdf](./LabSheets/Week_08.pdf), [docx](./LabSheets/Week_08.docx)
+
+8. Lab Sheets 8: Linear Algebra
+
+	[html (recommended)](./LabSheets/Week_09.html), [pdf](./LabSheets/Week_09.pdf), [docx](./LabSheets/Week_09.docx)
 
 ## Lesson plans
-1. Week 1: [ LaTeX](./Lesson_Plans/Week_01.html)
-2. Week 2: [ Symbolic Calculus](./Lesson_Plans/Week_02.html)
-3. Week 3: [ Linear Algebra](./Lesson_Plans/Week_03.html)
-4. Week 4: [ Class test and Sage: Algebra, Series and plots](./Lesson_Plans/Week_04.html)
-5. Week 5: [ Differential equations](./Lesson_Plans/Week_05.html)
-6. Week 6: [ Introduction](./Lesson_Plans/Week_06.html)
-7. Week 7: [ Sorting and Searching Algorithms](./Lesson_Plans/Week_07.html)
-8. Week 8: [ Data structures and recurrence](./Lesson_Plans/Week_08.html)
-9. Week 9: [ Basic Object Orientated Programming](./Lesson_Plans/Week_09.html)
-10. Week 10: [ Conditional statements, flow control and functions](./Lesson_Plans/Week_10.html)
+1. Week 1: [ Introduction](./Lesson_Plans/Week_01.html)
+2. Week 2: [ Conditional statements, flow control and functions](./Lesson_Plans/Week_02.html)
+3. Week 3: [ Data structures and recurrence](./Lesson_Plans/Week_03.html)
+4. Week 4: [ Sorting and Searching Algorithms](./Lesson_Plans/Week_04.html)
+5. Week 5: [ Basic Object Orientated Programming](./Lesson_Plans/Week_05.html)
+6. Week 6: [ Class test and Sage: Algebra, Series and plots](./Lesson_Plans/Week_06.html)
+7. Week 7: [ Symbolic Calculus](./Lesson_Plans/Week_07.html)
+8. Week 8: [ Differential equations](./Lesson_Plans/Week_08.html)
+9. Week 9: [ Linear Algebra](./Lesson_Plans/Week_09.html)
+10. Week 10: [ LaTeX](./Lesson_Plans/Week_10.html)
 
 
 ### Reading List
