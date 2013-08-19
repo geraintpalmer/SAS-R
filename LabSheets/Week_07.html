@@ -25,9 +25,31 @@
 <p>f(x, y) = x * y + x ^ 2 + y ^ 2</p></li>
 <li><p>In calculus the following definition of a limit is well know:</p>
 <blockquote>
-<p><span class="math">\(\lim_{x\to a}f(x)=L\)</span> iff <span class="math">\(\forall\; \epsilon&gt;0\)</span> <span class="math">\(\exists\)</span> <span class="math">\(\delta\)</span> such that <span class="math">\(\forall\; x\)</span>: <span class="math">\(|x-a|&lt;\delta\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(|f(x)-L|\leq epsilon\)</span>.</p>
-</blockquote></li>
-<li>Two sides limits</li>
+<p><span class="math">\(\lim_{x\to a}f(x)=L\)</span> iff <span class="math">\(\forall\; \epsilon&gt;0\)</span> <span class="math">\(\exists\)</span> <span class="math">\(\delta\)</span> such that <span class="math">\(\forall\; x\)</span>: <span class="math">\(|x-a|&lt;\delta\)</span> <span class="math">\(\Rightarrow\)</span> <span class="math">\(|f(x)-L|\leq \epsilon\)</span>.</p>
+</blockquote>
+<p>Let us calculate the limit of <span class="math">\(f(x) = \frac{3x^2}{x^3+x-1}\)</span> as <span class="math">\(x\to 1\)</span>.</p>
+<p>First of all let us plot <span class="math">\(f(x)\)</span>:</p>
+<pre><code>plot(f(x), x, .5, 10)</code></pre>
+<p>The following code obtains <span class="math">\(\lim_{x\to 1}f\)</span>:</p>
+<pre><code>f.limit(x=1)</code></pre>
+<p>We can also obtain the same result using the <code>limit</code> method:</p>
+<pre><code>limit(f,x=1)</code></pre>
+<p>Note that <span class="math">\(f(1)=\lim_{x\to 1}f(x)\)</span>:</p>
+<pre><code>f(1)</code></pre>
+<p>This implies that <span class="math">\(f\)</span> is continuous at 1.</p></li>
+<li><p><strong>TICKABLE</strong> Plot <span class="math">\(f(x)=\frac{3x^2}{x^3+x-1}\)</span> using the default options:</p>
+<pre><code>plot(f)</code></pre></li>
+</ol>
+<p>We see that Sage is plotting extremely high values at the discontinuity due to a root of the denominator which seems to be around <span class="math">\(x=.7\)</span>. We can plot our function either side of that point and combine them. We do this by creating plot objects:</p>
+<pre><code>    p = plot(f, x, 0.8, 10)
+    type(p)
+    p += plot(f, x, -10, .6)
+    type(p)
+    p.show()</code></pre>
+<p>and identify (use the <code>solve</code> function) <span class="math">\(\alpha\)</span>: the root of the denominator of <span class="math">\(f\)</span>. Obtain <span class="math">\(\lim_{x\to\alpha +}f(x)\)</span> and <span class="math">\(\lim_{x\to\alpha -}f(x)\)</span>. Directions of limits can be obtained using the following code:</p>
+<pre><code>    limit(f, x=??, dir=&quot;plus&quot;)
+    limit(f, x=??, dir=&quot;minus&quot;)</code></pre>
+<ol start="4" style="list-style-type: decimal">
 <li>Algebra of limits</li>
 <li><span class="math">\(\lim_{x\to 0}\frac{sin(x)}{x}\)</span></li>
 <li><span class="math">\(e^(x)\)</span></li>
@@ -40,7 +62,7 @@
 <li>Integration by parts</li>
 <li>Riemann integration</li>
 <li>Numerical integration</li>
-<li><p>Integrate polynomials in a data file</p></li>
+<li>Integrate polynomials in a data file</li>
 </ol>
 </body>
 </html>

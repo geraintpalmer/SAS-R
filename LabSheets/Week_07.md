@@ -22,7 +22,44 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     >  $\lim_{x\to a}f(x)=L$ iff $\forall\; \epsilon>0$ $\exists$ $\delta$ such that $\forall\; x$: $|x-a|<\delta$ $\Rightarrow$ $|f(x)-L|\leq \epsilon$.
 
-3. Two sides limits
+    Let us calculate the limit of $f(x) = \frac{3x^2}{x^3+x-1}$ as $x\to 1$.
+
+    First of all let us plot $f(x)$:
+
+        plot(f(x), x, .5, 10)
+
+    The following code obtains $\lim_{x\to 1}f$:
+
+        f.limit(x=1)
+
+    We can also obtain the same result using the `limit` method:
+
+        limit(f,x=1)
+
+    Note that $f(1)=\lim_{x\to 1}f(x)$:
+
+        f(1)
+
+    This implies that $f$ is continuous at 1.
+
+3. **TICKABLE** Plot $f(x)=\frac{3x^2}{x^3+x-1}$ using the default options:
+
+        plot(f)
+
+   We see that Sage is plotting extremely high values at the discontinuity due to a root of the denominator which seems to be around $x=.7$. We can plot our function either side of that point and combine them. We do this by creating plot objects:
+
+        p = plot(f, x, 0.8, 10)
+        type(p)
+        p += plot(f, x, -10, .6)
+        type(p)
+        p.show()
+
+and identify (use the `solve` function) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
+
+        limit(f, x=??, dir="plus")
+        limit(f, x=??, dir="minus")
+
+
 4. Algebra of limits
 5. $\lim_{x\to 0}\frac{sin(x)}{x}$
 6. $e^(x)$
