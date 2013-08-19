@@ -54,13 +54,30 @@ Using Sage we can carry out various operations from Calculus. This week we will 
         type(p)
         p.show()
 
-and identify (use the `solve` function) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
+and identify (use the `solve` function or the `roots` method, and maybe the `denominator` method on $f$) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
 
         limit(f, x=??, dir="plus")
         limit(f, x=??, dir="minus")
 
 
-4. Algebra of limits
+4. There are various algebraic relationships on limits:
+
+    1. $\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)$
+    2. $\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)$
+    3. $\lim_{x\to a}[f(x)/g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)$ (if $\lim_{x\to a}g(a)\ne 0$)
+
+
+    We can verify the first identity with the following Sage code for a particular example:
+
+        f(x) = exp(x)
+        g(x) = sin(x)
+        var('a')
+        L1 = limit(f(x) + g(x), x = a)
+        L2 = limit(f(x), x = a) + limit(g(x), x = a)
+        bool(L1 == L2)
+
+   Note that we use the `bool` class to convert the symbolic equation `L1==L2` to a boolean variable. Verify with some example functions the other two relationships above.
+
 5. $\lim_{x\to 0}\frac{sin(x)}{x}$
 6. $e^(x)$
 7. Basic differentiation

@@ -46,11 +46,26 @@
     p += plot(f, x, -10, .6)
     type(p)
     p.show()</code></pre>
-<p>and identify (use the <code>solve</code> function) <span class="math">\(\alpha\)</span>: the root of the denominator of <span class="math">\(f\)</span>. Obtain <span class="math">\(\lim_{x\to\alpha +}f(x)\)</span> and <span class="math">\(\lim_{x\to\alpha -}f(x)\)</span>. Directions of limits can be obtained using the following code:</p>
+<p>and identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on <span class="math">\(f\)</span>) <span class="math">\(\alpha\)</span>: the root of the denominator of <span class="math">\(f\)</span>. Obtain <span class="math">\(\lim_{x\to\alpha +}f(x)\)</span> and <span class="math">\(\lim_{x\to\alpha -}f(x)\)</span>. Directions of limits can be obtained using the following code:</p>
 <pre><code>    limit(f, x=??, dir=&quot;plus&quot;)
     limit(f, x=??, dir=&quot;minus&quot;)</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>Algebra of limits</li>
+<li><p>There are various algebraic relationships on limits:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)\)</span></li>
+<li><span class="math">\(\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)\)</span></li>
+<li><span class="math">\(\lim_{x\to a}[f(x)/g(x)]=\lim_{x\to a}f(x) / \lim_{x\to a}g(x)\)</span> (if <span class="math">\(\lim_{x\to a}g(a)\ne 0\)</span>)</li>
+</ol>
+<p>We can verify the first identity with the following Sage code for a particular example:</p>
+<pre><code>f(x) = exp(x)
+g(x) = sin(x)
+var(&#39;a&#39;)
+L1 = limit(f(x) + g(x), x = a)
+L2 = limit(f(x), x = a) + limit(g(x), x = a)
+bool(L1 == L2)</code></pre></li>
+</ol>
+<p>Note that we use the <code>bool</code> class to convert the symbolic equation <code>L1==L2</code> to a boolean variable. Verify with some example functions the other two relationships above.</p>
+<ol start="5" style="list-style-type: decimal">
 <li><span class="math">\(\lim_{x\to 0}\frac{sin(x)}{x}\)</span></li>
 <li><span class="math">\(e^(x)\)</span></li>
 <li>Basic differentiation</li>
