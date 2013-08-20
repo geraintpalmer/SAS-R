@@ -59,6 +59,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
         limit(f, x=??, dir="plus")
         limit(f, x=??, dir="minus")
 
+    Note that in this case a non directional limit returns `infinity` this implies that a single limit does not exist.
 
 4. There are various algebraic relationships on limits:
 

@@ -47,7 +47,8 @@ type(p)
 p.show()</code></pre>
 <p>and identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on <span class="math">\(f\)</span>) <span class="math">\(\alpha\)</span>: the root of the denominator of <span class="math">\(f\)</span>. Obtain <span class="math">\(\lim_{x\to\alpha +}f(x)\)</span> and <span class="math">\(\lim_{x\to\alpha -}f(x)\)</span>. Directions of limits can be obtained using the following code:</p>
 <pre><code>limit(f, x=??, dir=&quot;plus&quot;)
-limit(f, x=??, dir=&quot;minus&quot;)</code></pre></li>
+limit(f, x=??, dir=&quot;minus&quot;)</code></pre>
+<p>Note that in this case a non directional limit returns <code>infinity</code> this implies that a single limit does not exist.</p></li>
 <li><p>There are various algebraic relationships on limits:</p>
 <ol style="list-style-type: decimal">
 <li><span class="math">\(\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)\)</span></li>
