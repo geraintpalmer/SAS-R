@@ -111,9 +111,61 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     ![\text{Tangent at $x=2$.}\label{W07-img01}](./Images/W07-img01.png)
 
-10. Differentiation rules
-11. Basic integration
-12. Integration by parts
-13. Riemann integration
-14. Numerical integration
-15. Integrate polynomials in a data file
+10. There are various rules for the calculation of limits:
+
+    2. $\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}$
+    2. $\frac{d}{dx}uv=v\frac{du}{dx}+u\frac{dv}{dx}$
+    3. $\frac{d}{dx}\frac{u}{v}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}$
+
+
+    We can verify the first identity with the following Sage code for a particular example:
+
+        f(x) = exp(x)
+        g(x) = sin(x)
+        D1 = diff(f(x) + g(x), x)
+        D2 = diff(f(x), x) + diff(g(x), x)
+        bool(D1 == D2)
+
+    Note that we use the `bool` class to convert the symbolic equation `L1==L2` to a boolean variable. Verify with some example functions the other two relationships above.
+
+11. Sage can be used to carry out integration. Indefinite integrals can be computed as follows:
+
+        f(x) = x ^ 4
+        integrate(f, x)
+
+    the `integrate` method can also be used:
+
+        f.integrate(x)
+
+    To compute the definite integral, we simply include the start and end points as arguments:
+
+        integrate(f, x, 5, 12)
+
+
+12. **TICKABLE** As before we can integrate fully symbolic expressions:
+
+        var('a')
+        f(x) = sin(a * x)
+        f.integrate(x)
+
+    Note that in some cases we might need to include certain assumptions. Try the following code and understand why things have not worked:
+
+        var('n')
+        f(x) = x ^ n
+        f.integrate(n)
+
+   Investigate the `assume()` command as well as the `forget()` command and work out the previous integral.
+
+13. A graphical intepretation of integration is that $\int_a^bf(x)dx$ gives the area under the curve of $f(c)$. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by $f(x)$. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.
+
+15. **TICKABLE** The data file [W07-D01.txt](./Data/W07-D01.txt) contains 5 columns of data:
+
+    $$a,b,c,A,B$$
+
+    For every row of data compute $\int_{A}^{B}ax^2+bx+c$ and obtain:
+
+        1. The mean value of the integral
+        2. The mean value of all integrals that are positive
+        3. The mean value of all integrals that are negative
+
+    To carry this out you will need to load a data file as before (see Python lab sheets) but to do so in the notebook you need to 'attach' a data file.

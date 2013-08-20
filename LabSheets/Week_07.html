@@ -91,12 +91,45 @@ diff(f,x)</code></pre>
 <div class="figure">
 <img src="./Images/W07-img01.png" alt="" /><p class="caption"></p>
 </div></li>
-<li>Differentiation rules</li>
-<li>Basic integration</li>
-<li>Integration by parts</li>
-<li>Riemann integration</li>
-<li>Numerical integration</li>
-<li><p>Integrate polynomials in a data file</p></li>
+<li><p>There are various rules for the calculation of limits:</p>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math">\(\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}\)</span></li>
+<li><span class="math">\(\frac{d}{dx}uv=v\frac{du}{dx}+u\frac{dv}{dx}\)</span></li>
+<li><span class="math">\(\frac{d}{dx}\frac{u}{v}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}\)</span></li>
+</ol>
+<p>We can verify the first identity with the following Sage code for a particular example:</p>
+<pre><code>f(x) = exp(x)
+g(x) = sin(x)
+D1 = diff(f(x) + g(x), x)
+D2 = diff(f(x), x) + diff(g(x), x)
+bool(D1 == D2)</code></pre>
+<p>Note that we use the <code>bool</code> class to convert the symbolic equation <code>L1==L2</code> to a boolean variable. Verify with some example functions the other two relationships above.</p></li>
+<li><p>Sage can be used to carry out integration. Indefinite integrals can be computed as follows:</p>
+<pre><code>f(x) = x ^ 4
+integrate(f, x)</code></pre>
+<p>the <code>integrate</code> method can also be used:</p>
+<pre><code>f.integrate(x)</code></pre>
+<p>To compute the definite integral, we simply include the start and end points as arguments:</p>
+<pre><code>integrate(f, x, 5, 12)</code></pre></li>
+<li><p><strong>TICKABLE</strong> As before we can integrate fully symbolic expressions:</p>
+<pre><code>var(&#39;a&#39;)
+f(x) = sin(a * x)
+f.integrate(x)</code></pre>
+<p>Note that in some cases we might need to include certain assumptions. Try the following code and understand why things have not worked:</p>
+<pre><code>var(&#39;n&#39;)
+f(x) = x ^ n
+f.integrate(n)</code></pre></li>
+</ol>
+<p>Investigate the <code>assume()</code> command as well as the <code>forget()</code> command and work out the previous integral.</p>
+<ol start="13" style="list-style-type: decimal">
+<li><p>A graphical intepretation of integration is that <span class="math">\(\int_a^bf(x)dx\)</span> gives the area under the curve of <span class="math">\(f(c)\)</span>. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by <span class="math">\(f(x)\)</span>. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.</p></li>
+<li><p><strong>TICKABLE</strong> The data file <a href="./Data/W07-D01.txt">W07-D01.txt</a> contains 5 columns of data:</p>
+<p><span class="math">\[a,b,c,A,B\]</span></p>
+<p>For every row of data compute <span class="math">\(\int_{A}^{B}ax^2+bx+c\)</span> and obtain:</p>
+<pre><code>1. The mean value of the integral
+2. The mean value of all integrals that are positive
+3. The mean value of all integrals that are negative</code></pre>
+<p>To carry this out you will need to load a data file as before (see Python lab sheets) but to do so in the notebook you need to 'attach' a data file.</p></li>
 </ol>
 </body>
 </html>
