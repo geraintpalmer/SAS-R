@@ -6,7 +6,16 @@ Sage can be used to solve differential equations. Often complex systems can be m
 - Solve differential equations numerically using Sage;
 - Plot the results of the above.
 
-1. Solve a differential equation.
+1. **TICKABLE** The general syntax for solving a differential equation of the form $f(x, y)== g(x, y)$ is shown below:
+
+        desolve(f(x, y) == g(x, y), y)
+
+    Try out the following code which solves the differential equation: $\frac{dy}{dx}=y$.
+
+        desolve(diff(y,x)==y,y)
+
+    Note that that there is no need to specify the independent variable ()
+
 2. Plot the solution of a differential equation.
 3. A problem that needs to be written in terms of differential equations.
 4. Systems of differential equations
