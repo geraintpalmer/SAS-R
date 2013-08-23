@@ -75,13 +75,41 @@ B = matrix([[7,8],[9,10]])</code></pre>
 <pre><code>identify_matrix(4)</code></pre>
 <p>Note also, that the previous exercise showed that we can sometimes find a matrix \(B\) such that \(AB=\mathbb{I}_n\). Finding such a matrix is refered to as 'invering' \(A\) and if certain properties hold (you will see this in further details next semester) this matrix is denoted \(A^{-1}\).</p>
 <p>If we recall the matrix equation \(AX=b\) and if we assume that \(A^{-1}\)exists then multiplying both sides by \(A^{-1}\) gives:</p>
-<pre><code>$$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b=X=A^{-1}b$$</code></pre>
+<p>\[A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b\]</p>
 <p>In Sage we can obtain \(A^{-1}\) (if it exists) with the following code:</p>
 <pre><code>A.inverse()</code></pre>
 <p>Thus another approach to solving \(AX=b\) is:</p>
 <pre><code>A.inverse()*b</code></pre>
 <p>Use this approach to solve the systems of equations we have considered so far.</p></li>
-<li>Enter the following matrices in to a list. Invert all of them.</li>
+<li><p><strong>TICKABLE</strong> Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on <code>try</code> and <code>except</code>):</p>
+<p>\[\left(\begin{array}{rrrrr}
+\frac{1}{2} &amp; 0 &amp; 0 &amp; -1 &amp; 1 \\
+-1 &amp; -1 &amp; 1 &amp; -\frac{1}{2} &amp; 2 \\
+0 &amp; -1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; \frac{1}{2} &amp; -1 &amp; 0 \\
+-1 &amp; 0 &amp; -2 &amp; 2 &amp; 0
+\end{array}\right)
+\] \[\left(\begin{array}{rrrrr}
+-1 &amp; -1 &amp; 0 &amp; 0 &amp; -1 \\
+2 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\
+-2 &amp; 0 &amp; 1 &amp; 2 &amp; 2 \\
+-\frac{1}{2} &amp; 0 &amp; -\frac{1}{2} &amp; 0 &amp; \frac{1}{2} \\
+0 &amp; 0 &amp; 0 &amp; \frac{1}{2} &amp; -1
+\end{array}\right)
+\] \[\left(\begin{array}{rr}
+-\frac{1}{2} &amp; -\frac{1}{2} \\
+-2 &amp; -1
+\end{array}\right)
+\] \[\left(\begin{array}{rrr}
+-2 &amp; 0 &amp; 1 \\
+0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{array}\right)
+\] \[\left(\begin{array}{rr}
+1 &amp; 2 \\
+2 &amp; 0
+\end{array}\right)\]</p>
+<p>For every matrix in this list and the original list obtain the result of the <code>det</code> method. This gives the determinant of the matrices. It is a very important quantity that will be explained next semester.</p></li>
 <li>Plotting something?</li>
 <li>Solve a large number of systems of linear equations</li>
 <li>Reading in data for a big system of linear equations</li>

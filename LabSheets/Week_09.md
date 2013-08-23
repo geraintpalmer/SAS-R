@@ -106,7 +106,7 @@
 
     If we recall the matrix equation $AX=b$ and if we assume that $A^{-1}$exists then multiplying both sides by $A^{-1}$ gives:
 
-        $$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b=X=A^{-1}b$$
+    $$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b$$
 
     In Sage we can obtain $A^{-1}$ (if it exists) with the following code:
 
@@ -118,7 +118,42 @@
 
     Use this approach to solve the systems of equations we have considered so far.
 
-6. Enter the following matrices in to a list. Invert all of them.
+6. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
+
+    $$\left(\begin{array}{rrrrr}
+\frac{1}{2} & 0 & 0 & -1 & 1 \\
+-1 & -1 & 1 & -\frac{1}{2} & 2 \\
+0 & -1 & 0 & -2 & 0 \\
+0 & 0 & \frac{1}{2} & -1 & 0 \\
+-1 & 0 & -2 & 2 & 0
+\end{array}\right)
+$$
+$$\left(\begin{array}{rrrrr}
+-1 & -1 & 0 & 0 & -1 \\
+2 & 1 & 0 & 1 & 1 \\
+-2 & 0 & 1 & 2 & 2 \\
+-\frac{1}{2} & 0 & -\frac{1}{2} & 0 & \frac{1}{2} \\
+0 & 0 & 0 & \frac{1}{2} & -1
+\end{array}\right)
+$$
+$$\left(\begin{array}{rr}
+-\frac{1}{2} & -\frac{1}{2} \\
+-2 & -1
+\end{array}\right)
+$$
+$$\left(\begin{array}{rrr}
+-2 & 0 & 1 \\
+0 & -1 & 0 \\
+0 & 0 & 1
+\end{array}\right)
+$$
+$$\left(\begin{array}{rr}
+1 & 2 \\
+2 & 0
+\end{array}\right)$$
+
+    For every matrix in this list and the original list obtain the result of the `det` method. This gives the determinant of the matrices. It is a very important quantity that will be explained next semester.
+
 7. Plotting something?
 8. Solve a large number of systems of linear equations
 9. Reading in data for a big system of linear equations
