@@ -161,6 +161,24 @@ $$\left(\begin{array}{rr}
 
     Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse.
 
-7. Solve a large number of systems of linear equations
+8. **TICKABLE** The file [W09-D01.txt](./Data/W09-D01.txt) contains 4 columns of data:
+
+        a, b, c, d, f, g
+
+    For each row of data, obtain the solution to the system of equations:
+
+    $$\begin{cases}
+    ax+by=c\\
+    dx+fy=g
+    \end{cases}$$
+
+    Write to file a new data set containing the following columns:
+
+        A, B, C, D
+
+    Where $A$ is the number of the original data set, $B$ and $C$ are the solutions to the system of equation in question: $B=x, C=y$. $D$ is the 'norm of the solution vector': $D=\sqrt{C^2+B^2}$. Write the data to file in such a way as it is sorted by $D$ (attempt to do this without the inbuilt `sort` method).
+
+    If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist? What is the mean value of $D$?
+
 8. Reading in data for a big system of linear equations
 9. Creating a big linear system and solve it.
