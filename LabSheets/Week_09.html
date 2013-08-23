@@ -10,7 +10,7 @@
 <body>
 <h1 id="week-9---linear-algebra">Week 9 - Linear Algebra</h1>
 <ol style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> Use Sage to solve the following system of equations:</p>
+<li><p>Use Sage to solve the following system of equations:</p>
 <p>\[\begin{cases}
 10x+2y=0\\
 2x-y=154
@@ -29,15 +29,63 @@
 10,2,0\\
 2,-1,154
 \end{pmatrix}\]</p>
-<p>We can of course seperate the right hand side of our equation and perhaps include those elements in a vector:</p>
-<p>\[\begin{pmatrix}0\\154\end{pmatrix}\]</p></li>
-<li>Matrix multiplication.</li>
-<li>Matrix inversion</li>
+<p>We can of course seperate the right hand side of our equation and perhaps include those elements in a vector. Our system can now be represented as:</p>
+<p>\[\begin{pmatrix}10,2\\2,-1\end{pmatrix}\begin{pmatrix}0\\154\end{pmatrix}\]</p>
+<p>Let us attempt to represent the above system in Sage.</p>
+<p>The following defines <code>b</code> as a vector:</p>
+<pre><code>b = vector(0,154)</code></pre>
+<p>The representation of coefficients is a well defined mathematical object called a <code>matrix</code>. The following code defines <code>A</code> as a matrix:</p>
+<pre><code>A = matrix([[10, 2], [2, -1]])</code></pre>
+<p>If we define a vector <code>X</code> as a vector of the symbolic variables:</p>
+<pre><code>X = vector([x, y])</code></pre>
+<p>We can <strong>multiply</strong> <code>A</code> by <code>X</code>:</p>
+<pre><code>A * X</code></pre>
+<p>Verify that \(X = (x_0, y_0)\) where \((x_0, y_0)\) is the solution to our system of equations (obtained in (1)).</p></li>
+<li><p><strong>TICKABLE</strong> In linear algebra (you will study this next semester) a matrix equation is an equation of the form:</p>
+<p>\[AX=b\]</p>
+<p>or</p>
+<p>\[XA=b\]</p>
+<p>If we define <code>A</code> and <code>b</code> as in question 2 we can solve this equation quite simply using the <code>solve_right</code> or <code>solve_left</code> methods. The following obtains a solution to the equation \(AX=b\):</p>
+<pre><code>A.solve_right(b)</code></pre>
+<p>Note that <code>A\b</code> is shorthand for <code>A.solve_right</code></p>
+<p>Use the above to solve the following system of equations using matrix notation:</p>
+<p>\[\begin{cases}
+4x - 2y + 3z = 10\\
+-x - 5y - 8z = 9\\
+x + y + z = 1
+\end{cases}\]</p></li>
+<li><p>For reasons that will become clear, the following definition of matrix multiplication is required:</p>
+<p>\[(AB)_{ij}=\sum_{j&#39;}\sum_{i&#39;}A_{ij&#39;}B_{i&#39;j}\]</p>
+<p>For \(2\times 2\) matrices this is equivalent to:</p>
+<p>\[AB=\begin{pmatrix}a_{11}&amp; a_{12}\\a_{21}&amp; a_{22}\end{pmatrix}\begin{pmatrix}b_{11}&amp; b_{12}\\b_{21}&amp; b_{22}\end{pmatrix}=\begin{pmatrix}a_{11}b_{11}+a_{12}b_{21}&amp;a_{11}b_{12}+a_{12}b_{22}\\a_{21}b_{11}+a_{22}b_{21}&amp;a_{21}b_{12}+a_{22}b_{22}\end{pmatrix}\]</p>
+<p>As an example create the following two matrices in Sage:</p>
+<pre><code>A = matrix([[1,2],[3,4]])
+B = matrix([[7,8],[9,10]])</code></pre>
+<p>Attempt to multiply these matrices by hand and carry out their multiplication in Sage:</p>
+<pre><code>A*B</code></pre>
+<p>Repeat the exercise by multiplying the following pairs of matrices:</p>
+<ol style="list-style-type: decimal">
+<li>\(A=\begin{pmatrix}-1&amp;1\\-1&amp;-1\end{pmatrix}\), \(B=\begin{pmatrix}-1&amp;4\\1&amp;1\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}0&amp;144\\-2&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}-2&amp;0\\-1&amp;-17\end{pmatrix}\)</li>
+<li>\(A=\begin{pmatrix}0&amp;-1\\3&amp;1\end{pmatrix}\), \(B=\begin{pmatrix}1/3&amp;1/3\\-1&amp;0\end{pmatrix}\)</li>
+</ol></li>
+<li><p><strong>TICKABLE</strong> The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: &quot;the identity matrix&quot;.</p>
+<p>The identity matrix of size \(n\times n\) is denoted by \(\mathbb{I}_n\). The following Sage code gives \(\mathbb{I}_n\):</p>
+<pre><code>identify_matrix(4)</code></pre>
+<p>Note also, that the previous exercise showed that we can sometimes find a matrix \(B\) such that \(AB=\mathbb{I}_n\). Finding such a matrix is refered to as 'invering' \(A\) and if certain properties hold (you will see this in further details next semester) this matrix is denoted \(A^{-1}\).</p>
+<p>If we recall the matrix equation \(AX=b\) and if we assume that \(A^{-1}\)exists then multiplying both sides by \(A^{-1}\) gives:</p>
+<pre><code>$$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b=X=A^{-1}b$$</code></pre>
+<p>In Sage we can obtain \(A^{-1}\) (if it exists) with the following code:</p>
+<pre><code>A.inverse()</code></pre>
+<p>Thus another approach to solving \(AX=b\) is:</p>
+<pre><code>A.inverse()*b</code></pre>
+<p>Use this approach to solve the systems of equations we have considered so far.</p></li>
 <li>Enter the following matrices in to a list. Invert all of them.</li>
 <li>Plotting something?</li>
 <li>Solve a large number of systems of linear equations</li>
 <li>Reading in data for a big system of linear equations</li>
-<li><p>Creating a big linear system.</p></li>
+<li><p>Creating a big linear system and solve it.</p></li>
 </ol>
 </body>
 </html>

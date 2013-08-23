@@ -72,15 +72,54 @@
     x + y + z = 1
     \end{cases}$$
 
-4. Matrix multiplication.
+4. For reasons that will become clear, the following definition of matrix multiplication is required:
 
-    - Describe matrix multiplication
-    - Carry out mathematically
-    - Multiple 4 example (2 which multiples by identity and 1 by inverse)
+    $$(AB)_{ij}=\sum_{j'}\sum_{i'}A_{ij'}B_{i'j}$$
 
-5. Matrix inversion
+    For $2\times 2$ matrices this is equivalent to:
+
+    $$AB=\begin{pmatrix}a_{11}& a_{12}\\a_{21}& a_{22}\end{pmatrix}\begin{pmatrix}b_{11}& b_{12}\\b_{21}& b_{22}\end{pmatrix}=\begin{pmatrix}a_{11}b_{11}+a_{12}b_{21}&a_{11}b_{12}+a_{12}b_{22}\\a_{21}b_{11}+a_{22}b_{21}&a_{21}b_{12}+a_{22}b_{22}\end{pmatrix}$$
+
+    As an example create the following two matrices in Sage:
+
+        A = matrix([[1,2],[3,4]])
+        B = matrix([[7,8],[9,10]])
+
+    Attempt to multiply these matrices by hand and carry out their multiplication in Sage:
+
+        A*B
+
+    Repeat the exercise by multiplying the following pairs of matrices:
+
+    1. $A=\begin{pmatrix}-1&1\\-1&-1\end{pmatrix}$, $B=\begin{pmatrix}-1&4\\1&1\end{pmatrix}$
+    2. $A=\begin{pmatrix}0&144\\-2&1\end{pmatrix}$, $B=\begin{pmatrix}1&0\\0&1\end{pmatrix}$
+    3. $A=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $B=\begin{pmatrix}-2&0\\-1&-17\end{pmatrix}$
+    4. $A=\begin{pmatrix}0&-1\\3&1\end{pmatrix}$, $B=\begin{pmatrix}1/3&1/3\\-1&0\end{pmatrix}$
+
+5. **TICKABLE** The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: "the identity matrix".
+
+    The identity matrix of size $n\times n$ is denoted by $\mathbb{I}_n$. The following Sage code gives $\mathbb{I}_n$:
+
+        identify_matrix(4)
+
+    Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'invering' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.
+
+    If we recall the matrix equation $AX=b$ and if we assume that $A^{-1}$exists then multiplying both sides by $A^{-1}$ gives:
+
+        $$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b=X=A^{-1}b$$
+
+    In Sage we can obtain $A^{-1}$ (if it exists) with the following code:
+
+        A.inverse()
+
+    Thus another approach to solving $AX=b$ is:
+
+        A.inverse()*b
+
+    Use this approach to solve the systems of equations we have considered so far.
+
 6. Enter the following matrices in to a list. Invert all of them.
 7. Plotting something?
 8. Solve a large number of systems of linear equations
 9. Reading in data for a big system of linear equations
-10. Creating a big linear system.
+10. Creating a big linear system and solve it.
