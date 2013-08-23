@@ -32,11 +32,11 @@ This website is very much work in progress with content for the 1st year program
 
 	[html (recommended)](./LabSheets/Week_07.html), [pdf](./LabSheets/Week_07.pdf), [docx](./LabSheets/Week_07.docx)
 
-7. Lab Sheets 7: Differential Equations
+7. Lab Sheets 7: Linear Algebra
 
 	[html (recommended)](./LabSheets/Week_08.html), [pdf](./LabSheets/Week_08.pdf), [docx](./LabSheets/Week_08.docx)
 
-8. Lab Sheets 8: Linear Algebra
+8. Lab Sheets 8: Differential Equations
 
 	[html (recommended)](./LabSheets/Week_09.html), [pdf](./LabSheets/Week_09.pdf), [docx](./LabSheets/Week_09.docx)
 
@@ -48,8 +48,8 @@ This website is very much work in progress with content for the 1st year program
 5. Week 5: [ Basic Object Orientated Programming](./Lesson_Plans/Week_05.html)
 6. Week 6: [ Class test and Sage: Algebra, Series and plots](./Lesson_Plans/Week_06.html)
 7. Week 7: [ Symbolic Calculus](./Lesson_Plans/Week_07.html)
-8. Week 8: [ Differential equations](./Lesson_Plans/Week_08.html)
-9. Week 9: [ Linear Algebra](./Lesson_Plans/Week_09.html)
+8. Week 8: [ Linear Algebra](./Lesson_Plans/Week_08.html)
+9. Week 9: [ Differential Equations](./Lesson_Plans/Week_09.html)
 10. Week 10: [ LaTeX](./Lesson_Plans/Week_10.html)
 
 

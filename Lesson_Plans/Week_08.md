@@ -1,11 +1,11 @@
 # Computing for mathematics: week 8
-## Differential equations
+## Linear Algebra
 
 ### Aims of this week
 
 At the end of this lecture students will be:
 
-- 
+-
 
 ### Timeline
 
@@ -19,8 +19,8 @@ HANDOUT COURSEWORK
 #### Lecture
 
 - 0 - 5 mins: Recap
-- 5 - 15 mins: 
-- 15 - 35 mins: 
+- 5 - 15 mins:
+- 15 - 35 mins:
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 
