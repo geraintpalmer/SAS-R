@@ -152,9 +152,15 @@ $$\left(\begin{array}{rr}
 2 & 0
 \end{array}\right)$$
 
-    For every matrix in this list and the original list obtain the result of the `det` method. This gives the determinant of the matrices. It is a very important quantity that will be explained next semester.
+    For every matrix in this list and the original list obtain the result of the `det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
 
-7. Plotting something?
-8. Solve a large number of systems of linear equations
-9. Reading in data for a big system of linear equations
-10. Creating a big linear system and solve it.
+7 **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
+
+        random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
+        random_matrix(QQ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
+
+    Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse.
+
+7. Solve a large number of systems of linear equations
+8. Reading in data for a big system of linear equations
+9. Creating a big linear system and solve it.
