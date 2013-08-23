@@ -6,5 +6,4 @@ e = argv[1][:-3]
 print e
 
 system("pandoc -s " + e + ".md -o " + e + ".html")
-system("pandoc -s " + e + ".md -o " + e + ".docx")
 system("pandoc -s " + e + ".md -o " + e + ".pdf")
