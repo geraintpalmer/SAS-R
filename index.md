@@ -40,6 +40,10 @@ This website is very much work in progress with content for the 1st year program
 
 	[html (recommended)](./LabSheets/Week_09.html), [pdf](./LabSheets/Week_09.pdf), [docx](./LabSheets/Week_09.docx)
 
+9. Lab Sheets 9: LaTeX
+
+	[html (recommended)](./LabSheets/Week_10.html), [pdf](./LabSheets/Week_10.pdf), [docx](./LabSheets/Week_10.docx)
+
 ## Lesson plans
 1. Week 1: [ Introduction](./Lesson_Plans/Week_01.html)
 2. Week 2: [ Conditional statements, flow control and functions](./Lesson_Plans/Week_02.html)
