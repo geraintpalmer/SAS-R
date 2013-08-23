@@ -1,183 +1,88 @@
-# Week 9 - Linear Algebra
+# Week 9 - Differential Equations
 
-1. Use Sage to solve the following system of equations:
+Sage can be used to solve differential equations. Often complex systems can be modelled simply in terms of differential equations however solving these differential equations is not always straightforward (you will be studying differential equations a lot closer in the Spring semester). At the end of this week you will be able to:
 
-    $$\begin{cases}
-    10x+2y=0\\
-    2x-y=154
-    \end{cases}$$
+- Solve differential equations using Sage;
+- Solve differential equations numerically using Sage;
+- Plot the results of the above.
 
-2. **TICKABLE** Note that the above system of equations is equivalent to the following systems of equations:
+1. **TICKABLE** The general syntax for solving a differential equation of the form $f(x, y)== g(x, y)$ is shown below:
 
-    $$\begin{cases}
-    10a+2b=0\\
-    2a-b=154
-    \end{cases}$$
+        desolve(f(x, y) == g(x, y), y)
 
-    $$\begin{cases}
-    10m+2n=0\\
-    2m-n=154
-    \end{cases}$$
+    Try out the following code which solves the differential equation: $\frac{dy}{dx}=y$.
 
-    In essense the only thing that defines the system of equations is the cofficients:
+        y = function('y', x)
+        desolve(diff(y, x) == y, y)
 
-    $$\begin{pmatrix}
-    10,2,0\\
-    2,-1,154
-    \end{pmatrix}$$
+    Note that that there is no need to specify the independent variable ($x$). The following code solves the general form of the above equation: $\frac{dy}{dx}=ky$ for some $k\in\mathbb{R}$.
 
-    We can of course seperate the right hand side of our equation and perhaps include those elements in a vector. Our system can now be represented as:
+        var('k')
+        desolve(diff(y, x) == k * y, y, ivar=x)
 
-    $$\begin{pmatrix}10,2\\2,-1\end{pmatrix}\begin{pmatrix}0\\154\end{pmatrix}$$
+2. Once we have the solution to a differential equation it is very straightforward to plot it:
 
-    Let us attempt to represent the above system in Sage.
+        y = function('y', x)
+        soln(x) = desolve(diff(y, x) == y, y)
+        plot(soln(x).subs(c=2), x, -10, 10)
 
-    The following defines `b` as a vector:
+    Note that we are here seeing the `subs` method which allows us to substitue a given value in an expression. It is very easy to get a whole family of plots:
 
-        b = vector(0,154)
+        p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(10[0]), legend_label="c=0")
+        for C in range(1, 11):
+            p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(10[C], legend_label="c=%s" % C)
+        p.show()
 
-    The representation of coefficients is a well defined mathematical object called a `matrix`. The following code defines `A` as a matrix:
+    We are here making use of the Sage `rainbow` function which gives a list of colors that can be used in the plot `color` option. We are also making use of the `legend_label` option.
 
-        A = matrix([[10, 2], [2, -1]])
+    Obtain a similar plot for the solution to the differential equation: $\frac{dy}{dx} = xy$.
 
-    If we define a vector `X` as a vector of the symbolic variables:
+3. There is nothing restricting us to only solving first order differential equations. The following differential equation can be used to model the position of a mass on a spring:
 
-        X = vector([x, y])
+    $$m\frac{d^2x}{dt^2}+c\frac{dx}{dt}+kx=0$$
 
-    We can **multiply** `A` by `X`:
+    Solve this equation.
 
-        A * X
+4. **TICKABLE** Solve the following differential equations and plot their solution (for the given particular value):
 
-    Verify that $X = (x_0, y_0)$ where $(x_0, y_0)$ is the solution to our system of equations (obtained in (1)).
+    1. $\frac{dy}{dx}+4y=5e^x$, ($y(0)=3$)
+    2. $\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)$, ($y(0)=4$)
+    3. $\frac{d^2y}{dx^2}-y=\sin(5x)$, ($y(3)=1$)
+    4. $\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(t)$, ($y(1)=2$)
 
-3. **TICKABLE** In linear algebra (you will study this next semester) a matrix equation is an equation of the form:
-
-    $$AX=b$$
-
-    or
-
-    $$XA=b$$
-
-    If we define `A` and `b` as in question 2 we can solve this equation quite simply using the `solve_right` or `solve_left` methods. The following obtains a solution to the equation $AX=b$:
-
-        A.solve_right(b)
-
-    Note that `A\b` is shorthand for `A.solve_right`
-
-    Use the above to solve the following system of equations using matrix notation:
+5. Systems of differential equations often arise and can also be solved using Sage. Take a look at the `desolve_system` function and solve the following system of differential equations:
 
     $$\begin{cases}
-    4x - 2y + 3z = 10\\
-    -x - 5y - 8z = 9\\
-    x + y + z = 1
+    \frac{dx}{dt} = 1 - y\\
+    \frac{dy}{dt} = 1 - x
     \end{cases}$$
 
-4. For reasons that will become clear, the following definition of matrix multiplication is required:
-
-    $$(AB)_{ij}=\sum_{j'}\sum_{i'}A_{ij'}B_{i'j}$$
-
-    For $2\times 2$ matrices this is equivalent to:
-
-    $$AB=\begin{pmatrix}a_{11}& a_{12}\\a_{21}& a_{22}\end{pmatrix}\begin{pmatrix}b_{11}& b_{12}\\b_{21}& b_{22}\end{pmatrix}=\begin{pmatrix}a_{11}b_{11}+a_{12}b_{21}&a_{11}b_{12}+a_{12}b_{22}\\a_{21}b_{11}+a_{22}b_{21}&a_{21}b_{12}+a_{22}b_{22}\end{pmatrix}$$
-
-    As an example create the following two matrices in Sage:
-
-        A = matrix([[1,2],[3,4]])
-        B = matrix([[7,8],[9,10]])
-
-    Attempt to multiply these matrices by hand and carry out their multiplication in Sage:
-
-        A*B
-
-    Repeat the exercise by multiplying the following pairs of matrices:
-
-    1. $A=\begin{pmatrix}-1&1\\-1&-1\end{pmatrix}$, $B=\begin{pmatrix}-1&4\\1&1\end{pmatrix}$
-    2. $A=\begin{pmatrix}0&144\\-2&1\end{pmatrix}$, $B=\begin{pmatrix}1&0\\0&1\end{pmatrix}$
-    3. $A=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $B=\begin{pmatrix}-2&0\\-1&-17\end{pmatrix}$
-    4. $A=\begin{pmatrix}0&-1\\3&1\end{pmatrix}$, $B=\begin{pmatrix}1/3&1/3\\-1&0\end{pmatrix}$
-
-5. **TICKABLE** The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: "the identity matrix".
-
-    The identity matrix of size $n\times n$ is denoted by $\mathbb{I}_n$. The following Sage code gives $\mathbb{I}_n$:
-
-        identify_matrix(4)
-
-    Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'invering' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.
-
-    If we recall the matrix equation $AX=b$ and if we assume that $A^{-1}$exists then multiplying both sides by $A^{-1}$ gives:
-
-    $$A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b$$
-
-    In Sage we can obtain $A^{-1}$ (if it exists) with the following code:
-
-        A.inverse()
-
-    Thus another approach to solving $AX=b$ is:
-
-        A.inverse()*b
-
-    Use this approach to solve the systems of equations we have considered so far.
-
-6. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
-
-    $$\left(\begin{array}{rrrrr}
-\frac{1}{2} & 0 & 0 & -1 & 1 \\
--1 & -1 & 1 & -\frac{1}{2} & 2 \\
-0 & -1 & 0 & -2 & 0 \\
-0 & 0 & \frac{1}{2} & -1 & 0 \\
--1 & 0 & -2 & 2 & 0
-\end{array}\right)
-$$
-$$\left(\begin{array}{rrrrr}
--1 & -1 & 0 & 0 & -1 \\
-2 & 1 & 0 & 1 & 1 \\
--2 & 0 & 1 & 2 & 2 \\
--\frac{1}{2} & 0 & -\frac{1}{2} & 0 & \frac{1}{2} \\
-0 & 0 & 0 & \frac{1}{2} & -1
-\end{array}\right)
-$$
-$$\left(\begin{array}{rr}
--\frac{1}{2} & -\frac{1}{2} \\
--2 & -1
-\end{array}\right)
-$$
-$$\left(\begin{array}{rrr}
--2 & 0 & 1 \\
-0 & -1 & 0 \\
-0 & 0 & 1
-\end{array}\right)
-$$
-$$\left(\begin{array}{rr}
-1 & 2 \\
-2 & 0
-\end{array}\right)$$
-
-    For every matrix in this list and the original list obtain the result of the `det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
-
-7 **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
-
-        random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
-        random_matrix(QQ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
-
-    Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
-
-8. **TICKABLE** The file [W09_D01.txt](./Data/W09_D01.txt) contains 4 columns of data:
-
-        a, b, c, d, f, g
-
-    For each row of data, obtain the solution to the system of equations:
+6. A battle between two armies can be modelled with the following set of differrential equations:
 
     $$\begin{cases}
-    ax+by=c\\
-    dx+fy=g
-    \end{cases}$$
+    \frac{dx}{dt} = - y\\
+    \frac{dy}{dt} = -5x
+    \end{case}$$
 
-    Write to file a new data set containing the following columns:
+    Obtain the solution to this system of equations. Assuming that $x(0)=100$ and that $y(0)=700$ plot the two solutions of the equations, which army wins this battle? When does the battle end?
 
-        A, B, C, D
+7. **TICKABLE** The love story between Romero and Juliet can be modelled with the following system of differential equations:
 
-    Where $A$ is the number of the original data set, $B$ and $C$ are the solutions to the system of equation in question: $B=x, C=y$. $D$ is the 'norm of the solution vector': $D=\sqrt{C^2+B^2}$. Write the data to file in such a way as it is sorted by $D$ (attempt to do this without the inbuilt `sort` method).
+    $$\begin{cases}
+    \frac{dx}{dt} = -y\\
+    \frac{dy}{dt} = .7x
+    \end{case}$$
 
-    If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist? What is the mean value of $D$?
+    Where $x(t)$ represents the affection of Juliet towards Romeo and $y(t)$ the affection of Romeo towards Juliet (negative affection represents 'hatred').
 
-8. The file [W09_D02.txt](./Data/W09_D02.txt) contains 20 rows and 20 columns of numbers. This file represents a matrix. Invert the matrix, what is it's determinant? What is the determinant of it's inverse?
+    Solve this system of equation and assuming that Romeo is initially attracted to Juliet ($x(0)=1$) but that Juliet is initially indifferent to Romeo ($y(0)=0$) at time $t=0$ are indifferent to each other describe the long term relationship between the two characters.
+
+    Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.
+
+8. **TICKABLE** Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:
+
+    $$\frac{dy}{dx} + y(y-1)==\abs(x-2)$$
+
+    In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the `desolve_rk4` function and obtain a solution for the above equation given that $y(0)=1$ for $x<100$. Obtain a plot of the numerical solution
+
+9. Write a function that will attempt to solve a differential equation analytically and if such a solution is not obtainable will solve it numerically. To do this you should investigate the python functions: `try` and `except`.
