@@ -159,9 +159,9 @@ $$\left(\begin{array}{rr}
         random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
         random_matrix(QQ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
 
-    Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse.
+    Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
 
-8. **TICKABLE** The file [W09-D01.txt](./Data/W09-D01.txt) contains 4 columns of data:
+8. **TICKABLE** The file [W09_D01.txt](./Data/W09_D01.txt) contains 4 columns of data:
 
         a, b, c, d, f, g
 
@@ -180,5 +180,4 @@ $$\left(\begin{array}{rr}
 
     If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist? What is the mean value of $D$?
 
-8. Reading in data for a big system of linear equations
-9. Creating a big linear system and solve it.
+8. The file [W09_D02.txt](./Data/W09_D02.txt) contains 20 rows and 20 columns of numbers. This file represents a matrix. Invert the matrix, what is it's determinant? What is the determinant of it's inverse?
