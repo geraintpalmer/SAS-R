@@ -52,11 +52,53 @@ A typesetting language is a language that requires the user to write code that i
         Hello, world!
         \end{document}
 
-3. Title
-4. Abstract
-5. Lists
-6. Tables
-7. Sections
+3. In general all the code that comes before the `\begin{document}` statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:
+
+        \title{Choose a title}
+        \author{V Knight}
+        \date{\today}
+
+    If you compile your document this won't include the title in the output. To do so you need to include the following line (in the main body):
+
+        \maketitle
+
+4. The following will add an abstract to your document:
+
+        \begin{abstract}
+        This document contains some basic LaTeX code that will be useful to me in the future.
+        \end{abstract}
+
+5. There are various ways to obtain lists:
+
+        \begin{itemize}
+            \item Unorderd item number 1
+            \item Unorderd item number 2
+        \end{itemize}
+
+        \begin{enumerate}
+            \item Ordered item number 1
+            \item Ordered item number 2
+        \end{enumerate}
+
+    Note that in \LaTeX\; indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in \LaTeX\; they are ended by specific end statements `\end{enumerate}`.
+
+6. The following code creates a simple table (note the `c`, `r`, and `l` tags that indicate text alignment, experiment by changing these):
+
+        \begin{tabular}{|l|c|r|}
+            \hline
+            Name & Gender & Start Time\\
+            \hline
+            Angelico & Male & 1100\\
+            \hline
+            Leanne & Female & 0830\\
+            \hline
+            Lisa & Female & 0730\\
+            \hline
+        \end{tabular}
+
+    In general in \LaTeX\; `\\` is used to denote a 'new line'.
+
+7.
 8. Pictures
 9. Drawings
 10. Bibliography

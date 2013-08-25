@@ -49,24 +49,41 @@ Hello, world!
 \begin{document} % This line start the document
 Hello, world!
 \end{document}</code></pre></li>
-<li>Title</li>
-<li>Abstract</li>
-<li>Lists</li>
-<li>Tables</li>
-<li>Sections</li>
-<li>Pictures</li>
-<li>Drawings</li>
-<li>Bibliography</li>
-<li>Mathematics</li>
-<li>Math in Text</li>
-<li>Displayed mathematics</li>
-<li>Text in Maths</li>
-<li>Arithmetic operators</li>
-<li>Integrals</li>
-<li>Matrices</li>
-<li>Align</li>
-<li>Cases</li>
-<li><p>Beamer</p></li>
+<li><p>In general all the code that comes before the <code>\begin{document}</code> statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:</p>
+<pre><code>\title{Choose a title}
+\author{V Knight}
+\date{\today}</code></pre>
+<p>If you compile your document this won't include the title in the output. To do so you need to include the following line (in the main body):</p>
+<pre><code>\maketitle</code></pre></li>
+<li><p>The following will add an abstract to your document:</p>
+<pre><code>\begin{abstract}
+This document contains some basic LaTeX code that will be useful to me in the future.
+\end{abstract}</code></pre></li>
+<li><p>There are various ways to obtain lists:</p>
+<pre><code>\begin{itemize}
+    \item Unorderd item number 1
+    \item Unorderd item number 2
+\end{itemize}
+
+\begin{enumerate}
+    \item Ordered item number 1
+    \item Ordered item number 2
+\end{enumerate}</code></pre>
+<p>Note that in ; indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in ; they are ended by specific end statements <code>\end{enumerate}</code>.</p></li>
+<li><p>The following code creates a simple table (note the <code>c</code>, <code>r</code>, and <code>l</code> tags that indicate text alignment, experiment by changing these):</p>
+<pre><code>\begin{tabular}{|l|c|r|}
+    \hline
+    Name &amp; Gender &amp; Start Time\\
+    \hline
+    Angelico &amp; Male &amp; 1100\\
+    \hline
+    Leanne &amp; Female &amp; 0830\\
+    \hline
+    Lisa &amp; Female &amp; 0730\\
+    \hline
+\end{tabular}</code></pre>
+<p>In general in ; <code>\\</code> is used to denote a 'new line'.</p></li>
 </ol>
+<p>7. 8. Pictures 9. Drawings 10. Bibliography 11. Mathematics 12. Math in Text 13. Displayed mathematics 14. Text in Maths 15. Arithmetic operators 16. Integrals 17. Matrices 18. Align 19. Cases 20. Beamer</p>
 </body>
 </html>
