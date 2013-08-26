@@ -106,19 +106,16 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \draw (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
     \draw (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
     \draw (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
-\end{tikzpicture}</code></pre></li>
-</ol>
+\end{tikzpicture}</code></pre>
 <p>This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:</p>
-<pre><code>    \begin{tikzpicture}
-        \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
-        \draw [thin, color=blue] (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
-        \draw [thick] (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
-        \draw [thick] (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
-        \draw [color=red, fill=green] (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
-    \end{tikzpicture}
-
-A lot more can be done with tikz and there are a variety of great examples, tutorials online.</code></pre>
-<ol start="9" style="list-style-type: decimal">
+<pre><code>\begin{tikzpicture}
+    \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
+    \draw [thin, color=blue] (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
+    \draw [thick] (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
+    \draw [thick] (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
+    \draw [color=red, fill=green] (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+\end{tikzpicture}</code></pre>
+<p>A lot more can be done with tikz and there are a variety of great examples, tutorials online.</p></li>
 <li><p><strong>TICKABLE</strong> It is possible to organise parts of a document using 'sections':</p>
 <pre><code>\section{My first section}
 

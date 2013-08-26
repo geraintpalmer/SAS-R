@@ -135,7 +135,7 @@ A typesetting language is a language that requires the user to write code that i
             \draw (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
         \end{tikzpicture}
 
-   This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:
+    This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:
 
         \begin{tikzpicture}
             \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
@@ -215,11 +215,11 @@ A typesetting language is a language that requires the user to write code that i
 
         Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).
 
-11. **TICKABLE** The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:
+12. **TICKABLE** The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:
 
         $$\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$
 
-12. **TICKABLE** Mathematics can also be included in equations and referred to as for sections, pictures etc:
+13. **TICKABLE** Mathematics can also be included in equations and referred to as for sections, pictures etc:
 
         \begin{equation}\label{my_first_equation}
         e=mc^2
@@ -227,7 +227,7 @@ A typesetting language is a language that requires the user to write code that i
 
         In equation (\ref{my_first_equation}) we have a very well known relationship!
 
-13. **TICKABLE** To include text within mathematics we can use the `text` command from the `amsmath` package:
+14. **TICKABLE** To include text within mathematics we can use the `text` command from the `amsmath` package:
 
         $$x^2 = 1 \text{ implies} x=\pm1$$
 
@@ -235,7 +235,7 @@ A typesetting language is a language that requires the user to write code that i
 
     Another command that does this is `mbox` which does not require the amsmath package.
 
-14. **TICKABLE** Arithmetic operators are quite simple in LaTeX. Try the following:
+15. **TICKABLE** Arithmetic operators are quite simple in LaTeX. Try the following:
 
         \begin{itemize}
             \item $a+b$
@@ -249,11 +249,11 @@ A typesetting language is a language that requires the user to write code that i
             \item $\frac{a}{b}$
         \end{itemize}
 
-15. **TICKABLE** Experiment with the following to see how to obtain integrals in LaTeX:
+16. **TICKABLE** Experiment with the following to see how to obtain integrals in LaTeX:
 
         $$\int_{0}^{\pi}x^2\,dx$$
 
-16. **TICKABLE** The following code gives a 3 by 2 matrix:
+17. **TICKABLE** The following code gives a 3 by 2 matrix:
 
         $$\begin{pmatrix}
         a&b\\
@@ -263,7 +263,7 @@ A typesetting language is a language that requires the user to write code that i
 
     Experiment with `\begin{matrix}` and `\begin{vmatrix}`.
 
-17. **TICKABLE** It is possible to create aligned mathematics using:
+18. **TICKABLE** It is possible to create aligned mathematics using:
 
         \begin{align}
             (x+h)^2-x^2&=x^2+2xh+h^2-x^2\nonumber\\
@@ -279,7 +279,7 @@ A typesetting language is a language that requires the user to write code that i
             &=h(2x+h)&&\text{(by factorisation)}
         \end{align}
 
-18. **TICKABLE** Finally we can create partitioned statements:
+19. **TICKABLE** Finally we can create partitioned statements:
 
         $$
         1+(-1)^n=\begin{cases}
@@ -288,7 +288,7 @@ A typesetting language is a language that requires the user to write code that i
                  \end{cases}
         $$
 
-19. **TICKABLE** It is possible to create high quality presentation in LaTeX. To do this we use the `beamer` document class:
+20. **TICKABLE** It is possible to create high quality presentation in LaTeX. To do this we use the `beamer` document class:
 
         \documentclass{beamer}
         \begin{document}
@@ -311,7 +311,7 @@ A typesetting language is a language that requires the user to write code that i
         \usetheme{Hannover}
         \usetheme{Berkeley}
 
-20. **TICKABLE** Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the `frame` environment. There are however a few particularities:
+21. **TICKABLE** Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the `frame` environment. There are however a few particularities:
 
     To make a title, you need to use the `\titlepage` instead of the `\maketitle` command:
 
