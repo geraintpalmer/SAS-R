@@ -52,7 +52,7 @@ A typesetting language is a language that requires the user to write code that i
         Hello, world!
         \end{document}
 
-3. In general all the code that comes before the `\begin{document}` statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:
+3. **TICKABLE** In general all the code that comes before the `\begin{document}` statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:
 
         \title{Choose a title}
         \author{V Knight}
@@ -62,13 +62,13 @@ A typesetting language is a language that requires the user to write code that i
 
         \maketitle
 
-4. The following will add an abstract to your document:
+4. **TICKABLE** The following will add an abstract to your document:
 
         \begin{abstract}
         This document contains some basic LaTeX code that will be useful to me in the future.
         \end{abstract}
 
-5. There are various ways to obtain lists:
+5. **TICKABLE** There are various ways to obtain lists:
 
         \begin{itemize}
             \item Unorderd item number 1
@@ -82,7 +82,7 @@ A typesetting language is a language that requires the user to write code that i
 
     Note that in \LaTeX\; indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in \LaTeX\; they are ended by specific end statements `\end{enumerate}`.
 
-6. The following code creates a simple table (note the `c`, `r`, and `l` tags that indicate text alignment, experiment by changing these):
+6. **TICKABLE** The following code creates a simple table (note the `c`, `r`, and `l` tags that indicate text alignment, experiment by changing these):
 
         \begin{tabular}{|l|c|r|}
             \hline
@@ -98,7 +98,7 @@ A typesetting language is a language that requires the user to write code that i
 
     In general in \LaTeX\; `\\` is used to denote a 'new line'.
 
-7. To include a picture is straightforward in LaTeX. We make use of the `graphicx` package. In LaTeX packages are included in the preamble using `usepackage`. Include the following in the preamble:
+7. **TICKABLE** To include a picture is straightforward in LaTeX. We make use of the `graphicx` package. In LaTeX packages are included in the preamble using `usepackage`. Include the following in the preamble:
 
         \usepackage{graphicx}
 
@@ -115,7 +115,7 @@ A typesetting language is a language that requires the user to write code that i
     (Images can be in jpg, png and pdf format when using the pdflatex compiler.)
 
 
-8. Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required **but** it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is `tikz`. Include the following in the preamble:
+8. **TICKABLE** Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required **but** it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is `tikz`. Include the following in the preamble:
 
         \usepackage{tikz}
 
@@ -147,7 +147,7 @@ A typesetting language is a language that requires the user to write code that i
 
     A lot more can be done with tikz and there are a variety of great examples, tutorials online.
 
-9. It is possible to organise parts of a document using 'sections':
+9. **TICKABLE** It is possible to organise parts of a document using 'sections':
 
         \section{My first section}
 
@@ -184,7 +184,7 @@ A typesetting language is a language that requires the user to write code that i
 
     Note, labels can be using in conjunction with `tabular` (for tables) and `figure` (for images) environments.
 
-10. To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.
+10. **TICKABLE** To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.
 
     The following is the code for a book on LaTeX. Save the following in a separate file: `bibliography.bib`:
 
@@ -205,19 +205,129 @@ A typesetting language is a language that requires the user to write code that i
     \bibliographystyle{plain}
     \bibliography{bibliography.bib}
 
-   We now need to compile a document twice (as above to find all internal references for sections, figure etc...) **and then** we compile the bibliography with `bibtex` and then we need to compile one last time to match the bibliography items with the citations.
+    We now need to compile a document twice (as above to find all internal references for sections, figure etc...) **and then** we compile the bibliography with `bibtex` and then we need to compile one last time to match the bibliography items with the citations.
 
     ![](./Images/W10-img02.png)
 
     If you are using writelatex then this happens automatically.
 
-11. Mathematics
-12. Math in Text
-13. Displayed mathematics
-14. Text in Maths
-15. Arithmetic operators
-16. Integrals
-17. Matrices
-18. Align
-19. Cases
-20. Beamer
+11. **TICKABLE** Typesetting mathematics is LaTeX's strength. Add the following to your document:
+
+        Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).
+
+11. **TICKABLE** The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:
+
+        $$\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$
+
+12. **TICKABLE** Mathematics can also be included in equations and referred to as for sections, pictures etc:
+
+        \begin{equation}\label{my_first_equation}
+        e=mc^2
+        \end{equation}
+
+        In equation (\ref{my_first_equation}) we have a very well known relationship!
+
+13. **TICKABLE** To include text within mathematics we can use the `text` command from the `amsmath` package:
+
+        $$x^2 = 1 \text{ implies} x=\pm1$$
+
+    (be sure to include `usepackage{amsmath}` in the preamble.)
+
+    Another command that does this is `mbox` which does not require the amsmath package.
+
+14. **TICKABLE** Arithmetic operators are quite simple in LaTeX. Try the following:
+
+        \begin{itemize}
+            \item $a+b$
+            \item $a-b$
+            \item $-a$
+            \item $ab$
+            \item $a\cdot b$
+            \item $a\times b$
+            \item $a/b$
+            \item ${a\over b}$
+            \item $\frac{a}{b}$
+        \end{itemize}
+
+15. **TICKABLE** Experiment with the following to see how to obtain integrals in LaTeX:
+
+        $$\int_{0}^{\pi}x^2\,dx$$
+
+16. **TICKABLE** The following code gives a 3 by 2 matrix:
+
+        $$\begin{pmatrix}
+        a&b\\
+        c&d\\
+        e&f\\
+        \end{pmatrix}$$
+
+    Experiment with `\begin{matrix}` and `\begin{vmatrix}`.
+
+17. **TICKABLE** It is possible to create aligned mathematics using:
+
+        \begin{align}
+            (x+h)^2-x^2&=x^2+2xh+h^2-x^2\nonumber\\
+            &=2xh+h^2\nonumber\\
+            &=h(2x+h)\nonumber
+        \end{align}
+
+    Annotated text can also be added:
+
+        \begin{align}
+            (x+h)^2-x^2&=x^2+2xh+h^2-x^2&&\text{(by distributivity)}\\
+            &=2xh+h^2&&\text{(by subtraction)}\\
+            &=h(2x+h)&&\text{(by factorisation)}
+        \end{align}
+
+18. **TICKABLE** Finally we can create partitioned statements:
+
+        $$
+        1+(-1)^n=\begin{cases}
+                    0,& \text{if $n$ odd}\\
+                    2,& \text{if $n$ even}
+                 \end{cases}
+        $$
+
+19. **TICKABLE** It is possible to create high quality presentation in LaTeX. To do this we use the `beamer` document class:
+
+        \documentclass{beamer}
+        \begin{document}
+
+        \frame{This is my first slide.}
+
+        \frame{This is my second slide.}
+
+        \end{document}
+
+    Try one of the following themes in the preamble of your document to change the look of your slides.
+
+        \usetheme{default}
+        \usetheme{Boadilla}
+        \usetheme{Madrid}
+        \usetheme{Montpellier}
+        \usetheme{Warsaw}
+        \usetheme{Copenhagen}
+        \usetheme{Goettingen}
+        \usetheme{Hannover}
+        \usetheme{Berkeley}
+
+20. **TICKABLE** Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the `frame` environment. There are however a few particularities:
+
+    To make a title, you need to use the `\titlepage` instead of the `\maketitle` command:
+
+        \begin{frame}
+            \titlepage
+        \end{frame}
+
+    We can also have frame titles and sections as before in a Beamer document:
+
+        \frame{\frametitle{Overview}
+            \tableofcontents
+        }
+
+        \section{Simple Beamer}
+        \begin{frame}
+            \frametitle{My first slide}
+        \end{frame}
+
+    There are various other commands and tools that can be used in Beamer. In particular take a look at the `pause`, `only` and `onslide` commands.

@@ -50,17 +50,17 @@ Hello, world!
 \begin{document} % This line start the document
 Hello, world!
 \end{document}</code></pre></li>
-<li><p>In general all the code that comes before the <code>\begin{document}</code> statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:</p>
+<li><p><strong>TICKABLE</strong> In general all the code that comes before the <code>\begin{document}</code> statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:</p>
 <pre><code>\title{Choose a title}
 \author{V Knight}
 \date{\today}</code></pre>
 <p>If you compile your document this won't include the title in the output. To do so you need to include the following line (in the main body):</p>
 <pre><code>\maketitle</code></pre></li>
-<li><p>The following will add an abstract to your document:</p>
+<li><p><strong>TICKABLE</strong> The following will add an abstract to your document:</p>
 <pre><code>\begin{abstract}
 This document contains some basic LaTeX code that will be useful to me in the future.
 \end{abstract}</code></pre></li>
-<li><p>There are various ways to obtain lists:</p>
+<li><p><strong>TICKABLE</strong> There are various ways to obtain lists:</p>
 <pre><code>\begin{itemize}
     \item Unorderd item number 1
     \item Unorderd item number 2
@@ -71,7 +71,7 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \item Ordered item number 2
 \end{enumerate}</code></pre>
 <p>Note that in ; indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in ; they are ended by specific end statements <code>\end{enumerate}</code>.</p></li>
-<li><p>The following code creates a simple table (note the <code>c</code>, <code>r</code>, and <code>l</code> tags that indicate text alignment, experiment by changing these):</p>
+<li><p><strong>TICKABLE</strong> The following code creates a simple table (note the <code>c</code>, <code>r</code>, and <code>l</code> tags that indicate text alignment, experiment by changing these):</p>
 <pre><code>\begin{tabular}{|l|c|r|}
     \hline
     Name &amp; Gender &amp; Start Time\\
@@ -84,7 +84,7 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \hline
 \end{tabular}</code></pre>
 <p>In general in ; <code>\\</code> is used to denote a 'new line'.</p></li>
-<li><p>To include a picture is straightforward in LaTeX. We make use of the <code>graphicx</code> package. In LaTeX packages are included in the preamble using <code>usepackage</code>. Include the following in the preamble:</p>
+<li><p><strong>TICKABLE</strong> To include a picture is straightforward in LaTeX. We make use of the <code>graphicx</code> package. In LaTeX packages are included in the preamble using <code>usepackage</code>. Include the following in the preamble:</p>
 <pre><code>\usepackage{graphicx}</code></pre>
 <p>The following code (somewhere in the body) will include a picture:</p>
 <pre><code>\includegraphics{path_to_picture}</code></pre>
@@ -93,7 +93,7 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \includegraphics{path_to_picture}
 \end{center}</code></pre>
 <p>(Images can be in jpg, png and pdf format when using the pdflatex compiler.)</p></li>
-<li><p>Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required <strong>but</strong> it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is <code>tikz</code>. Include the following in the preamble:</p>
+<li><p><strong>TICKABLE</strong> Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required <strong>but</strong> it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is <code>tikz</code>. Include the following in the preamble:</p>
 <pre><code>\usepackage{tikz}</code></pre>
 <p>Using this package we start a picture by setting up a tikzpicture environment.</p>
 <pre><code>\begin{tikzpicture}
@@ -119,18 +119,144 @@ This document contains some basic LaTeX code that will be useful to me in the fu
 
 A lot more can be done with tikz and there are a variety of great examples, tutorials online.</code></pre>
 <ol start="9" style="list-style-type: decimal">
-<li>Sections</li>
-<li>Bibliography</li>
-<li>Mathematics</li>
-<li>Math in Text</li>
-<li>Displayed mathematics</li>
-<li>Text in Maths</li>
-<li>Arithmetic operators</li>
-<li>Integrals</li>
-<li>Matrices</li>
-<li>Align</li>
-<li>Cases</li>
-<li>Beamer</li>
+<li><p><strong>TICKABLE</strong> It is possible to organise parts of a document using 'sections':</p>
+<pre><code>\section{My first section}
+
+This is a section with a few subsections.
+
+\subsection{A part of my first section}
+
+Here I could write about the problem I&#39;m trying to solve.
+
+\subsection{Another part of my first section}
+
+In this subsection I could solve the problem.
+
+\subsubsection{Further fragmentation...}
+
+\section{My second section}
+
+etc...</code></pre>
+<p>We can include labels to sections so that we can refer to them:</p>
+<pre><code>\section{My first section}\label{first_section}
+
+\section{My second section}\label{second_section}
+
+In Section \ref{first_section} we saw that...</code></pre>
+<p>When compiling one needs to compile twice:</p>
+<ol style="list-style-type: decimal">
+<li>The first time to find all the labels;</li>
+<li>The second time to match the labels to the references.</li>
+</ol>
+<p>If you are using writelatex then this happens automatically.</p>
+<p>Note, labels can be using in conjunction with <code>tabular</code> (for tables) and <code>figure</code> (for images) environments.</p></li>
+<li><p><strong>TICKABLE</strong> To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.</p>
+<p>The following is the code for a book on LaTeX. Save the following in a separate file: <code>bibliography.bib</code>:</p>
+<pre><code>@book{Gratzer2007,
+author = {Gr\&quot;{a}tzer, George},
+publisher = {Springer},
+title = {{More Math Into LaTeX: A Guide for
+Documentation and Presentation}},
+year = {2007}
+}</code></pre>
+<p>We can then reference the 'key' (for the above it is Gratzer2007) for any document in the bibliography file using the following:</p>
+<pre><code>A very helpful reference for LaTeX is \cite{Gratzer2007}.</code></pre>
+<p>We need to however include a pointer towards the bibliography, at the end of the document include:</p>
+
+
+<p>We now need to compile a document twice (as above to find all internal references for sections, figure etc...) <strong>and then</strong> we compile the bibliography with <code>bibtex</code> and then we need to compile one last time to match the bibliography items with the citations.</p>
+<div class="figure">
+<img src="./Images/W10-img02.png" />
+</div>
+<p>If you are using writelatex then this happens automatically.</p></li>
+<li><p><strong>TICKABLE</strong> Typesetting mathematics is LaTeX's strength. Add the following to your document:</p>
+<pre><code>Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).</code></pre></li>
+<li><p><strong>TICKABLE</strong> The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:</p>
+<pre><code>$$\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$</code></pre></li>
+<li><p><strong>TICKABLE</strong> Mathematics can also be included in equations and referred to as for sections, pictures etc:</p>
+<pre><code>\begin{equation}\label{my_first_equation}
+e=mc^2
+\end{equation}
+
+In equation (\ref{my_first_equation}) we have a very well known relationship!</code></pre></li>
+<li><p><strong>TICKABLE</strong> To include text within mathematics we can use the <code>text</code> command from the <code>amsmath</code> package:</p>
+<pre><code>$$x^2 = 1 \text{ implies} x=\pm1$$</code></pre>
+<p>(be sure to include <code>usepackage{amsmath}</code> in the preamble.)</p>
+<p>Another command that does this is <code>mbox</code> which does not require the amsmath package.</p></li>
+<li><p><strong>TICKABLE</strong> Arithmetic operators are quite simple in LaTeX. Try the following:</p>
+<pre><code>\begin{itemize}
+    \item $a+b$
+    \item $a-b$
+    \item $-a$
+    \item $ab$
+    \item $a\cdot b$
+    \item $a\times b$
+    \item $a/b$
+    \item ${a\over b}$
+    \item $\frac{a}{b}$
+\end{itemize}</code></pre></li>
+<li><p><strong>TICKABLE</strong> Experiment with the following to see how to obtain integrals in LaTeX:</p>
+<pre><code>$$\int_{0}^{\pi}x^2\,dx$$</code></pre></li>
+<li><p><strong>TICKABLE</strong> The following code gives a 3 by 2 matrix:</p>
+<pre><code>$$\begin{pmatrix}
+a&amp;b\\
+c&amp;d\\
+e&amp;f\\
+\end{pmatrix}$$</code></pre>
+<p>Experiment with <code>\begin{matrix}</code> and <code>\begin{vmatrix}</code>.</p></li>
+<li><p><strong>TICKABLE</strong> It is possible to create aligned mathematics using:</p>
+<pre><code>\begin{align}
+    (x+h)^2-x^2&amp;=x^2+2xh+h^2-x^2\nonumber\\
+    &amp;=2xh+h^2\nonumber\\
+    &amp;=h(2x+h)\nonumber
+\end{align}</code></pre>
+<p>Annotated text can also be added:</p>
+<pre><code>\begin{align}
+    (x+h)^2-x^2&amp;=x^2+2xh+h^2-x^2&amp;&amp;\text{(by distributivity)}\\
+    &amp;=2xh+h^2&amp;&amp;\text{(by subtraction)}\\
+    &amp;=h(2x+h)&amp;&amp;\text{(by factorisation)}
+\end{align}</code></pre></li>
+<li><p><strong>TICKABLE</strong> Finally we can create partitioned statements:</p>
+<pre><code>$$
+1+(-1)^n=\begin{cases}
+            0,&amp; \text{if $n$ odd}\\
+            2,&amp; \text{if $n$ even}
+         \end{cases}
+$$</code></pre></li>
+<li><p><strong>TICKABLE</strong> It is possible to create high quality presentation in LaTeX. To do this we use the <code>beamer</code> document class:</p>
+<pre><code>\documentclass{beamer}
+\begin{document}
+
+\frame{This is my first slide.}
+
+\frame{This is my second slide.}
+
+\end{document}</code></pre>
+<p>Try one of the following themes in the preamble of your document to change the look of your slides.</p>
+<pre><code>\usetheme{default}
+\usetheme{Boadilla}
+\usetheme{Madrid}
+\usetheme{Montpellier}
+\usetheme{Warsaw}
+\usetheme{Copenhagen}
+\usetheme{Goettingen}
+\usetheme{Hannover}
+\usetheme{Berkeley}</code></pre></li>
+<li><p><strong>TICKABLE</strong> Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the <code>frame</code> environment. There are however a few particularities:</p>
+<p>To make a title, you need to use the <code>\titlepage</code> instead of the <code>\maketitle</code> command:</p>
+<pre><code>\begin{frame}
+    \titlepage
+\end{frame}</code></pre>
+<p>We can also have frame titles and sections as before in a Beamer document:</p>
+<pre><code>\frame{\frametitle{Overview}
+    \tableofcontents
+}
+
+\section{Simple Beamer}
+\begin{frame}
+    \frametitle{My first slide}
+\end{frame}</code></pre>
+<p>There are various other commands and tools that can be used in Beamer. In particular take a look at the <code>pause</code>, <code>only</code> and <code>onslide</code> commands.</p></li>
 </ol>
 </body>
 </html>
