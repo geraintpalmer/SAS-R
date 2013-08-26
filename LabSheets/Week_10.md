@@ -147,8 +147,70 @@ A typesetting language is a language that requires the user to write code that i
 
     A lot more can be done with tikz and there are a variety of great examples, tutorials online.
 
-9. Sections
-10. Bibliography
+9. It is possible to organise parts of a document using 'sections':
+
+        \section{My first section}
+
+        This is a section with a few subsections.
+
+        \subsection{A part of my first section}
+
+        Here I could write about the problem I'm trying to solve.
+
+        \subsection{Another part of my first section}
+
+        In this subsection I could solve the problem.
+
+        \subsubsection{Further fragmentation...}
+
+        \section{My second section}
+
+        etc...
+
+    We can include labels to sections so that we can refer to them:
+
+        \section{My first section}\label{first_section}
+
+        \section{My second section}\label{second_section}
+
+        In Section \ref{first_section} we saw that...
+
+    When compiling one needs to compile twice:
+
+    1. The first time to find all the labels;
+    2. The second time to match the labels to the references.
+
+    If you are using writelatex then this happens automatically.
+
+    Note, labels can be using in conjunction with `tabular` (for tables) and `figure` (for images) environments.
+
+10. To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.
+
+    The following is the code for a book on LaTeX. Save the following in a separate file: `bibliography.bib`:
+
+        @book{Gratzer2007,
+        author = {Gr\"{a}tzer, George},
+        publisher = {Springer},
+        title = {{More Math Into LaTeX: A Guide for
+        Documentation and Presentation}},
+        year = {2007}
+        }
+
+    We can then reference the 'key' (for the above it is Gratzer2007) for any document in the bibliography file using the following:
+
+        A very helpful reference for LaTeX is \cite{Gratzer2007}.
+
+    We need to however include a pointer towards the bibliography, at the end of the document include:
+
+    \bibliographystyle{plain}
+    \bibliography{bibliography.bib}
+
+   We now need to compile a document twice (as above to find all internal references for sections, figure etc...) **and then** we compile the bibliography with `bibtex` and then we need to compile one last time to match the bibliography items with the citations.
+
+    ![](./Images/W10-img02.png)
+
+    If you are using writelatex then this happens automatically.
+
 11. Mathematics
 12. Math in Text
 13. Displayed mathematics
