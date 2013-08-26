@@ -98,9 +98,56 @@ A typesetting language is a language that requires the user to write code that i
 
     In general in \LaTeX\; `\\` is used to denote a 'new line'.
 
-7.
-8. Pictures
-9. Drawings
+7. To include a picture is straightforward in LaTeX. We make use of the `graphicx` package. In LaTeX packages are included in the preamble using `usepackage`. Include the following in the preamble:
+
+        \usepackage{graphicx}
+
+    The following code (somewhere in the body) will include a picture:
+
+        \includegraphics{path_to_picture}
+
+    We can put this in the `center` environment to centre the picture:
+
+        \begin{center}
+            \includegraphics{path_to_picture}
+        \end{center}
+
+    (Images can be in jpg, png and pdf format when using the pdflatex compiler.)
+
+
+8. Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required **but** it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is `tikz`. Include the following in the preamble:
+
+        \usepackage{tikz}
+
+    Using this package we start a picture by setting up a tikzpicture environment.
+
+        \begin{tikzpicture}
+
+        \end{tikzpicture}
+
+    We then draw various shapes and connectors using the `\draw` command including coordinates:
+
+        \begin{tikzpicture}
+            \draw (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
+            \draw (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
+            \draw (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
+            \draw (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
+            \draw (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+        \end{tikzpicture}
+
+   This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:
+
+        \begin{tikzpicture}
+            \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
+            \draw [thin, color=blue] (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
+            \draw [thick] (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
+            \draw [thick] (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
+            \draw [color=red, fill=green] (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+        \end{tikzpicture}
+
+    A lot more can be done with tikz and there are a variety of great examples, tutorials online.
+
+9. Sections
 10. Bibliography
 11. Mathematics
 12. Math in Text

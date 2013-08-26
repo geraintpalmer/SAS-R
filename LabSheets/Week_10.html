@@ -5,13 +5,14 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
 <h1 id="week-10---latex">Week 10 - LaTeX</h1>
 <p>Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).</p>
 <p>A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read:</p>
 <div class="figure">
-<img src="./Images/W10-img01.png" /><p class="caption"></p>
+<img src="./Images/W10-img01.png" />
 </div>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> Open up TeXworks which should open a blank document. Write the following LaTeX code:</p>
@@ -26,7 +27,7 @@ Hello, world!
 <li>Click on the green arrow (ctrl+T) to <em>compile</em> this document which creates a pdf corresponding to your code.</li>
 </ol>
 <div class="figure">
-<img src="./Screenshots/W10-S01.png" /><p class="caption"></p>
+<img src="./Screenshots/W10-S01.png" />
 </div>
 <p><strong>This is the most basic of LaTeX documents, everything else you do using LaTeX will be done through writing code in your TeX file.</strong></p>
 <p>There exists some good cloud based solutions to LaTeX. The advantages of these are usually:</p>
@@ -83,7 +84,53 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \hline
 \end{tabular}</code></pre>
 <p>In general in ; <code>\\</code> is used to denote a 'new line'.</p></li>
+<li><p>To include a picture is straightforward in LaTeX. We make use of the <code>graphicx</code> package. In LaTeX packages are included in the preamble using <code>usepackage</code>. Include the following in the preamble:</p>
+<pre><code>\usepackage{graphicx}</code></pre>
+<p>The following code (somewhere in the body) will include a picture:</p>
+<pre><code>\includegraphics{path_to_picture}</code></pre>
+<p>We can put this in the <code>center</code> environment to centre the picture:</p>
+<pre><code>\begin{center}
+    \includegraphics{path_to_picture}
+\end{center}</code></pre>
+<p>(Images can be in jpg, png and pdf format when using the pdflatex compiler.)</p></li>
+<li><p>Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required <strong>but</strong> it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is <code>tikz</code>. Include the following in the preamble:</p>
+<pre><code>\usepackage{tikz}</code></pre>
+<p>Using this package we start a picture by setting up a tikzpicture environment.</p>
+<pre><code>\begin{tikzpicture}
+
+\end{tikzpicture}</code></pre>
+<p>We then draw various shapes and connectors using the <code>\draw</code> command including coordinates:</p>
+<pre><code>\begin{tikzpicture}
+    \draw (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
+    \draw (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
+    \draw (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
+    \draw (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
+    \draw (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+\end{tikzpicture}</code></pre></li>
 </ol>
-<p>7. 8. Pictures 9. Drawings 10. Bibliography 11. Mathematics 12. Math in Text 13. Displayed mathematics 14. Text in Maths 15. Arithmetic operators 16. Integrals 17. Matrices 18. Align 19. Cases 20. Beamer</p>
+<p>This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:</p>
+<pre><code>    \begin{tikzpicture}
+        \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
+        \draw [thin, color=blue] (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
+        \draw [thick] (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
+        \draw [thick] (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
+        \draw [color=red, fill=green] (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+    \end{tikzpicture}
+
+A lot more can be done with tikz and there are a variety of great examples, tutorials online.</code></pre>
+<ol start="9" style="list-style-type: decimal">
+<li>Sections</li>
+<li>Bibliography</li>
+<li>Mathematics</li>
+<li>Math in Text</li>
+<li>Displayed mathematics</li>
+<li>Text in Maths</li>
+<li>Arithmetic operators</li>
+<li>Integrals</li>
+<li>Matrices</li>
+<li>Align</li>
+<li>Cases</li>
+<li>Beamer</li>
+</ol>
 </body>
 </html>
