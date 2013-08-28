@@ -31,9 +31,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     In this question we will take a look at one type of algorithm that can be used to sort a list: "Selection sort".
 
-    The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.
+    The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list\text{ as shown in Figure \ref{W04-img01}}.
 
-    ![](./Images/W04-img01.png)
+    ![\text{Selection sort}\label{W04-img01}](./Images/W04-img01.png)
 
     Here is some **pseudo code** that describes this:
 
@@ -42,9 +42,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
             FIND SMALLEST ELEMENT IN OLDLIST
             MOVE THAT ELEMENT TO NEWLIST
 
-    It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.
+    It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
 
-    ![](./Images/W04-img02.png)
+    ![\text{A concise version of selection sort.}\label{W04-img02}}](./Images/W04-img02.png)
 
     Here is some **pseudo code** that describes the 'insertion sort' algorithm:
 
@@ -143,9 +143,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
     in the file [W04_D01.txt](./Data/W04_D01.txt).
 
 
-7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
+7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search\text{ as shown in Figure \ref{W04-img03}}.
 
-    ![](Images/W04-img03.png)
+    ![\text{Binary search}\label{W04-img03}](Images/W04-img03.png)
 
     Here is some pseudo code that describes this:
 
