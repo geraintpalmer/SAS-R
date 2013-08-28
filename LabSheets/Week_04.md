@@ -9,24 +9,30 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 1. **TICKABLE** The following code create a list of digits from 1 to 31.
 
-        l = range(1, 31)
-        print l
+    ~~~{.python}
+    l = range(1, 31)
+    print l
+    ~~~
 
     If we import the random library we can pick a random sample of the list and `shuffle` this it (do not worry too much about this):
 
-        import random
-        jumbledlist = random.sample(range(1, 31), 20)
-        random.shuffle(jumbledlist)
-        print jumbledlist
+    ~~~{.python}
+    import random
+    jumbledlist = random.sample(range(1, 31), 20)
+    random.shuffle(jumbledlist)
+    print jumbledlist
+    ~~~
 
     Using pen and paper, sort the above list, attempting to understand a general approach to doing this. Write a function `jumbledlist` that takes as arguments: `maximumnumber` and `sizeoflist` which returns a jumbled list of integersas above.
 
 2. **TICKABLE** Python has a built in method on lists to sort them: `sort()`:
 
-        l = jumbledlist(30, 20) # Use the function you created above.
-        print l
-        l.sort()
-        print l
+    ~~~{.python}
+    l = jumbledlist(30, 20) # Use the function you created above.
+    print l
+    l.sort()
+    print l
+    ~~~
 
 
     In this question we will take a look at one type of algorithm that can be used to sort a list: "Selection sort".
@@ -56,17 +62,19 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     Here is some python code that carries out the above algorithm, experiment with it and include comments:
 
-        def insertionsort(data):
-            firstunsorted = 0
-            while firstUnsorted < len(data) - 1:
-                indexOfSmallest = firstUnsorted
-                index = firstUnsorted + 1
-                while index <= len(data) - 1:
-                    if data[index] < data[indexOfSmallest]:
-                        indexOfSmallest = index
-                    index += 1
-                data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
-                firstUnsorted += 1
+    ~~~{.python}
+    def insertionsort(data):
+        firstunsorted = 0
+        while firstUnsorted < len(data) - 1:
+            indexOfSmallest = firstUnsorted
+            index = firstUnsorted + 1
+            while index <= len(data) - 1:
+                if data[index] < data[indexOfSmallest]:
+                    indexOfSmallest = index
+                index += 1
+            data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
+            firstUnsorted += 1
+    ~~~
 
 
 3. There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:
@@ -89,24 +97,32 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 4. The 'time' module allows you to get the current system time on your machine:
 
-        import time
-        print time.time()
+    ~~~{.python}
+    import time
+    print time.time()
+    ~~~
 
     Using this we can write a function that will evaluate how long it takes to run a particular function:
 
-        timing(string):
-            starttime = time.time()
-            eval(string)
-            return time.time() - starttime
+    ~~~{.python}
+    timing(string):
+        starttime = time.time()
+        eval(string)
+        return time.time() - starttime
+    ~~~
 
     This uses the `eval` function which runs any string of code. We can define the following test function:
 
-        def testfunction():
-            return 10 ** 1000
+    ~~~{.python}
+    def testfunction():
+        return 10 ** 1000
+    ~~~
 
     We see how long a single run of this testfunction takes using our timing function:
 
-        print timing("testfunction")
+    ~~~{.python}
+    print timing("testfunction")
+    ~~~
 
     Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.
 
@@ -135,10 +151,12 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     Write some python code for this and use it to find the index of following numbers:
 
-        targets = [12,
-                   593,
-                   9402,
-                   4320]
+    ~~~{.python}
+    targets = [12,
+               593,
+               9402,
+               4320]
+    ~~~
 
     in the file [W04_D01.txt](./Data/W04_D01.txt).
 
@@ -166,19 +184,21 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     Here is some python code that carries out the above algorithm, experiment with it and include comments:
 
-        def binarysearch(data, item):
-            first = 0
-            last = len(data) - 1
-            found = False
-            while first <= last and not found:
-                middle = int((first + last) / 2)
-                if item == data[middle]:
-                    found = True
-                elif item < data[middle]:
-                    last = middle - 1
-                else:
-                    first = middle + 1
-            return middle
+    ~~~{.python}
+    def binarysearch(data, item):
+        first = 0
+        last = len(data) - 1
+        found = False
+        while first <= last and not found:
+            middle = int((first + last) / 2)
+            if item == data[middle]:
+                found = True
+            elif item < data[middle]:
+                last = middle - 1
+            else:
+                first = middle + 1
+        return middle
+    ~~~
 
 8. Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.
 

@@ -5,6 +5,26 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
@@ -37,13 +57,13 @@
 <p>and many more. We will be using the simplest Python IDE available: IDLE which comes bundled with Python (in your own time be sure to investigate others as it is a question of personal choice).</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong>: Open up IDLE and in the <strong>interpreter</strong> type the following code and press <code>ENTER</code>:</p>
-<pre><code>print &quot;Hello world&quot;</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="st">&quot;Hello world&quot;</span></code></pre>
 <div class="figure">
 <img src="./Screenshots/W02-S01.png" alt="" /><p class="caption"></p>
 </div>
 <p><a href="http://www.youtube.com/watch?v=9FdsVBAUqRs">Video hint</a></p></li>
 <li><p>For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:</p>
-<pre><code>print &quot;Hello world&quot;</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="st">&quot;Hello world&quot;</span></code></pre>
 <div class="figure">
 <img src="./Screenshots/W02-S02.png" alt="" /><p class="caption"></p>
 </div>
@@ -53,23 +73,23 @@
 <p>A variable is one of the basic building blocks used by a program. Variables may be of various types.</p>
 <ol start="3" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong>: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the <code>type</code> function.</p>
-<pre><code>num1 = 23
-print type(num1)
+<pre class="sourceCode python"><code class="sourceCode python">num1 = <span class="dv">23</span>
+<span class="kw">print</span> <span class="dt">type</span>(num1)
 
-num2 = 23.5
-print type(num2)
+num2 = <span class="fl">23.5</span>
+<span class="kw">print</span> <span class="dt">type</span>(num2)
 
-str1 = &quot;Hello world!&quot;
-print type(str1)</code></pre>
+str1 = <span class="st">&quot;Hello world!&quot;</span>
+<span class="kw">print</span> <span class="dt">type</span>(str1)</code></pre>
 <p><a href="http://www.youtube.com/watch?v=UFGJEG34qMk">Video hint</a></p></li>
 <li><p>We can carry out basic arithmetic operations using Python. Take a look at the following:</p>
-<pre><code>num = 2
-num = num +3
-print num</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">num = <span class="dv">2</span>
+num = num +<span class="dv">3</span>
+<span class="kw">print</span> num</code></pre>
 <p>this can however also be written:</p>
-<pre><code>num = 2
-num += 3
-print num</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">num = <span class="dv">2</span>
+num += <span class="dv">3</span>
+<span class="kw">print</span> num</code></pre>
 <p>Simlarly, <code>-</code>, <code>*</code>, <code>/</code> and <code>**</code> can be used for:</p>
 <ul>
 <li>subtraction;</li>
@@ -81,37 +101,36 @@ print num</code></pre>
 <li><p><strong>TICKABLE</strong>: Assign the variable <code>num</code> to a value of 5.2, what is the result of adding 7 to <code>num</code> then muliplying <code>num</code> by 300 then dividing <code>num</code> by 4 and finally raising <code>num</code> to the power of 3?</p>
 <p><a href="http://www.youtube.com/watch?v=ihBpyMpDy-M">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong>: We can carry also manipulate strings. Try out the following:</p>
-<pre><code>str1 = &quot;This is a string that I will learn to manipulate&quot;
-str2 = &quot;, string manipulation is very useful.&quot;
+<pre class="sourceCode python"><code class="sourceCode python">str1 = <span class="st">&quot;This is a string that I will learn to manipulate&quot;</span>
+str2 = <span class="st">&quot;, string manipulation is very useful.&quot;</span>
 string = str1 + str2
-print string
-print len(string)
-print string[0]
-print string[-1]
-print string[3:7]</code></pre>
+<span class="kw">print</span> string
+<span class="kw">print</span> <span class="dt">len</span>(string)
+<span class="kw">print</span> string[<span class="dv">0</span>]
+<span class="kw">print</span> string[-<span class="dv">1</span>]
+<span class="kw">print</span> string[<span class="dv">3</span>:<span class="dv">7</span>]</code></pre>
 <p>We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.</p>
-<pre><code>index = str1.index(&quot;string&quot;)
-print index
-print str1[index:index + len(&quot;string&quot;)]</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">index = str1.index(<span class="st">&quot;string&quot;</span>)
+<span class="kw">print</span> index
+<span class="kw">print</span> str1[index:index + <span class="dt">len</span>(<span class="st">&quot;string&quot;</span>)]</code></pre>
 <p>There are various other things that can be done &quot;on&quot; strings, be sure to research these.</p>
 <p><a href="http://www.youtube.com/watch?v=IW6AGodpmSc">Video hint</a></p></li>
 <li><p>It is possible to go from one type of variable to another.</p>
-<pre><code>f = 10.2
-print int(f)
-print float(int(f))
-
-s = str(f)
-print s
-print type(s)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">f = <span class="fl">10.2</span>
+<span class="kw">print</span> <span class="dt">int</span>(f)
+<span class="kw">print</span> <span class="dt">float</span>(<span class="dt">int</span>(f))</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">s = <span class="dt">str</span>(f)
+<span class="kw">print</span> s
+<span class="kw">print</span> <span class="dt">type</span>(s)</code></pre>
 <p>It is also possible to write strings using other variables.</p>
-<pre><code>numberofcats = 2
-name = &quot;Vince&quot;
-height = 1.7
-notborn = &quot;the UK&quot;</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">numberofcats = <span class="dv">2</span>
+name = <span class="st">&quot;Vince&quot;</span>
+height = <span class="fl">1.7</span>
+notborn = <span class="st">&quot;the UK&quot;</span></code></pre>
 <p>One way to do this would be:</p>
-<pre><code>string = &quot;My name is &quot; + name +&quot;, I am &quot; + str(height) + &quot; metres tall, have &quot; + str(numberofcats) + &quot; cats and was not born in &quot; + notborn</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">string = <span class="st">&quot;My name is &quot;</span> + name +<span class="st">&quot;, I am &quot;</span> + <span class="dt">str</span>(height) + <span class="st">&quot; metres tall, have &quot;</span> + <span class="dt">str</span>(numberofcats) + <span class="st">&quot; cats and was not born in &quot;</span> + notborn</code></pre>
 <p>Python (and most other languages) has a nicer way of doing this:</p>
-<pre><code>string = &quot;My name is %s, I am %.2f metres tall, have %i cats and was not born in %s&quot; % (name, height, numberofcats, notborn)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">string = <span class="st">&quot;My name is </span><span class="ot">%s</span><span class="st">, I am </span><span class="ot">%.2f</span><span class="st"> metres tall, have </span><span class="ot">%i</span><span class="st"> cats and was not born in </span><span class="ot">%s</span><span class="st">&quot;</span> % (name, height, numberofcats, notborn)</code></pre>
 <p>The <code>%</code> is used to denote that a value must be input in to the string. The symbols after the <code>%</code> say what type of value is to be included:</p>
 <ul>
 <li><code>s</code>: A String</li>
@@ -124,10 +143,10 @@ notborn = &quot;the UK&quot;</code></pre>
 <h2 id="if-statements">If statements</h2>
 <ol start="8" style="list-style-type: decimal">
 <li><p>An <code>if</code> statement allows you to tell a program to carry out something based on the value of a <code>Boolean</code> variable.</p>
-<pre><code>boolean = True
-if boolean:
-    print &quot;boolean is %s&quot; % boolean</code></pre>
-<p>Try typying the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement</strong>.</p>
+<pre class="sourceCode python"><code class="sourceCode python">boolean = <span class="ot">True</span>
+<span class="kw">if</span> boolean:
+    <span class="kw">print</span> <span class="st">&quot;boolean is </span><span class="ot">%s</span><span class="st">&quot;</span> % boolean</code></pre>
+<p>Try typeing the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement</strong>.</p>
 <p>It is easy to create boolean variables using the following:</p>
 <ul>
 <li><code>&lt;</code> strictly less than</li>
@@ -138,12 +157,12 @@ if boolean:
 <li><code>==</code> equals <strong>Note: this is a test of equality as opposed to the basic <code>=</code> which is an assignment.</strong></li>
 </ul>
 <p>It is also possible to give alternatives to an <code>if statement</code>:</p>
-<pre><code>num = 11
-print num % 2 == 0
-if num % 2 == 0:
-    print &quot;num is an even number&quot;
-else:
-    print &quot;num is an odd number&quot;</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">num = <span class="dv">11</span>
+<span class="kw">print</span> num % <span class="dv">2</span> == <span class="dv">0</span>
+<span class="kw">if</span> num % <span class="dv">2</span> == <span class="dv">0</span>:
+    <span class="kw">print</span> <span class="st">&quot;num is an even number&quot;</span>
+<span class="kw">else</span>:
+    <span class="kw">print</span> <span class="st">&quot;num is an odd number&quot;</span></code></pre>
 <p>(The <code>%</code> operator gives the remainder of one number when divided by another.)</p>
 <p><a href="http://www.youtube.com/watch?v=ZODKm7YolkQ">Video hint</a></p>
 <p><strong>Spend some time understanding the <code>elif</code> statement.</strong></p></li>
@@ -154,34 +173,34 @@ else:
 <p>An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops &quot;count controlled loops&quot; and &quot;event controlled loops&quot;.</p>
 <ol start="10" style="list-style-type: decimal">
 <li><p>The <code>range()</code> function in Python allows us to create a list of integers easily. <strong>A list is a new type of variable that we will look at more closely next week</strong>:</p>
-<pre><code>print range(10)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dt">range</span>(<span class="dv">10</span>)</code></pre>
 <p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
-<pre><code>print range(3,10)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dt">range</span>(<span class="dv">3</span>,<span class="dv">10</span>)</code></pre>
 <p>We can also include 3 arguments:</p>
-<pre><code>print range(0,10,2)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">10</span>,<span class="dv">2</span>)</code></pre>
 <p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
-<pre><code>for i in range(10):
-    print i</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">10</span>):
+    <span class="kw">print</span> i</code></pre>
 <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
 <div class="figure">
 <img src="./Images/W02-img01.png" alt="" /><p class="caption"></p>
 </div>
 <p>We can in fact iterate over anything in a list:</p>
-<pre><code>for e in [&quot;dog&quot;, &quot;cat&quot;, 3, &quot;I love mathematics&quot;]:
-    print e</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> e in [<span class="st">&quot;dog&quot;</span>, <span class="st">&quot;cat&quot;</span>, <span class="dv">3</span>, <span class="st">&quot;I love mathematics&quot;</span>]:
+    <span class="kw">print</span> e</code></pre>
 <p>This allows us to do various interesting things. Try the following:</p>
-<pre><code>s = 0
-for i in range(1001):
+<pre class="sourceCode python"><code class="sourceCode python">s = <span class="dv">0</span>
+<span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1001</span>):
     s += i
-print s</code></pre>
+<span class="kw">print</span> s</code></pre>
 <p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</p>
 <p><a href="http://www.youtube.com/watch?v=1PvEXo0l1NE">Video hint</a></p></li>
 <li><p>Event based loops are implemented in Python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
-<pre><code>k = 0
-while k &lt; 10:
-    print k
-    k += 1</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">k = <span class="dv">0</span>
+<span class="kw">while</span> k &lt; <span class="dv">10</span>:
+    <span class="kw">print</span> k
+    k += <span class="dv">1</span></code></pre>
 <p>The second line of the above checks the boolean variable <code>k &lt; 10</code> and as long as this is <code>True</code> loops through the rest of the commands:</p>
 <div class="figure">
 <img src="./Images/W02-img02.png" alt="" /><p class="caption"></p>
@@ -208,17 +227,17 @@ while k &lt; 10:
 </div>
 <ol start="16" style="list-style-type: decimal">
 <li><p>The following code defines a very simple function (with no arguments):</p>
-<pre><code>def printhello():
-    print &quot;Hello&quot;</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> printhello():
+    <span class="kw">print</span> <span class="st">&quot;Hello&quot;</span></code></pre>
 <p>The name of the function is <code>PrintHello</code> and <code>def</code> is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:</p>
-<pre><code>printhello()</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">printhello()</code></pre>
 <p>We can modify our function to take an argument:</p>
-<pre><code>def printhello(name):
-    print &quot;Hello, &quot; + name</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> printhello(name):
+    <span class="kw">print</span> <span class="st">&quot;Hello, &quot;</span> + name</code></pre>
 <p><a href="http://www.youtube.com/watch?v=I_DXaP-mrRA">Video hint</a></p></li>
 <li><p>The following function makes use of the <code>return</code> call to actually return a result of the function:</p>
-<pre><code>def mydiv(a, b):
-    return a/b</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> mydiv(a, b):
+    <span class="kw">return</span> a/b</code></pre>
 <p><a href="http://www.youtube.com/watch?v=0cA2VNcc54A">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong>: Include a check in the <code>MyDiv</code> function to ensure that no division by 0 is attempted.</p>
 <p><a href="http://www.youtube.com/watch?v=KxdJVw-06KE">Video hint</a></p></li>
@@ -239,33 +258,33 @@ X_{n-1}+X_{n-2}\end{cases}\]</p>
 </ul>
 <ol start="22" style="list-style-type: decimal">
 <li><p>The following is an example of a single line comment in the middle of some code:</p>
-<pre><code>num = 2
-num += 3  # Add 3 to num
-print num</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python">num = <span class="dv">2</span>
+num += <span class="dv">3</span>  <span class="co"># Add 3 to num</span>
+<span class="kw">print</span> num</code></pre></li>
 <li><p>The following is an example of a multilined comment in the definition of a function:</p>
-<pre><code>def myfunc(a,b):
-&quot;&quot;&quot;
-This function calculates the ratio of two numbers raised to the sum of the two numbers.
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> myfunc(a,b):
+<span class="co">&quot;&quot;&quot;</span>
+<span class="co">This function calculates the ratio of two numbers raised to the sum of the two numbers.</span>
 
-Arguments:
-    a: the first number
-    b: the second number
+<span class="co">Arguments:</span>
+<span class="co">    a: the first number</span>
+<span class="co">    b: the second number</span>
 
-Output: (a / b) ** (a + b)
-&quot;&quot;&quot;
-    return (a / float(b)) ** (a + b)</code></pre></li>
+<span class="co">Output: (a / b) ** (a + b)</span>
+<span class="co">&quot;&quot;&quot;</span>
+    <span class="kw">return</span> (a / <span class="dt">float</span>(b)) ** (a + b)</code></pre></li>
 <li><p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is <a href="http://www.Python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
 <ul>
 <li>Variable and function names</li>
 </ul>
 <p>Use a descriptive <code>lowercase</code> (all lowercase characters) for variable and function names.</p>
 <p>Yes:</p>
-<pre><code>myvariable
+<pre class="sourceCode python"><code class="sourceCode python">myvariable
 sqrtvar
 var
 myfunction</code></pre>
 <p>No:</p>
-<pre><code>my_variable
+<pre class="sourceCode python"><code class="sourceCode python">my_variable
 SqrtVAR
 MyFunction
 MYFUNCTION</code></pre>
@@ -275,41 +294,41 @@ MYFUNCTION</code></pre>
 </ul>
 <p>Include a whitespace between operators (<code>+</code>, <code>-</code>, etc) and a whitespace after a comma <code>,</code>.</p>
 <p>Yes:</p>
-<pre><code>print 2 + 2
-myfunc(3, 4)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span>
+myfunc(<span class="dv">3</span>, <span class="dv">4</span>)</code></pre>
 <p>No:</p>
-<pre><code>print 2+2
-myfunc(3,4)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dv">2+2</span>
+myfunc(<span class="dv">3</span>,<span class="dv">4</span>)</code></pre>
 <p>Include 2 whitspaces before an inline comment <code>#</code> at the end of a line of code.</p>
 <p>Yes:</p>
-<pre><code># Just leave a space after the comment symbol if on a single line
-print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Just leave a space after the comment symbol if on a single line</span>
+<span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span>  <span class="co"># but if you comment at the end of a line leave 2 whitespaces.</span></code></pre>
 <p>No:</p>
-<pre><code>print 2 + 2 # So this is not enough space.</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span> <span class="co"># So this is not enough space.</span></code></pre>
 <p>Also include two blank lines before the definition of a function.</p>
 <p>Yes:</p>
-<pre><code>print 2 + 2
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span>
 
 
-def myfunc():
-    print 2 + 2</code></pre>
+<span class="kw">def</span> myfunc():
+    <span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span></code></pre>
 <p>No:</p>
-<pre><code>print 2 + 2
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span>
 
-def myfunc():
-    print 2 + 2</code></pre>
+<span class="kw">def</span> myfunc():
+    <span class="kw">print</span> <span class="dv">2</span> + <span class="dv">2</span></code></pre>
 <ul>
 <li>Comments</li>
 </ul>
 <p>Comment well and comment often. In particular use the following convention for functions:</p>
-<pre><code>afunc():
-&quot;&quot;&quot;
-Always start a function with a multiline comment to describe what it does.
+<pre class="sourceCode python"><code class="sourceCode python">afunc():
+<span class="co">&quot;&quot;&quot;</span>
+<span class="co">Always start a function with a multiline comment to describe what it does.</span>
 
-Arguments: List the arguments and what format they should be in.
+<span class="co">Arguments: List the arguments and what format they should be in.</span>
 
-Output: List the expected output of the function.
-&quot;&quot;&quot;</code></pre>
+<span class="co">Output: List the expected output of the function.</span>
+<span class="co">&quot;&quot;&quot;</span></code></pre>
 <p>As and when we see new topics on this course we will also discuss the corresponding conventions.</p>
 <p>Go back through your script and ensure that you have used the above convention.</p></li>
 </ol>

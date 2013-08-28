@@ -8,15 +8,21 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 1. Last week we saw how to define a function in Sage:
 
+    ~~~{.python}
     f(x) = x ^ 3 + 3 * x + sin(x)
+    ~~~
 
     To obtain the variables of a function we can use the `variables` method:
 
+    ~~~{.python}
     print f.variables()
+    ~~~
 
     Try this with a function of more than one variable:
 
+    ~~~{.python}
     f(x, y) = x * y + x ^ 2 + y ^ 2
+    ~~~
 
 2. In calculus the following definition of a limit is well know:
 
@@ -26,38 +32,52 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     First of all let us plot $f(x)$:
 
-        plot(f(x), x, .5, 10)
+    ~~~{.python}
+    plot(f(x), x, .5, 10)
+    ~~~
 
     The following code obtains $\lim_{x\to 1}f$:
 
-        f.limit(x=1)
+    ~~~{.python}
+    f.limit(x=1)
+    ~~~
 
     We can also obtain the same result using the `limit` method:
 
-        limit(f,x=1)
+    ~~~{.python}
+    limit(f,x=1)
+    ~~~
 
     Note that $f(1)=\lim_{x\to 1}f(x)$:
 
-        f(1)
+    ~~~{.python}
+    f(1)
+    ~~~
 
     This implies that $f$ is continuous at 1.
 
 3. **TICKABLE** Plot $f(x)=\frac{3x^2}{x^3+x-1}$ using the default options:
 
-        plot(f)
+    ~~~{.python}
+    plot(f)
+    ~~~
 
     We see that Sage is plotting extremely high values at the discontinuity due to a root of the denominator which seems to be around $x=.7$. We can plot our function either side of that point and combine them. We do this by creating plot objects:
 
-        p = plot(f, x, 0.8, 10)
-        type(p)
-        p += plot(f, x, -10, .6)
-        type(p)
-        p.show()
+    ~~~{.python}
+    p = plot(f, x, 0.8, 10)
+    type(p)
+    p += plot(f, x, -10, .6)
+    type(p)
+    p.show()
+    ~~~
 
     and identify (use the `solve` function or the `roots` method, and maybe the `denominator` method on $f$) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
 
-        limit(f, x=??, dir="plus")
-        limit(f, x=??, dir="minus")
+    ~~~{.python}
+    limit(f, x=??, dir="plus")
+    limit(f, x=??, dir="minus")
+    ~~~
 
     Note that in this case a non directional limit returns `infinity` this implies that a single limit does not exist.
 
@@ -70,12 +90,14 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     We can verify the first identity with the following Sage code for a particular example:
 
-        f(x) = exp(x)
-        g(x) = sin(x)
-        var('a')
-        L1 = limit(f(x) + g(x), x = a)
-        L2 = limit(f(x), x = a) + limit(g(x), x = a)
-        bool(L1 == L2)
+    ~~~{.python}
+    f(x) = exp(x)
+    g(x) = sin(x)
+    var('a')
+    L1 = limit(f(x) + g(x), x = a)
+    L2 = limit(f(x), x = a) + limit(g(x), x = a)
+    bool(L1 == L2)
+    ~~~
 
     Note that we use the `bool` class to convert the symbolic equation `L1==L2` to a boolean variable. Verify with some example functions the other two relationships above.
 
@@ -94,9 +116,11 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 7. Sage can be used to carry out symbolic differentiation. Experiment with the syntax below for other functions:
 
-        var('n')
-        f(x) = x ^ n
-        diff(f,x)
+    ~~~{.python}
+    n = var('n')
+    f(x) = x ^ n
+    diff(f,x)
+    ~~~
 
     Note that here everything is a symbolic variable!
 
@@ -114,50 +138,62 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 10. There are various rules for the calculation of limits:
 
-    2. $\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}$
+    1. $\frac{d}{dx}(u+v)=\frac{du}{dx}+\frac{dv}{dx}$
     2. $\frac{d}{dx}uv=v\frac{du}{dx}+u\frac{dv}{dx}$
     3. $\frac{d}{dx}\frac{u}{v}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}$
 
 
     We can verify the first identity with the following Sage code for a particular example:
 
-        f(x) = exp(x)
-        g(x) = sin(x)
-        D1 = diff(f(x) + g(x), x)
-        D2 = diff(f(x), x) + diff(g(x), x)
-        bool(D1 == D2)
+    ~~~{.python}
+    f(x) = exp(x)
+    g(x) = sin(x)
+    D1 = diff(f(x) + g(x), x)
+    D2 = diff(f(x), x) + diff(g(x), x)
+    bool(D1 == D2)
+    ~~~
 
     Note that we use the `bool` class to convert the symbolic equation `L1==L2` to a boolean variable. Verify with some example functions the other two relationships above.
 
 11. Sage can be used to carry out integration. Indefinite integrals can be computed as follows:
 
-        f(x) = x ^ 4
-        integrate(f, x)
+    ~~~{.python}
+    f(x) = x ^ 4
+    integrate(f, x)
+    ~~~
 
     the `integrate` method can also be used:
 
-        f.integrate(x)
+    ~~~{.python}
+    f.integrate(x)
+    ~~~
 
     To compute the definite integral, we simply include the start and end points as arguments:
 
-        integrate(f, x, 5, 12)
+    ~~~{.python}
+    integrate(f, x, 5, 12)
+    ~~~
 
 
 12. **TICKABLE** As before we can integrate fully symbolic expressions:
 
-        var('a')
-        f(x) = sin(a * x)
-        f.integrate(x)
+    ~~~{.python}
+    a = var('a')
+    f(x) = sin(a * x)
+    f.integrate(x)
+    ~~~
 
     Note that in some cases we might need to include certain assumptions. Try the following code and understand why things have not worked:
 
-        var('n')
-        f(x) = x ^ n
-        f.integrate(n)
+    ~~~{.python}
+    n = var('n')
+    f(x) = x ^ n
+    f.integrate(n)
+    ~~~
 
    Investigate the `assume()` command as well as the `forget()` command and work out the previous integral.
 
-13. A graphical intepretation of integration is that $\int_a^bf(x)dx$ gives the area under the curve of $f(c)$. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by $f(x)$. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.
+13. A graphical interpretation of integration is that $\int_a^bf(x)dx$ gives the area under the curve of $f(c)$. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by $f(x)$. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.
 
 15. **TICKABLE** The data file [W07-D01.txt](./Data/W07-D01.txt) contains 5 columns of data:
 
@@ -165,8 +201,8 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     For every row of data compute $\int_{A}^{B}ax^2+bx+c$ and obtain:
 
-        1. The mean value of the integral
-        2. The mean value of all integrals that are positive
-        3. The mean value of all integrals that are negative
+    1. The mean value of the integral
+    2. The mean value of all integrals that are positive
+    3. The mean value of all integrals that are negative
 
     To carry this out you will need to load a data file as before (see Python lab sheets) but to do so in the notebook you need to 'attach' a data file.

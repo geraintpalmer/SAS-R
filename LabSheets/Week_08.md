@@ -34,19 +34,27 @@
 
     The following defines `b` as a vector:
 
-        b = vector(0,154)
+    ~~~{.python}
+    b = vector(0,154)
+    ~~~
 
     The representation of coefficients is a well defined mathematical object called a `matrix`. The following code defines `A` as a matrix:
 
-        A = matrix([[10, 2], [2, -1]])
+    ~~~{.python}
+    A = matrix([[10, 2], [2, -1]])
+    ~~~
 
     If we define a vector `X` as a vector of the symbolic variables:
 
-        X = vector([x, y])
+    ~~~{.python}
+    X = vector([x, y])
+    ~~~
 
     We can **multiply** `A` by `X`:
 
-        A * X
+    ~~~{.python}
+    A * X
+    ~~~
 
     Verify that $X = (x_0, y_0)$ where $(x_0, y_0)$ is the solution to our system of equations (obtained in (1)).
 
@@ -60,7 +68,9 @@
 
     If we define `A` and `b` as in question 2 we can solve this equation quite simply using the `solve_right` or `solve_left` methods. The following obtains a solution to the equation $AX=b$:
 
-        A.solve_right(b)
+    ~~~{.python}
+    A.solve_right(b)
+    ~~~
 
     Note that `A\b` is shorthand for `A.solve_right`
 
@@ -82,12 +92,16 @@
 
     As an example create the following two matrices in Sage:
 
-        A = matrix([[1,2],[3,4]])
-        B = matrix([[7,8],[9,10]])
+    ~~~{.python}
+    A = matrix([[1,2],[3,4]])
+    B = matrix([[7,8],[9,10]])
+    ~~~
 
     Attempt to multiply these matrices by hand and carry out their multiplication in Sage:
 
-        A*B
+    ~~~{.python}
+    A * B
+    ~~~
 
     Repeat the exercise by multiplying the following pairs of matrices:
 
@@ -100,7 +114,9 @@
 
     The identity matrix of size $n\times n$ is denoted by $\mathbb{I}_n$. The following Sage code gives $\mathbb{I}_n$:
 
-        identify_matrix(4)
+    ~~~{.python}
+    identify_matrix(4)
+    ~~~
 
     Note also, that the previous exercise showed that we can sometimes find a matrix $B$ such that $AB=\mathbb{I}_n$. Finding such a matrix is refered to as 'invering' $A$ and if certain properties hold (you will see this in further details next semester) this matrix is denoted $A^{-1}$.
 
@@ -110,11 +126,15 @@
 
     In Sage we can obtain $A^{-1}$ (if it exists) with the following code:
 
-        A.inverse()
+    ~~~{.python}
+    A.inverse()
+    ~~~
 
     Thus another approach to solving $AX=b$ is:
 
-        A.inverse()*b
+    ~~~{.python}
+    A.inverse() * b
+    ~~~
 
     Use this approach to solve the systems of equations we have considered so far.
 
@@ -156,8 +176,10 @@ $$\left(\begin{array}{rr}
 
 7 **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
 
-        random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
-        random_matrix(QQ, 5) # Gives a random square matrix of size 5 in $\mathbb{Z}$
+    ~~~{.python}
+    random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in Z
+    random_matrix(QQ, 5) # Gives a random square matrix of size 5 in Z
+    ~~~
 
     Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
 

@@ -24,7 +24,7 @@ This website is very much work in progress with content for the 1st year program
 
 	[html (recommended)](./LabSheets/Week_05.html), [pdf](./LabSheets/Week_05.pdf), [docx](./LabSheets/Week_05.docx)
 
-5. Lab Sheets 5: Algebra, Series and Plots
+5. Lab Sheets 5: Algebra
 
 	[html (recommended)](./LabSheets/Week_06.html), [pdf](./LabSheets/Week_06.pdf), [docx](./LabSheets/Week_06.docx)
 
