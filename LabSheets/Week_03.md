@@ -1,6 +1,6 @@
 # Week 3 -  Data Structurs and Recurrence
 
-This lab sheet will introduce various data structures and also and important concept called 'recurrence'. After this session you will know how to:
+This lab sheet will introduce various data structures and also an important concept called 'recurrence'. After this session you will know how to:
 
 + Create and manipulate lists;
 + Create and manipulate dictionaries (hash tables);
@@ -15,7 +15,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 + Numeric variables;
 + Character variables;
 + Other lists;
-+ and various other things.
++ and various other 'things'.
 
 1. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
 
@@ -78,7 +78,14 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 7. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
 
-        badphonebook = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas", 10], ["Mike", 1], ["Matt", 4]]
+        badphonebook = [["Vince", 3],
+                        ["Zoe", 2],
+                        ["Julien", 6],
+                        ["Thomas", 10],
+                        ["Mike", 1],
+                        ["Matt", 4]]
+
+    (Note that you can write lists over multiple lines)
 
     To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
 
@@ -100,7 +107,14 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     This code creates the above phone book as a dictionary with the names as _keys_ and the numbers as their _values_:
 
-        goodphonebook = {"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
+        goodphonebook = {"Vince": 3,
+                         "Zoe": 2,
+                         "Julien": 6,
+                         "Thomas": 10,
+                         "Mike": 1,
+                         "Matt": 4}
+
+    (Note that you can write dictionaries over multiple lines)
 
     To query a dictionary we can use the `get` method:
 
@@ -129,7 +143,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
         for e in badphonebook:
             ...
 
-9. Iterating over values in a dictionary. Note that it is also possible to iterate over keys in a dictionary:
+9. Note that it is also possible to iterate over keys in a dictionary:
 
         for e in goodphonebook:
             print goodphonebook[e]
@@ -139,7 +153,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 10. **TICKABLE** All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).
 
-    To do this we need to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creats a) text file in 'write mode' (that's what the `w` is for) and write the number 1 to 10 to it:
+    To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the `w` is for) and write the number 1 to 10 to it:
 
         textfile = open('mytextfile.txt', 'w')
         for i in range(1, 11):
@@ -168,7 +182,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
         def isprime(n):
             return max([e % n for e in range(2, n)]) != 0
 
-    The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these files and prnit to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
+    The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
 
 13. There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.
 

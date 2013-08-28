@@ -1,6 +1,6 @@
 # Week 1 - Conditional Statements, flow control and functions
 
-This lab sheet will serve as a basic introduction to programming. After this session you will know the basic python syntax to carry out the following:
+This lab sheet will serve as a basic introduction to programming. After this session you will know the basic Python syntax to carry out the following:
 
 + Set up basic variables;
 + Write if statements (so called: 'Conditional statements');
@@ -28,7 +28,7 @@ When writing a program one makes use of an Integrated Development Environment: *
 + IDLE
 + Vim
 
-and many more. We will be using the simplest IDE available: IDLE which comes bundled with python (in your own time be sure to investigate others as it is a question of personal choice).
+and many more. We will be using the simplest Python IDE available: IDLE which comes bundled with Python (in your own time be sure to investigate others as it is a question of personal choice).
 
 1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code\text{ (as shown in Figure \ref{W02-S01})} and press `ENTER`:
 
@@ -48,7 +48,7 @@ and many more. We will be using the simplest IDE available: IDLE which comes bun
 
 ## Basic variables
 
-A value is one of the basic building blocks used by a program. Values may be of various types.
+A variable is one of the basic building blocks used by a program. Variables may be of various types.
 
 3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
 
@@ -63,7 +63,7 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
     [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
 
-4. We can carry out basic arithmetic operations using python. Take a look at the following:
+4. We can carry out basic arithmetic operations using Python. Take a look at the following:
 
         num = 2
         num = num +3
@@ -99,7 +99,7 @@ A value is one of the basic building blocks used by a program. Values may be of 
         print string[-1]
         print string[3:7]
 
-    We see that python indexes a string, starting at 0, we can also use negative values to start from the end.
+    We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.
 
         index = str1.index("string")
         print index
@@ -152,16 +152,16 @@ A value is one of the basic building blocks used by a program. Values may be of 
         if boolean:
             print "boolean is %s" % boolean
 
-    Try typying the above code but change `boolean` to `False`. **Note: in python, indentation is important! In all languages it is good practive, in python it is a requirement**.
+    Try typying the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement**.
 
     It is easy to create boolean variables using the following:
 
-    - `<`: strictly less than
-    - `>`: strictly greater than
-    - `<=`: less than or equal
-    - `>=`: greater than or equal
-    - `!=`: not equal
-    - `==`: equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
+    - `<` strictly less than
+    - `>` strictly greater than
+    - `<=` less than or equal
+    - `>=` greater than or equal
+    - `!=` not equal
+    - `==` equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
 
     It is also possible to give alternatives to an `if statement`:
 
@@ -186,7 +186,7 @@ A value is one of the basic building blocks used by a program. Values may be of 
 
 An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops "count controlled loops" and "event controlled loops".
 
-10. The `range()` function in python allows us to create a list of integers easily. **A list is a new type of variable that we will look at more closely next week**:
+10. The `range()` function in Python allows us to create a list of integers easily. **A list is a new type of variable that we will look at more closely next week**:
 
         print range(10)
 
@@ -198,7 +198,7 @@ An important type of programming instruction allows us to make a program repeat 
 
         print range(0,10,2)
 
-    Using `range()` we can use the basic `for` loop in python (a type of count controlled loop):
+    Using `range()` we can use the basic `for` loop in Python (a type of count controlled loop):
 
         for i in range(10):
             print i
@@ -225,7 +225,7 @@ An important type of programming instruction allows us to make a program repeat 
 
     [Video hint](http://www.youtube.com/watch?v=1PvEXo0l1NE)
 
-12. Event based loops are implemented in python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
+12. Event based loops are implemented in Python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
 
         k = 0
         while k < 10:
@@ -250,7 +250,7 @@ An important type of programming instruction allows us to make a program repeat 
 
     [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
 
-15. Take a look at the `random` python library (we will talk about libraries in detail later) and write some code that uses the `input` function to code a simple game:
+15. Take a look at the `random` Python library (we will talk about libraries in detail later) and write some code that uses the `input` function to code a simple game:
 
     - The program chooses a random integer;
     - The user tries to guess the integer;
@@ -269,7 +269,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
         def printhello():
             print "Hello"
 
-    The name of the function is `PrintHello` and `def` is the python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
+    The name of the function is `PrintHello` and `def` is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
 
         printhello()
 
@@ -308,7 +308,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
 When writing code it is **very important** to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.
 
-There are two ways of writing comments in python:
+There are two ways of writing comments in Python:
 
 - Use the `#` to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.
 - Use `"""` to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).
@@ -334,7 +334,7 @@ There are two ways of writing comments in python:
         """
             return (a / float(b)) ** (a + b)
 
-24. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for python is [PEP8](http://www.python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
+24. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is [PEP8](http://www.Python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
 
     - Variable and function names
 

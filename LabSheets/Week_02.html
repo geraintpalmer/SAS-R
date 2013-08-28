@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1 id="week-1---conditional-statements-flow-control-and-functions">Week 1 - Conditional Statements, flow control and functions</h1>
-<p>This lab sheet will serve as a basic introduction to programming. After this session you will know the basic python syntax to carry out the following:</p>
+<p>This lab sheet will serve as a basic introduction to programming. After this session you will know the basic Python syntax to carry out the following:</p>
 <ul>
 <li>Set up basic variables;</li>
 <li>Write if statements (so called: 'Conditional statements');</li>
@@ -34,7 +34,7 @@
 <li>IDLE</li>
 <li>Vim</li>
 </ul>
-<p>and many more. We will be using the simplest IDE available: IDLE which comes bundled with python (in your own time be sure to investigate others as it is a question of personal choice).</p>
+<p>and many more. We will be using the simplest Python IDE available: IDLE which comes bundled with Python (in your own time be sure to investigate others as it is a question of personal choice).</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong>: Open up IDLE and in the <strong>interpreter</strong> type the following code and press <code>ENTER</code>:</p>
 <pre><code>print &quot;Hello world&quot;</code></pre>
@@ -50,7 +50,7 @@
 <p>Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: <code>W02.py</code>).</p></li>
 </ol>
 <h2 id="basic-variables">Basic variables</h2>
-<p>A value is one of the basic building blocks used by a program. Values may be of various types.</p>
+<p>A variable is one of the basic building blocks used by a program. Variables may be of various types.</p>
 <ol start="3" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong>: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the <code>type</code> function.</p>
 <pre><code>num1 = 23
@@ -62,7 +62,7 @@ print type(num2)
 str1 = &quot;Hello world!&quot;
 print type(str1)</code></pre>
 <p><a href="http://www.youtube.com/watch?v=UFGJEG34qMk">Video hint</a></p></li>
-<li><p>We can carry out basic arithmetic operations using python. Take a look at the following:</p>
+<li><p>We can carry out basic arithmetic operations using Python. Take a look at the following:</p>
 <pre><code>num = 2
 num = num +3
 print num</code></pre>
@@ -89,7 +89,7 @@ print len(string)
 print string[0]
 print string[-1]
 print string[3:7]</code></pre>
-<p>We see that python indexes a string, starting at 0, we can also use negative values to start from the end.</p>
+<p>We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.</p>
 <pre><code>index = str1.index(&quot;string&quot;)
 print index
 print str1[index:index + len(&quot;string&quot;)]</code></pre>
@@ -127,15 +127,15 @@ notborn = &quot;the UK&quot;</code></pre>
 <pre><code>boolean = True
 if boolean:
     print &quot;boolean is %s&quot; % boolean</code></pre>
-<p>Try typying the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in python, indentation is important! In all languages it is good practive, in python it is a requirement</strong>.</p>
+<p>Try typying the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement</strong>.</p>
 <p>It is easy to create boolean variables using the following:</p>
 <ul>
-<li><code>&lt;</code>: strictly less than</li>
-<li><code>&gt;</code>: strictly greater than</li>
-<li><code>&lt;=</code>: less than or equal</li>
-<li><code>&gt;=</code>: greater than or equal</li>
-<li><code>!=</code>: not equal</li>
-<li><code>==</code>: equals <strong>Note: this is a test of equality as opposed to the basic <code>=</code> which is an assignment.</strong></li>
+<li><code>&lt;</code> strictly less than</li>
+<li><code>&gt;</code> strictly greater than</li>
+<li><code>&lt;=</code> less than or equal</li>
+<li><code>&gt;=</code> greater than or equal</li>
+<li><code>!=</code> not equal</li>
+<li><code>==</code> equals <strong>Note: this is a test of equality as opposed to the basic <code>=</code> which is an assignment.</strong></li>
 </ul>
 <p>It is also possible to give alternatives to an <code>if statement</code>:</p>
 <pre><code>num = 11
@@ -153,13 +153,13 @@ else:
 <h2 id="loops">Loops</h2>
 <p>An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops &quot;count controlled loops&quot; and &quot;event controlled loops&quot;.</p>
 <ol start="10" style="list-style-type: decimal">
-<li><p>The <code>range()</code> function in python allows us to create a list of integers easily. <strong>A list is a new type of variable that we will look at more closely next week</strong>:</p>
+<li><p>The <code>range()</code> function in Python allows us to create a list of integers easily. <strong>A list is a new type of variable that we will look at more closely next week</strong>:</p>
 <pre><code>print range(10)</code></pre>
 <p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
 <pre><code>print range(3,10)</code></pre>
 <p>We can also include 3 arguments:</p>
 <pre><code>print range(0,10,2)</code></pre>
-<p>Using <code>range()</code> we can use the basic <code>for</code> loop in python (a type of count controlled loop):</p>
+<p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
 <pre><code>for i in range(10):
     print i</code></pre>
 <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
@@ -177,7 +177,7 @@ print s</code></pre>
 <p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</p>
 <p><a href="http://www.youtube.com/watch?v=1PvEXo0l1NE">Video hint</a></p></li>
-<li><p>Event based loops are implemented in python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
+<li><p>Event based loops are implemented in Python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
 <pre><code>k = 0
 while k &lt; 10:
     print k
@@ -193,7 +193,7 @@ while k &lt; 10:
 <p>\[x_{n+1} = \frac{x_n+K/x_n}{2}\]</p>
 <p>approaches \(\sqrt{K}\) as \(n\) increases. Write some code to verify this to any given level of precision.</p>
 <p><a href="http://www.youtube.com/watch?v=bHv2vqPliL0">Video hint</a></p></li>
-<li><p>Take a look at the <code>random</code> python library (we will talk about libraries in detail later) and write some code that uses the <code>input</code> function to code a simple game:</p>
+<li><p>Take a look at the <code>random</code> Python library (we will talk about libraries in detail later) and write some code that uses the <code>input</code> function to code a simple game:</p>
 <ul>
 <li>The program chooses a random integer;</li>
 <li>The user tries to guess the integer;</li>
@@ -210,7 +210,7 @@ while k &lt; 10:
 <li><p>The following code defines a very simple function (with no arguments):</p>
 <pre><code>def printhello():
     print &quot;Hello&quot;</code></pre>
-<p>The name of the function is <code>PrintHello</code> and <code>def</code> is the python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:</p>
+<p>The name of the function is <code>PrintHello</code> and <code>def</code> is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:</p>
 <pre><code>printhello()</code></pre>
 <p>We can modify our function to take an argument:</p>
 <pre><code>def printhello(name):
@@ -232,7 +232,7 @@ X_{n-1}+X_{n-2}\end{cases}\]</p>
 </ol>
 <h2 id="writing-clear-code">Writing clear code</h2>
 <p>When writing code it is <strong>very important</strong> to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.</p>
-<p>There are two ways of writing comments in python:</p>
+<p>There are two ways of writing comments in Python:</p>
 <ul>
 <li>Use the <code>#</code> to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.</li>
 <li>Use <code>&quot;&quot;&quot;</code> to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).</li>
@@ -254,7 +254,7 @@ Arguments:
 Output: (a / b) ** (a + b)
 &quot;&quot;&quot;
     return (a / float(b)) ** (a + b)</code></pre></li>
-<li><p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for python is <a href="http://www.python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
+<li><p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is <a href="http://www.Python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
 <ul>
 <li>Variable and function names</li>
 </ul>
