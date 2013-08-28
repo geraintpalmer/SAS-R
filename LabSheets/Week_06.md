@@ -4,7 +4,7 @@ Now that we have a good knowledge of programming we can take a closer look at a 
 
 > Sage is a free open-source mathematics software system licensed under the GPL. It combines the power of many existing open-source packages into a common Python-based interface.
 
-Sage being an open-source program means that it is being developped by other mathematicians all over the world. It is also completely free (so you can download a copy on your own computer).
+Sage being an open-source program means that it is being developed by other mathematicians all over the world. It is also completely free (so you can download a copy on your own computer).
 
 Sage allows us to solves equations, differentiate expressions, plot graphs and do various other mathematical operations.
 
@@ -62,7 +62,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
     To do so we need to first declare symbolic variables:
 
-        var('y')
+        y = var('y')
 
     (We could also declare `x` but `x` is a default variable in Sage that is always declared). Once we have done that we can assign the above expression to a variable:
 
@@ -101,6 +101,17 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 9. **TICKABLE** Using Sage obtain the solution to the following equations:
 
     1. $x^2 = -1$
-    2. $x^2 - 53 x + 2 a == 0 $
-    3. $sin(x) =  .23$
-    4. $x^5 + 1/x - 53 x == 0 $ (Investigate the Sage function `find_root`)
+    2. $x^2 - 53 x + 2 a = 0 $
+    4. $sin(x) = x - 1$ (Investigate the Sage function `find_root`)
+    3. $x^5 + sin(x) - 2 * x = .5 $
+
+10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equation:
+
+    $$\begin{cases}
+    x + y = z\\
+    3 x - y = 0\\
+    y + z = 1
+    \end{cases}$$
+
+        y, z = var('y', 'z')
+        solve([x + y == z, 3*x - y == 0, y + z ==1], [x, y, z])

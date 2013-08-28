@@ -5,8 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="week-5---object-orientated-programming">Week 5 - Object Orientated Programming</h1>
@@ -21,11 +20,11 @@
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:</p>
 <div class="figure">
-<img src="./Images/W05-img01.png" />
+<img src="./Images/W05-img01.png" alt="" /><p class="caption"></p>
 </div>
 <p>The following image shows the various ideas that we will work through in this lab sheet (keep it in mind as we go through things).</p>
 <div class="figure">
-<img src="./Images/W05-img02.png" />
+<img src="./Images/W05-img02.png" alt="" /><p class="caption"></p>
 </div>
 <p>Here we will see how to create our own <strong>class</strong> (a type of object). The following code creates a class called <code>Student</code>:</p>
 <pre><code>class Student()
@@ -70,7 +69,7 @@ print vince.age
 
 vince.sex = &quot;M&quot;
 print vince.sex</code></pre></li>
-<li><p><strong>TICKABLE</strong> A quadratic is a mathematical expression of the form: <span class="math">\(a x ^ 2 + b x + c\)</span>. The following code creates a Quadratic class:</p>
+<li><p><strong>TICKABLE</strong> A quadratic is a mathematical expression of the form: \(a x ^ 2 + b x + c\). The following code creates a Quadratic class:</p>
 <pre><code>class Quadratic()
     a = 0
     b = 0
@@ -110,7 +109,7 @@ vince.haveabirthday()
 print vince.age
 vince.haveabirthday(28)
 print vince.age</code></pre></li>
-<li><p>There are a variety of 'special' methods to be defined no classes. The one we will consider here is the <code>__init__</code> method. This method is fun when an instance is created. The following code allows us to pass arguments to an instance of a class when it is <strong>initialised</strong> to set attributes.</p>
+<li><p>There are a variety of 'special' methods to be defined on classes. The one we will consider here is the <code>__init__</code> method. This method is run when an instance is created. The following code allows us to pass arguments to an instance of a class when it is <strong>initialised</strong> to set attributes.</p>
 <pre><code>class Student():
     def __init__(self, courses, age, sex):
         self.courses = courses
@@ -124,8 +123,8 @@ print vince.courses
 print vince.age
 print vince.sex</code></pre></li>
 <li><p><strong>TICKABLE</strong> Re visit the Quadratic class from earlier. Use the <code>__iter__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
-<p>Recall that the roots of <span class="math">\(ax^2 + bx + c\)</span> are given by:</p>
-<p><span class="math">\[x=\frac{-b\pm\sqrt{b^2-4a}}{2a}\]</span></p>
+<p>Recall that the roots of \(ax^2 + bx + c\) are given by:</p>
+<p>\[x=\frac{-b\pm\sqrt{b^2-4a}}{2a}\]</p>
 <p>Using this count how many of the instances in <a href="./Data/W05_D01.txt">W05_D01.csv</a> have real roots.</p></li>
 <li><p>The following dictionary contains course code - course name pairs:</p>
 <pre><code>coursedictionary = {1: &quot;Math&quot;,
@@ -138,26 +137,26 @@ print vince.sex</code></pre></li>
                     8: &quot;Geography&quot;}</code></pre>
 <p>The following list contains lists containing a student name as well as a list of the course codes on which they are enrolled.</p>
 <p><strong>Using object orientated programming</strong> obtain the number of students enrolled on each course as well as a dictionary containing students as keys and lists of enrolled courses as values.</p></li>
-<li><p>If rain drops were to fall <em>randomly</em> on a square of side length <span class="math">\(2r\)</span> the probability of the drops landing in an inscribed circle of radius <span class="math">\(r\)</span> would be given by:</p>
-<p><span class="math">\[P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}\]</span></p>
+<li><p>If rain drops were to fall <em>randomly</em> on a square of side length \(2r\) the probability of the drops landing in an inscribed circle of radius \(r\) would be given by:</p>
+<p>\[P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}\]</p>
 <div class="figure">
-<img src="./Images/W05-img03.png" />
+<img src="./Images/W05-img03.png" alt="{Inscribed circle}" /><p class="caption">{Inscribed circle}</p>
 </div>
-<p>Thus, if we can approximate <span class="math">\(P\)</span> then we can approximate <span class="math">\(\pi\)</span> as <span class="math">\(4P\)</span>. In this question we will write code to approximate <span class="math">\(P\)</span> using the random python library.</p>
+<p>Thus, if we can approximate \(P\) then we can approximate \(\pi\) as \(4P\). In this question we will write code to approximate \(P\) using the random python library.</p>
 <p>First of all, create a class for a rain drop (make sure you understand the code!):</p>
 <pre><code>class Drop():
     def __iter__(self, r=1):
         self.x = (.5 - random.random()) * 2 * r
         self.y = (.5 - random.random()) * 2 * r
         self.incircle = (self.y) ** 2 + (self.x) ** 2 &lt;= (r) ** 2</code></pre>
-<p>Note that the above uses the following equation for a circle centred at <span class="math">\((0,0)\)</span> of radius <span class="math">\(r\)</span>: <span class="math">\[x^2+y^2\leq r^2\]</span>.</p>
-<p>To approximate <span class="math">\(P\)</span> simply create N=1000 instances of Drops and count the number of those that are in the circle.</p>
-<p>Use this to approximate <span class="math">\(\pi\)</span>. What happens if you increase N?</p>
+<p>Note that the above uses the following equation for a circle centred at \((0,0)\) of radius \(r\): \[x^2+y^2\leq r^2\].</p>
+<p>To approximate \(P\) simply create N=1000 instances of Drops and count the number of those that are in the circle.</p>
+<p>Use this to approximate \(\pi\). What happens if you increase N?</p>
 <p>(This is an example of a technique called Monte Carlo Simulation.)</p></li>
 </ol>
 <h2 id="inheritance">Inheritance</h2>
 <ol start="10" style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> One final important concept of object orientated programming that we will consider is 'inheritabce'. This allows us create hierarchical structures of classes where some classes are derived from others.</p>
+<li><p><strong>TICKABLE</strong> One final important concept of object orientated programming that we will consider is 'inheritance'. This allows us create hierarchical structures of classes where some classes are derived from others.</p>
 <p>Recalling the Student class:</p>
 <pre><code>class Student():
     def __init__(self, courses, age, sex):

@@ -9,13 +9,13 @@ This lab sheet will introduce a very important concept of computer science: obje
 
 ## Classes
 
-1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:
+1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology\text{ as shown in Figure \ref{W05-img01}}:
 
-    ![](./Images/W05-img01.png)
+    ![\text{Cellular structure}\label{W05-img01}](./Images/W05-img01.png)
 
-    The following image shows the various ideas that we will work through in this lab sheet (keep it in mind as we go through things).
+    The following image\text{ (shown in Figure \ref{W05-img02})} shows the various ideas that we will work through in this lab sheet (keep it in mind as we go through things).
 
-    ![](./Images/W05-img02.png)
+    ![\text{Structure of OOP}\label{W05-img02}](./Images/W05-img02.png)
 
     Here we will see how to create our own **class** (a type of object). The following code creates a class called `Student`:
 
@@ -131,7 +131,7 @@ This lab sheet will introduce a very important concept of computer science: obje
         vince.haveabirthday(28)
         print vince.age
 
-6. There are a variety of 'special' methods to be defined no classes. The one we will consider here is the `__init__` method. This method is fun when an instance is created. The following code allows us to pass arguments to an instance of a class when it is **initialised** to set attributes.
+6. There are a variety of 'special' methods to be defined on classes. The one we will consider here is the `__init__` method. This method is run when an instance is created. The following code allows us to pass arguments to an instance of a class when it is **initialised** to set attributes.
 
         class Student():
             def __init__(self, courses, age, sex):
@@ -169,11 +169,11 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     **Using object orientated programming** obtain the number of students enrolled on each course as well as a dictionary containing students as keys and lists of enrolled courses as values.
 
-9. If rain drops were to fall _randomly_ on a square of side length $2r$ the probability of the drops landing in an inscribed circle of radius $r$ would be given by:
+9. If rain drops were to fall _randomly_ on a square of side length $2r$ the probability of the drops landing in an inscribed circle\text{ as shown in Figure \ref{W05-img03}} of radius $r$ would be given by:
 
     $$P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}$$
 
-    ![](./Images/W05-img03.png)
+    ![\{Inscribed circle}\label{W05-img03}](./Images/W05-img03.png)
 
     Thus, if we can approximate $P$ then we can approximate $\pi$ as $4P$. In this question we will write code to approximate $P$ using the random python library.
 
@@ -196,7 +196,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
 ## Inheritance
 
-10. **TICKABLE** One final important concept of object orientated programming that we will consider is 'inheritabce'. This allows us create hierarchical structures of classes where some classes are derived from others.
+10. **TICKABLE** One final important concept of object orientated programming that we will consider is 'inheritance'. This allows us create hierarchical structures of classes where some classes are derived from others.
 
     Recalling the Student class:
 
