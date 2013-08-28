@@ -5,17 +5,38 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="week-10---latex">Week 10 - LaTeX</h1>
 <p>Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).</p>
-<p>A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read:</p>
+<p>A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read.</p>
 <div class="figure">
-<img src="./Images/W10-img01.png" /><p class="caption"></p>
+<img src="./Images/W10-img01.png" alt="" /><p class="caption"></p>
 </div>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> Open up TeXworks which should open a blank document. Write the following LaTeX code:</p>
-<pre><code>\documentclass{article}
+<pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{article}
 
 \begin{document}
 Hello, world!
@@ -26,7 +47,7 @@ Hello, world!
 <li>Click on the green arrow (ctrl+T) to <em>compile</em> this document which creates a pdf corresponding to your code.</li>
 </ol>
 <div class="figure">
-<img src="./Screenshots/W10-S01.png" /><p class="caption"></p>
+<img src="./Screenshots/W10-S01.png" alt="" /><p class="caption"></p>
 </div>
 <p><strong>This is the most basic of LaTeX documents, everything else you do using LaTeX will be done through writing code in your TeX file.</strong></p>
 <p>There exists some good cloud based solutions to LaTeX. The advantages of these are usually:</p>
@@ -37,30 +58,30 @@ Hello, world!
 </ol>
 <p>The main disadvantage is that you need an internet collection to use it. A good such site is <a href="writelatex.org">www.writelatex.org</a>. The following link will create a new copy online of the above document: <a href=""></a>. Feel free to either use TeXworks or writelatex throughout your learning of LaTeX.</p></li>
 <li><p><strong>TICKABLE</strong> The following keys are used to type text in a source file:</p>
-<pre><code>a-z A-Z 0-9
+<pre class="sourceCode latex"><code class="sourceCode latex">a-z A-Z 0-9
 + = * / ( ) [ ]</code></pre>
 <p>The following punctuation marks:</p>
-<pre><code>&#39; ? ! : ` &#39; -</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">&#39; ? ! : ` &#39; -</code></pre>
 <p>Finally there are 13 special keys that are used in commands:</p>
-<pre><code># $ % &amp; ~ _ ^ \ { } @ &quot; |</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex"># $ <span class="co">% &amp; ~ _ ^ \ { } @ &quot; |</span></code></pre>
 <p>For example, <code>%</code> sign is used to denote comments in LaTeX (like <code>#</code> in Python or Sage). Modify your python script so that it looks like the following and compile it:</p>
-<pre><code>\documentclass{article} % There are various classes of documents, we will see a few later.
+<pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{article} <span class="co">% There are various classes of documents, we will see a few later.</span>
 
-\begin{document} % This line start the document
+\begin{document} <span class="co">% This line start the document</span>
 Hello, world!
 \end{document}</code></pre></li>
 <li><p><strong>TICKABLE</strong> In general all the code that comes before the <code>\begin{document}</code> statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:</p>
-<pre><code>\title{Choose a title}
+<pre class="sourceCode latex"><code class="sourceCode latex">\title{Choose a title}
 \author{V Knight}
 \date{\today}</code></pre>
 <p>If you compile your document this won't include the title in the output. To do so you need to include the following line (in the main body):</p>
-<pre><code>\maketitle</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">\maketitle</code></pre></li>
 <li><p><strong>TICKABLE</strong> The following will add an abstract to your document:</p>
-<pre><code>\begin{abstract}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{abstract}
 This document contains some basic LaTeX code that will be useful to me in the future.
 \end{abstract}</code></pre></li>
 <li><p><strong>TICKABLE</strong> There are various ways to obtain lists:</p>
-<pre><code>\begin{itemize}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{itemize}
     \item Unorderd item number 1
     \item Unorderd item number 2
 \end{itemize}
@@ -69,9 +90,9 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \item Ordered item number 1
     \item Ordered item number 2
 \end{enumerate}</code></pre>
-<p>Note that in ; indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in ; they are ended by specific end statements <code>\end{enumerate}</code>.</p></li>
+<p>Note that in LaTeX indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in LaTeX they are ended by specific end statements <code>\end{enumerate}</code>.</p></li>
 <li><p><strong>TICKABLE</strong> The following code creates a simple table (note the <code>c</code>, <code>r</code>, and <code>l</code> tags that indicate text alignment, experiment by changing these):</p>
-<pre><code>\begin{tabular}{|l|c|r|}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{tabular}{|l|c|r|}
     \hline
     Name &amp; Gender &amp; Start Time\\
     \hline
@@ -82,41 +103,41 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     Lisa &amp; Female &amp; 0730\\
     \hline
 \end{tabular}</code></pre>
-<p>In general in ; <code>\\</code> is used to denote a 'new line'.</p></li>
+<p>In general in LaTeX <code>\\</code> is used to denote a 'new line'.</p></li>
 <li><p><strong>TICKABLE</strong> To include a picture is straightforward in LaTeX. We make use of the <code>graphicx</code> package. In LaTeX packages are included in the preamble using <code>usepackage</code>. Include the following in the preamble:</p>
-<pre><code>\usepackage{graphicx}</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">\usepackage{graphicx}</code></pre>
 <p>The following code (somewhere in the body) will include a picture:</p>
-<pre><code>\includegraphics{path_to_picture}</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">\includegraphics{path_to_picture}</code></pre>
 <p>We can put this in the <code>center</code> environment to centre the picture:</p>
-<pre><code>\begin{center}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{center}
     \includegraphics{path_to_picture}
 \end{center}</code></pre>
 <p>(Images can be in jpg, png and pdf format when using the pdflatex compiler.)</p></li>
 <li><p><strong>TICKABLE</strong> Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required <strong>but</strong> it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is <code>tikz</code>. Include the following in the preamble:</p>
-<pre><code>\usepackage{tikz}</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">\usepackage{tikz}</code></pre>
 <p>Using this package we start a picture by setting up a tikzpicture environment.</p>
-<pre><code>\begin{tikzpicture}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{tikzpicture}
 
 \end{tikzpicture}</code></pre>
 <p>We then draw various shapes and connectors using the <code>\draw</code> command including coordinates:</p>
-<pre><code>\begin{tikzpicture}
-    \draw (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
-    \draw (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
-    \draw (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
-    \draw (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
-    \draw (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{tikzpicture}
+    \draw (0,0) -- (0,2); <span class="co">% This draws a line from (0,0) to (0,2)</span>
+    \draw (-1,1) -- (1,1); <span class="co">% This draws a line from (-1,1) to (1,1)</span>
+    \draw (0,0) -- (1,-1); <span class="co">% This draws a line from (0,0) to (1,-1)</span>
+    \draw (0,0) -- (-1,-1); <span class="co">% This draws a line from (0,0) to (-1,-1)</span>
+    \draw (0,2.5) circle(.5); <span class="co">% This draws a circle at (0,2.5) with radius .5</span>
 \end{tikzpicture}</code></pre>
 <p>This is very much touching the surface of what can be down with tikz. The simplest next step is to include various color and thickness options:</p>
-<pre><code>\begin{tikzpicture}
-    \draw [ultra thick] (0,0) -- (0,2); % This draws a line from (0,0) to (0,2)
-    \draw [thin, color=blue] (-1,1) -- (1,1); % This draws a line from (-1,1) to (1,1)
-    \draw [thick] (0,0) -- (1,-1); % This draws a line from (0,0) to (1,-1)
-    \draw [thick] (0,0) -- (-1,-1); % This draws a line from (0,0) to (-1,-1)
-    \draw [color=red, fill=green] (0,2.5) circle(.5); % This draws a circle at (0,2.5) with radius .5
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{tikzpicture}
+    \draw [ultra thick] (0,0) -- (0,2); <span class="co">% This draws a line from (0,0) to (0,2)</span>
+    \draw [thin, color=blue] (-1,1) -- (1,1); <span class="co">% This draws a line from (-1,1) to (1,1)</span>
+    \draw [thick] (0,0) -- (1,-1); <span class="co">% This draws a line from (0,0) to (1,-1)</span>
+    \draw [thick] (0,0) -- (-1,-1); <span class="co">% This draws a line from (0,0) to (-1,-1)</span>
+    \draw [color=red, fill=green] (0,2.5) circle(.5); <span class="co">% This draws a circle at (0,2.5) with radius .5</span>
 \end{tikzpicture}</code></pre>
 <p>A lot more can be done with tikz and there are a variety of great examples, tutorials online.</p></li>
 <li><p><strong>TICKABLE</strong> It is possible to organise parts of a document using 'sections':</p>
-<pre><code>\section{My first section}
+<pre class="sourceCode latex"><code class="sourceCode latex">\section{My first section}
 
 This is a section with a few subsections.
 
@@ -134,7 +155,7 @@ In this subsection I could solve the problem.
 
 etc...</code></pre>
 <p>We can include labels to sections so that we can refer to them:</p>
-<pre><code>\section{My first section}\label{first_section}
+<pre class="sourceCode latex"><code class="sourceCode latex">\section{My first section}\label{first_section}
 
 \section{My second section}\label{second_section}
 
@@ -148,39 +169,40 @@ In Section \ref{first_section} we saw that...</code></pre>
 <p>Note, labels can be using in conjunction with <code>tabular</code> (for tables) and <code>figure</code> (for images) environments.</p></li>
 <li><p><strong>TICKABLE</strong> To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.</p>
 <p>The following is the code for a book on LaTeX. Save the following in a separate file: <code>bibliography.bib</code>:</p>
-<pre><code>@book{Gratzer2007,
-author = {Gr\&quot;{a}tzer, George},
-publisher = {Springer},
-title = {{More Math Into LaTeX: A Guide for
+<pre class="sourceCode bibtex"><code class="sourceCode bibtex"><span class="kw">@book</span>{<span class="ot">Gratzer2007</span>,
+<span class="dt">author</span> = {Gr<span class="ch">\&quot;</span>{a}tzer, George},
+<span class="dt">publisher</span> = {Springer},
+<span class="dt">title</span> = {{More Math Into LaTeX: A Guide for
 Documentation and Presentation}},
-year = {2007}
+<span class="dt">year</span> = {2007}
 }</code></pre>
 <p>We can then reference the 'key' (for the above it is Gratzer2007) for any document in the bibliography file using the following:</p>
-<pre><code>A very helpful reference for LaTeX is \cite{Gratzer2007}.</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">A very helpful reference for LaTeX is \cite{Gratzer2007}.</code></pre>
+<p>Note that there are a variety of tools that will give you bibtex code for any given reference (Google Scholar, Zotero, Mendeley etc...).</p>
 <p>We need to however include a pointer towards the bibliography, at the end of the document include:</p>
-
-
+<pre class="sourceCode latex"><code class="sourceCode latex">\bibliographystyle{plain}
+\bibliography{bibliography.bib}</code></pre>
 <p>We now need to compile a document twice (as above to find all internal references for sections, figure etc...) <strong>and then</strong> we compile the bibliography with <code>bibtex</code> and then we need to compile one last time to match the bibliography items with the citations.</p>
 <div class="figure">
-<img src="./Images/W10-img02.png" /><p class="caption"></p>
+<img src="./Images/W10-img02.png" alt="" /><p class="caption"></p>
 </div>
 <p>If you are using writelatex then this happens automatically.</p></li>
 <li><p><strong>TICKABLE</strong> Typesetting mathematics is LaTeX's strength. Add the following to your document:</p>
-<pre><code>Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).</code></pre></li>
 <li><p><strong>TICKABLE</strong> The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:</p>
-<pre><code>$$\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$</code></pre></li>
+<p>\[\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\]</p></li>
 <li><p><strong>TICKABLE</strong> Mathematics can also be included in equations and referred to as for sections, pictures etc:</p>
-<pre><code>\begin{equation}\label{my_first_equation}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{equation}\label{my_first_equation}
 e=mc^2
 \end{equation}
 
 In equation (\ref{my_first_equation}) we have a very well known relationship!</code></pre></li>
 <li><p><strong>TICKABLE</strong> To include text within mathematics we can use the <code>text</code> command from the <code>amsmath</code> package:</p>
-<pre><code>$$x^2 = 1 \text{ implies} x=\pm1$$</code></pre>
+<pre class="sourceCode latex"><code class="sourceCode latex">$$x^2 = 1 \text{ implies} x=\pm1$$</code></pre>
 <p>(be sure to include <code>usepackage{amsmath}</code> in the preamble.)</p>
 <p>Another command that does this is <code>mbox</code> which does not require the amsmath package.</p></li>
 <li><p><strong>TICKABLE</strong> Arithmetic operators are quite simple in LaTeX. Try the following:</p>
-<pre><code>\begin{itemize}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{itemize}
     \item $a+b$
     \item $a-b$
     \item $-a$
@@ -192,35 +214,35 @@ In equation (\ref{my_first_equation}) we have a very well known relationship!</c
     \item $\frac{a}{b}$
 \end{itemize}</code></pre></li>
 <li><p><strong>TICKABLE</strong> Experiment with the following to see how to obtain integrals in LaTeX:</p>
-<pre><code>$$\int_{0}^{\pi}x^2\,dx$$</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">$$\int_{0}^{\pi}x^2\,dx$$</code></pre></li>
 <li><p><strong>TICKABLE</strong> The following code gives a 3 by 2 matrix:</p>
-<pre><code>$$\begin{pmatrix}
+<pre class="sourceCode latex"><code class="sourceCode latex">$$\begin{pmatrix}
 a&amp;b\\
 c&amp;d\\
 e&amp;f\\
 \end{pmatrix}$$</code></pre>
 <p>Experiment with <code>\begin{matrix}</code> and <code>\begin{vmatrix}</code>.</p></li>
 <li><p><strong>TICKABLE</strong> It is possible to create aligned mathematics using:</p>
-<pre><code>\begin{align}
-    (x+h)^2-x^2&amp;=x^2+2xh+h^2-x^2\nonumber\\
-    &amp;=2xh+h^2\nonumber\\
-    &amp;=h(2x+h)\nonumber
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{align}
+    (x+h)^2-x^2 &amp; =x^2+2xh+h^2-x^2 \nonumber\\
+                &amp; =2xh+h^2 \nonumber\\
+                &amp; =h(2x+h) \nonumber
 \end{align}</code></pre>
 <p>Annotated text can also be added:</p>
-<pre><code>\begin{align}
-    (x+h)^2-x^2&amp;=x^2+2xh+h^2-x^2&amp;&amp;\text{(by distributivity)}\\
-    &amp;=2xh+h^2&amp;&amp;\text{(by subtraction)}\\
-    &amp;=h(2x+h)&amp;&amp;\text{(by factorisation)}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{align}
+    (x+h)^2-x^2 &amp; = x^2+2xh+h^2-x^2 &amp;&amp; \text{(by distributivity)}\\
+                &amp; = 2xh+h^2         &amp;&amp; \text{(by subtraction)}\\
+                &amp; = h(2x+h)         &amp;&amp; \text{(by factorisation)}
 \end{align}</code></pre></li>
 <li><p><strong>TICKABLE</strong> Finally we can create partitioned statements:</p>
-<pre><code>$$
+<pre class="sourceCode latex"><code class="sourceCode latex">$$
 1+(-1)^n=\begin{cases}
-            0,&amp; \text{if $n$ odd}\\
-            2,&amp; \text{if $n$ even}
-         \end{cases}
+            0, &amp; \text{if $n$ odd}\\
+            2, &amp; \text{if $n$ even}
+            \end{cases}
 $$</code></pre></li>
 <li><p><strong>TICKABLE</strong> It is possible to create high quality presentation in LaTeX. To do this we use the <code>beamer</code> document class:</p>
-<pre><code>\documentclass{beamer}
+<pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{beamer}
 \begin{document}
 
 \frame{This is my first slide.}
@@ -229,7 +251,7 @@ $$</code></pre></li>
 
 \end{document}</code></pre>
 <p>Try one of the following themes in the preamble of your document to change the look of your slides.</p>
-<pre><code>\usetheme{default}
+<pre class="sourceCode latex"><code class="sourceCode latex">\usetheme{default}
 \usetheme{Boadilla}
 \usetheme{Madrid}
 \usetheme{Montpellier}
@@ -240,11 +262,11 @@ $$</code></pre></li>
 \usetheme{Berkeley}</code></pre></li>
 <li><p><strong>TICKABLE</strong> Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the <code>frame</code> environment. There are however a few particularities:</p>
 <p>To make a title, you need to use the <code>\titlepage</code> instead of the <code>\maketitle</code> command:</p>
-<pre><code>\begin{frame}
+<pre class="sourceCode latex"><code class="sourceCode latex">\begin{frame}
     \titlepage
 \end{frame}</code></pre>
 <p>We can also have frame titles and sections as before in a Beamer document:</p>
-<pre><code>\frame{\frametitle{Overview}
+<pre class="sourceCode latex"><code class="sourceCode latex">\frame{\frametitle{Overview}
     \tableofcontents
 }
 

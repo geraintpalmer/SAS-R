@@ -174,11 +174,11 @@ $$\left(\begin{array}{rr}
 
     For every matrix in this list and the original list obtain the result of the `det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
 
-7 **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
+7. **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
 
     ~~~{.python}
     random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in Z
-    random_matrix(QQ, 5) # Gives a random square matrix of size 5 in Z
+    random_matrix(QQ, 5) # Gives a random square matrix of size 5 in Q
     ~~~
 
     Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).

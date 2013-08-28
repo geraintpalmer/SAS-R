@@ -5,6 +5,26 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; }
+code > span.dt { color: #204a87; }
+code > span.dv { color: #0000cf; }
+code > span.bn { color: #0000cf; }
+code > span.fl { color: #0000cf; }
+code > span.ch { color: #4e9a06; }
+code > span.st { color: #4e9a06; }
+code > span.co { color: #8f5902; font-style: italic; }
+code > span.ot { color: #8f5902; }
+code > span.al { color: #ef2929; }
+code > span.fu { color: #000000; }
+code > span.er { font-weight: bold; }
+  </style>
   <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
@@ -17,21 +37,21 @@
 </ul>
 <ol style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> The general syntax for solving a differential equation of the form \(f(x, y)== g(x, y)\) is shown below:</p>
-<pre><code>desolve(f(x, y) == g(x, y), y)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">desolve(f(x, y) == g(x, y), y)</code></pre>
 <p>Try out the following code which solves the differential equation: \(\frac{dy}{dx}=y\).</p>
-<pre><code>y = function(&#39;y&#39;, x)
+<pre class="sourceCode python"><code class="sourceCode python">y = function(<span class="st">&#39;y&#39;</span>, x)
 desolve(diff(y, x) == y, y)</code></pre>
 <p>Note that that there is no need to specify the independent variable (\(x\)). The following code solves the general form of the above equation: \(\frac{dy}{dx}=ky\) for some \(k\in\mathbb{R}\).</p>
-<pre><code>var(&#39;k&#39;)
+<pre class="sourceCode python"><code class="sourceCode python">k = var(<span class="st">&#39;k&#39;</span>)
 desolve(diff(y, x) == k * y, y, ivar=x)</code></pre></li>
 <li><p>Once we have the solution to a differential equation it is very straightforward to plot it:</p>
-<pre><code>y = function(&#39;y&#39;, x)
+<pre class="sourceCode python"><code class="sourceCode python">y = function(<span class="st">&#39;y&#39;</span>, x)
 soln(x) = desolve(diff(y, x) == y, y)
-plot(soln(x).subs(c=2), x, -10, 10)</code></pre>
+plot(soln(x).subs(c=<span class="dv">2</span>), x, -<span class="dv">10</span>, <span class="dv">10</span>)</code></pre>
 <p>Note that we are here seeing the <code>subs</code> method which allows us to substitue a given value in an expression. It is very easy to get a whole family of plots:</p>
-<pre><code>p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(10[0]), legend_label=&quot;c=0&quot;)
-for C in range(1, 11):
-    p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(10[C], legend_label=&quot;c=%s&quot; % C)
+<pre class="sourceCode python"><code class="sourceCode python">p = plot(soln(x).subs(c=<span class="dv">0</span>), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">10</span>[<span class="dv">0</span>]), legend_label=<span class="st">&quot;c=0&quot;</span>)
+<span class="kw">for</span> C in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):
+    p += plot(soln(x).subs(c=C), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">10</span>[C], legend_label=<span class="st">&quot;c=</span><span class="ot">%s</span><span class="st">&quot;</span> % C)
 p.show()</code></pre>
 <p>We are here making use of the Sage <code>rainbow</code> function which gives a list of colors that can be used in the plot <code>color</code> option. We are also making use of the <code>legend_label</code> option.</p>
 <p>Obtain a similar plot for the solution to the differential equation: \(\frac{dy}{dx} = xy\).</p></li>
@@ -50,17 +70,17 @@ p.show()</code></pre>
 \frac{dx}{dt} = 1 - y\\
 \frac{dy}{dt} = 1 - x
 \end{cases}\]</p></li>
-<li><p>A battle between two armies can be modelled with the following set of differrential equations:</p>
+<li><p>A battle between two armies can be modelled with the following set of differential equations:</p>
 <p>\[\begin{cases}
 \frac{dx}{dt} = - y\\
 \frac{dy}{dt} = -5x
-\end{case}\]</p>
+\end{cases}\]</p>
 <p>Obtain the solution to this system of equations. Assuming that \(x(0)=100\) and that \(y(0)=700\) plot the two solutions of the equations, which army wins this battle? When does the battle end?</p></li>
 <li><p><strong>TICKABLE</strong> The love story between Romero and Juliet can be modelled with the following system of differential equations:</p>
 <p>\[\begin{cases}
 \frac{dx}{dt} = -y\\
 \frac{dy}{dt} = .7x
-\end{case}\]</p>
+\end{cases}\]</p>
 <p>Where \(x(t)\) represents the affection of Juliet towards Romeo and \(y(t)\) the affection of Romeo towards Juliet (negative affection represents 'hatred').</p>
 <p>Solve this system of equation and assuming that Romeo is initially attracted to Juliet (\(x(0)=1\)) but that Juliet is initially indifferent to Romeo (\(y(0)=0\)) at time \(t=0\) are indifferent to each other describe the long term relationship between the two characters.</p>
 <p>Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.</p></li>

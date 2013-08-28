@@ -8,30 +8,40 @@ Sage can be used to solve differential equations. Often complex systems can be m
 
 1. **TICKABLE** The general syntax for solving a differential equation of the form $f(x, y)== g(x, y)$ is shown below:
 
-        desolve(f(x, y) == g(x, y), y)
+    ~~~{.python}
+    desolve(f(x, y) == g(x, y), y)
+    ~~~
 
     Try out the following code which solves the differential equation: $\frac{dy}{dx}=y$.
 
-        y = function('y', x)
-        desolve(diff(y, x) == y, y)
+    ~~~{.python}
+    y = function('y', x)
+    desolve(diff(y, x) == y, y)
+    ~~~
 
     Note that that there is no need to specify the independent variable ($x$). The following code solves the general form of the above equation: $\frac{dy}{dx}=ky$ for some $k\in\mathbb{R}$.
 
-        var('k')
-        desolve(diff(y, x) == k * y, y, ivar=x)
+    ~~~{.python}
+    k = var('k')
+    desolve(diff(y, x) == k * y, y, ivar=x)
+    ~~~
 
 2. Once we have the solution to a differential equation it is very straightforward to plot it:
 
-        y = function('y', x)
-        soln(x) = desolve(diff(y, x) == y, y)
-        plot(soln(x).subs(c=2), x, -10, 10)
+    ~~~{.python}
+    y = function('y', x)
+    soln(x) = desolve(diff(y, x) == y, y)
+    plot(soln(x).subs(c=2), x, -10, 10)
+    ~~~
 
     Note that we are here seeing the `subs` method which allows us to substitue a given value in an expression. It is very easy to get a whole family of plots:
 
-        p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(10[0]), legend_label="c=0")
-        for C in range(1, 11):
-            p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(10[C], legend_label="c=%s" % C)
-        p.show()
+    ~~~{.python}
+    p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(10[0]), legend_label="c=0")
+    for C in range(1, 11):
+        p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(10[C], legend_label="c=%s" % C)
+    p.show()
+    ~~~
 
     We are here making use of the Sage `rainbow` function which gives a list of colors that can be used in the plot `color` option. We are also making use of the `legend_label` option.
 
@@ -57,12 +67,12 @@ Sage can be used to solve differential equations. Often complex systems can be m
     \frac{dy}{dt} = 1 - x
     \end{cases}$$
 
-6. A battle between two armies can be modelled with the following set of differrential equations:
+6. A battle between two armies can be modelled with the following set of differential equations:
 
     $$\begin{cases}
     \frac{dx}{dt} = - y\\
     \frac{dy}{dt} = -5x
-    \end{case}$$
+    \end{cases}$$
 
     Obtain the solution to this system of equations. Assuming that $x(0)=100$ and that $y(0)=700$ plot the two solutions of the equations, which army wins this battle? When does the battle end?
 
@@ -71,7 +81,7 @@ Sage can be used to solve differential equations. Often complex systems can be m
     $$\begin{cases}
     \frac{dx}{dt} = -y\\
     \frac{dy}{dt} = .7x
-    \end{case}$$
+    \end{cases}$$
 
     Where $x(t)$ represents the affection of Juliet towards Romeo and $y(t)$ the affection of Romeo towards Juliet (negative affection represents 'hatred').
 
