@@ -25,7 +25,7 @@ code > span.al { color: #ef2929; }
 code > span.fu { color: #000000; }
 code > span.er { font-weight: bold; }
   </style>
-  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="week-9---differential-equations">Week 9 - Differential Equations</h1>
@@ -85,7 +85,7 @@ p.show()</code></pre>
 <p>Solve this system of equation and assuming that Romeo is initially attracted to Juliet (\(x(0)=1\)) but that Juliet is initially indifferent to Romeo (\(y(0)=0\)) at time \(t=0\) are indifferent to each other describe the long term relationship between the two characters.</p>
 <p>Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.</p></li>
 <li><p><strong>TICKABLE</strong> Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:</p>
-<p>\[\frac{dy}{dx} + y(y-1)==\abs(x-2)\]</p>
+<p>\[\frac{dy}{dx} + y(y-1)==|(x-2)|\]</p>
 <p>In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the <code>desolve_rk4</code> function and obtain a solution for the above equation given that \(y(0)=1\) for \(x&lt;100\). Obtain a plot of the numerical solution</p></li>
 <li><p>Write a function that will attempt to solve a differential equation analytically and if such a solution is not obtainable will solve it numerically. To do this you should investigate the python functions: <code>try</code> and <code>except</code>.</p></li>
 </ol>
