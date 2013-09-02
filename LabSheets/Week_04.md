@@ -63,7 +63,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     ~~~{.python}
     def insertionsort(data):
-        firstunsorted = 0
+        firstUnsorted = 0
         while firstUnsorted < len(data) - 1:
             indexOfSmallest = firstUnsorted
             index = firstUnsorted + 1
