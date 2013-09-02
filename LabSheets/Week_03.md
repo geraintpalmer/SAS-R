@@ -55,7 +55,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     This makes use of the range function that we see in the previous lab sheet.
 
-3. **TICKABLE** Create a list with the first 1300 integers divisible by 3.
+3. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
 
 4. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
 
