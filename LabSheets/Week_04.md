@@ -7,7 +7,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 ## Sorting Algorithms
 
-1. **TICKABLE** The following code create a list of digits from 1 to 31.
+1. **TICKABLE** The following code creates a list of digits from 1 to 31.
 
     ~~~{.python}
     l = range(1, 31)
