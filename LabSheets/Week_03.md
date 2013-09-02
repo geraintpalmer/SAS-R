@@ -182,7 +182,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 10. **TICKABLE** All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).
 
-    To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the `w` is for) and write the number 1 to 10 to it:
+    To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the `w` is for) and writes the numbers 1 to 10 to it:
 
     ~~~{.python}
     textfile = open('mytextfile.txt', 'w')

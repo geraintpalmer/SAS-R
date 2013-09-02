@@ -67,7 +67,7 @@ clist = alist + blist
         mylist.append(i)
 <span class="kw">print</span> mylist</code></pre>
 <p>This makes use of the range function that we see in the previous lab sheet.</p></li>
-<li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3. How many such integers are there?</p></li>
+<li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3. What is the largest such number?</p></li>
 <li><p>There is another way of creating/manipulating lists in python called list <em>comprehensions</em>. The following code give the squares of the first 10 integers:</p>
 <pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)]
 <span class="kw">print</span> squares</code></pre>
@@ -144,7 +144,7 @@ goodphonebook[<span class="st">&#39;Brayden&#39;</span>] = <span class="dv">12</
 <h2 id="writing-data-to-files">Writing data to files</h2>
 <ol start="10" style="list-style-type: decimal">
 <li><p><strong>TICKABLE</strong> All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).</p>
-<p>To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the <code>w</code> is for) and write the number 1 to 10 to it:</p>
+<p>To do this we need Python to open a file (usually a basic text file), write strings to the text file and then close the file. The following code opens (or creates a) text file in 'write mode' (that's what the <code>w</code> is for) and writes the numbers 1 to 10 to it:</p>
 <pre class="sourceCode python"><code class="sourceCode python">textfile = <span class="dt">open</span>(<span class="st">&#39;mytextfile.txt&#39;</span>, <span class="st">&#39;w&#39;</span>)
 <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):
     textfile.write(<span class="st">&quot;</span><span class="ot">%s</span><span class="ch">\n</span><span class="st">&quot;</span> % i)
