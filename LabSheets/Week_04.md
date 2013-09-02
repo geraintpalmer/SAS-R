@@ -19,7 +19,6 @@ This lab sheet will introduce two algorithms from computer science. After this s
     ~~~{.python}
     import random
     jumbledlist = random.sample(range(1, 31), 20)
-    random.shuffle(jumbledlist)
     print jumbledlist
     ~~~
 
