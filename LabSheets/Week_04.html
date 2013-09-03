@@ -131,10 +131,10 @@ IF FOUND:
 ELSE:
     RETURN &quot;ITEM NOT IN LIST&quot;</code></pre>
 <p>Write some python code for this and use it to find the index of following numbers:</p>
-<pre class="sourceCode python"><code class="sourceCode python">targets = [<span class="dv">12</span>,
-           <span class="dv">593</span>,
-           <span class="dv">9402</span>,
-           <span class="dv">4320</span>]</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">targets = [<span class="dv">19</span>,
+           <span class="dv">592</span>,
+           <span class="dv">9507</span>,
+           <span class="dv">4221</span>]</code></pre>
 <p>in the file <a href="./Data/W04_D01.txt">W04_D01.txt</a>.</p></li>
 <li><p><strong>TICKABLE</strong> Another searching algorithm is called 'binary search'. In this algorithm, a <strong>sorted</strong> list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.</p>
 <div class="figure">
@@ -157,6 +157,7 @@ WHILE FIRST &lt;= LAST AND NOT FOUND:
 RETURN MIDDLE</code></pre>
 <p>Here is some python code that carries out the above algorithm, experiment with it and include comments:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> binarysearch(data, item):
+    data.sort()
     first = <span class="dv">0</span>
     last = <span class="dt">len</span>(data) - <span class="dv">1</span>
     found = <span class="ot">False</span>

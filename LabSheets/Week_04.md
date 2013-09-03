@@ -153,10 +153,10 @@ This lab sheet will introduce two algorithms from computer science. After this s
     Write some python code for this and use it to find the index of following numbers:
 
     ~~~{.python}
-    targets = [12,
-               593,
-               9402,
-               4320]
+    targets = [19,
+               592,
+               9507,
+               4221]
     ~~~
 
     in the file [W04_D01.txt](./Data/W04_D01.txt).
@@ -186,6 +186,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     ~~~{.python}
     def binarysearch(data, item):
+        data.sort()
         first = 0
         last = len(data) - 1
         found = False
