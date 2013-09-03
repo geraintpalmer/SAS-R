@@ -131,7 +131,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 ## Searching algorithms
 
-5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Search this file for the index of 2536. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
+5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
 
 6. One searching algorithm we will look at is called "sequential search". This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question **should** be at.
 
@@ -160,7 +160,6 @@ This lab sheet will introduce two algorithms from computer science. After this s
     ~~~
 
     in the file [W04_D01.txt](./Data/W04_D01.txt).
-
 
 7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search\text{ as shown in Figure \ref{W04-img03}}.
 
