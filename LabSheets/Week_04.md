@@ -114,7 +114,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
     ~~~{.python}
     def testfunction():
-        return 10 ** 1000
+        k = 0
+        while k < 10 ** 6:
+            k += 1
     ~~~
 
     We see how long a single run of this testfunction takes using our timing function:

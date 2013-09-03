@@ -104,7 +104,9 @@ WHILE INDEX &gt;  FIRSTUNSORTED + 1:
     <span class="kw">return</span> time.time() - starttime</code></pre>
 <p>This uses the <code>eval</code> function which runs any string of code. We can define the following test function:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> testfunction():
-    <span class="kw">return</span> <span class="dv">10</span> ** <span class="dv">1000</span></code></pre>
+    k = <span class="dv">0</span>
+    <span class="kw">while</span> k &lt; <span class="dv">10</span> ** <span class="dv">6</span>:
+        k += <span class="dv">1</span></code></pre>
 <p>We see how long a single run of this testfunction takes using our timing function:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> timing(<span class="st">&quot;testfunction&quot;</span>)</code></pre>
 <p>Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.</p>
