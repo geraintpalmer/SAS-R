@@ -35,13 +35,12 @@ code > span.er { font-weight: bold; }
 </ul>
 <h2 id="sorting-algorithms">Sorting Algorithms</h2>
 <ol style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> The following code create a list of digits from 1 to 31.</p>
+<li><p><strong>TICKABLE</strong> The following code creates a list of digits from 1 to 31.</p>
 <pre class="sourceCode python"><code class="sourceCode python">l = <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">31</span>)
 <span class="kw">print</span> l</code></pre>
 <p>If we import the random library we can pick a random sample of the list and <code>shuffle</code> this it (do not worry too much about this):</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> random
 jumbledlist = random.sample(<span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">31</span>), <span class="dv">20</span>)
-random.shuffle(jumbledlist)
 <span class="kw">print</span> jumbledlist</code></pre>
 <p>Using pen and paper, sort the above list, attempting to understand a general approach to doing this. Write a function <code>jumbledlist</code> that takes as arguments: <code>maximumnumber</code> and <code>sizeoflist</code> which returns a jumbled list of integersas above.</p></li>
 <li><p><strong>TICKABLE</strong> Python has a built in method on lists to sort them: <code>sort()</code>:</p>
@@ -71,7 +70,7 @@ WHILE NOT SORTED:
     SET FIRSTUNSORTED TO FIRSTUNSORTED + 1</code></pre>
 <p>Here is some python code that carries out the above algorithm, experiment with it and include comments:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> insertionsort(data):
-    firstunsorted = <span class="dv">0</span>
+    firstUnsorted = <span class="dv">0</span>
     <span class="kw">while</span> firstUnsorted &lt; <span class="dt">len</span>(data) - <span class="dv">1</span>:
         indexOfSmallest = firstUnsorted
         index = firstUnsorted + <span class="dv">1</span>
@@ -99,7 +98,7 @@ WHILE INDEX &gt;  FIRSTUNSORTED + 1:
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> time
 <span class="kw">print</span> time.time()</code></pre>
 <p>Using this we can write a function that will evaluate how long it takes to run a particular function:</p>
-<pre class="sourceCode python"><code class="sourceCode python">timing(string):
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> timing(string):
     starttime = time.time()
     <span class="dt">eval</span>(string)
     <span class="kw">return</span> time.time() - starttime</code></pre>

@@ -104,7 +104,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
     Using this we can write a function that will evaluate how long it takes to run a particular function:
 
     ~~~{.python}
-    timing(string):
+    def timing(string):
         starttime = time.time()
         eval(string)
         return time.time() - starttime
