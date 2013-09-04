@@ -175,13 +175,13 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 <p>Thus, if we can approximate \(P\) then we can approximate \(\pi\) as \(4P\). In this question we will write code to approximate \(P\) using the random python library.</p>
 <p>First of all, create a class for a rain drop (make sure you understand the code!):</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Drop():
-    <span class="kw">def</span> <span class="ot">__iter__</span>(<span class="ot">self</span>, r=<span class="dv">1</span>):
+    <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, r=<span class="dv">1</span>):
         <span class="ot">self</span>.x = (.<span class="dv">5</span> - random.random()) * <span class="dv">2</span> * r
         <span class="ot">self</span>.y = (.<span class="dv">5</span> - random.random()) * <span class="dv">2</span> * r
         <span class="ot">self</span>.incircle = (<span class="ot">self</span>.y) ** <span class="dv">2</span> + (<span class="ot">self</span>.x) ** <span class="dv">2</span> &lt;= (r) ** <span class="dv">2</span></code></pre>
 <p>Note that the above uses the following equation for a circle centred at \((0,0)\) of radius \(r\): \[x^2+y^2\leq r^2\].</p>
 <p>To approximate \(P\) simply create N=1000 instances of Drops and count the number of those that are in the circle.</p>
-<p>Use this to approximate \(\pi\). What happens if you increase N?</p>
+<p>Use this to approximate \(\pi\). What happens if you increase N? What value of N seems to give \(\pi\) correct to 3 decimal places?</p>
 <p>(This is an example of a technique called Monte Carlo Simulation.)</p></li>
 </ol>
 <h2 id="inheritance">Inheritance</h2>

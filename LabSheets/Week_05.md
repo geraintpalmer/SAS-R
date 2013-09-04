@@ -222,7 +222,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     ~~~{.python}
     class Drop():
-        def __iter__(self, r=1):
+        def __init__(self, r=1):
             self.x = (.5 - random.random()) * 2 * r
             self.y = (.5 - random.random()) * 2 * r
             self.incircle = (self.y) ** 2 + (self.x) ** 2 <= (r) ** 2
@@ -233,7 +233,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     To approximate $P$ simply create N=1000 instances of Drops and count the number of those that are in the circle.
 
-    Use this to approximate $\pi$. What happens if you increase N?
+    Use this to approximate $\pi$. What happens if you increase N? What value of N seems to give $\pi$ correct to 3 decimal places?
 
     (This is an example of a technique called Monte Carlo Simulation.)
 
