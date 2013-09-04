@@ -171,7 +171,7 @@ This lab sheet will introduce a very important concept of computer science: obje
     print vince.sex
     ~~~
 
-7. **TICKABLE** Re visit the Quadratic class from earlier. Use the `__iter__` method and also create a method to return `True` if the quadratic has real roots.
+7. **TICKABLE** Re visit the Quadratic class from earlier. Use the `__init__` method and also create a method to return `True` if the quadratic has real roots.
 
     Recall that the roots of $ax^2 + bx + c$ are given by:
 
