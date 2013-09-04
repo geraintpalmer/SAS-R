@@ -250,7 +250,7 @@ This lab sheet will introduce a very important concept of computer science: obje
             self.courses = courses
             self.age = age
             self.sex = sex
-        def haveabirthday(self, numberofbirthdays):
+        def haveabirthday(self, numberofbirthdays=1):
             self.age += numberofbirthdays
     ~~~
 
@@ -258,7 +258,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     ~~~{.python}
     class MathStudent(Student):
-        favouriteclass = "Mathematics"
+        self.favouriteclass = "Mathematics"
     ~~~
 
     Instances of this inherited class will inherit attributes and methods from the original class:
@@ -268,7 +268,7 @@ This lab sheet will introduce a very important concept of computer science: obje
     print becky.courses
     print becky.age
     print becky.favouriteclass
-    beck.haveabirthday()
+    becky.haveabirthday()
     print becky.age
     ~~~
 

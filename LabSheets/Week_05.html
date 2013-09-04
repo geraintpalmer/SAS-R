@@ -193,17 +193,17 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
         <span class="ot">self</span>.courses = courses
         <span class="ot">self</span>.age = age
         <span class="ot">self</span>.sex = sex
-    <span class="kw">def</span> haveabirthday(<span class="ot">self</span>, numberofbirthdays):
+    <span class="kw">def</span> haveabirthday(<span class="ot">self</span>, numberofbirthdays=<span class="dv">1</span>):
         <span class="ot">self</span>.age += numberofbirthdays</code></pre>
 <p>We can create a new class from the Student class:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> MathStudent(Student):
-    favouriteclass = <span class="st">&quot;Mathematics&quot;</span></code></pre>
+    <span class="ot">self</span>.favouriteclass = <span class="st">&quot;Mathematics&quot;</span></code></pre>
 <p>Instances of this inherited class will inherit attributes and methods from the original class:</p>
 <pre class="sourceCode python"><code class="sourceCode python">becky = MathStudent([<span class="st">&#39;Mathematics&#39;</span>, <span class="st">&#39;Biology&#39;</span>], <span class="dv">29</span>, <span class="st">&#39;Female&#39;</span>)
 <span class="kw">print</span> becky.courses
 <span class="kw">print</span> becky.age
 <span class="kw">print</span> becky.favouriteclass
-beck.haveabirthday()
+becky.haveabirthday()
 <span class="kw">print</span> becky.age</code></pre>
 <p>Create another inherited class (from student) giving it a specific method.</p></li>
 </ol>
