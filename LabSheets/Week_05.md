@@ -40,9 +40,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     **Note the convention used here: classes use a capitalized name.**
 
-2. Discussing other classes
-
-    We have already used various types of python objects:
+2. We have already used various types of python objects:
 
     - Lists;
     - Dictionaries;
