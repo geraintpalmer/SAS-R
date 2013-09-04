@@ -175,7 +175,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     Recall that the roots of $ax^2 + bx + c$ are given by:
 
-    $$x=\frac{-b\pm\sqrt{b^2-4a}}{2a}$$
+    $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
     Using this count how many of the instances in [W05_D01.csv](./Data/W05_D01.txt) have real roots.
 

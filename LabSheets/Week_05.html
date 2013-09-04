@@ -55,8 +55,7 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> vince</code></pre>
 <p>Create another instance of the Student object and view it.</p>
 <p><strong>Note the convention used here: classes use a capitalized name.</strong></p></li>
-<li><p>Discussing other classes</p>
-<p>We have already used various types of python objects:</p>
+<li><p>We have already used various types of python objects:</p>
 <ul>
 <li>Lists;</li>
 <li>Dictionaries;</li>
@@ -142,9 +141,9 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 <span class="kw">print</span> vince.courses
 <span class="kw">print</span> vince.age
 <span class="kw">print</span> vince.sex</code></pre></li>
-<li><p><strong>TICKABLE</strong> Re visit the Quadratic class from earlier. Use the <code>__iter__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
+<li><p><strong>TICKABLE</strong> Re visit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
 <p>Recall that the roots of \(ax^2 + bx + c\) are given by:</p>
-<p>\[x=\frac{-b\pm\sqrt{b^2-4a}}{2a}\]</p>
+<p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</p>
 <p>Using this count how many of the instances in <a href="./Data/W05_D01.txt">W05_D01.csv</a> have real roots.</p></li>
 <li><p>The following dictionary contains course code - course name pairs:</p>
 <pre class="sourceCode python"><code class="sourceCode python">coursedictionary = {<span class="dv">1</span>: <span class="st">&quot;Math&quot;</span>,
