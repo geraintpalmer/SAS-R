@@ -192,7 +192,21 @@ This lab sheet will introduce a very important concept of computer science: obje
                         8: "Geography"}
     ~~~
 
-    The following list contains lists containing a student name as well as a list of the course codes on which they are enrolled.
+    The following list contains lists containing a student name as well as a list of the course codes on which they are enrolled:
+
+    ~~~{.python}
+    Student_List = [["Adam", [1, 2, 5]],
+                    ["Zoe", [4, 3, 2]],
+                    ["Ben", [7]],
+                    ["Thomas", []],
+                    ["Meryl", [2, 3]],
+                    ["James", [6, 7, 2]],
+                    ["Leanne", []],
+                    ["Angelico", [1]],
+                    ["Izabela", [1, 2, 3, 4, 5]],
+                    ["Lisa", [1, 8]],
+                    ["Penny", [1, 2, 3]]]
+    ~~~
 
     **Using object orientated programming** obtain the number of students enrolled on each course as well as a dictionary containing students as keys and lists of enrolled courses as values.
 
