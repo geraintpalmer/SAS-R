@@ -12,7 +12,7 @@ This website is very much work in progress with content for the 1st year program
 
 	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
 
-2. Lab Sheets 2:  Data Structurs and Recurrence
+2. Lab Sheets 2:  Data Structurs and Recursion
 
 	[html (recommended)](./LabSheets/Week_03.html), [pdf](./LabSheets/Week_03.pdf), [docx](./LabSheets/Week_03.docx)
 
