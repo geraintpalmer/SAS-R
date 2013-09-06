@@ -1,4 +1,4 @@
-# Week 3 -  Data Structurs and Recurrence
+# Week 3 -  Data Structurs and Recursion
 
 This lab sheet will introduce various data structures and also an important concept called 'recurrence'. After this session you will know how to:
 
@@ -225,9 +225,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
 13. There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.
 
-## Recurrence
+## Recursion
 
-14. **TICKABLE** Recurrence is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
+14. **TICKABLE** Recursion is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
 
     $$X_n=\begin{cases}
     1,& n=1\\
@@ -254,8 +254,6 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     ~~~{.python}
     def iterX(n):
-        if n == 1:
-            return 1
         r = 1
         for i in range(n - 1):
             r *= 2
