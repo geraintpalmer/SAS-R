@@ -42,7 +42,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     sqrt(-53.)
     ~~~
 
-4. **TICKABLE** Obtain an exact form for $\sum_{i=0}^5\frac{1}{\sqrt{i}}$. Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
+4. **TICKABLE** Obtain an exact form for $\sum_{i=1}^5\frac{1}{\sqrt{i}}$. Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
 5. Sage can also be used to obtain prime factors of numbers:
 
     ~~~{.python}
