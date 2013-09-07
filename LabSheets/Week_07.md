@@ -33,19 +33,26 @@ Using Sage we can carry out various operations from Calculus. This week we will 
     First of all let us plot $f(x)$:
 
     ~~~{.python}
-    plot(f(x), x, .5, 10)
+    plot(f(x), x, 1, 10)
     ~~~
 
     The following code obtains $\lim_{x\to 1}f$:
 
     ~~~{.python}
-    f.limit(x=1)
+    limit(f,x=1)
+    ~~~
+
+    The following code obtains $\lim_{x\to \infty}f$:
+
+    ~~~{.python}
+    limit(f,x=oo)
     ~~~
 
     We can also obtain the same result using the `limit` method:
 
     ~~~{.python}
-    limit(f,x=1)
+    f.limit(x=1)
+    f.limit(x=oo)
     ~~~
 
     Note that $f(1)=\lim_{x\to 1}f(x)$:
@@ -72,7 +79,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
     p.show()
     ~~~
 
-    and identify (use the `solve` function or the `roots` method, and maybe the `denominator` method on $f$) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
+    Identify (use the `solve` function or the `roots` method, and maybe the `denominator` method on $f$) $\alpha$: the root of the denominator of $f$. Obtain $\lim_{x\to\alpha +}f(x)$ and $\lim_{x\to\alpha -}f(x)$. Directions of limits can be obtained using the following code:
 
     ~~~{.python}
     limit(f, x=??, dir="plus")

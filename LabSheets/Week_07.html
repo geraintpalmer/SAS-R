@@ -48,11 +48,14 @@ code > span.er { font-weight: bold; }
 </blockquote>
 <p>Let us calculate the limit of \(f(x) = \frac{3x^2}{x^3+x-1}\) as \(x\to 1\).</p>
 <p>First of all let us plot \(f(x)\):</p>
-<pre class="sourceCode python"><code class="sourceCode python">plot(f(x), x, .<span class="dv">5</span>, <span class="dv">10</span>)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">plot(f(x), x, <span class="dv">1</span>, <span class="dv">10</span>)</code></pre>
 <p>The following code obtains \(\lim_{x\to 1}f\):</p>
-<pre class="sourceCode python"><code class="sourceCode python">f.limit(x=<span class="dv">1</span>)</code></pre>
-<p>We can also obtain the same result using the <code>limit</code> method:</p>
 <pre class="sourceCode python"><code class="sourceCode python">limit(f,x=<span class="dv">1</span>)</code></pre>
+<p>The following code obtains \(\lim_{x\to \infty}f\):</p>
+<pre class="sourceCode python"><code class="sourceCode python">limit(f,x=oo)</code></pre>
+<p>We can also obtain the same result using the <code>limit</code> method:</p>
+<pre class="sourceCode python"><code class="sourceCode python">f.limit(x=<span class="dv">1</span>)
+f.limit(x=oo)</code></pre>
 <p>Note that \(f(1)=\lim_{x\to 1}f(x)\):</p>
 <pre class="sourceCode python"><code class="sourceCode python">f(<span class="dv">1</span>)</code></pre>
 <p>This implies that \(f\) is continuous at 1.</p></li>
@@ -64,7 +67,7 @@ code > span.er { font-weight: bold; }
 p += plot(f, x, -<span class="dv">10</span>, .<span class="dv">6</span>)
 <span class="dt">type</span>(p)
 p.show()</code></pre>
-<p>and identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on \(f\)) \(\alpha\): the root of the denominator of \(f\). Obtain \(\lim_{x\to\alpha +}f(x)\) and \(\lim_{x\to\alpha -}f(x)\). Directions of limits can be obtained using the following code:</p>
+<p>Identify (use the <code>solve</code> function or the <code>roots</code> method, and maybe the <code>denominator</code> method on \(f\)) \(\alpha\): the root of the denominator of \(f\). Obtain \(\lim_{x\to\alpha +}f(x)\) and \(\lim_{x\to\alpha -}f(x)\). Directions of limits can be obtained using the following code:</p>
 <pre class="sourceCode python"><code class="sourceCode python">limit(f, x=??, <span class="dt">dir</span>=<span class="st">&quot;plus&quot;</span>)
 limit(f, x=??, <span class="dt">dir</span>=<span class="st">&quot;minus&quot;</span>)</code></pre>
 <p>Note that in this case a non directional limit returns <code>infinity</code> this implies that a single limit does not exist.</p></li>
