@@ -195,7 +195,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
     ~~~{.python}
     n = var('n')
     f(x) = x ^ n
-    f.integrate(n)
+    f.integrate(x)
     ~~~
 
    Investigate the `assume()` command as well as the `forget()` command and work out the previous integral.
