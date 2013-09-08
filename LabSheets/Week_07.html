@@ -87,8 +87,8 @@ L2 = limit(f(x), x = a) + limit(g(x), x = a)
 <p>Note that we use the <code>bool</code> class to convert the symbolic equation <code>L1==L2</code> to a boolean variable. Verify with some example functions the other two relationships above.</p></li>
 <li><p><strong>TICKABLE</strong> The point of this question is to investigate \(\lim_{x\to 0}\frac{sin(x)}{x}\). Using Sage:</p>
 <ol style="list-style-type: decimal">
-<li>Obtain the values of \(|sin(x)-x|\) for 1000 values of \(x&lt;.05\).</li>
-<li>Plot the above points, what does this indicate as to the value of the limit?</li>
+<li>Obtain the values of \(|sin(x)-x|\) for 1000 values of \(x&lt;.05\) (you might find the sage <code>srange</code> function helpful).</li>
+<li>Plot the above points, what does this indicate as to the value of the limit (investigate the <code>list_plot</code> sage function)?</li>
 <li>Compute the limit in question using Sage.</li>
 </ol></li>
 <li><p>The point of this question is to investigate \(\lim_{x\to 0}(1+x)^{1/x}\). Using Sage:</p>

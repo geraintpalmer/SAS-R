@@ -110,8 +110,8 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 5. **TICKABLE** The point of this question is to investigate $\lim_{x\to 0}\frac{sin(x)}{x}$. Using Sage:
 
-    1. Obtain the values of $|sin(x)-x|$ for 1000 values of $x<.05$.
-    2. Plot the above points, what does this indicate as to the value of the limit?
+    1. Obtain the values of $|sin(x)-x|$ for 1000 values of $x<.05$ (you might find the sage `srange` function helpful).
+    2. Plot the above points, what does this indicate as to the value of the limit (investigate the `list_plot` sage function)?
     3. Compute the limit in question using Sage.
 
 6. The point of this question is to investigate $\lim_{x\to 0}(1+x)^{1/x}$. Using Sage:
