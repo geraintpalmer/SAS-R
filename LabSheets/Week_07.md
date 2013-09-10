@@ -202,7 +202,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 13. A graphical interpretation of integration is that $\int_a^bf(x)dx$ gives the area under the curve of $f(c)$. Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by $f(x)$. Do some work on Riemmann integration and use sage to see how the approximation converges to the actual value of the integral as the number of rectangles taken increases.
 
-15. **TICKABLE** The data file [W07-D01.txt](./Data/W07-D01.txt) contains 5 columns of data:
+15. **TICKABLE** The data file [W07_D01.txt](./Data/W07_D01.txt) contains 5 columns of data:
 
     $$a,b,c,A,B$$
 
