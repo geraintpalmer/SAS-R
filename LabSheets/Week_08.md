@@ -162,9 +162,9 @@ $$\left(\begin{array}{rr}
 \end{array}\right)
 $$
 $$\left(\begin{array}{rrr}
--2 & 0 & 1 \\
-0 & -1 & 0 \\
-0 & 0 & 1
+2 & -2 & 1 \\
+6 & -1 & 1 \\
+12 & -2 & 2
 \end{array}\right)
 $$
 $$\left(\begin{array}{rr}
