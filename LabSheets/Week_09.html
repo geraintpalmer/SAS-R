@@ -49,9 +49,9 @@ desolve(diff(y, x) == k * y, y, ivar=x)</code></pre></li>
 soln(x) = desolve(diff(y, x) == y, y)
 plot(soln(x).subs(c=<span class="dv">2</span>), x, -<span class="dv">10</span>, <span class="dv">10</span>)</code></pre>
 <p>Note that we are here seeing the <code>subs</code> method which allows us to substitue a given value in an expression. It is very easy to get a whole family of plots:</p>
-<pre class="sourceCode python"><code class="sourceCode python">p = plot(soln(x).subs(c=<span class="dv">0</span>), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">10</span>[<span class="dv">0</span>]), legend_label=<span class="st">&quot;c=0&quot;</span>)
+<pre class="sourceCode python"><code class="sourceCode python">p = plot(soln(x).subs(c=<span class="dv">0</span>), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">11</span>)[<span class="dv">0</span>], legend_label=<span class="st">&quot;c=0&quot;</span>)
 <span class="kw">for</span> C in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):
-    p += plot(soln(x).subs(c=C), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">10</span>[C], legend_label=<span class="st">&quot;c=</span><span class="ot">%s</span><span class="st">&quot;</span> % C)
+    p += plot(soln(x).subs(c=C), x, -<span class="dv">10</span>, <span class="dv">10</span>, color=rainbow(<span class="dv">11</span>)[C], legend_label=<span class="st">&quot;c=</span><span class="ot">%s</span><span class="st">&quot;</span> % C)
 p.show()</code></pre>
 <p>We are here making use of the Sage <code>rainbow</code> function which gives a list of colors that can be used in the plot <code>color</code> option. We are also making use of the <code>legend_label</code> option.</p>
 <p>Obtain a similar plot for the solution to the differential equation: \(\frac{dy}{dx} = xy\).</p></li>
@@ -62,8 +62,8 @@ p.show()</code></pre>
 <ol style="list-style-type: decimal">
 <li>\(\frac{dy}{dx}+4y=5e^x\), (\(y(0)=3\))</li>
 <li>\(\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)\), (\(y(0)=4\))</li>
-<li>\(\frac{d^2y}{dx^2}-y=\sin(5x)\), (\(y(3)=1\))</li>
-<li>\(\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(t)\), (\(y(1)=2\))</li>
+<li>\(\frac{d^2y}{dx^2}-y=\sin(5x)\), (\(y(3)=1, y&#39;(3)=0\))</li>
+<li>\(\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(x)\), (\(y(1)=2, y&#39;(1)=72\))</li>
 </ol></li>
 <li><p>Systems of differential equations often arise and can also be solved using Sage. Take a look at the <code>desolve_system</code> function and solve the following system of differential equations:</p>
 <p>\[\begin{cases}
@@ -87,7 +87,6 @@ p.show()</code></pre>
 <li><p><strong>TICKABLE</strong> Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:</p>
 <p>\[\frac{dy}{dx} + y(y-1)==|(x-2)|\]</p>
 <p>In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the <code>desolve_rk4</code> function and obtain a solution for the above equation given that \(y(0)=1\) for \(x&lt;100\). Obtain a plot of the numerical solution</p></li>
-<li><p>Write a function that will attempt to solve a differential equation analytically and if such a solution is not obtainable will solve it numerically. To do this you should investigate the python functions: <code>try</code> and <code>except</code>.</p></li>
 </ol>
 </body>
 </html>

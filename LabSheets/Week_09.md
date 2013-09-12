@@ -37,9 +37,9 @@ Sage can be used to solve differential equations. Often complex systems can be m
     Note that we are here seeing the `subs` method which allows us to substitue a given value in an expression. It is very easy to get a whole family of plots:
 
     ~~~{.python}
-    p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(10[0]), legend_label="c=0")
+    p = plot(soln(x).subs(c=0), x, -10, 10, color=rainbow(11)[0], legend_label="c=0")
     for C in range(1, 11):
-        p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(10[C], legend_label="c=%s" % C)
+        p += plot(soln(x).subs(c=C), x, -10, 10, color=rainbow(11)[C], legend_label="c=%s" % C)
     p.show()
     ~~~
 
@@ -57,8 +57,8 @@ Sage can be used to solve differential equations. Often complex systems can be m
 
     1. $\frac{dy}{dx}+4y=5e^x$, ($y(0)=3$)
     2. $\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)$, ($y(0)=4$)
-    3. $\frac{d^2y}{dx^2}-y=\sin(5x)$, ($y(3)=1$)
-    4. $\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(t)$, ($y(1)=2$)
+    3. $\frac{d^2y}{dx^2}-y=\sin(5x)$, ($y(3)=1, y'(3)=0$)
+    4. $\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(x)$, ($y(1)=2, y'(1)=72$)
 
 5. Systems of differential equations often arise and can also be solved using Sage. Take a look at the `desolve_system` function and solve the following system of differential equations:
 
@@ -94,5 +94,3 @@ Sage can be used to solve differential equations. Often complex systems can be m
     $$\frac{dy}{dx} + y(y-1)==|(x-2)|$$
 
     In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the `desolve_rk4` function and obtain a solution for the above equation given that $y(0)=1$ for $x<100$. Obtain a plot of the numerical solution
-
-9. Write a function that will attempt to solve a differential equation analytically and if such a solution is not obtainable will solve it numerically. To do this you should investigate the python functions: `try` and `except`.
