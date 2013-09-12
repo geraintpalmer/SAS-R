@@ -198,8 +198,8 @@ $$\left(\begin{array}{rr}
 
         A, B, C, D
 
-    Where $A$ is the number of the original data set, $B$ and $C$ are the solutions to the system of equation in question: $B=x, C=y$. $D$ is the 'norm of the solution vector': $D=\sqrt{C^2+B^2}$. Write the data to file in such a way as it is sorted by $D$ (attempt to do this without the inbuilt `sort` method).
+    Where $A$ is the number of the original data set, $B$ and $C$ are the solutions to the system of equation in question: $B=x, C=y$. $D$ is the 'norm of the solution vector': $D=\sqrt{C^2+B^2}$.
 
-    If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist? What is the mean value of $D$?
+    If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist?
 
 8. The file [W08_D02.txt](./Data/W08_D02.txt) contains 20 rows and 20 columns of numbers. This file represents a matrix. Invert the matrix, what is it's determinant? What is the determinant of it's inverse?
