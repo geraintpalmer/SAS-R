@@ -202,4 +202,4 @@ $$\left(\begin{array}{rr}
 
     If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist?
 
-8. The file [W08_D02.txt](./Data/W08_D02.txt) contains 20 rows and 20 columns of numbers. This file represents a matrix. Invert the matrix, what is it's determinant? What is the determinant of it's inverse?
+8. The file [W08_D02.txt](./Data/W08_D02.txt) contains 50 rows and 50 columns of numbers. This file represents a matrix. Invert the matrix, what is it's determinant? What is the determinant of it's inverse? Investigate the `dimensions` and `plot` methods on matrices.
