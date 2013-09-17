@@ -43,6 +43,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print clist[index:index + 2]
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=7FbYcOOB64c)
+
 2. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
 
     ~~~{.python}
@@ -55,7 +57,11 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     This makes use of the range function that we see in the previous lab sheet.
 
+    [Video hint](http://www.youtube.com/watch?v=DWiHBdf5mQI)
+
 3. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
+
+    [Video hint](http://www.youtube.com/watch?v=7KxOxWC3h78)
 
 4. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
 
@@ -71,6 +77,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print squares
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=8WXIY18RJiY)
+
 5. **TICKABLE** By creating a function and using list comprehensions, create a list of $f(n)$ for all integers $n\leq 100$ where $f(n)$ is given below:
 
     $$f(n) = \begin{cases}
@@ -78,6 +86,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
        n ^ 2 + 1,& \text{ if $n$ is divisible by }4\\
        n - 1,& \text{otherwise}
     \end{cases}$$
+
+    [Video hint](http://www.youtube.com/watch?v=cr_QV3fF-Ls)
 
 6. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
 
@@ -87,6 +97,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print min(alist)
     print len(alist)
     ~~~
+
+    [Video hint](http://www.youtube.com/watch?v=JslPoHRe3kk)
 
 ## Dictionaries in Python
 
@@ -162,6 +174,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
 
+    [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
+
 8. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
 
     ~~~{.python}
@@ -170,12 +184,16 @@ Lists are a particular object in Python that hold ordered collection of other ob
         ...
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=ZZv2sB57BgA)
+
 9. Note that it is also possible to iterate over keys in a dictionary:
 
     ~~~{.python}
     for e in goodphonebook:
         print goodphonebook[e]
     ~~~
+
+    [Video hint](http://www.youtube.com/watch?v=cZWwJgvRbBE)
 
 
 ## Writing data to files
@@ -214,6 +232,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
     data = [int(e) for e in data[:-1]]
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+
 12. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
 
     ~~~{.python}
@@ -223,7 +244,11 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).
 
+    [Video hint](http://www.youtube.com/watch?v=Tbv0s_GEJ1I)
+
 13. There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.
+
+    [Video hint](http://www.youtube.com/watch?v=jQ9aDyBWCXI)
 
 ## Recursion
 
@@ -274,6 +299,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
     Note that this approach is much more closely related to the actual definition of what we are trying to compute. \text{The basic idea behind recursion is shown in Figure \ref{W03_img01}.} In general we will always either be considering a _base_ case or a case than can be reduced.
 
     ![\text{Basic idea behind recursion}\label{W03_img01}](./Images/W03-img03.png)
+
+    [Video hint](http://www.youtube.com/watch?v=EYPT4Ykx5IU)
 
 15. **TICKABLE** Program two functions that return $n!$ in both an iterative approach and a recursive approach.
 
