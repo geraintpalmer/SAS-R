@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
@@ -56,7 +57,8 @@ Hello, world!
 <li>Often possible to have multiple authors collaborating on a document <strong>at the same time</strong>;</li>
 <li>Your files are always available to you.</li>
 </ol>
-<p>The main disadvantage is that you need an internet collection to use it. A good such site is <a href="writelatex.org">www.writelatex.org</a>. The following link will create a new copy online of the above document: <a href=""></a>. Feel free to either use TeXworks or writelatex throughout your learning of LaTeX.</p></li>
+<p>The main disadvantage is that you need an internet collection to use it. A good such site is <a href="writelatex.org">www.writelatex.org</a>. Feel free to either use TeXworks or writelatex throughout your learning of LaTeX.</p>
+<p><a href="http://youtu.be/4B8Cmm9scmU">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following keys are used to type text in a source file:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">a-z A-Z 0-9
 + = * / ( ) [ ]</code></pre>
@@ -69,17 +71,20 @@ Hello, world!
 
 \begin{document} <span class="co">% This line start the document</span>
 Hello, world!
-\end{document}</code></pre></li>
+\end{document}</code></pre>
+<p><a href="http://youtu.be/xMujHplqFx0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> In general all the code that comes before the <code>\begin{document}</code> statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\title{Choose a title}
 \author{V Knight}
 \date{\today}</code></pre>
 <p>If you compile your document this won't include the title in the output. To do so you need to include the following line (in the main body):</p>
-<pre class="sourceCode latex"><code class="sourceCode latex">\maketitle</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">\maketitle</code></pre>
+<p><a href="http://youtu.be/bSJbxAWM5A8">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following will add an abstract to your document:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{abstract}
 This document contains some basic LaTeX code that will be useful to me in the future.
-\end{abstract}</code></pre></li>
+\end{abstract}</code></pre>
+<p><a href="http://youtu.be/d9WZFOSjIPA">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> There are various ways to obtain lists:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{itemize}
     \item Unorderd item number 1
@@ -90,7 +95,8 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \item Ordered item number 1
     \item Ordered item number 2
 \end{enumerate}</code></pre>
-<p>Note that in LaTeX indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in LaTeX they are ended by specific end statements <code>\end{enumerate}</code>.</p></li>
+<p>Note that in LaTeX indentation is not required it is just good practice. Unlike Python where specific environments are delimited by indentation levels, in LaTeX they are ended by specific end statements <code>\end{enumerate}</code>.</p>
+<p><a href="http://youtu.be/AMisCNGM2G8">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following code creates a simple table (note the <code>c</code>, <code>r</code>, and <code>l</code> tags that indicate text alignment, experiment by changing these):</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{tabular}{|l|c|r|}
     \hline
@@ -103,7 +109,8 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     Lisa &amp; Female &amp; 0730\\
     \hline
 \end{tabular}</code></pre>
-<p>In general in LaTeX <code>\\</code> is used to denote a 'new line'.</p></li>
+<p>In general in LaTeX <code>\\</code> is used to denote a 'new line'.</p>
+<p><a href="http://youtu.be/OAgTXe5ShSI">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> To include a picture is straightforward in LaTeX. We make use of the <code>graphicx</code> package. In LaTeX packages are included in the preamble using <code>usepackage</code>. Include the following in the preamble:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\usepackage{graphicx}</code></pre>
 <p>The following code (somewhere in the body) will include a picture:</p>
@@ -112,7 +119,8 @@ This document contains some basic LaTeX code that will be useful to me in the fu
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{center}
     \includegraphics{path_to_picture}
 \end{center}</code></pre>
-<p>(Images can be in jpg, png and pdf format when using the pdflatex compiler.)</p></li>
+<p>(Images can be in jpg, png and pdf format when using the pdflatex compiler.)</p>
+<p><a href="http://youtu.be/260odGNvPEc">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required <strong>but</strong> it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is <code>tikz</code>. Include the following in the preamble:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\usepackage{tikz}</code></pre>
 <p>Using this package we start a picture by setting up a tikzpicture environment.</p>
@@ -135,7 +143,8 @@ This document contains some basic LaTeX code that will be useful to me in the fu
     \draw [thick] (0,0) -- (-1,-1); <span class="co">% This draws a line from (0,0) to (-1,-1)</span>
     \draw [color=red, fill=green] (0,2.5) circle(.5); <span class="co">% This draws a circle at (0,2.5) with radius .5</span>
 \end{tikzpicture}</code></pre>
-<p>A lot more can be done with tikz and there are a variety of great examples, tutorials online.</p></li>
+<p>A lot more can be done with tikz and there are a variety of great examples, tutorials online.</p>
+<p><a href="http://youtu.be/fPpATcx-fVc">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> It is possible to organise parts of a document using 'sections':</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\section{My first section}
 
@@ -166,7 +175,8 @@ In Section \ref{first_section} we saw that...</code></pre>
 <li>The second time to match the labels to the references.</li>
 </ol>
 <p>If you are using writelatex then this happens automatically.</p>
-<p>Note, labels can be using in conjunction with <code>tabular</code> (for tables) and <code>figure</code> (for images) environments.</p></li>
+<p>Note, labels can be using in conjunction with <code>tabular</code> (for tables) and <code>figure</code> (for images) environments.</p>
+<p><a href="http://youtu.be/E2xT0xNk8EU">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> To create a bibliography we need to store the bibliographic information in a separate 'bibtex' file. In this file you include bibliographic information for the various references you might have.</p>
 <p>The following is the code for a book on LaTeX. Save the following in a separate file: <code>bibliography.bib</code>:</p>
 <pre class="sourceCode bibtex"><code class="sourceCode bibtex"><span class="kw">@book</span>{<span class="ot">Gratzer2007</span>,
@@ -186,21 +196,26 @@ Documentation and Presentation}},
 <div class="figure">
 <img src="./Images/W10-img02.png" alt="" /><p class="caption"></p>
 </div>
-<p>If you are using writelatex then this happens automatically.</p></li>
+<p>If you are using writelatex then this happens automatically.</p>
+<p><a href="http://youtu.be/X-9T2Oaj-5A">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Typesetting mathematics is LaTeX's strength. Add the following to your document:</p>
-<pre class="sourceCode latex"><code class="sourceCode latex">Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">Mathematics can be typed in to \LaTeX\ as $x^2$ and/or \((a+b)^2=a^2+2ab+b^2\).</code></pre>
+<p><a href="http://youtu.be/ef2p-rVJ2Vk">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The previous code showed how to include mathematics in text (_inline). We can also include mathematics in display mode. Add the following to your document:</p>
-<p>\[\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\]</p></li>
+<p><span class="math">\[\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\]</span></p>
+<p><a href="http://youtu.be/cHuDdblKmjs">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Mathematics can also be included in equations and referred to as for sections, pictures etc:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{equation}\label{my_first_equation}
 e=mc^2
 \end{equation}
 
-In equation (\ref{my_first_equation}) we have a very well known relationship!</code></pre></li>
+In equation (\ref{my_first_equation}) we have a very well known relationship!</code></pre>
+<p><a href="http://youtu.be/_ZH0jwscSwk">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> To include text within mathematics we can use the <code>text</code> command from the <code>amsmath</code> package:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">$$x^2 = 1 \text{ implies} x=\pm1$$</code></pre>
 <p>(be sure to include <code>usepackage{amsmath}</code> in the preamble.)</p>
-<p>Another command that does this is <code>mbox</code> which does not require the amsmath package.</p></li>
+<p>Another command that does this is <code>mbox</code> which does not require the amsmath package.</p>
+<p><a href="http://youtu.be/408OEiq3ybU">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Arithmetic operators are quite simple in LaTeX. Try the following:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{itemize}
     \item $a+b$
@@ -212,16 +227,19 @@ In equation (\ref{my_first_equation}) we have a very well known relationship!</c
     \item $a/b$
     \item ${a\over b}$
     \item $\frac{a}{b}$
-\end{itemize}</code></pre></li>
+\end{itemize}</code></pre>
+<p><a href="http://youtu.be/DiDe88f8jN0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Experiment with the following to see how to obtain integrals in LaTeX:</p>
-<pre class="sourceCode latex"><code class="sourceCode latex">$$\int_{0}^{\pi}x^2\,dx$$</code></pre></li>
+<pre class="sourceCode latex"><code class="sourceCode latex">$$\int_{0}^{\pi}x^2\,dx$$</code></pre>
+<p><a href="http://youtu.be/Aezyj0OhDVM">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following code gives a 3 by 2 matrix:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">$$\begin{pmatrix}
 a&amp;b\\
 c&amp;d\\
 e&amp;f\\
 \end{pmatrix}$$</code></pre>
-<p>Experiment with <code>\begin{matrix}</code> and <code>\begin{vmatrix}</code>.</p></li>
+<p>Experiment with <code>\begin{matrix}</code> and <code>\begin{vmatrix}</code>.</p>
+<p><a href="http://youtu.be/JDsirwrf1Bg">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> It is possible to create aligned mathematics using:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{align}
     (x+h)^2-x^2 &amp; =x^2+2xh+h^2-x^2 \nonumber\\
@@ -233,14 +251,16 @@ e&amp;f\\
     (x+h)^2-x^2 &amp; = x^2+2xh+h^2-x^2 &amp;&amp; \text{(by distributivity)}\\
                 &amp; = 2xh+h^2         &amp;&amp; \text{(by subtraction)}\\
                 &amp; = h(2x+h)         &amp;&amp; \text{(by factorisation)}
-\end{align}</code></pre></li>
+\end{align}</code></pre>
+<p><a href="http://youtu.be/AzFOqb9WKX4">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Finally we can create partitioned statements:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">$$
 1+(-1)^n=\begin{cases}
             0, &amp; \text{if $n$ odd}\\
             2, &amp; \text{if $n$ even}
             \end{cases}
-$$</code></pre></li>
+$$</code></pre>
+<p><a href="http://youtu.be/if7P-w6hHmw">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> It is possible to create high quality presentation in LaTeX. To do this we use the <code>beamer</code> document class:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{beamer}
 \begin{document}
@@ -259,7 +279,8 @@ $$</code></pre></li>
 \usetheme{Copenhagen}
 \usetheme{Goettingen}
 \usetheme{Hannover}
-\usetheme{Berkeley}</code></pre></li>
+\usetheme{Berkeley}</code></pre>
+<p><a href="http://youtu.be/XrZRVGnFXw0">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Most of the LaTeX code you have learnt so far an be used without much change in a beamer presentation within the <code>frame</code> environment. There are however a few particularities:</p>
 <p>To make a title, you need to use the <code>\titlepage</code> instead of the <code>\maketitle</code> command:</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\begin{frame}
@@ -274,7 +295,8 @@ $$</code></pre></li>
 \begin{frame}
     \frametitle{My first slide}
 \end{frame}</code></pre>
-<p>There are various other commands and tools that can be used in Beamer. In particular take a look at the <code>pause</code>, <code>only</code> and <code>onslide</code> commands.</p></li>
+<p>There are various other commands and tools that can be used in Beamer. In particular take a look at the <code>pause</code>, <code>only</code> and <code>onslide</code> commands.</p>
+<p><a href="http://youtu.be/L3KGl2vn_iA">Video hint</a></p></li>
 </ol>
 </body>
 </html>
