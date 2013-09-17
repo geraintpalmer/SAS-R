@@ -43,7 +43,8 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> random
 jumbledlist = random.sample(<span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">31</span>), <span class="dv">20</span>)
 <span class="kw">print</span> jumbledlist</code></pre>
-<p>Using pen and paper, sort the above list, attempting to understand a general approach to doing this. Write a function <code>jumbledlist</code> that takes as arguments: <code>maximumnumber</code> and <code>sizeoflist</code> which returns a jumbled list of integersas above.</p></li>
+<p>Using pen and paper, sort the above list, attempting to understand a general approach to doing this. Write a function <code>jumbledlist</code> that takes as arguments: <code>maximumnumber</code> and <code>sizeoflist</code> which returns a jumbled list of integersas above.</p>
+<p><a href="http://www.youtube.com/watch?v=18LLHQ7JR1s">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Python has a built in method on lists to sort them: <code>sort()</code>:</p>
 <pre class="sourceCode python"><code class="sourceCode python">l = jumbledlist(<span class="dv">30</span>, <span class="dv">20</span>) <span class="co"># Use the function you created above.</span>
 <span class="kw">print</span> l
@@ -80,7 +81,8 @@ WHILE NOT SORTED:
                 indexOfSmallest = index
             index += <span class="dv">1</span>
         data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
-        firstUnsorted += <span class="dv">1</span></code></pre></li>
+        firstUnsorted += <span class="dv">1</span></code></pre>
+<p><a href="http://www.youtube.com/watch?v=O1HBxikerUQ">Video hint</a></p></li>
 <li><p>There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:</p>
 <pre><code>SET FIRSTUNSORTED TO 0
 SET SWAP TO TRUE
@@ -94,7 +96,8 @@ WHILE INDEX &gt;  FIRSTUNSORTED + 1:
     IF DATA[INDEX] &lt; DATA[INDEX - 1]
         SWAP DATA[INDEX] AND DATA[INDEX - 1]
         SET SWAP TO TRUE
-    SET INDEX TO INDEX - 1</code></pre></li>
+    SET INDEX TO INDEX - 1</code></pre>
+<p><a href="http://www.youtube.com/watch?v=SXDWTZpj--M">Video hint</a></p></li>
 <li><p>The 'time' module allows you to get the current system time on your machine:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> time
 <span class="kw">print</span> time.time()</code></pre>
@@ -111,11 +114,13 @@ WHILE INDEX &gt;  FIRSTUNSORTED + 1:
 <p>We see how long a single run of this testfunction takes using our timing function:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> timing(<span class="st">&quot;testfunction&quot;</span>)</code></pre>
 <p>Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.</p>
+<p><a href="http://www.youtube.com/watch?v=4MC3wPCKpyg">Video hint</a></p>
 <p>(Note that python also has a timeit library which offers timing functionality.)</p></li>
 </ol>
 <h2 id="searching-algorithms">Searching algorithms</h2>
 <ol start="5" style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> Consider the data in <a href="./Data/W04_D01.txt">W04_D01.txt</a>. Search this file for the index of 4558. Do this by hand and then check your answer using the <code>index</code> method. How could you do this if it was to be done in pairs (2 students searching the list)?</p></li>
+<li><p><strong>TICKABLE</strong> Consider the data in <a href="./Data/W04_D01.txt">W04_D01.txt</a>. Search this file for the index of 4558. Do this by hand and then check your answer using the <code>index</code> method. How could you do this if it was to be done in pairs (2 students searching the list)?</p>
+<p><a href="http://www.youtube.com/watch?v=D7-3Oh_oZA4">Video hin</a></p></li>
 <li><p>One searching algorithm we will look at is called &quot;sequential search&quot;. This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question <strong>should</strong> be at.</p>
 <pre><code>SORT THE LIST
 SET INDEX TO 0
@@ -136,7 +141,8 @@ ELSE:
            <span class="dv">592</span>,
            <span class="dv">9507</span>,
            <span class="dv">4221</span>]</code></pre>
-<p>in the file <a href="./Data/W04_D01.txt">W04_D01.txt</a>.</p></li>
+<p>in the file <a href="./Data/W04_D01.txt">W04_D01.txt</a>.</p>
+<p><a href="http://www.youtube.com/watch?v=CsBlbFaZD_I">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Another searching algorithm is called 'binary search'. In this algorithm, a <strong>sorted</strong> list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.</p>
 <div class="figure">
 <img src="Images/W04-img03.png" alt="" /><p class="caption"></p>
@@ -170,7 +176,8 @@ RETURN MIDDLE</code></pre>
             last = middle - <span class="dv">1</span>
         <span class="kw">else</span>:
             first = middle + <span class="dv">1</span>
-    <span class="kw">return</span> middle</code></pre></li>
+    <span class="kw">return</span> middle</code></pre>
+<p><a href="http://www.youtube.com/watch?v=UyIhxhURX-M">Video hint</a></p></li>
 <li><p>Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.</p></li>
 <li><p>The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.</p></li>
 </ol>
