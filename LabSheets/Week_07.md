@@ -63,6 +63,8 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     This implies that $f$ is continuous at 1.
 
+    [Video hint](http://youtu.be/-br9qoY9QbM)
+
 3. **TICKABLE** Plot $f(x)=\frac{3x^2}{x^3+x-1}$ using the default options:
 
     ~~~{.python}
@@ -131,6 +133,8 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
     Note that here everything is a symbolic variable!
 
+    [Video hint](http://youtu.be/FbxioEG9kzM)
+
 8. The point of this question is to investigate the definition of a derivative:
 
     $$\frac{df}{dx}=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
@@ -181,6 +185,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
     integrate(f, x, 5, 12)
     ~~~
 
+    [Video hint](http://youtu.be/wQEk0h5kg50)
 
 12. **TICKABLE** As before we can integrate fully symbolic expressions:
 
