@@ -12,27 +12,18 @@ At the end of this lecture students will be:
 
 ### Timeline
 
-#### Lab 1
-
-Basic sheet:
+#### Lab sheet
 
 - Documents;
-- Mathematics.
-
-(all tickable)
-
-#### Lab 2
-
-Basic sheet:
-
-- Beamer;
 - Tikz.
+- Mathematics.
+- Beamer;
 
 #### Lecture
 
 - 0 - 5 mins: Recap
 - 5 - 15 mins: Brief discussion showing advantages of LaTeX and pandoc as well.
-- 15 - 35 mins: Solutions of Lab sheets
+- 15 - 35 mins: Solutions of Lab sheet
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Discussion about next week and next term
 

@@ -11,23 +11,14 @@ At the end of this lecture students will be:
 
 ### Timeline
 
-#### Lab 1
-
-This lab session will have a basic sheet:
+#### Lab sheet
 
 - Understanding lists and certain functions that work on lists;
 - Understanding hash tables;
 - Using the write, read function;
 - Using the csv module;
 - A very basic recurrence function.
-
-(All tickable)
-
-#### Lab 2
-
-This lab session will be slightly more advanced:
-
-- Fibonacci using recurrence (tickable)
+- Fibonacci using recurrence
 - Another recurrence exercise
 - Create your own Hash table
 
@@ -35,7 +26,7 @@ This lab session will be slightly more advanced:
 
 - 0 - 5 mins: Recap
 - 5 - 15 mins: Power of dictionaries and recurrence
-- 15 - 35 mins: Solutions of Lab 2
+- 15 - 35 mins: Solutions of Lab sheet
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 

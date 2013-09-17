@@ -11,9 +11,8 @@ At the end of this lecture students will be:
 
 ### Timeline
 
-#### Lab 1
+#### Lab sheet
 
-This lab session will have a basic sheet:
 
 - Pep8
 - Basic variables
@@ -22,14 +21,7 @@ This lab session will have a basic sheet:
 - While Statements
 - For loops
 - Functions
-
-(All tickable)
-
-#### Lab 2
-
-This lab session will be slightly more advanced:
-
-- A basic fibonacci function (tickable)
+- A basic fibonacci function
 - Finding prime numbers
 - HP challenge
 
@@ -37,7 +29,7 @@ This lab session will be slightly more advanced:
 
 - 0 - 5 mins: Recap
 - 5 - 15 mins: Importance of writing clean code
-- 15 - 35 mins: Solutions of Lab 2
+- 15 - 35 mins: Solutions of Lab sheet
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 

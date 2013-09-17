@@ -5,19 +5,17 @@
 
 At the end of this lecture students will be:
 
-- Familiar with Sage: basic algebra, series, and plots.
+- Familiar with Sage: basic algebra, and plots.
 
 ### Timeline
 
-#### Lab 1
+#### Class test
 
-Class test on first 5 weeks.
+There will be a class test this week.
 
-#### Lab 2
+#### Lab sheet
 
-This lab session will cover some basic Sage
-
-- Basic algebra (solving equations, mainpulating expressions, etc...)
+- Basic algebra (solving equations, manipulating expressions, etc...)
 - Manipulating series
 - Plots
 

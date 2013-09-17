@@ -53,7 +53,7 @@ This website is very much work in progress with content for the 1st year program
 6. Week 6: [ Class test and Sage: Algebra, Series and plots](./Lesson_Plans/Week_06.html)
 7. Week 7: [ Symbolic Calculus](./Lesson_Plans/Week_07.html)
 8. Week 8: [ Linear Algebra](./Lesson_Plans/Week_08.html)
-9. Week 9: [ Differential Equations](./Lesson_Plans/Week_09.html)
+9. Week 9: [ Linear Algebra](./Lesson_Plans/Week_09.html)
 10. Week 10: [ LaTeX](./Lesson_Plans/Week_10.html)
 
 

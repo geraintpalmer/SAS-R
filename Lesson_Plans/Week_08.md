@@ -5,22 +5,28 @@
 
 At the end of this lecture students will be:
 
--
+- Familiar with linear algebra in Sage: Matrices, Matrix multiplication, inverses and determinants
 
 ### Timeline
 
-#### Lab 1
+#### Coursework
 
+The coursework will be handed out this week.
 
-#### Lab 2
+#### Lab sheet
 
-HANDOUT COURSEWORK
+- Representing systems of equations in Matrix form;
+- Matrix multiplication;
+- Solving matrix equations;
+- Inverting matrices;
+- Connection between inverse and determinants;
+
 
 #### Lecture
 
 - 0 - 5 mins: Recap
-- 5 - 15 mins:
-- 15 - 35 mins:
+- 5 - 15 mins: Solution to lab sheet
+- 15 - 35 mins: Explanation of coursework
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 

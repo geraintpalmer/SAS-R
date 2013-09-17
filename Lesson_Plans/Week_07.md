@@ -5,27 +5,21 @@
 
 At the end of this lecture students will be:
 
-- Familiar with Sage: basic algebra, series, and plots.
+- Familiar with calculus in Sage: limits, differentiation and integration
 
 ### Timeline
 
-#### Lab 1
+#### Lab sheet
 
-Class test on first 5 weeks.
-
-#### Lab 2
-
-This lab session will cover some basic Sage
-
-- Basic algebra (solving equations, mainpulating expressions, etc...)
-- Manipulating series
-- Plots
+- Limits
+- Differentiation
+- Integration
 
 #### Lecture
 
 - 0 - 5 mins: Recap
-- 5 - 15 mins: Brief feedback on class test and description of Sage
-- 15 - 35 mins: Solution of class test
+- 5 - 15 mins: Solution to lab sheet
+- 15 - 35 mins: Overview of Sage function
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 

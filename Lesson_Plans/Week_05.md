@@ -10,29 +10,20 @@ At the end of this lecture students will be:
 
 ### Timeline
 
-#### Lab 1
-
-This lab session will have a basic sheet:
+#### Lab sheet
 
 - Classes
 - Attributes
 - Methods
 - Inheritance
-
-(All tickable)
-
-#### Lab 2
-
-This lab session will be slightly more advanced:
-
-- Example of handling data (tickable)
+- Example of handling data
 - Example making use of the random library (estimate pi)
 
 #### Lecture
 
 - 0 - 5 mins: Recap
-- 5 - 15 mins: Advantages of OOp
-- 15 - 35 mins: Solutions of Lab 2
+- 5 - 15 mins: Advantages of OOP
+- 15 - 35 mins: Solutions of Lab sheet
 - 35 - 45 mins: Questions?
 - 45 - 50 mins: Introduction to next week
 
