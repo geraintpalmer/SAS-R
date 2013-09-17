@@ -40,6 +40,8 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     **Note the convention used here: classes use a capitalized name.**
 
+    [Video hint](http://youtu.be/fTV7B6YTHCU)
+
 2. We have already used various types of python objects:
 
     - Lists;
@@ -88,6 +90,8 @@ This lab sheet will introduce a very important concept of computer science: obje
     vince.sex = "M"
     print vince.sex
     ~~~
+
+    [Video hint](http://youtu.be/I_fbk5Uss-Q)
 
 4. **TICKABLE** A quadratic is a mathematical expression of the form: $a x ^ 2 + b x + c$. The following code creates a Quadratic class:
 
@@ -153,6 +157,8 @@ This lab sheet will introduce a very important concept of computer science: obje
     vince.haveabirthday(28)
     print vince.age
     ~~~
+
+    [Video hint](http://youtu.be/epYMekhWx2k)
 
 6. There are a variety of 'special' methods to be defined on classes. The one we will consider here is the `__init__` method. This method is run when an instance is created. The following code allows us to pass arguments to an instance of a class when it is **initialised** to set attributes.
 
@@ -273,3 +279,5 @@ This lab sheet will introduce a very important concept of computer science: obje
     ~~~
 
     Create another inherited class (from student) giving it a specific method.
+
+    [Video hint](http://youtu.be/oEzqQLlORq4)
