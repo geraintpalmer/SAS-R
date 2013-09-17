@@ -60,32 +60,38 @@ clist = alist + blist
 <p>We see that python indexes lists just like strings: starting at 0. We can also use the <code>index</code> function as for strings. Try:</p>
 <pre class="sourceCode python"><code class="sourceCode python">index = clist.index(<span class="dv">40</span>)
 <span class="kw">print</span> index
-<span class="kw">print</span> clist[index:index + <span class="dv">2</span>]</code></pre></li>
+<span class="kw">print</span> clist[index:index + <span class="dv">2</span>]</code></pre>
+<p><a href="http://www.youtube.com/watch?v=7FbYcOOB64c">Video hint</a></p></li>
 <li><p>We have seen how to combine two lists using <code>+</code> but there is a very useful method on lists called the <code>append</code> method. With this we can easily add elements to lists:</p>
 <pre class="sourceCode python"><code class="sourceCode python">mylist = []
 <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">11</span>):
     <span class="kw">if</span> i % <span class="dv">2</span> == <span class="dv">0</span>:
         mylist.append(i)
 <span class="kw">print</span> mylist</code></pre>
-<p>This makes use of the range function that we see in the previous lab sheet.</p></li>
-<li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3. What is the largest such number?</p></li>
+<p>This makes use of the range function that we see in the previous lab sheet.</p>
+<p><a href="http://www.youtube.com/watch?v=DWiHBdf5mQI">Video hint</a></p></li>
+<li><p><strong>TICKABLE</strong> Create a list with the first 1300 integers divisible by 3. What is the largest such number?</p>
+<p><a href="http://www.youtube.com/watch?v=7KxOxWC3h78">Video hint</a></p></li>
 <li><p>There is another way of creating/manipulating lists in python called list <em>comprehensions</em>. The following code give the squares of the first 10 integers:</p>
 <pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)]
 <span class="kw">print</span> squares</code></pre>
 <p>We can include logical statements to only give the squares of odd numbers:</p>
 <pre class="sourceCode python"><code class="sourceCode python">squares = [e ** <span class="dv">2</span> <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">11</span>) <span class="kw">if</span> e %% <span class="dv">2</span> == <span class="dv">1</span>]
-<span class="kw">print</span> squares</code></pre></li>
+<span class="kw">print</span> squares</code></pre>
+<p><a href="http://www.youtube.com/watch?v=8WXIY18RJiY">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> By creating a function and using list comprehensions, create a list of <span class="math">\(f(n)\)</span> for all integers <span class="math">\(n\leq 100\)</span> where <span class="math">\(f(n)\)</span> is given below:</p>
 <p><span class="math">\[f(n) = \begin{cases}
    n ^ 3,&amp; \text{ if $n$ odd}\\
    n ^ 2 + 1,&amp; \text{ if $n$ is divisible by }4\\
    n - 1,&amp; \text{otherwise}
-\end{cases}\]</span></p></li>
+\end{cases}\]</span></p>
+<p><a href="http://www.youtube.com/watch?v=cr_QV3fF-Ls">Video hint</a></p></li>
 <li><p>There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:</p>
 <pre class="sourceCode python"><code class="sourceCode python">alist = [<span class="dv">1</span>,<span class="dv">74</span>,<span class="dv">2</span>,<span class="dv">100</span>,-<span class="dv">123</span>]
 <span class="kw">print</span> <span class="dt">max</span>(alist)
 <span class="kw">print</span> <span class="dt">min</span>(alist)
-<span class="kw">print</span> <span class="dt">len</span>(alist)</code></pre></li>
+<span class="kw">print</span> <span class="dt">len</span>(alist)</code></pre>
+<p><a href="http://www.youtube.com/watch?v=JslPoHRe3kk">Video hint</a></p></li>
 </ol>
 <h2 id="dictionaries-in-python">Dictionaries in Python</h2>
 <ol start="7" style="list-style-type: decimal">
@@ -133,14 +139,17 @@ goodphonebook[<span class="st">&#39;Vince&#39;</span>] = <span class="dv">8</spa
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">print</span> goodphonebook[<span class="st">&#39;Brayden&#39;</span>]
 goodphonebook[<span class="st">&#39;Brayden&#39;</span>] = <span class="dv">12</span>
 <span class="kw">print</span> goodphonebook[<span class="st">&#39;Brayden&#39;</span>]</code></pre>
-<p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p></li>
+<p><strong>Note valid keys must be strings or numerical variables but anything can be a value of a key.</strong></p>
+<p><a href="http://www.youtube.com/watch?v=CuyHg-1Let0">Video hint</a></p></li>
 <li><p>Iterate over the list <code>badphonebook</code> to initiate the <code>pb</code> as the equivalent dictionary:</p>
 <pre class="sourceCode python"><code class="sourceCode python">pb = {}
 <span class="kw">for</span> e in badphonebook:
-    ...</code></pre></li>
+    ...</code></pre>
+<p><a href="http://www.youtube.com/watch?v=ZZv2sB57BgA">Video hint</a></p></li>
 <li><p>Note that it is also possible to iterate over keys in a dictionary:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">for</span> e in goodphonebook:
-    <span class="kw">print</span> goodphonebook[e]</code></pre></li>
+    <span class="kw">print</span> goodphonebook[e]</code></pre>
+<p><a href="http://www.youtube.com/watch?v=cZWwJgvRbBE">Video hint</a></p></li>
 </ol>
 <h2 id="writing-data-to-files">Writing data to files</h2>
 <ol start="10" style="list-style-type: decimal">
@@ -159,12 +168,15 @@ string = textfile.read()
 <pre class="sourceCode python"><code class="sourceCode python">data = string.split(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)
 <span class="kw">print</span> data</code></pre>
 <p>All the variables in this list are still character variables. To convert them to numeric variables we can use a list comprehension:</p>
-<pre class="sourceCode python"><code class="sourceCode python">data = [<span class="dt">int</span>(e) <span class="kw">for</span> e in data[:-<span class="dv">1</span>]]</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python">data = [<span class="dt">int</span>(e) <span class="kw">for</span> e in data[:-<span class="dv">1</span>]]</code></pre>
+<p><a href="http://www.youtube.com/watch?v=HSz1A8ZHWWg">Video hint</a> <a href="http://www.youtube.com/watch?v=HSz1A8ZHWWg">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The following function checks if a number is prime or not. Read through the function and ensure that you understand it.</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> isprime(n):
     <span class="kw">return</span> <span class="dt">max</span>([e % n <span class="kw">for</span> e in <span class="dt">range</span>(<span class="dv">2</span>, n)]) != <span class="dv">0</span></code></pre>
-<p>The file <a href="./Data/W03_D01.txt">W03_D01.txt</a> contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).</p></li>
-<li><p>There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.</p></li>
+<p>The file <a href="./Data/W03_D01.txt">W03_D01.txt</a> contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).</p>
+<p><a href="http://www.youtube.com/watch?v=Tbv0s_GEJ1I">Video hint</a></p></li>
+<li><p>There is a common data format called 'csv' short for 'comma separated value'. There is a python library that allows for the easy use of this format when writing a lot of data to files. Watch the following video and experiment with this library.</p>
+<p><a href="http://www.youtube.com/watch?v=jQ9aDyBWCXI">Video hint</a></p></li>
 </ol>
 <h2 id="recursion">Recursion</h2>
 <ol start="14" style="list-style-type: decimal">
@@ -196,7 +208,8 @@ string = textfile.read()
 <p>Note that this approach is much more closely related to the actual definition of what we are trying to compute.  In general we will always either be considering a <em>base</em> case or a case than can be reduced.</p>
 <div class="figure">
 <img src="./Images/W03-img03.png" alt="" /><p class="caption"></p>
-</div></li>
+</div>
+<p><a href="http://www.youtube.com/watch?v=EYPT4Ykx5IU">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> Program two functions that return <span class="math">\(n!\)</span> in both an iterative approach and a recursive approach.</p></li>
 <li><p>Write a recursive program for the Fibonacci sequence.</p></li>
 </ol>
