@@ -26,6 +26,8 @@ Sage can be used to solve differential equations. Often complex systems can be m
     desolve(diff(y, x) == k * y, y, ivar=x)
     ~~~
 
+    [Video hint](http://youtu.be/fpyxAE_-UsI)
+
 2. Once we have the solution to a differential equation it is very straightforward to plot it:
 
     ~~~{.python}
@@ -47,11 +49,15 @@ Sage can be used to solve differential equations. Often complex systems can be m
 
     Obtain a similar plot for the solution to the differential equation: $\frac{dy}{dx} = xy$.
 
+    [Video hint](http://youtu.be/XUcn_zTa2FM)
+
 3. There is nothing restricting us to only solving first order differential equations. The following differential equation can be used to model the position of a mass on a spring:
 
     $$m\frac{d^2x}{dt^2}+c\frac{dx}{dt}+kx=0$$
 
     Solve this equation.
+
+    [Video hint](http://youtu.be/DZ5ofuAgDIY)
 
 4. **TICKABLE** Solve the following differential equations and plot their solution (for the given particular value):
 
@@ -66,6 +72,8 @@ Sage can be used to solve differential equations. Often complex systems can be m
     \frac{dx}{dt} = 1 - y\\
     \frac{dy}{dt} = 1 - x
     \end{cases}$$
+
+    [Video hint](http://youtu.be/2Q52rmftdjQ)
 
 6. A battle between two armies can be modelled with the following set of differential equations:
 
@@ -94,3 +102,5 @@ Sage can be used to solve differential equations. Often complex systems can be m
     $$\frac{dy}{dx} + y(y-1)==|(x-2)|$$
 
     In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the `desolve_rk4` function and obtain a solution for the above equation given that $y(0)=1$ for $x<100$. Obtain a plot of the numerical solution
+
+    [Video hint](http://youtu.be/LhIyZ14LKKE)
