@@ -58,6 +58,8 @@
 
     Verify that $X = (x_0, y_0)$ where $(x_0, y_0)$ is the solution to our system of equations (obtained in (1)).
 
+    [Video hint](http://youtu.be/zuxPlbRK79w)
+
 3. **TICKABLE** In linear algebra (you will study this next semester) a matrix equation is an equation of the form:
 
     $$AX=b$$
@@ -81,6 +83,8 @@
     -x - 5y - 8z = 9\\
     x + y + z = 1
     \end{cases}$$
+
+    [Video hint](http://youtu.be/-Qxv5XMer60)
 
 4. For reasons that will become clear, the following definition of matrix multiplication is required:
 
@@ -110,6 +114,8 @@
     3. $A=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $B=\begin{pmatrix}-2&0\\-1&-17\end{pmatrix}$
     4. $A=\begin{pmatrix}0&-1\\3&1\end{pmatrix}$, $B=\begin{pmatrix}1/3&1/3\\-1&0\end{pmatrix}$
 
+    [Video hint](http://youtu.be/NOpEMl_yzMM)
+
 5. **TICKABLE** The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: "the identity matrix".
 
     The identity matrix of size $n\times n$ is denoted by $\mathbb{I}_n$. The following Sage code gives $\mathbb{I}_n$:
@@ -138,41 +144,45 @@
 
     Use this approach to solve the systems of equations we have considered so far.
 
+    [Video hint](http://youtu.be/NOpEMl_yzMM)
+
 6. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
 
     $$\left(\begin{array}{rrrrr}
-\frac{1}{2} & 0 & 0 & -1 & 1 \\
--1 & -1 & 1 & -\frac{1}{2} & 2 \\
-0 & -1 & 0 & -2 & 0 \\
-0 & 0 & \frac{1}{2} & -1 & 0 \\
--1 & 0 & -2 & 2 & 0
-\end{array}\right)
-$$
-$$\left(\begin{array}{rrrrr}
--1 & -1 & 0 & 0 & -1 \\
-2 & 1 & 0 & 1 & 1 \\
--2 & 0 & 1 & 2 & 2 \\
--\frac{1}{2} & 0 & -\frac{1}{2} & 0 & \frac{1}{2} \\
-0 & 0 & 0 & \frac{1}{2} & -1
-\end{array}\right)
-$$
-$$\left(\begin{array}{rr}
--\frac{1}{2} & -\frac{1}{2} \\
--2 & -1
-\end{array}\right)
-$$
-$$\left(\begin{array}{rrr}
-2 & -2 & 1 \\
-6 & -1 & 1 \\
-12 & -2 & 2
-\end{array}\right)
-$$
-$$\left(\begin{array}{rr}
-1 & 2 \\
-2 & 0
-\end{array}\right)$$
+    \frac{1}{2} & 0 & 0 & -1 & 1 \\
+    -1 & -1 & 1 & -\frac{1}{2} & 2 \\
+    0 & -1 & 0 & -2 & 0 \\
+    0 & 0 & \frac{1}{2} & -1 & 0 \\
+    -1 & 0 & -2 & 2 & 0
+    \end{array}\right)
+    $$
+    $$\left(\begin{array}{rrrrr}
+    -1 & -1 & 0 & 0 & -1 \\
+    2 & 1 & 0 & 1 & 1 \\
+    -2 & 0 & 1 & 2 & 2 \\
+    -\frac{1}{2} & 0 & -\frac{1}{2} & 0 & \frac{1}{2} \\
+    0 & 0 & 0 & \frac{1}{2} & -1
+    \end{array}\right)
+    $$
+    $$\left(\begin{array}{rr}
+    -\frac{1}{2} & -\frac{1}{2} \\
+    -2 & -1
+    \end{array}\right)
+    $$
+    $$\left(\begin{array}{rrr}
+    2 & -2 & 1 \\
+    6 & -1 & 1 \\
+    12 & -2 & 2
+    \end{array}\right)
+    $$
+    $$\left(\begin{array}{rr}
+    1 & 2 \\
+    2 & 0
+    \end{array}\right)$$
 
     For every matrix in this list and the original list obtain the result of the `det` method. This gives the **determinant** of the matrices. It is a very important quantity that will be explained next semester.
+
+    [Video hint](http://youtu.be/rUvbWGg0QO0)
 
 7. **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
 
@@ -182,6 +192,8 @@ $$\left(\begin{array}{rr}
     ~~~
 
     Using this attempt to conjecture a connection between the determinant of a matrix and it's inverse (and the determinant of it's inverse).
+
+    [Video hint](http://youtu.be/3qdlespAi9o)
 
 8. **TICKABLE** The file [W08_D01.txt](./Data/W08_D01.txt) contains 4 columns of data:
 
