@@ -12,11 +12,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
 1. **TICKABLE** Open Sage
 
-    - webserver;
-    - signing in;
-    - Click on thing so that it returns pretty math;
-    - print hello world;
-    - print 2 + 2
+    **Waiting for our sage server to be set up**
 
 2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
@@ -24,6 +20,8 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     cos?
     sum?
     ~~~
+
+    [Video hint](http://youtu.be/Fbq1GNiF85k)
 
 3. We can use Sage as an advanced calculator. Try out the following commands:
 
@@ -42,7 +40,11 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     sqrt(-53.)
     ~~~
 
+
 4. **TICKABLE** Obtain an exact form for $\sum_{i=1}^5\frac{1}{\sqrt{i}}$. Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
+
+    [Video hint](http://youtu.be/kJwDWY6Wd7s)
+
 5. Sage can also be used to obtain prime factors of numbers:
 
     ~~~{.python}
@@ -63,6 +65,8 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     ~~~
 
     Obtain the mean number of factors for the first 1000 integers (you can use the `mean` sage function).
+
+    [Video hint](http://youtu.be/5e0wAaO4I84)
 
 6. Using the `is_prime` method investigate the following claim:
 
@@ -96,6 +100,8 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     myexp.factor()
     ~~~
 
+    [Video hint](http://youtu.be/_mmHrQ7FzaY)
+
 8. We can also define functions in Sage. The following code defines $f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi$:
 
     ~~~{.python}
@@ -128,12 +134,16 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     solve(f(x) == 0, x)
     ~~~
 
+    [Video hint](http://youtu.be/UA7LVwmMmfk)
+
 9. **TICKABLE** Using Sage obtain the solution to the following equations:
 
     1. $x^2 = -1$
     2. $x^2 - 53 x + 2 a = 0 $
     4. $sin(x) = x - 1$ (Investigate the Sage function `find_root`)
     3. $x^5 + sin(x) - 2 * x = .5 $
+
+    [Video hint](http://youtu.be/GVEbkBXBmTw)
 
 10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equation:
 
