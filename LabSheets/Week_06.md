@@ -20,7 +20,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
     Take a look at the following video that goes through this process as well as shows you how to create your first Sage worksheet.
 
-    [Video hint]()
+    [Video hint](http://www.youtube.com/watch?v=3E9LvXV_zrA&feature=youtu.be)
 
 2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
