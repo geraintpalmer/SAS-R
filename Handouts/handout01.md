@@ -1,5 +1,9 @@
 # Computing for mathematics
 
+Lecturer: Vince Knight
+Office: M1.25
+email: knightva@cf.ac.uk
+
 ## Intended learning outcomes for this module:
 
 - Understand and be able to write in Python the following programming ideas: Conditional Statements; Flow Control; Data Structures; Recurrence, Basic ideas of Object Orientated Programming;
