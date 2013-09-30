@@ -1,8 +1,6 @@
 # Computing for mathematics
 
-This website is very much work in progress with content for the 1st year programming course I'm teachnig.
-
-([My personal website](http://www.vincent-knight.com/))
+This website contains the lab sheets for the first term of Computing for Mathematics. Each lab sheet contains links to a number of videos that should help with the exercises.
                  
 
 
@@ -44,22 +42,9 @@ This website is very much work in progress with content for the 1st year program
 
 	[html (recommended)](./LabSheets/Week_10.html), [pdf](./LabSheets/Week_10.pdf), [docx](./LabSheets/Week_10.docx)
 
-## Lesson plans
-1. Week 1: [ Introduction](./Lesson_Plans/Week_01.html)
-2. Week 2: [ Conditional statements, flow control and functions](./Lesson_Plans/Week_02.html)
-3. Week 3: [ Data structures and recurrence](./Lesson_Plans/Week_03.html)
-4. Week 4: [ Sorting and Searching Algorithms](./Lesson_Plans/Week_04.html)
-5. Week 5: [ Basic Object Orientated Programming](./Lesson_Plans/Week_05.html)
-6. Week 6: [ Class test and Sage: Algebra, Series and plots](./Lesson_Plans/Week_06.html)
-7. Week 7: [ Symbolic Calculus](./Lesson_Plans/Week_07.html)
-8. Week 8: [ Linear Algebra](./Lesson_Plans/Week_08.html)
-9. Week 9: [ Linear Algebra](./Lesson_Plans/Week_09.html)
-10. Week 10: [ LaTeX](./Lesson_Plans/Week_10.html)
-
-
-### Reading List
-
 The reading list can be found [here](./readinglist.html).
+
+([My personal website](http://www.vincent-knight.com/))
 
 <script type="text/javascript">
 
