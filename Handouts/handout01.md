@@ -17,7 +17,7 @@ email: knightva@cf.ac.uk
 
 ## How the material will be taught (first term):
 
-- 2 lab sessions to do 1 lab sheet (**bring headphone!**);
+- 2 lab sessions to do 1 lab sheet (**bring headphones!**);
 - Need to complete 80% of 'TICKABLES';
 - **YOU WILL NEED TO WORK OUTSIDE OF THE LABS TO HAVE SUFFICIENT TIME TO COMPLETE LAB SHEETS**
 - Lecture on Thursday 1100;
@@ -28,7 +28,7 @@ email: knightva@cf.ac.uk
 - Download and install Python on your own machine if you have one:
     - If you have a windows machine follow the instruction at [www.python.org/](http://www.python.org/)
     - If you have a linux machine or using Mac OS (both of these are 'nix' machines) then python is already installed.
-- Start working on the the first lab sheet.
+- Start working on the first lab sheet.
 - Organise a study group of 4 to 5 people to work together (I suggest finding people in your own tutor groups).
 
 ## Resources:
