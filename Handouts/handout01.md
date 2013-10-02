@@ -1,7 +1,9 @@
 # Computing for mathematics handout 1 - What you need to know
 
 Lecturer: Vince Knight
+
 Office: M1.25
+
 email: knightva@cf.ac.uk
 
 **Office hours: Thursday 1300-1500**
@@ -24,10 +26,8 @@ email: knightva@cf.ac.uk
 ## What you should do next:
 
 - Download and install Python on your own machine if you have one:
-
     - If you have a windows machine follow the instruction at [www.python.org/](http://www.python.org/)
-    - If you have a linux or a Mac (nix) then python is already installed.
-
+    - If you have a linux machine or using Mac OS (both of these are 'nix' machines) then python is already installed.
 - Start working on the the first lab sheet.
 - Organise a study group of 4 to 5 people to work together (I suggest finding people in your own tutor groups).
 
