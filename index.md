@@ -42,6 +42,13 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./LabSheets/Week_10.html), [pdf](./LabSheets/Week_10.pdf), [docx](./LabSheets/Week_10.docx)
 
+
+## Handouts
+
+1. Handout 1: What you need to know
+
+	[html (recommended)](./Handouts/handout01.html), [pdf](./Handouts/handout01.pdf), [docx](./Handouts/handout01.docx)
+
 The reading list can be found [here](./readinglist.html).
 
 ([My personal website](http://www.vincent-knight.com/))

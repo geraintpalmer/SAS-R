@@ -1,4 +1,4 @@
-# Computing for mathematics
+# Computing for mathematics handout 1 - What you need to know
 
 Lecturer: Vince Knight
 Office: M1.25
