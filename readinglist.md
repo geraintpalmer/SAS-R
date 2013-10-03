@@ -2,7 +2,7 @@
 
 ## Recommended
 
-- "A byte of Python" (free open source book) by C H Swaroop
+- ["A byte of Python" (free open source book) by C H Swaroop](http://swaroopch.com/notes/python/)
 - "Beginning Python: from Novice to Professional" by Magnus Lie Hetland
 - "Learning Python" by Mark Lutz
 - "Sage Documentation" [www.sagemath.org](www.sagemath.org)
