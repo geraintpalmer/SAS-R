@@ -19,11 +19,11 @@ rawdata = csv.reader(f)
 rawdata = [[r.strip() for r in row[:-1]] for row in rawdata if row[-1] != '']
 f.close()
 
-classtestrooms = {"1300 - M1.03" : 14,
-                  "1300 - MSc Computing Lab" : 26,
-                  "1300 - MSc Reading Room" : 10,
-                  "1300 - M0.33" : 17,
-                  "1300 - M0.35" : 16,
+classtestrooms = {"1500 - M1.03" : 14,
+                  "1500 - MSc Computing Lab" : 26,
+                  "1500 - MSc Reading Room" : 10,
+                  "1500 - M0.33" : 17,
+                  "1500 - M0.35" : 16,
                   "1400 - M1.03" : 14,
                   "1400 - MSc Computing Lab" : 26,
                   "1400 - MSc Reading Room" : 10,

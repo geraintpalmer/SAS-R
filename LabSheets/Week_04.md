@@ -208,7 +208,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
                 last = middle - 1
             else:
                 first = middle + 1
-        return middle
+        if data[middle] == item:
+            return middle
+        return False
     ~~~
 
     [Video hint](http://www.youtube.com/watch?v=UyIhxhURX-M)
