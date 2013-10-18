@@ -39,7 +39,7 @@ for slot in classtestrooms:
             rawdata[e+i].append(slot)
     i += classtestrooms[slot]
 
-rawdata = sorted(rawdata, key=lambda x : x[-1])
+rawdata = sorted(rawdata, key=lambda x : x[0])
 
 outfile = open('classtest.csv', 'w')
 writeobj = csv.writer(outfile)
