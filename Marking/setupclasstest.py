@@ -16,7 +16,8 @@ print 'Reading students from %s' % rawdata
 
 f = open(rawdata, 'r')
 rawdata = csv.reader(f)
-rawdata = [[r.strip() for r in row[:-1]] for row in rawdata if row[-1] != '']
+#rawdata = [[r.strip() for r in row[:-1]] for row in rawdata if row[-1] != '']
+rawdata = [[r.strip() for r in row[:3]] for row in rawdata]
 f.close()
 
 classtestrooms = {"1500 - M1.03" : 14,
