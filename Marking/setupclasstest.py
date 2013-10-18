@@ -21,13 +21,13 @@ rawdata = [[r.strip() for r in row[:3]] for row in rawdata]
 f.close()
 
 classtestrooms = {"1500 - M1.03" : 14,
-                  "1500 - MSc Computing Lab" : 26,
-                  "1500 - MSc Reading Room" : 10,
+                  "1500 - M1.05" : 26,
+                  "1500 - M1.08" : 10,
                   "1500 - M0.33" : 17,
                   "1500 - M0.35" : 16,
                   "1400 - M1.03" : 14,
-                  "1400 - MSc Computing Lab" : 26,
-                  "1400 - MSc Reading Room" : 10,
+                  "1400 - M1.05" : 26,
+                  "1400 - M1.08" : 10,
                   "1400 - M0.33" : 17,
                   "1400 - M0.35" : 16
                     }
