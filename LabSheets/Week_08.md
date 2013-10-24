@@ -195,7 +195,7 @@
 
     [Video hint](http://youtu.be/3qdlespAi9o)
 
-8. **TICKABLE** The file [W08_D01.txt](./Data/W08_D01.txt) contains 4 columns of data:
+8. **TICKABLE** The file [W08_D01.csv](./Data/W08_D01.csv) contains 4 columns of data:
 
         a, b, c, d, f, g
 
@@ -214,4 +214,4 @@
 
     If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist?
 
-8. The file [W08_D02.txt](./Data/W08_D02.txt) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
+8. The file [W08_D02.csv](./Data/W08_D02.csv) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
