@@ -5,6 +5,8 @@ Script to download tickable information
 import csv
 import gspread
 import matplotlib.pyplot as plt
+from subprocess import call
+from os import remove
 
 class Student():
     """
@@ -85,6 +87,7 @@ groupnames = {0:"P",
 
 print "Plotting data"
 allcounts = []
+listofpdfs = []
 for g in groups:
     groupname = groupnames[g.number]
     plt.figure()
@@ -94,6 +97,7 @@ for g in groups:
     plt.title("Group %s" % groupname)
     plt.savefig("%s.pdf" % groupname)
     allcounts += g.numberofticks  # Keep track of total ticks
+    listofpdfs.append("%s.pdf" % groupname)
 
 # Plot total histogram
 plt.figure()
@@ -102,3 +106,8 @@ plt.xlabel("Number of ticks")
 plt.ylabel("Proportion")
 plt.title("All")
 plt.savefig("All.pdf")
+listofpdfs.append("All.pdf")
+
+call(["pdftk"] + listofpdfs + ["output","plots.pdf"])
+for f in listofpdfs:
+    remove(f)
