@@ -93,7 +93,7 @@ for g in groups:
     plt.figure()
     plt.hist(g.numberofticks)
     plt.xlabel("Number of ticks")
-    plt.ylabel("Proportion")
+    plt.ylabel("Frequency")
     plt.title("Group %s" % groupname)
     plt.savefig("%s.pdf" % groupname)
     allcounts += g.numberofticks  # Keep track of total ticks
@@ -103,7 +103,7 @@ for g in groups:
 plt.figure()
 plt.hist(allcounts)
 plt.xlabel("Number of ticks")
-plt.ylabel("Proportion")
+plt.ylabel("Frequency")
 plt.title("All")
 plt.savefig("All.pdf")
 listofpdfs.append("All.pdf")
