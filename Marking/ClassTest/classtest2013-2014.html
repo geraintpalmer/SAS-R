@@ -25,7 +25,7 @@
 <p>Define a function <code>fib(n)</code> that returns <span class="math">\(X_n\)</span> <strong>using a recursive approach</strong>.</p>
 <p>Use this function to print to screen <span class="math">\(X_n\)</span> for <span class="math">\(0\leq n&lt;11\)</span>.</p>
 <h2 id="q2">Q2</h2>
-<p>The data file <a href="">classtestdata.csv</a> contains a collections of names. Write a script that:</p>
+<p>The data file <a href="./Data/classtestdata.csv">classtestdata.csv</a> contains a collections of names. Write a script that:</p>
 <ul>
 <li>Imports the data;</li>
 <li>Prints to screen how many total names are in the data file;</li>
@@ -34,12 +34,18 @@
 </ul>
 <h2 id="q3">Q3</h2>
 <p>Consider the rectangle on a grid with dimensions as shown:</p>
-<p>PICTURE HERE</p>
-<p>On this grid, consider the graph of <span class="math">\(f(x) = 1 - x ^ 2\)</span>. If we draw points of random coordinates in this rectangle, the probability <span class="math">\(P\)</span> of a point landing under the graph would be:</p>
+<div class="figure">
+<img src="./Images/grid.png" alt="" /><p class="caption"></p>
+</div>
+<p>On this grid, consider the graph of <span class="math">\(f(x) = 1 - x ^ 2\)</span>.</p>
+<div class="figure">
+<img src="./Images/gridwithplot.png" alt="" /><p class="caption"></p>
+</div>
+<p>If we draw points of random coordinates in this rectangle, the probability <span class="math">\(P\)</span> of a point landing under the graph would be:</p>
 <p><span class="math">\[P=\frac{\text{Area under the graph}}{\text{Total area of rectangle}}=\frac{\text{Area under the graph}}{2}\]</span></p>
 <p>Importantly, from basic Calculus we know that:</p>
-<p><span class="math">\[\text{Area under the graph}=\int_{-1}^{1}1-x^2,dx\]</span></p>
-<p>Use the random library to approximate the value of <span class="math">\(\int_{-1}^11-x^2,dx\)</span>.</p>
+<p><span class="math">\[\text{Area under the graph}=\int_{0}^{1}1-x^2,dx\]</span></p>
+<p>Use the random library to approximate the value of <span class="math">\(\int_{0}^11-x^2,dx\)</span>.</p>
 <h2 id="submission-instructions">Submission instructions</h2>
 <p>Do both of the following (if in any doubt ask an invigilator):</p>
 <ul>

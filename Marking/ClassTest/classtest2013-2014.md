@@ -22,7 +22,7 @@ Use this function to print to screen $X_n$ for $0\leq n<11$.
 
 ## Q2
 
-The data file [classtestdata.csv]() contains a collections of names. Write a script that:
+The data file [classtestdata.csv](./Data/classtestdata.csv) contains a collections of names. Write a script that:
 
 - Imports the data;
 - Prints to screen how many total names are in the data file;
@@ -33,17 +33,21 @@ The data file [classtestdata.csv]() contains a collections of names. Write a scr
 
 Consider the rectangle on a grid with dimensions as shown:
 
-PICTURE HERE
+![\text{A grid}](./Images/grid.png)
 
-On this grid, consider the graph of $f(x) = 1 - x ^ 2$. If we draw points of random coordinates in this rectangle, the probability $P$ of a point landing under the graph would be:
+On this grid, consider the graph of $f(x) = 1 - x ^ 2$.
+
+![\text{A grid}](./Images/gridwithplot.png)
+
+If we draw points of random coordinates in this rectangle, the probability $P$ of a point landing under the graph would be:
 
 $$P=\frac{\text{Area under the graph}}{\text{Total area of rectangle}}=\frac{\text{Area under the graph}}{2}$$
 
 Importantly, from basic Calculus we know that:
 
-$$\text{Area under the graph}=\int_{-1}^{1}1-x^2,dx$$
+$$\text{Area under the graph}=\int_{0}^{1}1-x^2,dx$$
 
-Use the random library to approximate the value of $\int_{-1}^11-x^2,dx$.
+Use the random library to approximate the value of $\int_{0}^11-x^2,dx$.
 
 ## Submission instructions
 
