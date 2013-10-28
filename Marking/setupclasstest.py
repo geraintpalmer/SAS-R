@@ -211,6 +211,7 @@ for s in studentstoslot:
                 slots.remove(slt)
             scheduledstudents.append(s)
 
+print [s.fullname for s in studentsbusyat1400]
 
 m016a1400 = Slot("1400 - M016A", 200)
 m016a1500 = Slot("1500 - M016A", 200)
@@ -218,10 +219,10 @@ print "Moving relevant students to M016A"
 for s in scheduledstudents:
     for n in mustbeinroomm016a:
         if n in s.fullname:
-            if s not in studentsbusyat1400:
-                s.schedule(m016a1400)
-            else:
+            if any([n in k for k in namesbusyat1400]):
                 s.schedule(m016a1500)
+            else:
+                s.schedule(m016a1400)
 
 
 outfile = open('classtest.csv', 'w')
