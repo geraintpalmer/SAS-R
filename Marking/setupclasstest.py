@@ -8,40 +8,6 @@ from random import choice
 Script return a csv file with students and their schedule
 """
 
-parser = argparse.ArgumentParser(description='Identify schedule for class test')
-parser.add_argument('rawdata', help='A data file with 4 columns, number, first name, last name and group')
-args = parser.parse_args()
-rawdata = args.rawdata
-
-print 'Reading students from %s' % rawdata
-
-f = open(rawdata, 'r')
-rawdata = csv.reader(f)
-rawdata = [[r.strip() for r in row[:3]] for row in rawdata]
-f.close()
-
-class Slot():
-    def __init__(self, label, capacity):
-        self.label = label
-        self.students = []
-        self.capacity = capacity
-        self.time = label[:4]
-        self.room = label[7:]
-        self.full = False
-
-class Student():
-    def __init__(self, firstname, lastname):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.fullname = firstname + " " + lastname
-        self.scheduled = False
-        self.hasclash = False
-    def schedule(slot):
-        self.slot = slot
-        self.slot.students.append(self)
-        if self.slot.capacity == len(self.slot.students):
-            self.slot.full = True
-
 classtestrooms = {"1500 - M1.03" : 14,
                   "1500 - M1.05" : 26,
                   "1500 - M1.08" : 10,
@@ -55,48 +21,48 @@ classtestrooms = {"1500 - M1.03" : 14,
                     }
 
 namesbusyat1400 = ["AWAN",
-        "BAKER",
-        "BIRD",
-        "CAMPBELL JAMES",
-        "CARNEY",
-        "CARPENTER",
-        "CHAMBERLAIN",
-        "CHAMBERS",
-        "CHAN",
-        "CHANT",
-        "COLE",
-        "DAVIES HAYLEY",
-        "DAVIES NICK",
-        "DAVIS JODIE",
-        "DIAKUN",
-        "DRENNEN",
-        "DUNKLEY",
-        "EARNSHAW",
-        "EDWARDS",
-        "EWEN",
-        "FERRO KIRBY",
-        "FORD",
-        "FOWLER",
-        "FOX",
-        "FROUDE",
-        "FURNELL",
-        "GARDNER",
-        "GHANAVATI",
-        "GIBBS",
-        "GRIFFITHS",
-        "GRIME",
-        "JOHNSON",
-        "KATES",
-        "LOUGHNANE",
-        "MACGINNIS",
-        "MAHENDRAN",
-        "POHL",
-        "SHAH",
-        "TATTERSDILL",
-        "WELLER",
-        "WIGHTMAN",
-        "JAC WILLIAMS",
-        "YIP"]
+                "BAKER",
+                "BIRD",
+                "CAMPBELL JAMES",
+                "CARNEY",
+                "CARPENTER",
+                "CHAMBERLAIN",
+                "CHAMBERS",
+                "CHAN",
+                "CHANT",
+                "COLE",
+                "DAVIES HAYLEY",
+                "DAVIES NICK",
+                "DAVIS JODIE",
+                "DIAKUN",
+                "DRENNEN",
+                "DUNKLEY",
+                "EARNSHAW",
+                "EDWARDS",
+                "EWEN",
+                "FERRO KIRBY",
+                "FORD",
+                "FOWLER",
+                "FOX",
+                "FROUDE",
+                "FURNELL",
+                "GARDNER",
+                "GHANAVATI",
+                "GIBBS",
+                "GRIFFITHS",
+                "GRIME",
+                "JOHNSON",
+                "KATES",
+                "LOUGHNANE",
+                "MACGINNIS",
+                "MAHENDRAN",
+                "POHL",
+                "SHAH",
+                "TATTERSDILL",
+                "WELLER",
+                "WIGHTMAN",
+                "JAC WILLIAMS",
+                "YIP"]
 
 namesbusyat1500 = ["ADDIS",
               "ALI",
@@ -128,7 +94,7 @@ namesbusyat1500 = ["ADDIS",
               "FORMAN",
               "FOULKES",
               "INGRAM",
-              "JAMES-OWEN",
+              "JAMES-OWEN ELEN",
               "JONES MARK",
               "JONES NICK",
               "LEWIS",
@@ -162,43 +128,104 @@ mustbeinroomm016a = ["BAKER",
                      "MARTIN",
                      "POHL"]
 
-slots = [Slot(e, classtestrooms[e]) for e in classtestrooms]
-students = [Student(row[2], row[1]) for row in rawdata]
+parser = argparse.ArgumentParser(description='Identify schedule for class test')
+parser.add_argument('rawdata', help='A data file with 4 columns, number, first name, last name and group')
+args = parser.parse_args()
+rawdata = args.rawdata
 
-print [s.fullname for s in students if 'BIRD' in s.fullname]
+print 'Reading students from %s' % rawdata
+
+f = open(rawdata, 'r')
+rawdata = csv.reader(f)
+rawdata = [[r.strip() for r in row[:3]] for row in rawdata]
+f.close()
+
+class Slot():
+    def __init__(self, label, capacity):
+        self.label = label
+        self.students = []
+        self.capacity = capacity
+        self.time = label[:4]
+        self.room = label[7:]
+        self.full = False
+
+class Student():
+    def __init__(self, firstname, lastname, number):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.fullname = lastname + " " + firstname
+        self.scheduled = False
+        self.hasclash = False
+        self.number = number
+    def schedule(self, slot):
+        self.slot = slot
+        self.slot.students.append(self)
+        if self.slot.capacity == len(self.slot.students):
+            self.slot.scheduled = True
+
+slots = [Slot(e, classtestrooms[e]) for e in classtestrooms]
+studentstoslot = [Student(row[2], row[1], row[0]) for row in rawdata]
 
 studentsbusyat1400 = []
 studentsbusyat1500 = []
-for s in students:
-    if any([k in s.fullname for k in namesbusyat1400]):
-        studentsbusyat1400.append(s)
-    elif any([k in s.fullname for k in namesbusyat1500]):
-        studentsbusyat1500.append(s)
+for s in studentstoslot:
+    for k in namesbusyat1400:
+        if k in s.fullname:
+            studentsbusyat1400.append(s)
+    for k in namesbusyat1500:
+        if k in s.fullname:
+            studentsbusyat1500.append(s)
 
-print [e for e in namesbusyat1400 if e not in [s.fullname for s in studentsbusyat1400]]
+studentsbusyat1400 = list(set(studentsbusyat1400))
+studentsbusyat1500 = list(set(studentsbusyat1500))
 
-def findclashes():
-    clashes = []
-    for row in rawdata:
-        if ("1500" in row[-1] and any([k in row[2] + " " + row[1]  for k in busyat1500])) or ("1400" in row[-1] and any([k in row[2] + " " + row[1] for k in busyat1400])):
-            clashes.append(row)
-    return clashes
+print any(["BIRD" in k for k in [s.fullname for s in studentsbusyat1400]])
 
-print "Randomly swapping clashes"
-while len(findclashes()) > 0:  # Randomly swap students until we no longer have clashes
-    swprow = choice(rawdata)
-    clshrow = findclashes()[0]
-    swprow[-1], clshrow[-1] = clshrow[-1], swprow[-1]
+scheduledstudents = []
+fullslots = []
+while studentsbusyat1400:
+    slt = choice([slt for slt in slots if slt.time == '1500'])
+    s = studentsbusyat1400.pop()
+    s.schedule(slt)
+    if slt.full:
+        fullslots.append(slt)
+        slots.remove(slt)
+    scheduledstudents.append(s)
+while studentsbusyat1500:
+        slt = choice([slt for slt in slots if slt.time == '1400'])
+        s = studentsbusyat1500.pop()
+        if s.fullname != "CAMPBELL JAMES":
+            s.schedule(slt)
+            if slt.full:
+                fullslots.append(slt)
+                slots.remove(slt)
+            scheduledstudents.append(s)
 
+for s in studentstoslot:
+    if s not in scheduledstudents:
+        if s.fullname != "CAMPBELL JAMES":
+            slt = choice(slots)
+            s.schedule(slt)
+            if slt.full:
+                fullslots.append(slt)
+                slots.remove(slt)
+            scheduledstudents.append(s)
+
+
+m016a1400 = Slot("1400 - M016A", 200)
+m016a1500 = Slot("1500 - M016A", 200)
 print "Moving relevant students to M016A"
-for row in rawdata:
+for s in scheduledstudents:
     for n in mustbeinroomm016a:
-        if n in row[2] + " " + row[1]:
-            row[-1] = "1400 - M016A"
+        if n in s.fullname:
+            if s not in studentsbusyat1400:
+                s.schedule(m016a1400)
+            else:
+                s.schedule(m016a1500)
 
-rawdata = sorted(rawdata, key=lambda x : x[0])
+
 outfile = open('classtest.csv', 'w')
 writeobj = csv.writer(outfile)
-for e in rawdata:
-    writeobj.writerow(e)
+for s in scheduledstudents:
+    writeobj.writerow([s.number, s.lastname, s.firstname, s.slot.label])
 outfile.close()
