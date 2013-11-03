@@ -22,7 +22,7 @@ Use this function to print to screen $X_n$ for $0\leq n<11$.
 
 ## Q2
 
-The data file [classtestdata.csv](./Data/classtestdata.csv) contains a collections of names. Write a script that:
+The data file [classtestdata.csv](./Data/classtestdata.csv) (**link provided at [www.vincent-knight.com](http://www.vincent-knight.com/)**) contains a collections of names. Write a script that:
 
 - Imports the data;
 - Prints to screen how many total names are in the data file;
@@ -31,7 +31,7 @@ The data file [classtestdata.csv](./Data/classtestdata.csv) contains a collectio
 
 ## Q3
 
-Consider the rectangle on a grid with dimensions as shown:
+Consider the square on a grid with dimensions as shown:
 
 ![\text{A grid}](./Images/grid.png)
 
@@ -39,9 +39,9 @@ On this grid, consider the graph of $f(x) = 1 - x ^ 2$.
 
 ![\text{A grid}](./Images/gridwithplot.png)
 
-If we draw points of random coordinates in this rectangle, the probability $P$ of a point landing under the graph would be:
+If we draw points of random coordinates in this square, the probability $P$ of a point landing under the graph would be:
 
-$$P=\frac{\text{Area under the graph}}{\text{Total area of rectangle}}=\frac{\text{Area under the graph}}{2}$$
+$$P=\frac{\text{Area under the graph}}{\text{Total area of square}}=\frac{\text{Area under the graph}}{2}$$
 
 Importantly, from basic Calculus we know that:
 
@@ -51,7 +51,7 @@ Use the random library to approximate the value of $\int_{0}^11-x^2,dx$.
 
 ## Submission instructions
 
-Do both of the following (if in any doubt ask an invigilator):
+Do **both** of the following (if in any doubt ask an invigilator):
 
 - Save your 3 files to the directory xyz. You will not be able to see your file when it is saved there but be sure to save it there (perhaps do this twice).
-- Email your file in an attachment to me: knightva@cf.ac.uk
+- Email your file in an attachment to me: knightva@cf.ac.uk. **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MAT1003-classtest-c123456789'.
