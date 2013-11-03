@@ -19,6 +19,7 @@ class Point():
         self.y = random.random()
         self.undergraph = 1 - (self.x) ** 2 <= self.y  # This returns the boolean checking whether or not the point is under the graph
 
+### 20 marks for creating class as above. Also, 20 marks if include method for 'undergraph' instead of attribute. If however, undergraph check is not class based: students lose 5 marks.
 
 def approxint(N=1000):
     """
@@ -36,6 +37,7 @@ def approxint(N=1000):
     return 2 * numberofpointsundergraph / float(N)
 
 
+### 10 remaining marks for obtaining 'correct answer' (whether or not a function is used as above or if list comprehensions are used etc...
 
 print "For N=200, integral approximated as %s" % approxint(200)
 print "For N=1000, integral approximated as %s" % approxint()

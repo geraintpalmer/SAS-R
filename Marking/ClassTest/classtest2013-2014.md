@@ -52,7 +52,7 @@ Importantly, from basic Calculus we know that:
 
 $$\text{Area under the graph}=\int_{0}^{1}1-x^2,dx$$
 
-Use the random library to approximate the value of $\int_{0}^11-x^2,dx$.
+Use the random library and a class to approximate the value of $\int_{0}^11-x^2,dx$.
 
 (Available mark: 30)
 
