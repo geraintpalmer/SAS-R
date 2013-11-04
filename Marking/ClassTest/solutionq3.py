@@ -17,24 +17,24 @@ class Point():
     def __init__(self, r=1):
         self.x = random.random()
         self.y = random.random()
-        self.undergraph = 1 - (self.x) ** 2 <= self.y  # This returns the boolean checking whether or not the point is under the graph
+        self.undergraph = 1 - (self.x) ** 2 >= self.y  # This returns the boolean checking whether or not the point is under the graph
 
 ### 20 marks for creating class as above. Also, 20 marks if include method for 'undergraph' instead of attribute. If however, undergraph check is not class based: students lose 5 marks.
 
 def approxint(N=1000):
     """
-    Function to return an approximation for pi using montecarlo simulation
+    Function to return an approximation for the integral using montecarlo simulation
 
     Arguments: N (default=1000) which is the number of points
 
-    Outputs: An approximation of pi
+    Outputs: An approximation of the integral
     """
     numberofpointsundergraph = 0
     for i in range(N):  # A loop to drop sufficient points
         point = Point()  # Generate a new drop
         if point.undergraph:  # Check if drop is in circle
             numberofpointsundergraph += 1
-    return 2 * numberofpointsundergraph / float(N)
+    return numberofpointsundergraph / float(N)
 
 
 ### 10 remaining marks for obtaining 'correct answer' (whether or not a function is used as above or if list comprehensions are used etc...

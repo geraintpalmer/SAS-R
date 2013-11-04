@@ -4,7 +4,7 @@
 
 - You have 50 minutes to carry out the following 3 questions;
 - You are allowed access to the internet and any books/notes you may have with you. **However, YOU ARE NOT PERMITTED TO COMMUNICATE WITH ANY OTHER STUDENT**. As such you are simply not allowed to log in to an email client, facebook etc... If you are caught using any site that an invigilator suspects you may be able to use to communicate with another student you will be asked to stop working on this class test and reported.
-- Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing student number by your actual student number). Submission details are given at the end of this sheet.
+- Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing studentnumber by your actual student number and q1 with q2 or q3 for each of the questions). Submission details are given at the end of this sheet.
 
 **10 marks are available for convention, comments and general presentation of code.**
 
@@ -60,5 +60,5 @@ Use the random library and a class to approximate the value of $\int_{0}^11-x^2,
 
 Do **both** of the following (if in any doubt ask an invigilator):
 
-- Save your 3 files to the directory xyz. You will not be able to see your file when it is saved there but be sure to save it there (perhaps do this twice).
-- Email your file in an attachment to me: knightva@cf.ac.uk. **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MAT1003-classtest-c123456789'.
+- Save your 3 files to the MA1003 class test folder in the shared drive. You will not be able to see your file when it is saved there but be sure to save it there (perhaps do this twice).
+- Email your file in an attachment to me: knightva@cf.ac.uk. **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MA1003-classtest-c123456789'.
