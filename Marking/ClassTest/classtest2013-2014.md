@@ -42,7 +42,7 @@ Consider the square on a grid with dimensions as shown:
 
 On this grid, consider the graph of $f(x) = 1 - x ^ 2$.
 
-![\text{A grid}](./Images/gridwithplot.png)
+![\text{A grid with $f(x)$}](./Images/gridwithplot.png)
 
 If we draw points of random coordinates in this square, the probability $P$ of a point landing under the graph would be:
 
