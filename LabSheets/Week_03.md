@@ -1,4 +1,4 @@
-# Week 3 -  Data Structurs and Recursion
+# Week 3 -  Data Structures and Recursion
 
 This lab sheet will introduce various data structures and also an important concept called 'recurrence'. After this session you will know how to:
 
@@ -7,6 +7,8 @@ This lab sheet will introduce various data structures and also an important conc
 + Write data to a file using the `write` and `read` functions;
 + Use the csv python module to read and write csv files;
 + Program some basic algorithms using recurrence.
+
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znxclcsx-JIwgFqGTXMdItOH).
 
 ## Lists in Python
 
@@ -73,7 +75,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     We can include logical statements to only give the squares of odd numbers:
 
     ~~~{.python}
-    squares = [e ** 2 for e in range(1, 11) if e %% 2 == 1]
+    squares = [e ** 2 for e in range(1, 11) if e % 2 == 1]
     print squares
     ~~~
 
@@ -115,7 +117,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     (Note that you can write lists over multiple lines)
 
-    To find a particular phone number in this phone book we would need to go through ever element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
+    To find a particular phone number in this phone book we would need to go through every element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
 
     ![\text{A bad phone book}\label{W03-img01}](./Images/W03-img01.png)
 
@@ -172,7 +174,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
     print goodphonebook['Brayden']
     ~~~
 
-    **Note valid keys must be strings or numerical variables but anything can be a value of a key.**
+    **Note: A key must be a string or a numerical variable. The associated value of a key can be anything.**
 
     [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
 
@@ -211,6 +213,8 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Note that the string we are writing at each step of the loop ends with a `\n`. This is a special character that tells the writer to write a new line. There are other special characters such as `\t` which tells the writer to include a tabulated space.
 
+    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+
 11. To read data from a file, we need to open the file in 'read mode':
 
     ~~~{.python}
@@ -232,14 +236,13 @@ Lists are a particular object in Python that hold ordered collection of other ob
     data = [int(e) for e in data[:-1]]
     ~~~
 
-    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
-    [Video hint](http://www.youtube.com/watch?v=HSz1A8ZHWWg)
+    [Video hint](http://www.youtube.com/watch?v=3ljPll8cG3A&feature=youtu.be)
 
 12. **TICKABLE** The following function checks if a number is prime or not. Read through the function and ensure that you understand it.
 
     ~~~{.python}
     def isprime(n):
-        return max([e % n for e in range(2, n)]) != 0
+        return min([n % e for e in range(2, n)]) != 0
     ~~~
 
     The file [W03_D01.txt](./Data/W03_D01.txt) contains a list of integers. Read in these integers and print to screen how many of them are prime. (If you would like a bit of a challenge, print to to screen the number of unique primes as the file contains various repetitions of numbers).

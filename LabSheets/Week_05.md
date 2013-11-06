@@ -7,9 +7,11 @@ This lab sheet will introduce a very important concept of computer science: obje
 + Methods;
 + Inheritance.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znwesme9fiK-kZZ-DUOJF9l_).
+
 ## Classes
 
-1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology\text{ as shown in Figure \ref{W05-img01}}:
+1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology\text{ as shown in Figure \ref{W05-img01}}:
 
     ![\text{Cellular structure}\label{W05-img01}](./Images/W05-img01.png)
 
@@ -108,6 +110,8 @@ This lab sheet will introduce a very important concept of computer science: obje
     listofquadratics = []
     ~~~
 
+    [Video hint](http://www.youtube.com/watch?v=2pPih4SawM8&feature=youtu.be)
+
 ## Methods
 
 5. **TICKABLE** We have seen methods before. For example for a given list `l = [1, 3, 2, 1.2]`, there exists a `sort` method that 'does some work to l' so that `l` becomes: `[1, 1.2, 2, 3]`. It is very easy to create custom methods for any class. We simply need to define functions _within_ our class.
@@ -124,7 +128,7 @@ This lab sheet will introduce a very important concept of computer science: obje
             self.age += 1
     ~~~
 
-     **All method definitions require `self` as an argument which simply implies that that method work on the particular instance in question.** We do not need to pass an argument to methods for the self argument (we can in essence ignore it).
+     **All method definitions require `self` as an argument which simply implies that the method works on the particular instance in question.** We do not need to pass an argument to methods for the self argument (we can in essence ignore it when calling the method).
 
     Let us see how this works:
 
@@ -177,7 +181,7 @@ This lab sheet will introduce a very important concept of computer science: obje
     print vince.sex
     ~~~
 
-7. **TICKABLE** Re visit the Quadratic class from earlier. Use the `__init__` method and also create a method to return `True` if the quadratic has real roots.
+7. **TICKABLE** Revisit the Quadratic class from earlier. Use the `__init__` method and also create a method to return `True` if the quadratic has real roots.
 
     Recall that the roots of $ax^2 + bx + c$ are given by:
 
@@ -264,7 +268,7 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     ~~~{.python}
     class MathStudent(Student):
-        self.favouriteclass = "Mathematics"
+        favouriteclass = "Mathematics"
     ~~~
 
     Instances of this inherited class will inherit attributes and methods from the original class:
@@ -280,4 +284,4 @@ This lab sheet will introduce a very important concept of computer science: obje
 
     Create another inherited class (from student) giving it a specific method.
 
-    [Video hint](http://youtu.be/oEzqQLlORq4)
+    [Video hint](http://www.youtube.com/watch?v=cKDWCzCE1y4&feature=youtu.be)

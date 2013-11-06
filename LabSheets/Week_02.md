@@ -8,6 +8,8 @@ This lab sheet will serve as a basic introduction to programming. After this ses
 + Define functions;
 + Write clear and consistent code.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znwZCtyKG1UQASpZ9mRkEIJo).
+
 ## Programming in Python
 
 Python is a programming language. There are various other programming languages:
@@ -121,7 +123,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
     There are various other things that can be done "on" strings, be sure to research these.
 
-    [Video hint](http://www.youtube.com/watch?v=IW6AGodpmSc)
+    [Video hint](http://www.youtube.com/watch?v=gHQtmCeCg1w&feature=youtu.be)
 
 7. It is possible to go from one type of variable to another.
 
@@ -178,7 +180,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
         print "boolean is %s" % boolean
     ~~~
 
-    Try typeing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practive, in Python it is a requirement**.
+    Try typing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement**.
 
     It is easy to create boolean variables using the following:
 
@@ -200,7 +202,7 @@ A variable is one of the basic building blocks used by a program. Variables may 
         print "num is an odd number"
     ~~~
 
-    (The `%` operator gives the remainder of one number when divided by another.)
+    (The `%` operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)
 
     [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
 
@@ -343,7 +345,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
 19. **TICKABLE**: Create a function that returns the sum of the first $K$ integers not divisiable by $B$. Investigate "using optional arguments" and set $K$ and $B$ to have default values 10000 and 3 respectively.
 
-    [Video hint](http://www.youtube.com/watch?v=asCgj1tXqu8)
+    [Video hint](http://www.youtube.com/watch?v=hjv8sAlYPDw&feature=youtu.be)
 
 20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
 
@@ -376,15 +378,15 @@ There are two ways of writing comments in Python:
 
     ~~~{.python}
     def myfunc(a,b):
-    """
-    This function calculates the ratio of two numbers raised to the sum of the two numbers.
+        """
+        This function calculates the ratio of two numbers raised to the sum of the two numbers.
 
-    Arguments:
-        a: the first number
-        b: the second number
+        Arguments:
+            a: the first number
+            b: the second number
 
-    Output: (a / b) ** (a + b)
-    """
+        Output: (a / b) ** (a + b)
+        """
         return (a / float(b)) ** (a + b)
     ~~~
 
@@ -474,13 +476,13 @@ There are two ways of writing comments in Python:
 
     ~~~{.python}
     afunc():
-    """
-    Always start a function with a multiline comment to describe what it does.
+        """
+        Always start a function with a multiline comment to describe what it does.
 
-    Arguments: List the arguments and what format they should be in.
+        Arguments: List the arguments and what format they should be in.
 
-    Output: List the expected output of the function.
-    """
+        Output: List the expected output of the function.
+        """
     ~~~
 
     As and when we see new topics on this course we will also discuss the corresponding conventions.

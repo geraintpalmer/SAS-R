@@ -36,9 +36,10 @@ code > span.er { font-weight: bold; }
 <li>Methods;</li>
 <li>Inheritance.</li>
 </ul>
+<p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znwesme9fiK-kZZ-DUOJF9l_">here</a>.</p>
 <h2 id="classes">Classes</h2>
 <ol style="list-style-type: decimal">
-<li><p><strong>TICKABLE</strong> The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay come up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:</p>
+<li><p><strong>TICKABLE</strong> The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:</p>
 <div class="figure">
 <img src="./Images/W05-img01.png" alt="" /><p class="caption"></p>
 </div>
@@ -96,7 +97,12 @@ vince.sex = <span class="st">&quot;M&quot;</span>
     b = <span class="dv">0</span>
     c = <span class="dv">0</span></code></pre>
 <p>The file <a href="./Data/W05_D01.csv">W05_D01.csv</a> contains triplets of coefficients. Create instances of the Quadratic class with the corresponding coefficients and put them all in to a list:</p>
+<<<<<<< HEAD
 <pre class="sourceCode python"><code class="sourceCode python">listofquadratics = []</code></pre></li>
+=======
+<pre class="sourceCode python"><code class="sourceCode python">listofquadratics = []</code></pre>
+<p><a href="http://www.youtube.com/watch?v=2pPih4SawM8&amp;feature=youtu.be">Video hint</a></p></li>
+>>>>>>> master
 </ol>
 <h2 id="methods">Methods</h2>
 <ol start="5" style="list-style-type: decimal">
@@ -109,7 +115,7 @@ vince.sex = <span class="st">&quot;M&quot;</span>
 
     <span class="kw">def</span> haveabirthday(<span class="ot">self</span>):
         <span class="ot">self</span>.age += <span class="dv">1</span></code></pre>
-<p><strong>All method definitions require <code>self</code> as an argument which simply implies that that method work on the particular instance in question.</strong> We do not need to pass an argument to methods for the self argument (we can in essence ignore it).</p>
+<p><strong>All method definitions require <code>self</code> as an argument which simply implies that the method works on the particular instance in question.</strong> We do not need to pass an argument to methods for the self argument (we can in essence ignore it when calling the method).</p>
 <p>Let us see how this works:</p>
 <pre class="sourceCode python"><code class="sourceCode python">vince = Student()
 <span class="kw">print</span> vince.age
@@ -144,7 +150,11 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 <span class="kw">print</span> vince.courses
 <span class="kw">print</span> vince.age
 <span class="kw">print</span> vince.sex</code></pre></li>
+<<<<<<< HEAD
 <li><p><strong>TICKABLE</strong> Re visit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
+=======
+<li><p><strong>TICKABLE</strong> Revisit the Quadratic class from earlier. Use the <code>__init__</code> method and also create a method to return <code>True</code> if the quadratic has real roots.</p>
+>>>>>>> master
 <p>Recall that the roots of \(ax^2 + bx + c\) are given by:</p>
 <p>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</p>
 <p>Using this count how many of the instances in <a href="./Data/W05_D01.txt">W05_D01.csv</a> have real roots.</p></li>
@@ -200,7 +210,7 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
         <span class="ot">self</span>.age += numberofbirthdays</code></pre>
 <p>We can create a new class from the Student class:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> MathStudent(Student):
-    <span class="ot">self</span>.favouriteclass = <span class="st">&quot;Mathematics&quot;</span></code></pre>
+    favouriteclass = <span class="st">&quot;Mathematics&quot;</span></code></pre>
 <p>Instances of this inherited class will inherit attributes and methods from the original class:</p>
 <pre class="sourceCode python"><code class="sourceCode python">becky = MathStudent([<span class="st">&#39;Mathematics&#39;</span>, <span class="st">&#39;Biology&#39;</span>], <span class="dv">29</span>, <span class="st">&#39;Female&#39;</span>)
 <span class="kw">print</span> becky.courses
@@ -209,7 +219,7 @@ vince = Student([<span class="st">&quot;Biology&quot;</span>,<span class="st">&q
 becky.haveabirthday()
 <span class="kw">print</span> becky.age</code></pre>
 <p>Create another inherited class (from student) giving it a specific method.</p>
-<p><a href="http://youtu.be/oEzqQLlORq4">Video hint</a></p></li>
+<p><a href="http://www.youtube.com/watch?v=cKDWCzCE1y4&amp;feature=youtu.be">Video hint</a></p></li>
 </ol>
 </body>
 </html>

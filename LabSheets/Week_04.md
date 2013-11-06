@@ -5,6 +5,8 @@ This lab sheet will introduce two algorithms from computer science. After this s
 + Insertion and Bubble sort algorithm;
 + Binary search.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znyEYYOnDbQHq1PUuNgbhdD3).
+
 ## Sorting Algorithms
 
 1. **TICKABLE** The following code creates a list of digits from 1 to 31.
@@ -48,9 +50,9 @@ This lab sheet will introduce two algorithms from computer science. After this s
             FIND SMALLEST ELEMENT IN OLDLIST
             MOVE THAT ELEMENT TO NEWLIST
 
-    It should be straightforward to see that at every step of this algorithm we the total size of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
+    It should be straightforward to see that at every step of this algorithm the sum of the sizes of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
 
-    ![\text{A concise version of selection sort.}\label{W04-img02}}](./Images/W04-img02.png)
+    ![\text{A concise version of selection sort.}\label{W04-img02}](./Images/W04-img02.png)
 
     Here is some **pseudo code** that describes the 'insertion sort' algorithm:
 
@@ -90,7 +92,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
     Here's the pseudo code for the "BUBBLE UP" part of the above code:
 
         SET INDEX TO LENGTH - 1
-        WHILE INDEX >  FIRSTUNSORTED + 1:
+        WHILE INDEX > FIRSTUNSORTED:
             IF DATA[INDEX] < DATA[INDEX - 1]
                 SWAP DATA[INDEX] AND DATA[INDEX - 1]
                 SET SWAP TO TRUE
@@ -139,7 +141,7 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
 
-    [Video hin](http://www.youtube.com/watch?v=D7-3Oh_oZA4)
+    [Video hint](http://www.youtube.com/watch?v=D7-3Oh_oZA4)
 
 6. One searching algorithm we will look at is called "sequential search". This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question **should** be at.
 

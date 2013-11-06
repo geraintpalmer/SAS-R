@@ -10,6 +10,8 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
 **Sage is based on Python so you can use all the general programming techniques you have learnt up until now in Sage.** Sage has all of the commands and functions you are used to in Python although some might do a bit more. Sage also has a lot of built in objects for specific mathematical operations.
 
+A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znyytHl2YQjE41o-TdfewmKr).
+
 1. **TICKABLE** Open Sage
 
     Navigate to [sage.maths.cf.ac.uk](https://sage.maths.cf.ac.uk/) where you can setup a user account following these instructions:
@@ -21,6 +23,8 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
     Take a look at the following video that goes through this process as well as shows you how to create your first Sage worksheet.
 
     [Video hint](http://www.youtube.com/watch?v=3E9LvXV_zrA&feature=youtu.be)
+
+    **If you forget your password DO NOT CREATE ANOTHER ACCOUNT: come and see me (Vince Knight) and I can reset your password.**
 
 2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
@@ -78,7 +82,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
 6. Using the `is_prime` method investigate the following claim:
 
-    > All numbers of the form $k^2-79*k+1601$ are prime for $k\in\mathbb{Z}$ and $k\geq 3$.
+    > All numbers of the form $k^2-79k+1601$ are prime for $k\in\mathbb{Z}$ and $k\geq 3$.
 
 7. **TICKABLE** A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:
 
@@ -147,13 +151,13 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 9. **TICKABLE** Using Sage obtain the solution to the following equations:
 
     1. $x^2 = -1$
-    2. $x^2 - 53 x + 2 a = 0 $
-    4. $sin(x) = x - 1$ (Investigate the Sage function `find_root`)
-    3. $x^5 + sin(x) - 2 * x = .5 $
+    2. $x^2 - 53 x + 2 a = 0$
+    4. $\sin(x) = x - 1$ (Investigate the Sage function `find_root`)
+    3. $x^5 + \sin(x) - 2x = .5$
 
     [Video hint](http://youtu.be/GVEbkBXBmTw)
 
-10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equation:
+10. It is also possible to solve systems of equations using Sage. In this case we pass a list of equations as arguments to the `solve` function. The following code gives a solution to this system of equations:
 
     $$\begin{cases}
     x + y = z\\

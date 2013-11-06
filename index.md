@@ -10,7 +10,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./LabSheets/Week_02.html), [pdf](./LabSheets/Week_02.pdf), [docx](./LabSheets/Week_02.docx)
 
-2. Lab Sheets 2:  Data Structurs and Recursion
+2. Lab Sheets 2:  Data Structures and Recursion
 
 	[html (recommended)](./LabSheets/Week_03.html), [pdf](./LabSheets/Week_03.pdf), [docx](./LabSheets/Week_03.docx)
 
@@ -49,9 +49,29 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./Handouts/handout01.html), [pdf](./Handouts/handout01.pdf), [docx](./Handouts/handout01.docx)
 
-The reading list can be found [here](./readinglist.html).
+2. Handout 2: Conditional Statements, flow control and functions
 
-([My personal website](http://www.vincent-knight.com/))
+	[html (recommended)](./Handouts/handout02.html), [pdf](./Handouts/handout02.pdf), [docx](./Handouts/handout02.docx)
+
+3. Handout 3: Functions, Lists and For Loops, Iteration versus Recursion
+
+	[html (recommended)](./Handouts/handout03.html), [pdf](./Handouts/handout03.pdf), [docx](./Handouts/handout03.docx)
+
+4. Handout 4: Functions, Sorting and Searching algorithms and what to expect on the class test.
+
+	[html (recommended)](./Handouts/handout04.html), [pdf](./Handouts/handout04.pdf), [docx](./Handouts/handout04.docx)
+
+5. Handout 5: Object Orientated Programming
+
+	[html (recommended)](./Handouts/handout05.html), [pdf](./Handouts/handout05.pdf), [docx](./Handouts/handout05.docx)
+
+6. Handout 6: Sage and the Class test
+
+	[html (recommended)](./Handouts/handout06.html), [pdf](./Handouts/handout06.pdf), [docx](./Handouts/handout06.docx)
+
+Alternative resources can be found [here](./alternativeresources.html).
+
+[My personal website](http://www.vincent-knight.com/) contains information with regards to assessment and also solutions to the lab sheets.
 
 <script type="text/javascript">
 

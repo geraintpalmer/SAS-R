@@ -29,6 +29,7 @@ code > span.er { font-weight: bold; }
 </head>
 <body>
 <h1 id="week-8---linear-algebra">Week 8 - Linear Algebra</h1>
+<p>A YouTube playlist with all the videos for this lab sheet can be found <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znzwLePTdmDWDCKJse3omJe5">here</a>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Use Sage to solve the following system of equations:</p>
 <p>\[\begin{cases}
@@ -95,7 +96,11 @@ B = matrix([[<span class="dv">7</span>,<span class="dv">8</span>],[<span class="
 <p><a href="http://youtu.be/NOpEMl_yzMM">Video hint</a></p></li>
 <li><p><strong>TICKABLE</strong> The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: &quot;the identity matrix&quot;.</p>
 <p>The identity matrix of size \(n\times n\) is denoted by \(\mathbb{I}_n\). The following Sage code gives \(\mathbb{I}_n\):</p>
+<<<<<<< HEAD
 <pre class="sourceCode python"><code class="sourceCode python">identify_matrix(<span class="dv">4</span>)</code></pre>
+=======
+<pre class="sourceCode python"><code class="sourceCode python">identity_matrix(<span class="dv">4</span>)</code></pre>
+>>>>>>> master
 <p>Note also, that the previous exercise showed that we can sometimes find a matrix \(B\) such that \(AB=\mathbb{I}_n\). Finding such a matrix is refered to as 'invering' \(A\) and if certain properties hold (you will see this in further details next semester) this matrix is denoted \(A^{-1}\).</p>
 <p>If we recall the matrix equation \(AX=b\) and if we assume that \(A^{-1}\)exists then multiplying both sides by \(A^{-1}\) gives:</p>
 <p>\[A^{-1}AX=A^{-1}b\Rightarrow \mathbb{I}_nX=A^{-1}b\Rightarrow X=A^{-1}b\]</p>
