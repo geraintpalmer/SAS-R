@@ -60,5 +60,5 @@ Use the random library and a class to approximate the value of $\int_{0}^11-x^2,
 
 Do **both** of the following (if in any doubt ask an invigilator):
 
-- Save your 3 files to the MA1003 class test folder in the shared drive. You will not be able to see your file when it is saved there but be sure to save it there (perhaps do this twice).
+- Save your 3 files to the folder called 'MA1003 Class Test' **in the S drive**. You will only be able to do this once!
 - Email your file in an attachment to me: knightva@cf.ac.uk. **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MA1003-classtest-c123456789'.
