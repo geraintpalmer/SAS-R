@@ -33,7 +33,7 @@ Use this function to print to screen $X_n$ for $0\leq n<11$.
 
 ## Q2
 
-The data file [classtestdata.csv](./Data/classtestdata.csv) (**link provided at [www.vincent-knight.com](http://www.vincent-knight.com/)**) contains a collections of names. Write a script that:
+The data file [classtestdata.csv](./Data/classtestdata.csv) (**link provided at [drvinceknight.github.io/data.html]**) contains a collections of names. Write a script that:
 
 - Imports the data;
 - Prints to screen how many total names are in the data file;
