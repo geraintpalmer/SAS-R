@@ -40,7 +40,7 @@ The data file [classtestdata.csv](./Data/classtestdata.csv) (**link provided at 
 - Prints to screen the mean length of names in the file;
 - Prints to screen the number of unique names in the file.
 
-(Available mark: 30)
+(Available marks: 30)
 
 ## Q3
 
@@ -62,7 +62,7 @@ $$\text{Area under the graph}=\int_{0}^{1}1-x^2,dx$$
 
 Use the random library and a class to approximate the value of $\int_{0}^11-x^2,dx$.
 
-(Available mark: 30)
+(Available marks: 30)
 
 ## Submission instructions
 
