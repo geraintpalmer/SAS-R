@@ -4,12 +4,12 @@
 
 - You have 50 minutes to carry out the following 3 questions;
 - You are allowed access to the internet and any books/notes you may have with you. **However, YOU ARE NOT PERMITTED TO COMMUNICATE WITH ANY OTHER STUDENT**. As such you are simply not allowed to log in to an email client, facebook etc... If you are caught using any site that an invigilator suspects you may be able to use to communicate with another student you will be asked to stop working on this class test and reported.
-- Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing studentnumber by your actual student number and q1 with q2 or q3 for each of the questions). Submission details are given at the end of this sheet. Start every script with a multiline comment with student number. For example:
+- Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing studentnumber by your actual student number and q1 with q2 or q3 for each of the questions). Submission details are given at the end of this sheet. Start every script with a multiline comment with your student number. For example:
 
 ~~~{.python}
 """
 Class test
-123456789
+c123456789
 """
 ~~~
 
@@ -32,7 +32,7 @@ Use this function to print to screen $X_n$ for $0\leq n<11$.
 
 ## Q2
 
-The data file [classtestdata.csv](./Data/classtestdata.csv) (**the file can be found at [drvinceknight.github.io/data.html](http://drvinceknight.github.io/Computing_for_mathematics/data.html)**, use the following password: cL3d2a) contains a collections of names. Write a script that:
+The data file [classtestdata.csv](./Data/classtestdata.csv) (**the file can be found at [drvinceknight.github.io/Computing_for_mathematics/data.html](http://drvinceknight.github.io/Computing_for_mathematics/data.html)**, use the following password: cL3d2a) contains a collections of names. Write a script that:
 
 - Imports the data;
 - Prints to screen how many total names are in the data file;
@@ -68,4 +68,4 @@ Use the random library and a class to approximate the value of $\int_{0}^11-x^2,
 Do **both** of the following (if in any doubt ask an invigilator):
 
 - Save your 3 files to the folder called 'MA1003 Class Test' **in the S drive**. You will only be able to do this once!
-- Email your file in an attachment to me: knightva@cf.ac.uk. **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MA1003-classtest-c123456789'.
+- Email your file in an attachment to me: knightva@cf.ac.uk. BE SURE TO CLOSE PYTHON BEFORE OPENING YOUR EMAIL! **Use the following as a subject for the email:** MA1003-classtest-yourstudentnumber. For example: 'MA1003-classtest-c123456789'.
