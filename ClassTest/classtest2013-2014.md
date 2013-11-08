@@ -6,12 +6,12 @@
 - You are allowed access to the internet and any books/notes you may have with you. **However, YOU ARE NOT PERMITTED TO COMMUNICATE WITH ANY OTHER STUDENT**. As such you are simply not allowed to log in to an email client, facebook etc... If you are caught using any site that an invigilator suspects you may be able to use to communicate with another student you will be asked to stop working on this class test and reported.
 - Write three separate scripts for each question naming them as follows: `ma1003-studentnumber-q1.py' (replacing studentnumber by your actual student number and q1 with q2 or q3 for each of the questions). Submission details are given at the end of this sheet. Start every script with a multiline comment with your student number and question number. For example:
 
-~~~{.python}
-"""
-Class test - question 1
-c123456789
-"""
-~~~
+    ~~~{.python}
+    """
+    Class test - question 1
+    c123456789
+    """
+    ~~~
 
 **10 marks are available for convention, comments and general presentation of code.**
 
