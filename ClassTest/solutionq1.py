@@ -1,5 +1,7 @@
 """
 Solution to question 1 of class test
+
+Marking for this exercise will be strict as the students were told multiple times during lectures that all they would need to do for question 1 of the class test is to copy a file from the solutions.
 """
 
 def fib(n):

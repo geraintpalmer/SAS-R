@@ -1,6 +1,7 @@
 """
 Solution to question 3 of the classtest
 
+Marking for this question will again be lenient with marks given for methodology and 'almost working' answers.
 """
 
 import random

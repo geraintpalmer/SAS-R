@@ -1,5 +1,7 @@
 """
 Solution to question 2 of class test
+
+Marking for this question will be lenient with marks given for methodology and 'almost working' answers.
 """
 
 import csv  # Library to read the csv file
