@@ -54,8 +54,6 @@ class Group():
                     k += 1
         self.numberofticks = [len([t for t in s.ticks if t]) for s in self.students]
 
-
-
 print "Authenticating"
 # Download data
 username = "vincent.knight"  # My gmail username
@@ -111,3 +109,12 @@ listofpdfs.append("All.pdf")
 call(["pdftk"] + listofpdfs + ["output","plots.pdf"])
 for f in listofpdfs:
     remove(f)
+
+# Find students with not enough ticks
+f = open("studentsmissingticks.md", 'w')
+requirednumberofticks = 55
+for g in groups:
+    for s in g.students:
+        if len([t for t in s.ticks if t]) < requirednumberofticks:
+            f.write(s.name + "\n")
+f.close()
