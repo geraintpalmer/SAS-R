@@ -5,6 +5,7 @@ Script to analyse feedback
 import csv
 import gspread
 import matplotlib.pyplot as plt
+import pylab
 
 class Opinion():
     """
@@ -50,3 +51,31 @@ print "Negative comments"
 print "================================"
 for o in [o for o in opinions if not o.positive]:
     print "%s: %s" % (o.label, o.mentions)
+
+
+def plot(dictionary, title, filetitle, color='cyan', maxx=False):
+    """
+    Saves a histogram of a dictionary of the form {comment : count} to a given title.
+    """
+    if not maxx:
+        maxx = max(dictionary.values)
+    comments = sorted(dictionary.keys(), key= lambda x: dictionary[x])  # Obtain comments sorted by count
+
+    fig, ax = plt.subplots(figsize=(4,7))
+
+    fig.canvas.set_window_title('title')
+
+    rects = ax.barh(range(0, 3*len(dictionary), 3), [dictionary[c] for c in comments], align='center', height=2, color=color)
+
+    ax.axis([0, max(dictionary.values()), -3, 3 * len(dictionary)])
+    pylab.yticks(range(0, 3*len(dictionary), 3), comments)
+    pylab.xticks(range(min(dictionary.values()),maxx + 1,5))
+    ax.set_title(title)
+    plt.grid()
+    plt.xlabel('Frequency')
+    plt.savefig(filetitle, bbox_inches='tight')
+
+opinion_dict = {o.label:o.mentions for o in opinions if o.positive and o.mentions >= 10}
+plot(opinion_dict, 'Positive Comments', 'positive_2013-2014.png', maxx=max([o.mentions for o in opinions]))
+opinion_dict = {o.label:o.mentions for o in opinions if not o.positive and o.mentions >= 10}
+plot(opinion_dict, 'Negative Comments', 'negative-2013-2014.png', color='red', maxx=max([o.mentions for o in opinions]))
