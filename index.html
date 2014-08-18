@@ -8,7 +8,7 @@ title  : Vince Knight
     <ul>
     {% for page in site.pages %}
         {% if page.categories contains 'labsheets' %}
-        <a href={{page.url}}>{{ page.title }}</a>
+        <li><a href={{ page.url }}>{{ page.title }}</a></li>
         {% endif %}
     {% endfor %}
     </ul>

@@ -1,3 +1,9 @@
+---
+layout     : post
+categories : labsheets
+title      : Week 10 - LaTeX
+comments   : false
+---
 # Week 10 - LaTeX
 
 Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).
