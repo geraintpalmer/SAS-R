@@ -31,7 +31,7 @@ ga('send', 'pageview');
 
 <div class="wrap">
 
-<a class="site-title" href="./index.html">Fair Individual Marks</a>
+<a class="site-title" href="./index.html">Computing for Mathematics</a>
 
 <nav class="site-nav">
 <a href="#" class="menu-icon">
@@ -46,12 +46,12 @@ ga('send', 'pageview');
  </svg>
 </a>
 <div class="trigger">
-  <a class="page-link" href="drvinceknight.github.io/">Personal Site</a>
-  <a class="page-link" href="drvinceknight.github.io/unpeudemath">Blog</a>
-  <a class="page-link" href="drvinceknight.github.io/teaching">Teaching</a>
-  <a class="page-link" href="drvinceknight.github.io/research">Research</a>
-  <a class="page-link" href="drvinceknight.github.io/outreach">Outreach</a>
-  <a class="page-link" href="drvinceknight.github.io/other">Other</a>
+  <a class="page-link" href="https://drvinceknight.github.io/">Personal Site</a>
+  <a class="page-link" href="https://drvinceknight.github.io/unpeudemath">Blog</a>
+  <a class="page-link" href="https://drvinceknight.github.io/teaching">Teaching</a>
+  <a class="page-link" href="https://drvinceknight.github.io/research">Research</a>
+  <a class="page-link" href="https://drvinceknight.github.io/outreach">Outreach</a>
+  <a class="page-link" href="https://drvinceknight.github.io/other">Other</a>
 </div>
 </nav>
 
@@ -62,8 +62,6 @@ ga('send', 'pageview');
 <div class="page-content">
 <div class="wrap">
 <div class="home"> """)
-index_file.write("# Computing for mathematics")
-index_file.write("\n")
 
 # Notes
 
@@ -82,9 +80,11 @@ list_of_md_sheets.sort()
 number_of_lab_sheets = len(list_of_md_sheets)
 print "%s lab sheets read." % number_of_lab_sheets
 
-index_file.write("\n")
-index_file.write("\n## Lab Sheets")
-index_file.write("\n")
+index_file.write("""
+
+# Lab Sheets
+
+""")
 
 for i in range(len(list_of_md_sheets)):
     outfile = open(target_dir + "/" + list_of_md_sheets[i])
@@ -106,9 +106,9 @@ list_of_md_sheets.sort()
 number_of_lab_sheets = len(list_of_md_sheets)
 print "%s handouts read." % number_of_lab_sheets
 
-index_file.write("\n")
-index_file.write("\n## Handouts")
-index_file.write("\n")
+index_file.write("""
+# Handouts
+""")
 
 for i in range(len(list_of_md_sheets)):
     outfile = open(target_dir + "/" + list_of_md_sheets[i])
@@ -248,7 +248,7 @@ index_file.write("""
 </div>
 
 <div class="footer-col-2 column">
-  <p class="text">This site contains information about a methodology used to calculate fair individual marks in a group project using game theory.</p>
+  <p class="text">This is the class website for the Computing for Mathematics module</p>
 </div>
 
 </div>

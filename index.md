@@ -24,7 +24,7 @@ ga('send', 'pageview');
 
 <div class="wrap">
 
-<a class="site-title" href="./index.html">Fair Individual Marks</a>
+<a class="site-title" href="./index.html">Computing for Mathematics</a>
 
 <nav class="site-nav">
 <a href="#" class="menu-icon">
@@ -39,12 +39,12 @@ ga('send', 'pageview');
  </svg>
 </a>
 <div class="trigger">
-  <a class="page-link" href="drvinceknight.github.io/">Personal Site</a>
-  <a class="page-link" href="drvinceknight.github.io/unpeudemath">Blog</a>
-  <a class="page-link" href="drvinceknight.github.io/teaching">Teaching</a>
-  <a class="page-link" href="drvinceknight.github.io/research">Research</a>
-  <a class="page-link" href="drvinceknight.github.io/outreach">Outreach</a>
-  <a class="page-link" href="drvinceknight.github.io/other">Other</a>
+  <a class="page-link" href="https://drvinceknight.github.io/">Personal Site</a>
+  <a class="page-link" href="https://drvinceknight.github.io/unpeudemath">Blog</a>
+  <a class="page-link" href="https://drvinceknight.github.io/teaching">Teaching</a>
+  <a class="page-link" href="https://drvinceknight.github.io/research">Research</a>
+  <a class="page-link" href="https://drvinceknight.github.io/outreach">Outreach</a>
+  <a class="page-link" href="https://drvinceknight.github.io/other">Other</a>
 </div>
 </nav>
 
@@ -54,13 +54,13 @@ ga('send', 'pageview');
 <body>
 <div class="page-content">
 <div class="wrap">
-<div class="home"> # Computing for mathematics
-
+<div class="home"> 
 This website contains the lab sheets for the first term of Computing for Mathematics. Each lab sheet contains links to a number of videos that should help with the exercises.
                  
 
 
-## Lab Sheets
+# Lab Sheets
+
 
 1. Lab Sheets 1: Conditional Statements, flow control and functions
 
@@ -98,8 +98,7 @@ This website contains the lab sheets for the first term of Computing for Mathema
 
 	[html (recommended)](./LabSheets/Week_10.html), [pdf](./LabSheets/Week_10.pdf), [docx](./LabSheets/Week_10.docx)
 
-
-## Handouts
+# Handouts
 
 1. Handout 1: What you need to know
 
@@ -225,7 +224,7 @@ Alternative resources can be found [here](./alternativeresources.html).
 </div>
 
 <div class="footer-col-2 column">
-  <p class="text">This site contains information about a methodology used to calculate fair individual marks in a group project using game theory.</p>
+  <p class="text">This is the class website for the Computing for Mathematics module</p>
 </div>
 
 </div>
