@@ -1,3 +1,9 @@
+---
+layout     : post
+categories : labsheets
+title      : Week 2
+comments   : false
+---
 # Week 2 - Conditional Statements, flow control and functions
 
 This lab sheet will serve as a basic introduction to programming. After this session you will know the basic Python syntax to carry out the following:
