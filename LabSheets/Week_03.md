@@ -125,7 +125,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     To find a particular phone number in this phone book we would need to go through every element of the phone book to check if it was the right one\text{ (as shown in Figure \ref{W03-img01)}}:
 
-    ![\text{A bad phone book}\label{W03-img01}](./Images/W03-img01.png)
+    ![\text{A bad phone book}\label{W03-img01}]({{site.baseurl}}/assets/Images/W03-img01.png)
 
     ~~~{.python}
     def searchpb(target):
@@ -140,7 +140,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     **In reality this is not how a phone book is designed.** Names are in a given order (alphabetical) and so it is easier to know _where a name is supposed to be_\text{ (as shown in Figure \ref{W03-img02)}}. This is implemented in python using 'dictionaries' which are an **unordered set of _key:value_ pairs**.
 
-    ![\text{A good phone book}\label{W03-img02}](./Images/W03-img02.png)
+    ![\text{A good phone book}\label{W03-img02}]({{site.baseurl}}/assets/Images/W03-img02.png)
 
     This code creates the above phone book as a dictionary with the names as _keys_ and the numbers as their _values_:
 
@@ -307,7 +307,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     Note that this approach is much more closely related to the actual definition of what we are trying to compute. \text{The basic idea behind recursion is shown in Figure \ref{W03_img01}.} In general we will always either be considering a _base_ case or a case than can be reduced.
 
-    ![\text{Basic idea behind recursion}\label{W03_img01}](./Images/W03-img03.png)
+    ![\text{Basic idea behind recursion}\label{W03_img01}]({{site.baseurl}}/assets/Images/W03-img03.png)
 
     [Video hint](http://www.youtube.com/watch?v=EYPT4Ykx5IU)
 

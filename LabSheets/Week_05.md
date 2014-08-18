@@ -19,11 +19,11 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology\text{ as shown in Figure \ref{W05-img01}}:
 
-    ![\text{Cellular structure}\label{W05-img01}](./Images/W05-img01.png)
+    ![\text{Cellular structure}\label{W05-img01}]({{site.baseurl}}/assets/Images/W05-img01.png)
 
     The following image\text{ (shown in Figure \ref{W05-img02})} shows the various ideas that we will work through in this lab sheet (keep it in mind as we go through things).
 
-    ![\text{Structure of OOP}\label{W05-img02}](./Images/W05-img02.png)
+    ![\text{Structure of OOP}\label{W05-img02}]({{site.baseurl}}/assets/Images/W05-img02.png)
 
     Here we will see how to create our own **class** (a type of object). The following code creates a class called `Student`:
 
@@ -230,7 +230,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     $$P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}$$
 
-    ![\text{Inscribed circle}\label{W05-img03}](./Images/W05-img03.png)
+    ![\text{Inscribed circle}\label{W05-img03}]({{site.baseurl}}/assets/Images/W05-img03.png)
 
     Thus, if we can approximate $P$ then we can approximate $\pi$ as $4P$. In this question we will write code to approximate $P$ using the random python library.
 

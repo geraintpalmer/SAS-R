@@ -1,7 +1,7 @@
 ---
 layout     : post
 categories : labsheets
-title      : Week 2
+title      : Week 2 - Conditional Statements, Flow Control and Functions
 comments   : false
 ---
 # Week 2 - Conditional Statements, flow control and functions
@@ -38,23 +38,19 @@ When writing a program one makes use of an Integrated Development Environment: *
 
 and many more. We will be using the simplest Python IDE available: IDLE which comes bundled with Python (in your own time be sure to investigate others as it is a question of personal choice).
 
-1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code\text{ (as shown in Figure \ref{W02-S01})} and press `ENTER`:
+1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
-    ~~~{.python}
-    print "Hello world"
-    ~~~
+        print "Hello world"
 
-    ![\text{Hello world.}\label{W02-S01}](./Screenshots/W02-S01.png)
+    ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
 
     [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
 
-2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above\text{ (as shown in Figure \ref{W02-S02})}:
+2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:
 
-    ~~~{.python}
-    print "Hello world"
-    ~~~
+        print "Hello world"
 
-    ![\text{Hello world in a file.}\label{W02-S02}](./Screenshots/W02-S02.png)
+    ![]({{site.baseurl}}/assets/Screenshots/W02-S02.png)
 
     Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
 
@@ -64,34 +60,28 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
 3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
 
-    ~~~{.python}
-    num1 = 23
-    print type(num1)
+        num1 = 23
+        print type(num1)
 
-    num2 = 23.5
-    print type(num2)
+        num2 = 23.5
+        print type(num2)
 
-    str1 = "Hello world!"
-    print type(str1)
-    ~~~
+        str1 = "Hello world!"
+        print type(str1)
 
     [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
 
 4. We can carry out basic arithmetic operations using Python. Take a look at the following:
 
-    ~~~{.python}
-    num = 2
-    num = num +3
-    print num
-    ~~~
+        num = 2
+        num = num +3
+        print num
 
     this can however also be written:
 
-    ~~~{.python}
-    num = 2
-    num += 3
-    print num
-    ~~~
+        num = 2
+        num += 3
+        print num
 
     Simlarly, `-`, `*`, `/` and `**` can be used for:
 
@@ -108,24 +98,20 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
 6. **TICKABLE**: We can carry also manipulate strings. Try out the following:
 
-    ~~~{.python}
-    str1 = "This is a string that I will learn to manipulate"
-    str2 = ", string manipulation is very useful."
-    string = str1 + str2
-    print string
-    print len(string)
-    print string[0]
-    print string[-1]
-    print string[3:7]
-    ~~~
+        str1 = "This is a string that I will learn to manipulate"
+        str2 = ", string manipulation is very useful."
+        string = str1 + str2
+        print string
+        print len(string)
+        print string[0]
+        print string[-1]
+        print string[3:7]
 
     We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.
 
-    ~~~{.python}
-    index = str1.index("string")
-    print index
-    print str1[index:index + len("string")]
-    ~~~
+        index = str1.index("string")
+        print index
+        print str1[index:index + len("string")]
 
     There are various other things that can be done "on" strings, be sure to research these.
 
@@ -133,38 +119,28 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
 7. It is possible to go from one type of variable to another.
 
-    ~~~{.python}
-    f = 10.2
-    print int(f)
-    print float(int(f))
-    ~~~
+        f = 10.2
+        print int(f)
+        print float(int(f))
 
-    ~~~{.python}
-    s = str(f)
-    print s
-    print type(s)
-    ~~~
+        s = str(f)
+        print s
+        print type(s)
 
     It is also possible to write strings using other variables.
 
-    ~~~{.python}
-    numberofcats = 2
-    name = "Vince"
-    height = 1.7
-    notborn = "the UK"
-    ~~~
+        numberofcats = 2
+        name = "Vince"
+        height = 1.7
+        notborn = "the UK"
 
     One way to do this would be:
 
-    ~~~{.python}
-    string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
-    ~~~
+        string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
 
     Python (and most other languages) has a nicer way of doing this:
 
-    ~~~{.python}
-    string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
-    ~~~
+        string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
 
     The `%` is used to denote that a value must be input in to the string. The symbols after the `%` say what type of value is to be included:
 
@@ -180,11 +156,9 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
 8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
 
-    ~~~{.python}
-    boolean = True
-    if boolean:
-        print "boolean is %s" % boolean
-    ~~~
+        boolean = True
+        if boolean:
+            print "boolean is %s" % boolean
 
     Try typing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement**.
 
@@ -199,14 +173,12 @@ A variable is one of the basic building blocks used by a program. Variables may 
 
     It is also possible to give alternatives to an `if statement`:
 
-    ~~~{.python}
-    num = 11
-    print num % 2 == 0
-    if num % 2 == 0:
-        print "num is an even number"
-    else:
-        print "num is an odd number"
-    ~~~
+        num = 11
+        print num % 2 == 0
+        if num % 2 == 0:
+            print "num is an even number"
+        else:
+            print "num is an odd number"
 
     (The `%` operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)
 
@@ -224,48 +196,36 @@ An important type of programming instruction allows us to make a program repeat 
 
 10. The `range()` function in Python allows us to create a list of integers easily. **A list is a new type of variable that we will look at more closely next week**:
 
-    ~~~{.python}
-    print range(10)
-    ~~~
+        print range(10)
 
     Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:
 
-    ~~~{.python}
-    print range(3,10)
-    ~~~
+        print range(3,10)
 
     We can also include 3 arguments:
 
-    ~~~{.python}
-    print range(0,10,2)
-    ~~~
+        print range(0,10,2)
 
     Using `range()` we can use the basic `for` loop in Python (a type of count controlled loop):
 
-    ~~~{.python}
-    for i in range(10):
-        print i
-    ~~~
+        for i in range(10):
+            print i
 
-    The first line of the above defines the iterator `i` and tells it the values it will go through\text{ as shown in Figure \ref{W02-img01}}.
+    The first line of the above defines the iterator `i` and tells it the values it will go through.
 
-    ![\text{A basic For loop}\label{W02-img01}](./Images/W02-img01.png)
+    ![]({{site.baseurl}}/assets/Images/W02-img01.png)
 
     We can in fact iterate over anything in a list:
 
-    ~~~{.python}
-    for e in ["dog", "cat", 3, "I love mathematics"]:
-        print e
-    ~~~
+        for e in ["dog", "cat", 3, "I love mathematics"]:
+            print e
 
     This allows us to do various interesting things. Try the following:
 
-    ~~~{.python}
-    s = 0
-    for i in range(1001):
-        s += i
-    print s
-    ~~~
+        s = 0
+        for i in range(1001):
+            s += i
+        print s
 
     [Video hint](http://www.youtube.com/watch?v=3ht1mNULJC0)
 
@@ -275,16 +235,14 @@ An important type of programming instruction allows us to make a program repeat 
 
 12. Event based loops are implemented in Python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
 
-    ~~~{.python}
-    k = 0
-    while k < 10:
-        print k
-        k += 1
-    ~~~
+        k = 0
+        while k < 10:
+            print k
+            k += 1
 
-    The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands\text{ as shown in Figure \ref{W02-img01}}:
+    The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands:
 
-    ![\text{A basic while loop}\label{W02-img02}](./Images/W02-img02.png)
+    ![]({{site.baseurl}}/assets/Images/W02-img02.png)
 
     [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
 
@@ -310,38 +268,30 @@ An important type of programming instruction allows us to make a program repeat 
 
 ## Functions
 
-To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments\text{ as shown diagramaticaly in Figure \ref{W02-img03}}.
+To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.
 
-![\text{A diagram of a function}\label{W02-img03}](./Images/W02-img03.png)
+![]({{site.baseurl}}/assets/Images/W02-img03.png)
 
 16. The following code defines a very simple function (with no arguments):
 
-    ~~~{.python}
-    def printhello():
-        print "Hello"
-    ~~~
+        def printhello():
+            print "Hello"
 
     The name of the function is `PrintHello` and `def` is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:
 
-    ~~~{.python}
-    printhello()
-    ~~~
+        printhello()
 
     We can modify our function to take an argument:
 
-    ~~~{.python}
-    def printhello(name):
-        print "Hello, " + name
-    ~~~
+        def printhello(name):
+            print "Hello, " + name
 
     [Video hint](http://www.youtube.com/watch?v=I_DXaP-mrRA)
 
 17.  The following function makes use of the `return` call to actually return a result of the function:
 
-    ~~~{.python}
-    def mydiv(a, b):
-        return a/b
-    ~~~
+        def mydiv(a, b):
+            return a/b
 
     [Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
 
@@ -373,124 +323,101 @@ There are two ways of writing comments in Python:
 
 22. The following is an example of a single line comment in the middle of some code:
 
-    ~~~{.python}
-    num = 2
-    num += 3  # Add 3 to num
-    print num
-    ~~~
+        num = 2
+        num += 3  # Add 3 to num
+        print num
 
 23. The following is an example of a multilined comment in the definition of a function:
 
+        def myfunc(a,b):
+            """
+            This function calculates the ratio of two numbers raised to the sum of the two numbers.
 
-    ~~~{.python}
-    def myfunc(a,b):
-        """
-        This function calculates the ratio of two numbers raised to the sum of the two numbers.
+            Arguments:
+                a: the first number
+                b: the second number
 
-        Arguments:
-            a: the first number
-            b: the second number
-
-        Output: (a / b) ** (a + b)
-        """
-        return (a / float(b)) ** (a + b)
-    ~~~
+            Output: (a / b) ** (a + b)
+            """
+            return (a / float(b)) ** (a + b)
 
 24. **TICKABLE**: One final aspect that is very important when writing code is **convention**. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is [PEP8](http://www.Python.org/dev/peps/pep-0008/). You are advised to use the following general summary of PEP8 for this course:
 
     - Variable and function names
 
-    Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
+        Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
 
-    Yes:
+        Yes:
 
-    ~~~{.python}
-    myvariable
-    sqrtvar
-    var
-    myfunction
-    ~~~
+            myvariable
+            sqrtvar
+            var
+            myfunction
 
-    No:
+        No:
 
-    ~~~{.python}
-    my_variable
-    SqrtVAR
-    MyFunction
-    MYFUNCTION
-    ~~~
+            my_variable
+            SqrtVAR
+            MyFunction
+            MYFUNCTION
 
-    On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
+        On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
 
     - White spaces
 
-    Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
+        Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
 
-    Yes:
+        Yes:
 
-    ~~~{.python}
-    print 2 + 2
-    myfunc(3, 4)
-    ~~~
+            print 2 + 2
+            myfunc(3, 4)
 
-    No:
+        No:
 
-    ~~~{.python}
-    print 2+2
-    myfunc(3,4)
-    ~~~
+            print 2+2
+            myfunc(3,4)
 
-    Include 2 whitspaces before an inline comment `#` at the end of a line of code.
+        Include 2 whitespaces before an inline comment `#` at the end of a line of code.
 
-    Yes:
+        Yes:
 
-    ~~~{.python}
-    # Just leave a space after the comment symbol if on a single line
-    print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
-    ~~~
+            # Just leave a space after the comment symbol if on a single line
+            print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
 
-    No:
+        No:
 
-    ~~~{.python}
-    print 2 + 2 # So this is not enough space.
-    ~~~
+            print 2 + 2 # So this is not enough space.
 
-    Also include two blank lines before the definition of a function.
+        Also include two blank lines before the definition of a function.
 
-    Yes:
+        Yes:
 
-    ~~~{.python}
-    print 2 + 2
+            print 2 + 2
 
 
-    def myfunc():
-        print 2 + 2
-    ~~~
+            def myfunc():
+                print 2 + 2
 
-    No:
+        No:
 
-    ~~~{.python}
-    print 2 + 2
+            print 2 + 2
 
-    def myfunc():
-        print 2 + 2
-    ~~~
+            def myfunc():
+                print 2 + 2
 
     - Comments
 
-    Comment well and comment often. In particular use the following convention for functions:
+        Comment well and comment often. In particular use the following convention for functions:
 
-    ~~~{.python}
-    afunc():
-        """
-        Always start a function with a multiline comment to describe what it does.
+            afunc():
+                """
+                Always start a function with a multiline comment to describe what it does.
 
-        Arguments: List the arguments and what format they should be in.
+                Arguments: List the arguments and what format they should be in.
 
-        Output: List the expected output of the function.
-        """
-    ~~~
+                Output: List the expected output of the function.
+                """
 
-    As and when we see new topics on this course we will also discuss the corresponding conventions.
+        As and when we see new topics on this course we will also discuss the corresponding conventions.
 
     Go back through your script and ensure that you have used the above convention.

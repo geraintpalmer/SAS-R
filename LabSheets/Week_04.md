@@ -47,7 +47,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list\text{ as shown in Figure \ref{W04-img01}}.
 
-    ![\text{Selection sort}\label{W04-img01}](./Images/W04-img01.png)
+    ![\text{Selection sort}\label{W04-img01}]({{site.baseurl}}/assets/Images/W04-img01.png)
 
     Here is some **pseudo code** that describes this:
 
@@ -58,7 +58,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     It should be straightforward to see that at every step of this algorithm the sum of the sizes of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
 
-    ![\text{A concise version of selection sort.}\label{W04-img02}](./Images/W04-img02.png)
+    ![\text{A concise version of selection sort.}\label{W04-img02}]({{site.baseurl}}/assets/Images/W04-img02.png)
 
     Here is some **pseudo code** that describes the 'insertion sort' algorithm:
 

@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Week 2</title>
+    <title>Week 2 - Conditional Statements, Flow Control and Functions</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Class website for Computing for Mathematics">
-    <meta name="keywords" content="Week 2, , , ">
+    <meta name="keywords" content="Week 2 - Conditional Statements, Flow Control and Functions, , , ">
     <link rel="canonical" href="/LabSheets/Week_02/">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -40,7 +40,7 @@
 
   <div class="wrap">
 
-      <a class="site-title" href="">Computing for Mathematics</a>
+      <a class="site-title" href="/">Computing for Mathematics</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -55,7 +55,7 @@
         </svg>
       </a>
       <div class="trigger">
-          <a class="page-link" href="">Home</a>
+          <a class="page-link" href="/">Home</a>
           <a class="page-link" href="/unpeudemath">Blog</a>
           <a class="page-link" href="/teaching">Teaching</a>
           <a class="page-link" href="/research">Research</a>
@@ -73,7 +73,7 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Week 2</h1>
+    <h1>Week 2 - Conditional Statements, Flow Control and Functions</h1>
     <p class="meta"></p>
   </header>
 
@@ -120,24 +120,22 @@
 
 <ol>
   <li>
-    <p><strong>TICKABLE</strong>: Open up IDLE and in the <strong>interpreter</strong> type the following code\text{ (as shown in Figure \ref{W02-S01})} and press <code>ENTER</code>:</p>
+    <p><strong>TICKABLE</strong>: Open up IDLE and in the <strong>interpreter</strong> type the following code and press <code>ENTER</code>:</p>
 
-    <p>~~~{.python}
- print “Hello world”
- ~~~</p>
+    <pre><code> print "Hello world"
+</code></pre>
 
-    <p><img src="./Screenshots/W02-S01.png" alt="\text{Hello world.}\label{W02-S01}" /></p>
+    <p><img src="/assets/Screenshots/W02-S01.png" alt="" /></p>
 
     <p><a href="http://www.youtube.com/watch?v=9FdsVBAUqRs">Video hint</a></p>
   </li>
   <li>
-    <p>For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above\text{ (as shown in Figure \ref{W02-S02})}:</p>
+    <p>For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:</p>
 
-    <p>~~~{.python}
- print “Hello world”
- ~~~</p>
+    <pre><code> print "Hello world"
+</code></pre>
 
-    <p><img src="./Screenshots/W02-S02.png" alt="\text{Hello world in a file.}\label{W02-S02}" /></p>
+    <p><img src="/assets/Screenshots/W02-S02.png" alt="" /></p>
 
     <p>Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: <code>W02.py</code>).</p>
   </li>
@@ -151,35 +149,32 @@
   <li>
     <p><strong>TICKABLE</strong>: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the <code>type</code> function.</p>
 
-    <p>~~~{.python}
- num1 = 23
- print type(num1)</p>
+    <pre><code> num1 = 23
+ print type(num1)
 
-    <p>num2 = 23.5
- print type(num2)</p>
+ num2 = 23.5
+ print type(num2)
 
-    <p>str1 = “Hello world!”
+ str1 = "Hello world!"
  print type(str1)
- ~~~</p>
+</code></pre>
 
     <p><a href="http://www.youtube.com/watch?v=UFGJEG34qMk">Video hint</a></p>
   </li>
   <li>
     <p>We can carry out basic arithmetic operations using Python. Take a look at the following:</p>
 
-    <p>~~~{.python}
- num = 2
+    <pre><code> num = 2
  num = num +3
  print num
- ~~~</p>
+</code></pre>
 
     <p>this can however also be written:</p>
 
-    <p>~~~{.python}
- num = 2
+    <pre><code> num = 2
  num += 3
  print num
- ~~~</p>
+</code></pre>
 
     <p>Simlarly, <code>-</code>, <code>*</code>, <code>/</code> and <code>**</code> can be used for:</p>
 
@@ -200,24 +195,22 @@
   <li>
     <p><strong>TICKABLE</strong>: We can carry also manipulate strings. Try out the following:</p>
 
-    <p>~~~{.python}
- str1 = “This is a string that I will learn to manipulate”
- str2 = “, string manipulation is very useful.”
+    <pre><code> str1 = "This is a string that I will learn to manipulate"
+ str2 = ", string manipulation is very useful."
  string = str1 + str2
  print string
  print len(string)
  print string[0]
  print string[-1]
  print string[3:7]
- ~~~</p>
+</code></pre>
 
     <p>We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.</p>
 
-    <p>~~~{.python}
- index = str1.index(“string”)
+    <pre><code> index = str1.index("string")
  print index
- print str1[index:index + len(“string”)]
- ~~~</p>
+ print str1[index:index + len("string")]
+</code></pre>
 
     <p>There are various other things that can be done “on” strings, be sure to research these.</p>
 
@@ -226,38 +219,32 @@
   <li>
     <p>It is possible to go from one type of variable to another.</p>
 
-    <p>~~~{.python}
- f = 10.2
+    <pre><code> f = 10.2
  print int(f)
  print float(int(f))
- ~~~</p>
 
-    <p>~~~{.python}
  s = str(f)
  print s
  print type(s)
- ~~~</p>
+</code></pre>
 
     <p>It is also possible to write strings using other variables.</p>
 
-    <p>~~~{.python}
- numberofcats = 2
- name = “Vince”
+    <pre><code> numberofcats = 2
+ name = "Vince"
  height = 1.7
- notborn = “the UK”
- ~~~</p>
+ notborn = "the UK"
+</code></pre>
 
     <p>One way to do this would be:</p>
 
-    <p>~~~{.python}
- string = “My name is “ + name +”, I am “ + str(height) + “ metres tall, have “ + str(numberofcats) + “ cats and was not born in “ + notborn
- ~~~</p>
+    <pre><code> string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
+</code></pre>
 
     <p>Python (and most other languages) has a nicer way of doing this:</p>
 
-    <p>~~~{.python}
- string = “My name is %s, I am %.2f metres tall, have %i cats and was not born in %s” % (name, height, numberofcats, notborn)
- ~~~</p>
+    <pre><code> string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
+</code></pre>
 
     <p>The <code>%</code> is used to denote that a value must be input in to the string. The symbols after the <code>%</code> say what type of value is to be included:</p>
 
@@ -279,11 +266,10 @@
   <li>
     <p>An <code>if</code> statement allows you to tell a program to carry out something based on the value of a <code>Boolean</code> variable.</p>
 
-    <p>~~~{.python}
- boolean = True
+    <pre><code> boolean = True
  if boolean:
-     print “boolean is %s” % boolean
- ~~~</p>
+     print "boolean is %s" % boolean
+</code></pre>
 
     <p>Try typing the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement</strong>.</p>
 
@@ -300,14 +286,13 @@
 
     <p>It is also possible to give alternatives to an <code>if statement</code>:</p>
 
-    <p>~~~{.python}
- num = 11
+    <pre><code> num = 11
  print num % 2 == 0
  if num % 2 == 0:
-     print “num is an even number”
+     print "num is an even number"
  else:
-     print “num is an odd number”
- ~~~</p>
+     print "num is an odd number"
+</code></pre>
 
     <p>(The <code>%</code> operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)</p>
 
@@ -330,48 +315,42 @@
   <li>
     <p>The <code>range()</code> function in Python allows us to create a list of integers easily. <strong>A list is a new type of variable that we will look at more closely next week</strong>:</p>
 
-    <p>~~~{.python}
-print range(10)
-~~~</p>
+    <pre><code>print range(10)
+</code></pre>
 
     <p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
 
-    <p>~~~{.python}
-print range(3,10)
-~~~</p>
+    <pre><code>print range(3,10)
+</code></pre>
 
     <p>We can also include 3 arguments:</p>
 
-    <p>~~~{.python}
-print range(0,10,2)
-~~~</p>
+    <pre><code>print range(0,10,2)
+</code></pre>
 
     <p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
 
-    <p>~~~{.python}
-for i in range(10):
+    <pre><code>for i in range(10):
     print i
-~~~</p>
+</code></pre>
 
-    <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through\text{ as shown in Figure \ref{W02-img01}}.</p>
+    <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
 
-    <p><img src="./Images/W02-img01.png" alt="\text{A basic For loop}\label{W02-img01}" /></p>
+    <p><img src="/assets/Images/W02-img01.png" alt="" /></p>
 
     <p>We can in fact iterate over anything in a list:</p>
 
-    <p>~~~{.python}
-for e in [“dog”, “cat”, 3, “I love mathematics”]:
+    <pre><code>for e in ["dog", "cat", 3, "I love mathematics"]:
     print e
-~~~</p>
+</code></pre>
 
     <p>This allows us to do various interesting things. Try the following:</p>
 
-    <p>~~~{.python}
-s = 0
+    <pre><code>s = 0
 for i in range(1001):
     s += i
 print s
-~~~</p>
+</code></pre>
 
     <p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p>
   </li>
@@ -383,16 +362,15 @@ print s
   <li>
     <p>Event based loops are implemented in Python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
 
-    <p>~~~{.python}
-k = 0
+    <pre><code>k = 0
 while k &lt; 10:
     print k
     k += 1
-~~~</p>
+</code></pre>
 
-    <p>The second line of the above checks the boolean variable <code>k &lt; 10</code> and as long as this is <code>True</code> loops through the rest of the commands\text{ as shown in Figure \ref{W02-img01}}:</p>
+    <p>The second line of the above checks the boolean variable <code>k &lt; 10</code> and as long as this is <code>True</code> loops through the rest of the commands:</p>
 
-    <p><img src="./Images/W02-img02.png" alt="\text{A basic while loop}\label{W02-img02}" /></p>
+    <p><img src="/assets/Images/W02-img02.png" alt="" /></p>
 
     <p><a href="http://www.youtube.com/watch?v=Rog3YAETP-Q">Video hint</a></p>
   </li>
@@ -425,45 +403,40 @@ while k &lt; 10:
 
 <h2 id="functions">Functions</h2>
 
-<p>To be able to make progress from the basic on this sheet we need a way to write “recycle” code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments\text{ as shown diagramaticaly in Figure \ref{W02-img03}}.</p>
+<p>To be able to make progress from the basic on this sheet we need a way to write “recycle” code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.</p>
 
-<p><img src="./Images/W02-img03.png" alt="\text{A diagram of a function}\label{W02-img03}" /></p>
+<p><img src="/assets/Images/W02-img03.png" alt="" /></p>
 
 <ol>
   <li>
     <p>The following code defines a very simple function (with no arguments):</p>
 
-    <p>~~~{.python}
-def printhello():
-    print “Hello”
-~~~</p>
+    <pre><code>def printhello():
+    print "Hello"
+</code></pre>
 
     <p>The name of the function is <code>PrintHello</code> and <code>def</code> is the Python syntax used to define it. When we run the above two lines of code, nothing is output. To call the function we simply write:</p>
 
-    <p>~~~{.python}
-printhello()
-~~~</p>
+    <pre><code>printhello()
+</code></pre>
 
     <p>We can modify our function to take an argument:</p>
 
-    <p>~~~{.python}
-def printhello(name):
-    print “Hello, “ + name
-~~~</p>
+    <pre><code>def printhello(name):
+    print "Hello, " + name
+</code></pre>
 
     <p><a href="http://www.youtube.com/watch?v=I_DXaP-mrRA">Video hint</a></p>
   </li>
   <li>
     <p>The following function makes use of the <code>return</code> call to actually return a result of the function:</p>
+
+    <p>def mydiv(a, b):
+       return a/b</p>
   </li>
 </ol>
 
-<pre><code>~~~{.python}
-def mydiv(a, b):
-    return a/b
-~~~
-
-[Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
+<pre><code>[Video hint](http://www.youtube.com/watch?v=0cA2VNcc54A)
 </code></pre>
 
 <ol>
@@ -506,131 +479,121 @@ X_{n-1}+X_{n-2}\end{cases} %]]></script>
   <li>
     <p>The following is an example of a single line comment in the middle of some code:</p>
 
-    <p>~~~{.python}
-num = 2
+    <pre><code>num = 2
 num += 3  # Add 3 to num
 print num
-~~~</p>
+</code></pre>
   </li>
   <li>
     <p>The following is an example of a multilined comment in the definition of a function:</p>
 
-    <p>~~~{.python}
-def myfunc(a,b):
-    “””
-    This function calculates the ratio of two numbers raised to the sum of the two numbers.</p>
+    <pre><code>def myfunc(a,b):
+    """
+    This function calculates the ratio of two numbers raised to the sum of the two numbers.
 
-    <pre><code>Arguments:
-    a: the first number
-    b: the second number
+    Arguments:
+        a: the first number
+        b: the second number
 
-Output: (a / b) ** (a + b)
-"""
-return (a / float(b)) ** (a + b) ~~~
+    Output: (a / b) ** (a + b)
+    """
+    return (a / float(b)) ** (a + b)
 </code></pre>
   </li>
   <li>
     <p><strong>TICKABLE</strong>: One final aspect that is very important when writing code is <strong>convention</strong>. When working on a project with multiple people for example being able to use the same convention can be very beneficial. The most commonly known convention for Python is <a href="http://www.Python.org/dev/peps/pep-0008/">PEP8</a>. You are advised to use the following general summary of PEP8 for this course:</p>
 
     <ul>
-      <li>Variable and function names</li>
-    </ul>
+      <li>
+        <p>Variable and function names</p>
 
-    <p>Use a descriptive <code>lowercase</code> (all lowercase characters) for variable and function names.</p>
+        <p>Use a descriptive <code>lowercase</code> (all lowercase characters) for variable and function names.</p>
 
-    <p>Yes:</p>
+        <p>Yes:</p>
 
-    <p>~~~{.python}
-myvariable
-sqrtvar
-var
-myfunction
-~~~</p>
-
-    <p>No:</p>
-
-    <p>~~~{.python}
-my_variable
-SqrtVAR
-MyFunction
-MYFUNCTION
-~~~</p>
-
-    <p>On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).</p>
-
-    <ul>
-      <li>White spaces</li>
-    </ul>
-
-    <p>Include a whitespace between operators (<code>+</code>, <code>-</code>, etc) and a whitespace after a comma <code>,</code>.</p>
-
-    <p>Yes:</p>
-
-    <p>~~~{.python}
-print 2 + 2
-myfunc(3, 4)
-~~~</p>
-
-    <p>No:</p>
-
-    <p>~~~{.python}
-print 2+2
-myfunc(3,4)
-~~~</p>
-
-    <p>Include 2 whitspaces before an inline comment <code>#</code> at the end of a line of code.</p>
-
-    <p>Yes:</p>
-
-    <p>~~~{.python}
-# Just leave a space after the comment symbol if on a single line
-print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
-~~~</p>
-
-    <p>No:</p>
-
-    <p>~~~{.python}
-print 2 + 2 # So this is not enough space.
-~~~</p>
-
-    <p>Also include two blank lines before the definition of a function.</p>
-
-    <p>Yes:</p>
-
-    <p>~~~{.python}
-print 2 + 2</p>
-
-    <p>def myfunc():
-    print 2 + 2
-~~~</p>
-
-    <p>No:</p>
-
-    <p>~~~{.python}
-print 2 + 2</p>
-
-    <p>def myfunc():
-    print 2 + 2
-~~~</p>
-
-    <ul>
-      <li>Comments</li>
-    </ul>
-
-    <p>Comment well and comment often. In particular use the following convention for functions:</p>
-
-    <p>~~~{.python}
-afunc():
-    “””
-    Always start a function with a multiline comment to describe what it does.</p>
-
-    <pre><code>Arguments: List the arguments and what format they should be in.
-
-Output: List the expected output of the function.
-""" ~~~
+        <pre><code>  myvariable
+  sqrtvar
+  var
+  myfunction
 </code></pre>
 
-    <p>As and when we see new topics on this course we will also discuss the corresponding conventions.</p>
+        <p>No:</p>
+
+        <pre><code>  my_variable
+  SqrtVAR
+  MyFunction
+  MYFUNCTION
+</code></pre>
+
+        <p>On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).</p>
+      </li>
+      <li>
+        <p>White spaces</p>
+
+        <p>Include a whitespace between operators (<code>+</code>, <code>-</code>, etc) and a whitespace after a comma <code>,</code>.</p>
+
+        <p>Yes:</p>
+
+        <pre><code>  print 2 + 2
+  myfunc(3, 4)
+</code></pre>
+
+        <p>No:</p>
+
+        <pre><code>  print 2+2
+  myfunc(3,4)
+</code></pre>
+
+        <p>Include 2 whitespaces before an inline comment <code>#</code> at the end of a line of code.</p>
+
+        <p>Yes:</p>
+
+        <pre><code>  # Just leave a space after the comment symbol if on a single line
+  print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
+</code></pre>
+
+        <p>No:</p>
+
+        <pre><code>  print 2 + 2 # So this is not enough space.
+</code></pre>
+
+        <p>Also include two blank lines before the definition of a function.</p>
+
+        <p>Yes:</p>
+
+        <pre><code>  print 2 + 2
+
+
+  def myfunc():
+      print 2 + 2
+</code></pre>
+
+        <p>No:</p>
+
+        <pre><code>  print 2 + 2
+
+  def myfunc():
+      print 2 + 2
+</code></pre>
+      </li>
+      <li>
+        <p>Comments</p>
+
+        <p>Comment well and comment often. In particular use the following convention for functions:</p>
+
+        <pre><code>  afunc():
+      """
+      Always start a function with a multiline comment to describe what it does.
+
+      Arguments: List the arguments and what format they should be in.
+
+      Output: List the expected output of the function.
+      """
+</code></pre>
+
+        <p>As and when we see new topics on this course we will also discuss the corresponding conventions.</p>
+      </li>
+    </ul>
 
     <p>Go back through your script and ensure that you have used the above convention.</p>
   </li>
