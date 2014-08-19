@@ -42,7 +42,13 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
         print "Hello world"
 
-22. The following is an example of a single line comment in the middle of some code:
+2. The following is an example of a single line comment in the middle of some code:
+
+        num = 2
+        num += 3  # Add 3 to num
+        print num
+
+2. The following is an example of a single line comment in the middle of some code:
 
         num = 2
         num += 3  # Add 3 to num
