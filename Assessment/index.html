@@ -1,0 +1,19 @@
+---
+layout : default
+title  : "CfM: Assessment"
+---
+
+<div class="home">
+    <h1>Class test</h1>
+
+    <ul>
+    {% for page in site.pages %}
+        {% if page.categories contains 'classtest' %}
+        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+
+    <h1>Individual Coursework</h1>
+</div>
