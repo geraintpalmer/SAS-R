@@ -13,6 +13,19 @@ title  : Computing for Mathematics
     {% endfor %}
     </ul>
 
+    <h1>Handouts</h1>
+    <ul>
+    {% for page in site.pages %}
+        {% if page.categories contains 'handouts' %}
+        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p>
+    <a href='{{site.baseurl}}/Handouts/PastHandouts'>Handouts from previous years</a>
+    </p>
+
     <h1><a href='{{site.baseurl}}/Assessment'>Assessment</a></h1>
 
 
