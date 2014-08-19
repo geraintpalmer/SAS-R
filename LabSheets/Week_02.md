@@ -52,13 +52,13 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
    ![]({{site.baseurl}}/assets/Screenshots/W02-S02.png)
 
-   Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
+    Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
 
-## Basic variables
+** Basic variables **
 
 A variable is one of the basic building blocks used by a program. Variables may be of various types.
 
-3. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
+03. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
 
         num1 = 23
         print type(num1)
@@ -69,28 +69,28 @@ A variable is one of the basic building blocks used by a program. Variables may 
         str1 = "Hello world!"
         print type(str1)
 
-   [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
+    [Video hint](http://www.youtube.com/watch?v=UFGJEG34qMk)
 
-4. We can carry out basic arithmetic operations using Python. Take a look at the following:
+04. We can carry out basic arithmetic operations using Python. Take a look at the following:
 
         num = 2
         num = num +3
         print num
 
-   this can however also be written:
+    this can however also be written:
 
         num = 2
         num += 3
         print num
 
-   Simlarly, `-`, `*`, `/` and `**` can be used for:
+    Simlarly, `-`, `*`, `/` and `**` can be used for:
 
-   + subtraction;
-   + multiplication;
-   + division;
-   + exponentiation.
+    + subtraction;
+    +  multiplication;
+    +  division;
+    +  exponentiation.
 
-   [Video hint](http://www.youtube.com/watch?v=A_Pa6Ov60T8)
+    [Video hint](http://www.youtube.com/watch?v=A_Pa6Ov60T8)
 
 5. **TICKABLE**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
 
