@@ -364,7 +364,7 @@ There are two ways of writing comments in Python:
             MYFUNCTION
 
 
-      On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
+          On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
 
     - White spaces
 
