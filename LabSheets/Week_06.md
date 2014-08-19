@@ -34,29 +34,23 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
-    ~~~{.python}
-    cos?
-    sum?
-    ~~~
+        cos?
+        sum?
 
     [Video hint](http://youtu.be/Fbq1GNiF85k)
 
 3. We can use Sage as an advanced calculator. Try out the following commands:
 
-    ~~~{.python}
-    cos(3)
-    cos(3.)
-    sqrt(4)
-    sqrt(8)
-    sqrt(8.)
-    ~~~
+        cos(3)
+        cos(3.)
+        sqrt(4)
+        sqrt(8)
+        sqrt(8.)
 
     Sage uses `I` to denote the imaginary constant:
 
-    ~~~{.python}
-    I ** 2
-    sqrt(-53.)
-    ~~~
+        I ** 2
+        sqrt(-53.)
 
 
 4. **TICKABLE** Obtain an exact form for $\sum_{i=1}^5\frac{1}{\sqrt{i}}$. Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
@@ -65,22 +59,16 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 5. Sage can also be used to obtain prime factors of numbers:
 
-    ~~~{.python}
-    factor(234398)
-    ~~~
+        factor(234398)
 
     We can do this as above using a function but also using the `factor` method on the object: `234398`:
 
-    ~~~{.python}
-    234398.factor()
-    ~~~
+        234398.factor()
 
     To obtain the number of prime factors that a number has we can use the `len` function or method:
 
-    ~~~{.python}
-    f = 234398.factor()
-    len(f)
-    ~~~
+        f = 234398.factor()
+        len(f)
 
     Obtain the mean number of factors for the first 1000 integers (you can use the `mean` sage function).
 
@@ -96,61 +84,43 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     To do so we need to first declare symbolic variables:
 
-    ~~~{.python}
-    y = var('y')
-    ~~~
+        y = var('y')
 
     (We could also declare `x` but `x` is a default variable in Sage that is always declared). Once we have done that we can assign the above expression to a variable:
 
-    ~~~{.python}
-    myexp = x ** 2 - 5 * x ** 2 + 12 * x * y - 9 * y ** 2
-    ~~~
+        myexp = x ** 2 - 5 * x ** 2 + 12 * x * y - 9 * y ** 2
 
     Note that here I'm using the exponentiation used in python: `**` but in Sage we can also use `^`:
 
-    ~~~{.python}
-    myexp = x ^ 2 - 5 * x ^ 2 + 12 * x * y - 9 * y ^ 2
-    ~~~
+        myexp = x ^ 2 - 5 * x ^ 2 + 12 * x * y - 9 * y ^ 2
 
     Once we have done that we can factorise the expression using the `factor` method:
 
-    ~~~{.python}
-    myexp.factor()
-    ~~~
+        myexp.factor()
 
     [Video hint](http://youtu.be/_mmHrQ7FzaY)
 
 8. We can also define functions in Sage. The following code defines $f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi$:
 
-    ~~~{.python}
-    f(x) =  x^3 + pi*x^2 - 23/2*x^2 - 23/2*pi*x  + 15*x+ 15*pi
-    ~~~
+        f(x) =  x^3 + pi*x^2 - 23/2*x^2 - 23/2*pi*x  + 15*x+ 15*pi
 
     To take a look at $f$ we can use the `plot` function:
 
-    ~~~{.python}
-    plot(f(x), x, -15, 15)
-    ~~~
+        plot(f(x), x, -15, 15)
 
     Experiment with the arguments in that expression.
 
     To idenfity the 3 (visible on the plot) roots of our function we can use the `roots` method on $f$:
 
-    ~~~{.python}
-    f.roots()
-    ~~~
+        f.roots()
 
     We can also try to factorise $f$:
 
-    ~~~{.python}
-    f.factor()
-    ~~~
+        f.factor()
 
     Finally we can use the `solve` function:
 
-    ~~~{.python}
-    solve(f(x) == 0, x)
-    ~~~
+        solve(f(x) == 0, x)
 
     [Video hint](http://youtu.be/UA7LVwmMmfk)
 
@@ -171,7 +141,5 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     y + z = 1
     \end{cases}$$
 
-    ~~~{.python}
-    y, z = var('y', 'z')
-    solve([x + y == z, 3*x - y == 0, y + z ==1], [x, y, z])
-    ~~~
+        y, z = var('y', 'z')
+        solve([x + y == z, 3*x - y == 0, y + z ==1], [x, y, z])
