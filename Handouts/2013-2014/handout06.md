@@ -1,7 +1,7 @@
 ---
 layout     : post
 categories : [pasthandouts, 2013-2014]
-title      : Computing for mathematics handout 6 - Sage and the Class test
+title      : '2013-2014: handout 6 - Sage and the Class test'
 comments   : false
 ---
 

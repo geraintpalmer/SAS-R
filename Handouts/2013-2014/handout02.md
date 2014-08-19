@@ -1,7 +1,7 @@
 ---
 layout     : post
 categories : [pasthandouts, 2013-2014]
-title      : Computing for mathematics handout 2 - Conditional Statements, flow control and functions
+title      : '2013-2014: handout 2 - Conditional Statements, flow control and functions'
 comments   : false
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout     : post
 categories : [pasthandouts, 2013-2014]
-title      : Computing for mathematics handout 4 - Functions, Sorting and Searching algorithms and what to expect on the class test.
+title      : '2013-2014: handout 4 - Functions, Sorting and Searching algorithms and what to expect on the class test.'
 comments   : false
 ---
 Lecturer: Vince Knight

@@ -1,7 +1,7 @@
 ---
 layout     : post
-categories : handouts
-title      : Computing for Mathematics Handout 1 - What you need to know
+categories : ['pasthandouts', '2013-2014']
+title      : '2013-2014: handout 1 - What you need to know'
 comments   : false
 ---
 
