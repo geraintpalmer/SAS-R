@@ -2,7 +2,7 @@
 layout     : post
 categories : labsheets
 title      : Week 8 - Linear Algebra
-comments   : false
+comments   : true
 ---
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znzwLePTdmDWDCKJse3omJe5).

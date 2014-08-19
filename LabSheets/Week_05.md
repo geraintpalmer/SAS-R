@@ -2,7 +2,7 @@
 layout     : post
 categories : labsheets
 title      : Week 5 - Object Orientated Programming
-comments   : false
+comments   : true
 ---
 
 This lab sheet will introduce a very important concept of computer science: object orientated programming. After this session you will be familiar with the following concepts:
