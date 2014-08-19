@@ -38,9 +38,9 @@ When writing a program one makes use of an Integrated Development Environment: *
 
 and many more. We will be using the simplest Python IDE available: IDLE which comes bundled with Python (in your own time be sure to investigate others as it is a question of personal choice).
 
-1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
+1. Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
-          print "Hello world"
+        print "Hello world"
 
 22. The following is an example of a single line comment in the middle of some code:
 
