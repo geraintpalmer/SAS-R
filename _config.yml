@@ -2,8 +2,8 @@
 title: Vincent Knight
 email: vincent.knight@gmail.com
 description: "Class website for Computing for Mathematics"
-baseurl: "http://drvinceknight.github.io/Computing_for_mathematics/"
-url: "http://drvinceknight.github.io/Computing_for_mathematics"
+baseurl: "/Computing_for_mathematics"
+url: "http://drvinceknight.github.io"
 github_username: "drvinceknight"
 twitter_username: "@drvinceknight"
 plus_username: "+VincentKnight"
