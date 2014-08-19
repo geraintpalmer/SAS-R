@@ -46,6 +46,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
    ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
 
    [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
+
 22. The following is an example of a single line comment in the middle of some code:
 
         num = 2
