@@ -16,7 +16,9 @@ This lab sheet will introduce various data structures and also an important conc
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znxclcsx-JIwgFqGTXMdItOH).
 
-## Lists in Python
+**Lists**
+
+---
 
 Lists are a particular object in Python that hold ordered collection of other objects. In other languages they are sometimes called 'arrays'. You can think of these as baskets that allow you to hold objects. You can put anything in lists:
 
@@ -25,7 +27,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 + Other lists;
 + and various other 'things'.
 
-1. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
+01. **TICKABLE**: The following code creates a list with the numbers from 1, to 10.
 
         alist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -47,7 +49,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=7FbYcOOB64c)
 
-2. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
+02. We have seen how to combine two lists using `+` but there is a very useful method on lists called the `append` method. With this we can easily add elements to lists:
 
         mylist = []
         for i in range(11):
@@ -59,11 +61,11 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=DWiHBdf5mQI)
 
-3. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
+03. **TICKABLE** Create a list with the first 1300 integers divisible by 3. What is the largest such number?
 
     [Video hint](http://www.youtube.com/watch?v=7KxOxWC3h78)
 
-4. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
+04. There is another way of creating/manipulating lists in python called list _comprehensions_. The following code give the squares of the first 10 integers:
 
         squares = [e ** 2 for e in range(1, 11)]
         print squares
@@ -75,7 +77,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=8WXIY18RJiY)
 
-5. **TICKABLE** By creating a function and using list comprehensions, create a list of $f(n)$ for all integers $n\leq 100$ where $f(n)$ is given below:
+05. **TICKABLE** By creating a function and using list comprehensions, create a list of $f(n)$ for all integers $n\leq 100$ where $f(n)$ is given below:
 
     $$f(n) = \begin{cases}
        n ^ 3,& \text{ if $n$ odd}\\
@@ -85,7 +87,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=cr_QV3fF-Ls)
 
-6. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
+06. There are various other things that we can do to a list. Including getting the highest, lowest values as well as the length of the list:
 
         alist = [1,74,2,100,-123]
         print max(alist)
@@ -94,9 +96,11 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=JslPoHRe3kk)
 
-## Dictionaries in Python
+    **Dictionaries in Python**
 
-7. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
+    ---
+
+07. **TICKABLE** In computer science 'hash tables' are used as an efficient way to find particular data that is used often. In python 'hash tables' are called dictionaries. To understand this consider the following list of lists:
 
         badphonebook = [["Vince", 3],
                         ["Zoe", 2],
@@ -158,7 +162,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=CuyHg-1Let0)
 
-8. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
+08. Iterate over the list `badphonebook` to initiate the `pb` as the equivalent dictionary:
 
         pb = {}
         for e in badphonebook:
@@ -166,7 +170,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=ZZv2sB57BgA)
 
-9. Note that it is also possible to iterate over keys in a dictionary:
+09. Note that it is also possible to iterate over keys in a dictionary:
 
         for e in goodphonebook:
             print goodphonebook[e]
@@ -174,7 +178,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
     [Video hint](http://www.youtube.com/watch?v=cZWwJgvRbBE)
 
 
-## Writing data to files
+    **Writing data to files**
+
+    ---
 
 10. **TICKABLE** All of the data we handle with variables, lists and dictionaries lives in the 'memory' of a computer when our python code is running. When the program stops running the data is lost. There will be occasions when we want to write our data to a file on the hard drive of a computer (so that it is always available even when we turn the computer off).
 
@@ -219,7 +225,9 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=jQ9aDyBWCXI)
 
-## Recursion
+    **Recursion**
+
+    ---
 
 14. **TICKABLE** Recursion is an important technique in programming. It often allows you to write code in a much more succinct way and is intimately linked to mathematics where sequences can be defined recursively. For example, consider:
 
