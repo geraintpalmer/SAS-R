@@ -347,7 +347,7 @@ There are two ways of writing comments in Python:
 
     - Variable and function names
 
-      Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
+          Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
 
           Yes:
 
