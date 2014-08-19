@@ -8,7 +8,7 @@ title  : Video Playlists
     <ul>
     {% for page in site.pages %}
         {% if page.categories contains 'labsheets' %}
-        <li><a href={{ page.playlisturl | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        <li><a href={{ page.playlisturl }}>{{ page.title }}</a></li>
         {% endif %}
     {% endfor %}
     </ul>
