@@ -44,9 +44,10 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
        print "Hello world"
        {% endhighlight %}
 
-   ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
 
-   [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
+       ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
+
+       [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
 
 2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:
 
