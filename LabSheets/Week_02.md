@@ -92,11 +92,11 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=A_Pa6Ov60T8)
 
-5. **TICKABLE**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
+05. **TICKABLE**: Assign the variable `num` to a value of 5.2, what is the result of adding 7 to `num` then muliplying `num` by 300 then dividing `num` by 4 and finally raising `num` to the power of 3?
 
-   [Video hint](http://www.youtube.com/watch?v=ihBpyMpDy-M)
+    [Video hint](http://www.youtube.com/watch?v=ihBpyMpDy-M)
 
-6. **TICKABLE**: We can carry also manipulate strings. Try out the following:
+06. **TICKABLE**: We can carry also manipulate strings. Try out the following:
 
         str1 = "This is a string that I will learn to manipulate"
         str2 = ", string manipulation is very useful."
@@ -107,15 +107,15 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
         print string[-1]
         print string[3:7]
 
-   We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.
+    We see that Python indexes a string, starting at 0, we can also use negative values to start from the end.
 
         index = str1.index("string")
         print index
         print str1[index:index + len("string")]
 
-   There are various other things that can be done "on" strings, be sure to research these.
+    There are various other things that can be done "on" strings, be sure to research these.
 
-   [Video hint](http://www.youtube.com/watch?v=gHQtmCeCg1w&feature=youtu.be)
+    [Video hint](http://www.youtube.com/watch?v=gHQtmCeCg1w&feature=youtu.be)
 
 7. It is possible to go from one type of variable to another.
 
