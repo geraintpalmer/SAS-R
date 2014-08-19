@@ -216,31 +216,31 @@ print str1[index:index + len("string")]
   <li>
     <p>It is possible to go from one type of variable to another.</p>
 
-    <pre><code> f = 10.2
- print int(f)
- print float(int(f))
+    <pre><code>f = 10.2
+print int(f)
+print float(int(f))
 
- s = str(f)
- print s
- print type(s)
+s = str(f)
+print s
+print type(s)
 </code></pre>
 
     <p>It is also possible to write strings using other variables.</p>
 
-    <pre><code> numberofcats = 2
- name = "Vince"
- height = 1.7
- notborn = "the UK"
+    <pre><code>numberofcats = 2
+name = "Vince"
+height = 1.7
+notborn = "the UK"
 </code></pre>
 
     <p>One way to do this would be:</p>
 
-    <pre><code> string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
+    <pre><code>string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
 </code></pre>
 
     <p>Python (and most other languages) has a nicer way of doing this:</p>
 
-    <pre><code> string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
+    <pre><code>string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
 </code></pre>
 
     <p>The <code>%</code> is used to denote that a value must be input in to the string. The symbols after the <code>%</code> say what type of value is to be included:</p>
@@ -257,7 +257,7 @@ print str1[index:index + len("string")]
   </li>
 </ol>
 
-<h2 id="if-statements">If statements</h2>
+<p><strong>If statements</strong></p>
 
 <ol>
   <li>

@@ -117,7 +117,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=gHQtmCeCg1w&feature=youtu.be)
 
-7. It is possible to go from one type of variable to another.
+07. It is possible to go from one type of variable to another.
 
         f = 10.2
         print int(f)
@@ -127,32 +127,32 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
         print s
         print type(s)
 
-   It is also possible to write strings using other variables.
+    It is also possible to write strings using other variables.
 
         numberofcats = 2
         name = "Vince"
         height = 1.7
         notborn = "the UK"
 
-   One way to do this would be:
+    One way to do this would be:
 
         string = "My name is " + name +", I am " + str(height) + " metres tall, have " + str(numberofcats) + " cats and was not born in " + notborn
 
-   Python (and most other languages) has a nicer way of doing this:
+    Python (and most other languages) has a nicer way of doing this:
 
         string = "My name is %s, I am %.2f metres tall, have %i cats and was not born in %s" % (name, height, numberofcats, notborn)
 
-   The `%` is used to denote that a value must be input in to the string. The symbols after the `%` say what type of value is to be included:
+    The `%` is used to denote that a value must be input in to the string. The symbols after the `%` say what type of value is to be included:
 
     - `s`: A String
     - `.`_x_`f`: A float rounded to _x_ decimal places
     - `i`: An integer
 
-   There are other types that can be used as well.
+    There are other types that can be used as well.
 
-   [Video hint](http://www.youtube.com/watch?v=LlQ7q-EaDnc)
+    [Video hint](http://www.youtube.com/watch?v=LlQ7q-EaDnc)
 
-## If statements
+**If statements**
 
 8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
 
