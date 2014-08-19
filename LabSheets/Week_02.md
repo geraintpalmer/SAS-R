@@ -40,7 +40,9 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
 01. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
+        {% highlight python %}
         print "Hello world"
+        {% endhighlight %}
 
 
     ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
