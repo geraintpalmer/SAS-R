@@ -40,9 +40,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
 01. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
-       {% highlight python %}
-       print "Hello world"
-       {% endhighlight %}
+        print "Hello world"
 
 
     ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
@@ -55,7 +53,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
    ![]({{site.baseurl}}/assets/Screenshots/W02-S02.png)
 
-    Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
+   Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
 
 ## Basic variables
 
