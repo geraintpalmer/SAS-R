@@ -40,7 +40,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
 1. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
-        print "Hello world"
+          print "Hello world"
 
 22. The following is an example of a single line comment in the middle of some code:
 
