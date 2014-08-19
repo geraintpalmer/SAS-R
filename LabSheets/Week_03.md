@@ -4,7 +4,6 @@ categories : labsheets
 title      : Week 3 - Data Structures and Recursion
 comments   : false
 ---
-# Week 3 -  Data Structures and Recursion
 
 This lab sheet will introduce various data structures and also an important concept called 'recurrence'. After this session you will know how to:
 

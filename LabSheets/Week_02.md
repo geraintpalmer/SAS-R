@@ -4,7 +4,6 @@ categories : labsheets
 title      : Week 2 - Conditional Statements, Flow Control and Functions
 comments   : false
 ---
-# Week 2 - Conditional Statements, flow control and functions
 
 This lab sheet will serve as a basic introduction to programming. After this session you will know the basic Python syntax to carry out the following:
 
@@ -16,7 +15,9 @@ This lab sheet will serve as a basic introduction to programming. After this ses
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znwZCtyKG1UQASpZ9mRkEIJo).
 
-## Programming in Python
+**Programming in Python**
+
+---
 
 Python is a programming language. There are various other programming languages:
 
