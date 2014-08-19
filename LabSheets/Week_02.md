@@ -267,11 +267,11 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
 
-## Functions
+    **Functions**
 
-To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.
+    To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.
 
-![]({{site.baseurl}}/assets/Images/W02-img03.png)
+    ![]({{site.baseurl}}/assets/Images/W02-img03.png)
 
 16. The following code defines a very simple function (with no arguments):
 
@@ -306,7 +306,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
 20. Create a function that return the square root of a number using the algorithm suggested in question 14. Write some code that compares the output of this algorithm to the actual square root for the first 10000 digits.
 
-21. **TICKABLE**: Write a function `Fibonacci` that uses loops to calculate the $n$th number of the Fibonacci sequence:
+21. **TICKABLE**: Write a function `Fibonacci` that uses loops to calculate the \\(n\\)th number of the Fibonacci sequence:
 
     $$X_n=\begin{cases}1,& n=0,1\\
     X_{n-1}+X_{n-2}\end{cases}$$
