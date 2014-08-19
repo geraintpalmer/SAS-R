@@ -217,8 +217,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         @book{Gratzer2007,
         author = {Gr\"{a}tzer, George},
         publisher = {Springer},
-        title = {{More Math Into LaTeX: A Guide for
-        Documentation and Presentation}},
+        title = {% raw %}{{More Math Into LaTeX: A Guide for Documentation and Presentation}}{% endraw %},
         year = {2007}
         }
 
@@ -233,7 +232,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         \bibliographystyle{plain}
         \bibliography{bibliography.bib}
 
-    We now need to compile a document twice (as above to find all internal references for sections, figure etc...) **and then** we compile the bibliography with `bibtex` and then we need to compile one last time to match the bibliography items with the citations\text{ as shown in Figure \ref{W10-img02}}.
+    We now need to compile a document twice (as above to find all internal references for sections, figure etc...) **and then** we compile the bibliography with `bibtex` and then we need to compile one last time to match the bibliography items with the citations.
 
     ![]({{site.baseurl}}/assets/Images/W10-img02.png)
 
