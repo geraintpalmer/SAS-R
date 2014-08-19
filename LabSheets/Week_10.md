@@ -4,7 +4,6 @@ categories : labsheets
 title      : Week 10 - LaTeX
 comments   : false
 ---
-# Week 10 - LaTeX
 Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).
 
 A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read\text{ as shown in Figure \ref{W10-img01}}.
@@ -13,7 +12,7 @@ A typesetting language is a language that requires the user to write code that i
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znygZ2rYNaX7_8j2Duwh58cK).
 
-1. **TICKABLE**  Open up TeXworks which should open a blank document. Write the following LaTeX code:
+01. **TICKABLE**  Open up TeXworks which should open a blank document. Write the following LaTeX code:
 
         \documentclass{article}
 
@@ -39,7 +38,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/4B8Cmm9scmU)
 
-2. **TICKABLE** The following keys are used to type text in a source file:
+02. **TICKABLE** The following keys are used to type text in a source file:
 
         a-z A-Z 0-9
         + = * / ( ) [ ]
@@ -62,7 +61,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/xMujHplqFx0)
 
-3. **TICKABLE** In general all the code that comes before the `\begin{document}` statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:
+03. **TICKABLE** In general all the code that comes before the `\begin{document}` statement is called the 'preamble' and is used to set a title for the document, call certain packages as well as various other things. The following code (to be inserted in the preamble of your document) sets a title:
 
 
         \title{Choose a title}
@@ -76,7 +75,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/bSJbxAWM5A8)
 
-4. **TICKABLE** The following will add an abstract to your document:
+04. **TICKABLE** The following will add an abstract to your document:
 
         \begin{abstract}
         This document contains some basic LaTeX code that will be useful to me in the future.
@@ -84,7 +83,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/d9WZFOSjIPA)
 
-5. **TICKABLE** There are various ways to obtain lists:
+05. **TICKABLE** There are various ways to obtain lists:
 
         \begin{itemize}
             \item Unorderd item number 1
@@ -100,7 +99,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/AMisCNGM2G8)
 
-6. **TICKABLE** The following code creates a simple table (note the `c`, `r`, and `l` tags that indicate text alignment, experiment by changing these):
+06. **TICKABLE** The following code creates a simple table (note the `c`, `r`, and `l` tags that indicate text alignment, experiment by changing these):
 
         \begin{tabular}{|l|c|r|}
             \hline
@@ -118,7 +117,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/OAgTXe5ShSI)
 
-7. **TICKABLE** To include a picture is straightforward in LaTeX. We make use of the `graphicx` package. In LaTeX packages are included in the preamble using `usepackage`. Include the following in the preamble:
+07. **TICKABLE** To include a picture is straightforward in LaTeX. We make use of the `graphicx` package. In LaTeX packages are included in the preamble using `usepackage`. Include the following in the preamble:
 
         \usepackage{graphicx}
 
@@ -137,7 +136,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     [Video hint](http://youtu.be/260odGNvPEc)
 
 
-8. **TICKABLE** Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required **but** it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is `tikz`. Include the following in the preamble:
+08. **TICKABLE** Graphs, pictures and diagrams can thus be created in any software of choice (Sage, inkscape, google drive etc...) and then included as required **but** it is often easier to draw a picture in LaTeX itself using code. A great package to do this with is `tikz`. Include the following in the preamble:
 
         \usepackage{tikz}
 
@@ -171,7 +170,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/fPpATcx-fVc)
 
-9. **TICKABLE** It is possible to organise parts of a document using 'sections':
+09. **TICKABLE** It is possible to organise parts of a document using 'sections':
 
         \section{My first section}
 
