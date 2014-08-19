@@ -53,7 +53,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         sqrt(-53.)
 
 
-4. **TICKABLE** Obtain an exact form for $\sum_{i=1}^5\frac{1}{\sqrt{i}}$. Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
+4. **TICKABLE** Obtain an exact form for \\(\sum_{i=1}^5\frac{1}{\sqrt{i}}\\). Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
 
     [Video hint](http://youtu.be/kJwDWY6Wd7s)
 
@@ -76,7 +76,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 6. Using the `is_prime` method investigate the following claim:
 
-    > All numbers of the form $k^2-79k+1601$ are prime for $k\in\mathbb{Z}$ and $k\geq 3$.
+   All numbers of the form \\(k^2-79k+1601\\) are prime for \\(k\in\mathbb{Z}\\) and \\(k\geq 3\\).
 
 7. **TICKABLE** A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:
 
@@ -100,21 +100,21 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/_mmHrQ7FzaY)
 
-8. We can also define functions in Sage. The following code defines $f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi$:
+8. We can also define functions in Sage. The following code defines \\(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\\):
 
         f(x) =  x^3 + pi*x^2 - 23/2*x^2 - 23/2*pi*x  + 15*x+ 15*pi
 
-    To take a look at $f$ we can use the `plot` function:
+    To take a look at \\(f\\) we can use the `plot` function:
 
         plot(f(x), x, -15, 15)
 
     Experiment with the arguments in that expression.
 
-    To idenfity the 3 (visible on the plot) roots of our function we can use the `roots` method on $f$:
+    To idenfity the 3 (visible on the plot) roots of our function we can use the `roots` method on \\(f\\):
 
         f.roots()
 
-    We can also try to factorise $f$:
+    We can also try to factorise \\(f\\):
 
         f.factor()
 
@@ -126,10 +126,10 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 9. **TICKABLE** Using Sage obtain the solution to the following equations:
 
-    1. $x^2 = -1$
-    2. $x^2 - 53 x + 2 a = 0$
-    4. $\sin(x) = x - 1$ (Investigate the Sage function `find_root`)
-    3. $x^5 + \sin(x) - 2x = .5$
+    1. \\(x^2 = -1\\)
+    2. \\(x^2 - 53 x + 2 a = 0\\)
+    4. \\(\sin(x) = x - 1\\) (Investigate the Sage function `find_root`)
+    3. \\(x^5 + \sin(x) - 2x = .5\\)
 
     [Video hint](http://youtu.be/GVEbkBXBmTw)
 
