@@ -240,6 +240,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
             print k
             k += 1
 
+
     The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands:
 
     ![]({{site.baseurl}}/assets/Images/W02-img02.png)
