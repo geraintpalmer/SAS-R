@@ -15,9 +15,11 @@ This lab sheet will introduce a very important concept of computer science: obje
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znwesme9fiK-kZZ-DUOJF9l_).
 
-## Classes
+**Classes**
 
-1. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:
+---
+
+01. **TICKABLE** The main idea behind object orientated programming (OOP) is to create abstract structures that allow us to not worry about data. Alan Kay came up with the concept and is quoted as saying: 'I wanted to get rid of data'. Instead of keeping track of variables using lists and arrays and writing specific functions for each operation we could be trying to do we use a system similar to the cellular structure in biology:
 
     ![]({{site.baseurl}}/assets/Images/W05-img01.png)
 
@@ -44,7 +46,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/fTV7B6YTHCU)
 
-2. We have already used various types of python objects:
+02. We have already used various types of python objects:
 
     - Lists;
     - Dictionaries;
@@ -58,9 +60,11 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     We have in fact created a new object of the string class and assigned that to the variable `a`.
 
-## Attributes
+    **Attributes**
 
-3. So far we have done nothing interesting. We now see how to make our objects 'hold' information. The following code re-creates our previous student class but gives the class some 'attributes':
+    ---
+
+03. So far we have done nothing interesting. We now see how to make our objects 'hold' information. The following code re-creates our previous student class but gives the class some 'attributes':
 
         class Student():
             courses = ["Biology", "Mathematics", "English"]
@@ -87,7 +91,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/I_fbk5Uss-Q)
 
-4. **TICKABLE** A quadratic is a mathematical expression of the form: $a x ^ 2 + b x + c$. The following code creates a Quadratic class:
+04. **TICKABLE** A quadratic is a mathematical expression of the form: \\(a x ^ 2 + b x + c\\). The following code creates a Quadratic class:
 
         class Quadratic()
             a = 0
@@ -100,9 +104,11 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=2pPih4SawM8&feature=youtu.be)
 
-## Methods
+    **Methods**
 
-5. **TICKABLE** We have seen methods before. For example for a given list `l = [1, 3, 2, 1.2]`, there exists a `sort` method that 'does some work to l' so that `l` becomes: `[1, 1.2, 2, 3]`. It is very easy to create custom methods for any class. We simply need to define functions _within_ our class.
+    ---
+
+05. **TICKABLE** We have seen methods before. For example for a given list `l = [1, 3, 2, 1.2]`, there exists a `sort` method that 'does some work to l' so that `l` becomes: `[1, 1.2, 2, 3]`. It is very easy to create custom methods for any class. We simply need to define functions _within_ our class.
 
     Let us revisit the Student class but we now include a method `haveabirthday` which increments the age:
 
@@ -144,7 +150,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/epYMekhWx2k)
 
-6. There are a variety of 'special' methods to be defined on classes. The one we will consider here is the `__init__` method. This method is run when an instance is created. The following code allows us to pass arguments to an instance of a class when it is **initialised** to set attributes.
+06. There are a variety of 'special' methods to be defined on classes. The one we will consider here is the `__init__` method. This method is run when an instance is created. The following code allows us to pass arguments to an instance of a class when it is **initialised** to set attributes.
 
         class Student():
             def __init__(self, courses, age, sex):
@@ -159,15 +165,15 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         print vince.age
         print vince.sex
 
-7. **TICKABLE** Revisit the Quadratic class from earlier. Use the `__init__` method and also create a method to return `True` if the quadratic has real roots.
+07. **TICKABLE** Revisit the Quadratic class from earlier. Use the `__init__` method and also create a method to return `True` if the quadratic has real roots.
 
-    Recall that the roots of $ax^2 + bx + c$ are given by:
+    Recall that the roots of \\(ax^2 + bx + c\\) are given by:
 
     $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
     Using this count how many of the instances in [W05_D01.csv]({{site.baseurl}}/assets/Data/W05_D01.txt) have real roots.
 
-8. The following dictionary contains course code - course name pairs:
+08. The following dictionary contains course code - course name pairs:
 
         coursedictionary = {1: "Math",
                             2: "English",
@@ -194,13 +200,13 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     **Using object orientated programming** obtain the number of students enrolled on each course as well as a dictionary containing students as keys and lists of enrolled courses as values.
 
-9. If rain drops were to fall _randomly_ on a square of side length $2r$ the probability of the drops landing in an inscribed circle of radius $r$ would be given by:
+09. If rain drops were to fall _randomly_ on a square of side length \\(2r\\) the probability of the drops landing in an inscribed circle of radius \\(r\\) would be given by:
 
     $$P = \frac{\text{Area of circle}}{\text{Area of square}} = \frac{\pi r^2}{4 r^2} = \frac{\pi}{4}$$
 
     ![]({{site.baseurl}}/assets/Images/W05-img03.png)
 
-    Thus, if we can approximate $P$ then we can approximate $\pi$ as $4P$. In this question we will write code to approximate $P$ using the random python library.
+    Thus, if we can approximate \\(P\\) then we can approximate \\(\pi\\) as \\(4P\\). In this question we will write code to approximate \\(P\\) using the random python library.
 
     First of all, create a class for a rain drop (make sure you understand the code!):
 
@@ -210,12 +216,12 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
                 self.y = (.5 - random.random()) * 2 * r
                 self.incircle = (self.y) ** 2 + (self.x) ** 2 <= (r) ** 2
 
-    Note that the above uses the following equation for a circle centred at $(0,0)$ of radius $r$:
+    Note that the above uses the following equation for a circle centred at \\((0,0)\\) of radius \\(r\\):
     $$x^2+y^2\leq r^2$$.
 
-    To approximate $P$ simply create N=1000 instances of Drops and count the number of those that are in the circle.
+    To approximate \\(P\\) simply create N=1000 instances of Drops and count the number of those that are in the circle.
 
-    Use this to approximate $\pi$. What happens if you increase N? What value of N seems to give $\pi$ correct to 3 decimal places?
+    Use this to approximate \\(\pi\\). What happens if you increase N? What value of N seems to give \\(\pi\\) correct to 3 decimal places?
 
     (This is an example of a technique called Monte Carlo Simulation.)
 
