@@ -31,19 +31,17 @@ When you save a python script make sure to include the `.py` extension. This ens
 
 Indentation is important in Python.
 
-~~~{.python}
-if BOOLEAN:  # Check if BOOLEAN is true or false
-    then do everything in this indented block
-    ...
-    ...
-    ...
-    up until the last indent!
-else:  # If BOOLEAN is false
-    then do everything in THIS indented block
-    ...
-    ...
-    ...
-~~~
+    if BOOLEAN:  # Check if BOOLEAN is true or false
+        then do everything in this indented block
+        ...
+        ...
+        ...
+        up until the last indent!
+    else:  # If BOOLEAN is false
+        then do everything in THIS indented block
+        ...
+        ...
+        ...
 
 ## Assignment
 
@@ -61,17 +59,15 @@ To do this without simultaneous assignment we would need a `temporary variable`:
 
 Remember to describe functions like this:
 
-~~~{.python}
-def somefunction():
-    """
-    Describe in a sentence or two what your function does
+    def somefunction():
+        """
+        Describe in a sentence or two what your function does
 
-    Arguments: Describe what variables must be passed to the function
+        Arguments: Describe what variables must be passed to the function
 
-    Outputs: Describe what outputs will be returned by the function
-    """
-    Then start the code... # Include in line comments along the way.
-~~~
+        Outputs: Describe what outputs will be returned by the function
+        """
+        Then start the code... # Include in line comments along the way.
 
 ## What you should do next:
 
