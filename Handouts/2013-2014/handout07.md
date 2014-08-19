@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 7 - The class test, srange, tangents and more applications of functions or classes to data.'
-comments   : false
+comments   : true
 ---
 Lecturer: Vince Knight
 

@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 8 - Sharing and publishing worksheets, writing to files, the individual coursework and Class test feedback.'
-comments   : false
+comments   : true
 ---
 Lecturer: Vince Knight
 

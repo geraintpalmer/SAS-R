@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 5 - Object Orientated Programming'
-comments   : false
+comments   : true
 ---
 
 Lecturer: Vince Knight

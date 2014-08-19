@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 9 - Extracting solutions from outputs of solvers'
-comments   : false
+comments   : true
 ---
 Lecturer: Vince Knight
 

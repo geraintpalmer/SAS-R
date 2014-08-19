@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 4 - Functions, Sorting and Searching algorithms and what to expect on the class test.'
-comments   : false
+comments   : true
 ---
 Lecturer: Vince Knight
 

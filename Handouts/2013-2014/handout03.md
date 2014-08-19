@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 3 - Functions, Lists and For Loops, Iteration versus Recursion'
-comments   : false
+comments   : true
 ---
 
 Lecturer: Vince Knight

@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 2 - Conditional Statements, flow control and functions'
-comments   : false
+comments   : true
 ---
 
 Lecturer: Vince Knight

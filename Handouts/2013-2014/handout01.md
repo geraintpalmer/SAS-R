@@ -2,7 +2,7 @@
 layout     : post
 categories : ['pasthandouts', '2013-2014']
 title      : '2013-2014: handout 1 - What you need to know'
-comments   : false
+comments   : true
 ---
 
 Lecturer: Vince Knight

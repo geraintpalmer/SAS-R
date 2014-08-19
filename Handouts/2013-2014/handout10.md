@@ -2,7 +2,7 @@
 layout     : post
 categories : [pasthandouts, 2013-2014]
 title      : '2013-2014: handout 10 - File paths, formatting, floating figures, cloud.sagemath, plagiarism and next semester.'
-comments   : false
+comments   : true
 ---
 Lecturer: Vince Knight
 
