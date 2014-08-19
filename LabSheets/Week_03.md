@@ -77,7 +77,7 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=8WXIY18RJiY)
 
-05. **TICKABLE** By creating a function and using list comprehensions, create a list of $f(n)$ for all integers $n\leq 100$ where $f(n)$ is given below:
+05. **TICKABLE** By creating a function and using list comprehensions, create a list of \\(f(n)\\) for all integers \\(n\leq 100\\) where \\(f(n)\\) is given below:
 
     $$f(n) = \begin{cases}
        n ^ 3,& \text{ if $n$ odd}\\
@@ -236,15 +236,15 @@ Lists are a particular object in Python that hold ordered collection of other ob
     2X_{n-1},& n>1
     \end{cases}$$
 
-    To calculate $X_3$, we apply the formula and get:
+    To calculate \\(X_3\\), we apply the formula and get:
 
     $$X_3=2X_2$$
 
-    at this point we must calculate $X_2$:
+    at this point we must calculate \\(X_2\\):
 
     $$X_2=2X_1$$
 
-    and we now apply the formula to calculate $X_1$:
+    and we now apply the formula to calculate \\(X_1\\):
 
     $$X_1=1$$
 
@@ -275,6 +275,6 @@ Lists are a particular object in Python that hold ordered collection of other ob
 
     [Video hint](http://www.youtube.com/watch?v=EYPT4Ykx5IU)
 
-15. **TICKABLE** Program two functions that return $n!$ in both an iterative approach and a recursive approach.
+15. **TICKABLE** Program two functions that return \\(n!\\) in both an iterative approach and a recursive approach.
 
 16. Write a recursive program for the Fibonacci sequence.
