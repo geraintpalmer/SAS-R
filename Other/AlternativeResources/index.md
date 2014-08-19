@@ -1,4 +1,7 @@
-# Alternative resources for Computing for Mathematics
+---
+layout : page
+title  : Alternative Resources
+---
 
 ## Other online resources
 
@@ -16,7 +19,7 @@
 
 ## The class wiki
 
-My teaching assistant [Jason Young](https://plus.google.com/u/0/104243854554833157722/posts) is curating a wiki *for* you guys (ie you need to populate it). Please do add your own tips and tricks but also add any resources I might not have here (if they are any good I'm sure Jason will let me know about them and I'll add them here). [Here it is](https://docs.google.com/document/d/1oif-limb4tlKEVR_el_Md9OXK6WYyLwm_nGkFvY0KAA/edit?usp=sharing).
+My teaching assistant [Jason Young](https://plus.google.com/u/0/104243854554833157722/posts) is curating a wiki *for* you guys (ie you need to populate it). Please do add your own tips and tricks but also add any resources I might not have here (if they are any good I'm sure Jason will let me know about them and I'll add them here). [Here it is](https://github.com/drvinceknight/Computing_for_mathematics/wiki).
 
 ## Reading list
 
@@ -41,4 +44,3 @@ My teaching assistant [Jason Young](https://plus.google.com/u/0/1042438545548331
 - [Stackoverflow](http://stackoverflow.com/)
 - [Tutor mailing list for python](https://mail.python.org/mailman/listinfo/tutor)
 - [Python-forum.org](http://python-forum.org/)
-
