@@ -40,15 +40,16 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
 01. **TICKABLE**: Open up IDLE and in the **interpreter** type the following code and press `ENTER`:
 
-        print "Hello world"
+       {% highlight python %}
+       print "Hello world"
+       {% endhighlight %}
 
-22. The following is an example of a single line comment in the middle of some code:
 
-        num = 2
-        num += 3  # Add 3 to num
-        print num
+    ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
 
-2. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:
+    [Video hint](http://www.youtube.com/watch?v=9FdsVBAUqRs)
+
+02. For short bits of code typing directly in to the interpreter is fine (and in fact sometimes very helpful). However, for longer pieces of code one needs to write a file containing all the commands. Open a script and type the same code as above:
 
         print "Hello world"
 
