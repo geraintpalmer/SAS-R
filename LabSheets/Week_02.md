@@ -56,6 +56,8 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     **Basic variables**
 
+    ---
+
     A variable is one of the basic building blocks used by a program. Variables may be of various types.
 
 03. **TICKABLE**: Experiment with the following code which creates variables (by assigning them a value) and checks what type they are using the `type` function.
@@ -154,6 +156,8 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     **If statements**
 
+    ---
+
 08. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
 
         boolean = True
@@ -191,6 +195,8 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
     [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
 
     **Loops**
+
+    ---
 
     An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops "count controlled loops" and "event controlled loops".
 
@@ -268,6 +274,8 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
     [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
 
     **Functions**
+
+    ---
 
     To be able to make progress from the basic on this sheet we need a way to write "recycle" code: functions. Much like mathematical functions, functions in programming can take multiple arguments and carry out tasks with those arguments.
 
