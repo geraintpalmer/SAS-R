@@ -247,7 +247,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
 
-13. **TICKABLE**: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.
+13. **TICKABLE**: Write some code to find \\(N\\) such that \\(\sum_{i=0}^Ni^2\\) is more than 20000.
 
     [Video hint](http://www.youtube.com/watch?v=tzc4uaJaYHU)
 
@@ -255,7 +255,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     $$x_{n+1} = \frac{x_n+K/x_n}{2}$$
 
-    approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.
+    approaches \\(\sqrt{K}\\) as \\(n\\) increases. Write some code to verify this to any given level of precision.
 
     [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
 
