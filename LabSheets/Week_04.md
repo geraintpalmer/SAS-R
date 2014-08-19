@@ -13,9 +13,11 @@ This lab sheet will introduce two algorithms from computer science. After this s
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znyEYYOnDbQHq1PUuNgbhdD3).
 
-## Sorting Algorithms
+**Sorting Algorithms**
 
-1. **TICKABLE** The following code creates a list of digits from 1 to 31.
+---
+
+01. **TICKABLE** The following code creates a list of digits from 1 to 31.
 
         l = range(1, 31)
         print l
@@ -30,7 +32,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=18LLHQ7JR1s)
 
-2. **TICKABLE** Python has a built in method on lists to sort them: `sort()`:
+02. **TICKABLE** Python has a built in method on lists to sort them: `sort()`:
 
         l = jumbledlist(30, 20) # Use the function you created above.
         print l
@@ -78,7 +80,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=O1HBxikerUQ)
 
-3. There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:
+03. There are various other algorithms that can be used to sort lists. The following pseudo code is for an algorithm called 'bubble sort'. Attempt to write out the corresponding python code:
 
         SET FIRSTUNSORTED TO 0
         SET SWAP TO TRUE
@@ -98,7 +100,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=SXDWTZpj--M)
 
-4. The 'time' module allows you to get the current system time on your machine:
+04. The 'time' module allows you to get the current system time on your machine:
 
         import time
         print time.time()
@@ -127,13 +129,15 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     (Note that python also has a timeit library which offers timing functionality.)
 
-## Searching algorithms
+    **Searching algorithms**
 
-5. **TICKABLE** Consider the data in [W04_D01.txt]({{site.baseurl}}/assets/Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
+    ---
+
+05. **TICKABLE** Consider the data in [W04_D01.txt]({{site.baseurl}}/assets/Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
 
     [Video hint](http://www.youtube.com/watch?v=D7-3Oh_oZA4)
 
-6. One searching algorithm we will look at is called "sequential search". This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question **should** be at.
+06. One searching algorithm we will look at is called "sequential search". This algorithm starts by sorting a list, and then going through it until it either reaches the element in question or gets to a point in the list that the item in question **should** be at.
 
         SORT THE LIST
         SET INDEX TO 0
@@ -161,7 +165,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=CsBlbFaZD_I)
 
-7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
+07. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
 
     ![]({{site.baseurl}}/assets/Images/W04-img03.png)
 
@@ -203,6 +207,6 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://www.youtube.com/watch?v=UyIhxhURX-M)
 
-8. Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.
+08. Use the timing function of question 4 to compare the performance of the binary search and sequential search algorithms.
 
-9. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
+09. The binary search algorithm is a very nice algorithm to write in a recursive way, attempt to do this.
