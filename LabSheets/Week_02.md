@@ -290,7 +290,7 @@ To be able to make progress from the basic on this sheet we need a way to write 
 
     [Video hint](http://www.youtube.com/watch?v=I_DXaP-mrRA)
 
-17.  The following function makes use of the `return` call to actually return a result of the function:
+17. The following function makes use of the `return` call to actually return a result of the function:
 
         def mydiv(a, b):
             return a/b
