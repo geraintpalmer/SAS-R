@@ -254,18 +254,15 @@ notborn = "the UK"
     <p>There are other types that can be used as well.</p>
 
     <p><a href="http://www.youtube.com/watch?v=LlQ7q-EaDnc">Video hint</a></p>
+
+    <p><strong>If statements</strong></p>
   </li>
-</ol>
-
-<p><strong>If statements</strong></p>
-
-<ol>
   <li>
     <p>An <code>if</code> statement allows you to tell a program to carry out something based on the value of a <code>Boolean</code> variable.</p>
 
-    <pre><code> boolean = True
- if boolean:
-     print "boolean is %s" % boolean
+    <pre><code>boolean = True
+if boolean:
+    print "boolean is %s" % boolean
 </code></pre>
 
     <p>Try typing the above code but change <code>boolean</code> to <code>False</code>. <strong>Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement</strong>.</p>
@@ -283,12 +280,12 @@ notborn = "the UK"
 
     <p>It is also possible to give alternatives to an <code>if statement</code>:</p>
 
-    <pre><code> num = 11
- print num % 2 == 0
- if num % 2 == 0:
-     print "num is an even number"
- else:
-     print "num is an odd number"
+    <pre><code>num = 11
+print num % 2 == 0
+if num % 2 == 0:
+    print "num is an even number"
+else:
+    print "num is an odd number"
 </code></pre>
 
     <p>(The <code>%</code> operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)</p>
@@ -301,61 +298,56 @@ notborn = "the UK"
     <p><strong>TICKABLE</strong>: Find some information on the <code>raw_input</code> statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print “that string has length strictly more than 10” otherwise “that string has length less than 9”.</p>
 
     <p><a href="http://www.youtube.com/watch?v=4nH-vtBrKXs">Video hint</a></p>
+
+    <p><strong>Loops</strong></p>
+
+    <p>An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops “count controlled loops” and “event controlled loops”.</p>
   </li>
-</ol>
-
-<h2 id="loops">Loops</h2>
-
-<p>An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops “count controlled loops” and “event controlled loops”.</p>
-
-<ol>
   <li>
     <p>The <code>range()</code> function in Python allows us to create a list of integers easily. <strong>A list is a new type of variable that we will look at more closely next week</strong>:</p>
 
     <pre><code>print range(10)
 </code></pre>
+
+    <p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
+
+    <pre><code>print range(3,10)
+</code></pre>
+
+    <p>We can also include 3 arguments:</p>
+
+    <pre><code>print range(0,10,2)
+</code></pre>
+
+    <p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
+
+    <pre><code>for i in range(10):
+    print i
+</code></pre>
+
+    <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
+
+    <p><img src="/Computing_for_mathematics/assets/Images/W02-img01.png" alt="" /></p>
+
+    <p>We can in fact iterate over anything in a list:</p>
+
+    <pre><code>for e in ["dog", "cat", 3, "I love mathematics"]:
+    print e
+</code></pre>
+
+    <p>This allows us to do various interesting things. Try the following:</p>
+
+    <pre><code>s = 0
+for i in range(1001):
+    s += i
+print s
+</code></pre>
+
+    <p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p>
   </li>
-</ol>
-
-<p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
-
-<pre><code>        print range(3,10)
-</code></pre>
-
-<p>We can also include 3 arguments:</p>
-
-<pre><code>    print range(0,10,2)
-</code></pre>
-
-<p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
-
-<pre><code>    for i in range(10):
-        print i
-</code></pre>
-
-<p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
-
-<pre><code>![](/Computing_for_mathematics/assets/Images/W02-img01.png)
-</code></pre>
-
-<p>We can in fact iterate over anything in a list:</p>
-
-<pre><code>    for e in ["dog", "cat", 3, "I love mathematics"]:
-        print e
-</code></pre>
-
-<p>This allows us to do various interesting things. Try the following:</p>
-
-<pre><code>    s = 0
-    for i in range(1001):
-        s += i
-    print s
-</code></pre>
-
-<p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p>
-
-<ol>
-  <li><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</li>
+  <li>
+    <p><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</p>
+  </li>
 </ol>
 
 <p><a href="http://www.youtube.com/watch?v=1PvEXo0l1NE">Video hint</a></p>

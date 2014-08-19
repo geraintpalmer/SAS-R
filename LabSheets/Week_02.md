@@ -152,26 +152,26 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=LlQ7q-EaDnc)
 
-**If statements**
+    **If statements**
 
-8. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
+08. An `if` statement allows you to tell a program to carry out something based on the value of a `Boolean` variable.
 
         boolean = True
         if boolean:
             print "boolean is %s" % boolean
 
-   Try typing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement**.
+    Try typing the above code but change `boolean` to `False`. **Note: in Python, indentation is important! In all languages it is good practice, in Python it is a requirement**.
 
-   It is easy to create boolean variables using the following:
+    It is easy to create boolean variables using the following:
 
-   - `<` strictly less than
-   - `>` strictly greater than
-   - `<=` less than or equal
-   - `>=` greater than or equal
-   - `!=` not equal
-   - `==` equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
+    - `<` strictly less than
+    - `>` strictly greater than
+    - `<=` less than or equal
+    - `>=` greater than or equal
+    - `!=` not equal
+    - `==` equals **Note: this is a test of equality as opposed to the basic `=` which is an assignment.**
 
-   It is also possible to give alternatives to an `if statement`:
+    It is also possible to give alternatives to an `if statement`:
 
         num = 11
         print num % 2 == 0
@@ -180,54 +180,54 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
         else:
             print "num is an odd number"
 
-   (The `%` operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)
+    (The `%` operator gives the remainder of one number when divided by another. Note that this is not the same use as discussed in question 7 within strings.)
 
-   [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
+    [Video hint](http://www.youtube.com/watch?v=ZODKm7YolkQ)
 
-   **Spend some time understanding the `elif` statement.**
+    **Spend some time understanding the `elif` statement.**
 
 9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length strictly more than 10" otherwise "that string has length less than 9".
 
-   [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
+    [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
 
-## Loops
+    **Loops**
 
-An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops "count controlled loops" and "event controlled loops".
+    An important type of programming instruction allows us to make a program repeat certain things. These are also referred to as loops. There are two basic types of loops "count controlled loops" and "event controlled loops".
 
 10. The `range()` function in Python allows us to create a list of integers easily. **A list is a new type of variable that we will look at more closely next week**:
 
         print range(10)
 
-   Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:
+    Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:
 
-            print range(3,10)
+        print range(3,10)
 
-   We can also include 3 arguments:
+    We can also include 3 arguments:
 
         print range(0,10,2)
 
-   Using `range()` we can use the basic `for` loop in Python (a type of count controlled loop):
+    Using `range()` we can use the basic `for` loop in Python (a type of count controlled loop):
 
         for i in range(10):
             print i
 
-   The first line of the above defines the iterator `i` and tells it the values it will go through.
+    The first line of the above defines the iterator `i` and tells it the values it will go through.
 
     ![]({{site.baseurl}}/assets/Images/W02-img01.png)
 
-   We can in fact iterate over anything in a list:
+    We can in fact iterate over anything in a list:
 
         for e in ["dog", "cat", 3, "I love mathematics"]:
             print e
 
-   This allows us to do various interesting things. Try the following:
+    This allows us to do various interesting things. Try the following:
 
         s = 0
         for i in range(1001):
             s += i
         print s
 
-   [Video hint](http://www.youtube.com/watch?v=3ht1mNULJC0)
+    [Video hint](http://www.youtube.com/watch?v=3ht1mNULJC0)
 
 11. **TICKABLE**: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.
 
