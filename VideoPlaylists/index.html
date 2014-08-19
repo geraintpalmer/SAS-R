@@ -5,7 +5,7 @@ title  : Video Playlists
 
 <div class="home">
     <h1>Video Playlists</h1>
-    <p>(Link point to YouTube playlists)</p>
+    <p>
     <ul>
     {% for page in site.pages %}
         {% if page.categories contains 'labsheets' %}
@@ -13,5 +13,7 @@ title  : Video Playlists
         {% endif %}
     {% endfor %}
     </ul>
+    (Link points to YouTube playlist)
+    </p>
 
 </div>
