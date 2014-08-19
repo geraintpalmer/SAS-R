@@ -317,48 +317,53 @@
 
     <pre><code>print range(10)
 </code></pre>
-
-    <p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
-
-    <pre><code>print range(3,10)
-</code></pre>
-
-    <p>We can also include 3 arguments:</p>
-
-    <pre><code>print range(0,10,2)
-</code></pre>
-
-    <p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
-
-    <pre><code>for i in range(10):
-    print i
-</code></pre>
-
-    <p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
-
-    <p><img src="/Computing_for_mathematics/assets/Images/W02-img01.png" alt="" /></p>
-
-    <p>We can in fact iterate over anything in a list:</p>
-
-    <pre><code>for e in ["dog", "cat", 3, "I love mathematics"]:
-    print e
-</code></pre>
-
-    <p>This allows us to do various interesting things. Try the following:</p>
-
-    <pre><code>s = 0
-for i in range(1001):
-    s += i
-print s
-</code></pre>
-
-    <p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p>
   </li>
-  <li>
-    <p><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</p>
+</ol>
 
-    <p><a href="http://www.youtube.com/watch?v=1PvEXo0l1NE">Video hint</a></p>
-  </li>
+<p>Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:</p>
+
+<pre><code>    print range(3,10)
+</code></pre>
+
+<p>We can also include 3 arguments:</p>
+
+<pre><code>    print range(0,10,2)
+</code></pre>
+
+<p>Using <code>range()</code> we can use the basic <code>for</code> loop in Python (a type of count controlled loop):</p>
+
+<pre><code>    for i in range(10):
+        print i
+</code></pre>
+
+<p>The first line of the above defines the iterator <code>i</code> and tells it the values it will go through.</p>
+
+<pre><code>![](/Computing_for_mathematics/assets/Images/W02-img01.png)
+</code></pre>
+
+<p>We can in fact iterate over anything in a list:</p>
+
+<pre><code>    for e in ["dog", "cat", 3, "I love mathematics"]:
+        print e
+</code></pre>
+
+<p>This allows us to do various interesting things. Try the following:</p>
+
+<pre><code>    s = 0
+    for i in range(1001):
+        s += i
+    print s
+</code></pre>
+
+<p><a href="http://www.youtube.com/watch?v=3ht1mNULJC0">Video hint</a></p>
+
+<ol>
+  <li><strong>TICKABLE</strong>: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.</li>
+</ol>
+
+<p><a href="http://www.youtube.com/watch?v=1PvEXo0l1NE">Video hint</a></p>
+
+<ol>
   <li>
     <p>Event based loops are implemented in Python using a <code>while</code> command that keep repeating a set of commands until a boolean variable is <code>False</code>.</p>
 
@@ -367,39 +372,42 @@ while k &lt; 10:
     print k
     k += 1
 </code></pre>
-
-    <p>The second line of the above checks the boolean variable <code>k &lt; 10</code> and as long as this is <code>True</code> loops through the rest of the commands:</p>
-
-    <p><img src="/Computing_for_mathematics/assets/Images/W02-img02.png" alt="" /></p>
-
-    <p><a href="http://www.youtube.com/watch?v=Rog3YAETP-Q">Video hint</a></p>
-  </li>
-  <li>
-    <p><strong>TICKABLE</strong>: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.</p>
-
-    <p><a href="http://www.youtube.com/watch?v=tzc4uaJaYHU">Video hint</a></p>
-  </li>
-  <li>
-    <p>It can be shown (you are not required to check this) that the following sequence:</p>
-
-    <script type="math/tex; mode=display">x_{n+1} = \frac{x_n+K/x_n}{2}</script>
-
-    <p>approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.</p>
-
-    <p><a href="http://www.youtube.com/watch?v=bHv2vqPliL0">Video hint</a></p>
-  </li>
-  <li>
-    <p>Take a look at the <code>random</code> Python library (we will talk about libraries in detail later) and write some code that uses the <code>input</code> function to code a simple game:</p>
-
-    <ul>
-      <li>The program chooses a random integer;</li>
-      <li>The user tries to guess the integer;</li>
-      <li>At every guess the program indicates if the guess is too high or too low.</li>
-    </ul>
-
-    <p><a href="http://www.youtube.com/watch?v=TpQgPKEhrg0">Video hint</a></p>
   </li>
 </ol>
+
+<p>The second line of the above checks the boolean variable <code>k &lt; 10</code> and as long as this is <code>True</code> loops through the rest of the commands:</p>
+
+<p><img src="/Computing_for_mathematics/assets/Images/W02-img02.png" alt="" /></p>
+
+<p><a href="http://www.youtube.com/watch?v=Rog3YAETP-Q">Video hint</a></p>
+
+<ol>
+  <li><strong>TICKABLE</strong>: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.</li>
+</ol>
+
+<p><a href="http://www.youtube.com/watch?v=tzc4uaJaYHU">Video hint</a></p>
+
+<ol>
+  <li>It can be shown (you are not required to check this) that the following sequence:</li>
+</ol>
+
+<script type="math/tex; mode=display">x_{n+1} = \frac{x_n+K/x_n}{2}</script>
+
+<p>approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.</p>
+
+<p><a href="http://www.youtube.com/watch?v=bHv2vqPliL0">Video hint</a></p>
+
+<ol>
+  <li>Take a look at the <code>random</code> Python library (we will talk about libraries in detail later) and write some code that uses the <code>input</code> function to code a simple game:</li>
+</ol>
+
+<ul>
+  <li>The program chooses a random integer;</li>
+  <li>The user tries to guess the integer;</li>
+  <li>At every guess the program indicates if the guess is too high or too low.</li>
+</ul>
+
+<p><a href="http://www.youtube.com/watch?v=TpQgPKEhrg0">Video hint</a></p>
 
 <h2 id="functions">Functions</h2>
 
