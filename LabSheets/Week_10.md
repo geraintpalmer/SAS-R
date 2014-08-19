@@ -1,8 +1,9 @@
 ---
-layout     : post
-categories : labsheets
-title      : Week 10 - LaTeX
-comments   : true
+layout      : post
+categories  : labsheets
+title       : Week 10 - LaTeX
+playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znygZ2rYNaX7_8j2Duwh58cK
+comments    : true
 ---
 Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).
 

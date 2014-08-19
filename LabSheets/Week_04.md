@@ -1,8 +1,9 @@
 ---
-layout     : post
-categories : labsheets
-title      : Week 4 - Sorting and Searching Algorithms
-comments   : true
+layout      : post
+categories  : labsheets
+title       : Week 4 - Sorting and Searching Algorithms
+playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znyEYYOnDbQHq1PUuNgbhdD3
+comments    : true
 ---
 
 This lab sheet will introduce two algorithms from computer science. After this session you will be able to sort and search lists using the two following algorithms:

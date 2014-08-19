@@ -1,8 +1,9 @@
 ---
-layout     : post
-categories : labsheets
-title      : Week 9 - Differential Equations
-comments   : true
+layout      : post
+categories  : labsheets
+title       : Week 9 - Differential Equations
+playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znzOZOAOVo6k_b-zDxjBr-x4
+comments    : true
 ---
 
 Sage can be used to solve differential equations. Often complex systems can be modelled simply in terms of differential equations however solving these differential equations is not always straightforward (you will be studying differential equations a lot closer in the Spring semester). At the end of this week you will be able to:

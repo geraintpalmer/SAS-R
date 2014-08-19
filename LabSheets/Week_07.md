@@ -1,8 +1,9 @@
 ---
-layout     : post
-categories : labsheets
-title      : Week 7 - Symbolic Calculus
-comments   : true
+layout      : post
+categories  : labsheets
+title       : Week 7 - Symbolic Calculus
+playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znz1cih4_2b7QvVZaqPnE7m4
+comments    : true
 ---
 
 Using Sage we can carry out various operations from Calculus. This week we will investigate how to:

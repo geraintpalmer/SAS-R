@@ -1,8 +1,9 @@
 ---
-layout     : post
-categories : labsheets
-title      : Week 6 - Algebra
-comments   : true
+layout      : post
+categories  : labsheets
+title       : Week 6 - Algebra
+playlisturl : http://www.youtube.com/playlist?list=PLnC5h3PY-znyytHl2YQjE41o-TdfewmKr
+comments    : true
 ---
 
 Now that we have a good knowledge of programming we can take a closer look at a Mathematics package. There are a variety of such packages: [Maple](http://www.maplesoft.com/products/maple/), [Mathematica](http://www.wolfram.com/products/) and others. The mathematics package we will use is called [Sage](http://sagemath.org/), as stated on the Sage website ([sagemath.org](http://sagemath.org/)):
