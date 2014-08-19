@@ -347,24 +347,24 @@ There are two ways of writing comments in Python:
 
     - Variable and function names
 
-        Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
+      Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
 
-        Yes:
+          Yes:
 
-            myvariable
-            sqrtvar
-            var
-            myfunction
+              myvariable
+              sqrtvar
+              var
+              myfunction
 
-        No:
+          No:
 
-            my_variable
-            SqrtVAR
-            MyFunction
-            MYFUNCTION
+              my_variable
+              SqrtVAR
+              MyFunction
+              MYFUNCTION
 
 
-          On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
+      On some occasions it might be appropriate to make some exceptions (for example using a single letter for a very simple variable).
 
     - White spaces
 
