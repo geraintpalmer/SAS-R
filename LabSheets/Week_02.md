@@ -42,10 +42,6 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
         print "Hello world"
 
-
-   ![]({{site.baseurl}}/assets/Screenshots/W02-S01.png)
-
-
 22. The following is an example of a single line comment in the middle of some code:
 
         num = 2
