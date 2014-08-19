@@ -17,18 +17,14 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 1. **TICKABLE** The following code creates a list of digits from 1 to 31.
 
-    ~~~{.python}
-    l = range(1, 31)
-    print l
-    ~~~
+        l = range(1, 31)
+        print l
 
     If we import the random library we can pick a random sample of the list and `shuffle` this it (do not worry too much about this):
 
-    ~~~{.python}
-    import random
-    jumbledlist = random.sample(range(1, 31), 20)
-    print jumbledlist
-    ~~~
+        import random
+        jumbledlist = random.sample(range(1, 31), 20)
+        print jumbledlist
 
     Using pen and paper, sort the above list, attempting to understand a general approach to doing this. Write a function `jumbledlist` that takes as arguments: `maximumnumber` and `sizeoflist` which returns a jumbled list of integersas above.
 
@@ -36,18 +32,16 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 2. **TICKABLE** Python has a built in method on lists to sort them: `sort()`:
 
-    ~~~{.python}
-    l = jumbledlist(30, 20) # Use the function you created above.
-    print l
-    l.sort()
-    print l
-    ~~~
+        l = jumbledlist(30, 20) # Use the function you created above.
+        print l
+        l.sort()
+        print l
 
     In this question we will take a look at one type of algorithm that can be used to sort a list: "Selection sort".
 
-    The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list\text{ as shown in Figure \ref{W04-img01}}.
+    The main idea behind this algorithm is to create a new (empty at first) list and go through the old list and slowly pick out the 'next' element to go in the new list.
 
-    ![\text{Selection sort}\label{W04-img01}]({{site.baseurl}}/assets/Images/W04-img01.png)
+    ![]({{site.baseurl}}/assets/Images/W04-img01.png)
 
     Here is some **pseudo code** that describes this:
 
@@ -56,9 +50,9 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
             FIND SMALLEST ELEMENT IN OLDLIST
             MOVE THAT ELEMENT TO NEWLIST
 
-    It should be straightforward to see that at every step of this algorithm the sum of the sizes of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list\text{ as shown in Figure \ref{W04-img02}}.
+    It should be straightforward to see that at every step of this algorithm the sum of the sizes of NEWLIST and OLDLIST stay the same. As such we can simply put the NEWLIST at the beginning of the OLDLIST so that at each step of our algorithm we are basically moving elements from the unsorted part of the list to the sorted part of the list.
 
-    ![\text{A concise version of selection sort.}\label{W04-img02}]({{site.baseurl}}/assets/Images/W04-img02.png)
+    ![]({{site.baseurl}}/assets/Images/W04-img02.png)
 
     Here is some **pseudo code** that describes the 'insertion sort' algorithm:
 
@@ -70,19 +64,17 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Here is some python code that carries out the above algorithm, experiment with it and include comments:
 
-    ~~~{.python}
-    def insertionsort(data):
-        firstUnsorted = 0
-        while firstUnsorted < len(data) - 1:
-            indexOfSmallest = firstUnsorted
-            index = firstUnsorted + 1
-            while index <= len(data) - 1:
-                if data[index] < data[indexOfSmallest]:
-                    indexOfSmallest = index
-                index += 1
-            data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
-            firstUnsorted += 1
-    ~~~
+        def insertionsort(data):
+            firstUnsorted = 0
+            while firstUnsorted < len(data) - 1:
+                indexOfSmallest = firstUnsorted
+                index = firstUnsorted + 1
+                while index <= len(data) - 1:
+                    if data[index] < data[indexOfSmallest]:
+                        indexOfSmallest = index
+                    index += 1
+                data[firstUnsorted], data[indexOfSmallest] = data[indexOfSmallest], data[firstUnsorted]
+                firstUnsorted += 1
 
     [Video hint](http://www.youtube.com/watch?v=O1HBxikerUQ)
 
@@ -108,34 +100,26 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 4. The 'time' module allows you to get the current system time on your machine:
 
-    ~~~{.python}
-    import time
-    print time.time()
-    ~~~
+        import time
+        print time.time()
 
     Using this we can write a function that will evaluate how long it takes to run a particular function:
 
-    ~~~{.python}
-    def timing(string):
-        starttime = time.time()
-        eval(string)
-        return time.time() - starttime
-    ~~~
+        def timing(string):
+            starttime = time.time()
+            eval(string)
+            return time.time() - starttime
 
     This uses the `eval` function which runs any string of code. We can define the following test function:
 
-    ~~~{.python}
-    def testfunction():
-        k = 0
-        while k < 10 ** 6:
-            k += 1
-    ~~~
+        def testfunction():
+            k = 0
+            while k < 10 ** 6:
+                k += 1
 
     We see how long a single run of this testfunction takes using our timing function:
 
-    ~~~{.python}
-    print timing("testfunction")
-    ~~~
+        print timing("testfunction")
 
     Modify the timing function so that it returns the average time taken over 10 evaluations of the passed code. Furthermore use this function to evaluate the performance of the bubble sort and insertion sort algorithms.
 
@@ -145,7 +129,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 ## Searching algorithms
 
-5. **TICKABLE** Consider the data in [W04_D01.txt](./Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
+5. **TICKABLE** Consider the data in [W04_D01.txt]({{site.baseurl}}/assets/Data/W04_D01.txt). Search this file for the index of 4558. Do this by hand and then check your answer using the `index` method. How could you do this if it was to be done in pairs (2 students searching the list)?
 
     [Video hint](http://www.youtube.com/watch?v=D7-3Oh_oZA4)
 
@@ -168,20 +152,18 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Write some python code for this and use it to find the index of following numbers:
 
-    ~~~{.python}
-    targets = [19,
-               592,
-               9507,
-               4221]
-    ~~~
+        targets = [19,
+                   592,
+                   9507,
+                   4221]
 
-    in the file [W04_D01.txt](./Data/W04_D01.txt).
+    in the file [W04_D01.txt]({{site.baseurl}}/assets/Data/W04_D01.txt).
 
     [Video hint](http://www.youtube.com/watch?v=CsBlbFaZD_I)
 
-7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search\text{ as shown in Figure \ref{W04-img03}}.
+7. **TICKABLE** Another searching algorithm is called 'binary search'. In this algorithm, a **sorted** list is split in two recursively and by considering the first and last element of each list we immediately know which sublist to search.
 
-    ![\text{Binary search}\label{W04-img03}](Images/W04-img03.png)
+    ![]({{site.baseurl}}/assets/Images/W04-img03.png)
 
     Here is some pseudo code that describes this:
 
@@ -202,24 +184,22 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Here is some python code that carries out the above algorithm, experiment with it and include comments:
 
-    ~~~{.python}
-    def binarysearch(data, item):
-        data.sort()
-        first = 0
-        last = len(data) - 1
-        found = False
-        while first <= last and not found:
-            middle = int((first + last) / 2)
-            if item == data[middle]:
-                found = True
-            elif item < data[middle]:
-                last = middle - 1
-            else:
-                first = middle + 1
-        if data[middle] == item:
-            return middle
-        return False
-    ~~~
+        def binarysearch(data, item):
+            data.sort()
+            first = 0
+            last = len(data) - 1
+            found = False
+            while first <= last and not found:
+                middle = int((first + last) / 2)
+                if item == data[middle]:
+                    found = True
+                elif item < data[middle]:
+                    last = middle - 1
+                else:
+                    first = middle + 1
+            if data[middle] == item:
+                return middle
+            return False
 
     [Video hint](http://www.youtube.com/watch?v=UyIhxhURX-M)
 
