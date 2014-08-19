@@ -96,7 +96,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 08. **TICKABLE** Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:
 
-    $$\frac{dy}{dx} + y(y-1)==\abs{(x-2)}$$
+    $$\frac{dy}{dx} + y(y-1)==\lvert(x-2)\rvert$$
 
     In these situations certain numerical algorithms exist that can still describe the evolution of the system. Investigate the `desolve_rk4` function and obtain a solution for the above equation given that \\(y(0)=1\\) for \\(x<100\\). Obtain a plot of the numerical solution
 
