@@ -4,7 +4,6 @@ categories : labsheets
 title      : Week 7 - Symbolic Calculus
 comments   : false
 ---
-# Week 7 - Symbolic Calculus
 
 Using Sage we can carry out various operations from Calculus. This week we will investigate how to:
 
@@ -14,7 +13,7 @@ Using Sage we can carry out various operations from Calculus. This week we will 
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znz1cih4_2b7QvVZaqPnE7m4).
 
-1. Last week we saw how to define a function in Sage:
+01. Last week we saw how to define a function in Sage:
 
         f(x) = x ^ 3 + 3 * x + sin(x)
 
@@ -26,7 +25,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
         f(x, y) = x * y + x ^ 2 + y ^ 2
 
-2. In calculus the following definition of a limit is well know:
+02. In calculus the following definition of a limit is well know:
 
     $$\lim_{x\to a}f(x)=L\text{ iff } \forall\; \epsilon>0\; \exists\; \delta \text{ such that } \forall\; x: |x-a|<\delta \Rightarrow |f(x)-L|\leq \epsilon$$
 
@@ -57,7 +56,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/-br9qoY9QbM)
 
-3. **TICKABLE** Plot \\(f(x)=\frac{3x^2}{x^3+x-1}\\) using the default options:
+03. **TICKABLE** Plot \\(f(x)=\frac{3x^2}{x^3+x-1}\\) using the default options:
 
         plot(f)
 
@@ -78,7 +77,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Note that in this case a non directional limit returns `infinity` this implies that a single limit does not exist.
 
-4. There are various algebraic relationships on limits:
+04. There are various algebraic relationships on limits:
 
     $$\lim_{x\to a}[f(x)+g(x)]=\lim_{x\to a}f(x) + \lim_{x\to a}g(x)$$
     $$\lim_{x\to a}[f(x)\times g(x)]=\lim_{x\to a}f(x) \times \lim_{x\to a}g(x)$$
@@ -96,20 +95,20 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Note that we use the `bool` class to convert the symbolic equation `L1==L2` to a boolean variable. Verify with some example functions the other two relationships above.
 
-5. **TICKABLE** The point of this question is to investigate \\(\lim_{x\to 0}\frac{sin(x)}{x}\\). Using Sage:
+05. **TICKABLE** The point of this question is to investigate \\(\lim_{x\to 0}\frac{sin(x)}{x}\\). Using Sage:
 
     1. Obtain the values of \\(\|sin(x)-x\|\\) for 1000 values of \\(x<.05\\) (you might find the sage `srange` function helpful).
     2. Plot the above points, what does this indicate as to the value of the limit (investigate the `list_plot` sage function)?
     3. Compute the limit in question using Sage.
 
-6. The point of this question is to investigate \\(\lim_{x\to 0}(1+x)^{1/x}\\). Using Sage:
+06. The point of this question is to investigate \\(\lim_{x\to 0}(1+x)^{1/x}\\). Using Sage:
 
     1. Compute the numerical value of \\(e\\).
     2. Obtain the values of \\((1+x)^{1/x}\\) for 1000 values of \\(x<.05\\).
     3. Plot the above points, what does this indicate as to the value of the limit?
     4. Compute the limit in question using Sage.
 
-7. Sage can be used to carry out symbolic differentiation. Experiment with the syntax below for other functions:
+07. Sage can be used to carry out symbolic differentiation. Experiment with the syntax below for other functions:
 
         n = var('n')
         f(x) = x ^ n
@@ -119,7 +118,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/FbxioEG9kzM)
 
-8. The point of this question is to investigate the definition of a derivative:
+08. The point of this question is to investigate the definition of a derivative:
 
     $$\frac{df}{dx}=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
 
@@ -127,7 +126,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
     2. Compute \\(\frac{f(x+h)-f(x)}{h}\\);
     3. Compute the above limit as \\(h\to 0\\) and verify that this is the derivative of \\(f\\).
 
-9. **TICKABLE** By definition, the derivative \\(f'(a)\\) gives the rate of change of the tangent line at the point \\((a,f(a)\\).
+09. **TICKABLE** By definition, the derivative \\(f'(a)\\) gives the rate of change of the tangent line at the point \\((a,f(a)\\).
     Write a function that takes as arguments a function and a point \\(a\\) and returns the plot of the function as well as the tangent line at \\(a\\).
     The plot shows a plot of \\(f(x)=\sin(x)+3x+1/x\\) as well as the tangent line at \\(x=2\\).
 
@@ -177,7 +176,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         f(x) = x ^ n
         f.integrate(x)
 
-   Investigate the `assume()` command as well as the `forget()` command and work out the previous integral.
+    Investigate the `assume()` command as well as the `forget()` command and work out the previous integral.
 
 13. A graphical interpretation of integration is that \\(\int_a^bf(x)dx\\) gives the area under the curve of \\(f(c)\\).
     Using a technique called Riemmann integration we can approximate this area by taking a certain number of rectangles of given width and height given by \\(f(x)\\).
