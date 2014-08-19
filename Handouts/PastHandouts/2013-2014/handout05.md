@@ -1,4 +1,9 @@
-# Computing for mathematics handout 5 - Object Orientated Programming
+---
+layout     : post
+categories : [pasthandouts, 2013-2014]
+title      : Computing for mathematics handout 5 - Object Orientated Programming
+comments   : false
+---
 
 Lecturer: Vince Knight
 
@@ -21,34 +26,32 @@ Many people found question 7 quite a challenge. Here is a similar question.
 
 > _The list `fields` contains two columns of data: each representing the width and lengths of fields. For a field to be profitable they must have an area of at least 50 square metres, how many fields in our data set are profitable?_
 
-~~~{.python}
 
-fields = [[4,5],
-          [6,2],
-          [1,7],
-          [8,2],
-          [4,1],
-          [7,2],
-          [8,2],
-          [9,1],
-          [10,56],
-          [83,15],
-          [4,1],
-          [53,2]]
+    fields = [[4,5],
+              [6,2],
+              [1,7],
+              [8,2],
+              [4,1],
+              [7,2],
+              [8,2],
+              [9,1],
+              [10,56],
+              [83,15],
+              [4,1],
+              [53,2]]
 
-class Field():
-    """
-    A class for our field
-    """
-    def __init__(self, x, y):
-        self.width = x
-        self.height = y
-    def profitable(self):
-        return self.width * self.height >= 50
+    class Field():
+        """
+        A class for our field
+        """
+        def __init__(self, x, y):
+            self.width = x
+            self.height = y
+        def profitable(self):
+            return self.width * self.height >= 50
 
-fields = [Field(f[0], f[1]) for f in fields]
-print len([f for f in fields if f.profitable()])
-~~~
+    fields = [Field(f[0], f[1]) for f in fields]
+    print len([f for f in fields if f.profitable()])
 
 ## What you should do next:
 

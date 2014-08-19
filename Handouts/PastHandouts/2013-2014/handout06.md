@@ -1,4 +1,9 @@
-# Computing for mathematics handout 6 - Sage and the Class test
+---
+layout     : post
+categories : [pasthandouts, 2013-2014]
+title      : Computing for mathematics handout 6 - Sage and the Class test
+comments   : false
+---
 
 Lecturer: Vince Knight
 
@@ -15,33 +20,29 @@ email: knightva@cf.ac.uk
 ## What is Sage?
 
 - Sage is a mathematics package built on Python. This implies that you can use the Python code you learnt in the first weeks of this class in Sage.
-- Sage can be used to check formulae. For example: what is the formula for $\sum_{i=a}^bx^{i}$?
+- Sage can be used to check formulae. For example: what is the formula for \\(\sum_{i=a}^bx^{i}\\)?
 
-    ~~~{.python}
-    a = var('a')
-    b = var('b')
-    i = var('i')
-    x = var('x')
-    sum(x^i,i,a,b)
-    ~~~
+        a = var('a')
+        b = var('b')
+        i = var('i')
+        x = var('x')
+        sum(x^i,i,a,b)
 
 - Sage can also be used to plot functions (this could help when attempting to visualise a particular theorem):
 
-    ~~~{.python}
-    k = 20
-    p = plot(x^0,color=rainbow(20)[0], legend_label="$x^0$")
-    for i in range(1,20):
-        p += plot(x^i,color=rainbow(20)[i],legend_label="$x^{%s}$" % i)
-    p
-    ~~~
+        {% raw %}
+        k = 20
+        p = plot(x^0,color=rainbow(20)[0], legend_label="$x^0$")
+        for i in range(1,20):
+            p += plot(x^i,color=rainbow(20)[i],legend_label="$x^{%s}$" % i)
+        p
+        {% endraw %}
 
     Here is something a bit more visually impressive (the code is slightly more compact as it uses some Sage tricks):
 
-    ~~~{.python}
-    k = 20
-    rb = rainbow(k+1)
-    sum(plot(sin(i*x)*i,color=rb[k-i], legend_label=r"${0}\sin({0}x)$".format(i)) for i in [0..k])
-    ~~~
+        k = 20
+        rb = rainbow(k+1)
+        sum(plot(sin(i*x)*i,color=rb[k-i], legend_label=r"${0}\sin({0}x)$".format(i)) for i in [0..k])
 
 - Sage is a tool available to you to help you through your time at Cardiff.
 - Sage allows you to share files with particular people (if you know their username) and also allows you to publish it.
@@ -53,15 +54,11 @@ Our server has been a bit buggy for some of you. I apologise and sadly there's n
 - **DO NOT USE INTERNET EXPLORER** Internet explorer (IE) does weird things sometimes and so if you've written your code in IE and then opened up your file in a modern browser you might **still need to re-write your code** (not copy and paste) to make it work. **Alternative to IE are available on the networked machines**.
 - If sometimes your code seems to work but does not evaluate try the following trick:
 
-    ~~~{.python}
-    sol = solve(x^2==-1,x)
-    ~~~
+        sol = solve(x^2==-1,x)
 
     Then in another cell simple show `sol`:
 
-    ~~~{.python}
-    sol
-    ~~~
+        sol
 
 - If all else fails close down your browser and open it up again. If there are very buggy things happening please let me know.
 

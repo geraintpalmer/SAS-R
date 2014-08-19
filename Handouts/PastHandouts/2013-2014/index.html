@@ -1,0 +1,17 @@
+---
+layout : default
+title  : "Past handouts"
+---
+
+<div class="home">
+
+    <h1>2013-2014</h1>
+    <ul>
+    {% for page in site.pages %}
+        {% if page.categories contains '2013-2014' %}
+        <li><a href={{ page.url | prepend: site.baseurl }}>{{ page.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+</div>
