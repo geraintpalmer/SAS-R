@@ -28,7 +28,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
 2. In calculus the following definition of a limit is well know:
 
-    \\(\lim_{x\to a}f(x)=L\\) iff \\(\forall\; \epsilon>0\\) \\(\exists\\) \\(\delta\\) such that \\(\forall\; x\\): \\(|x-a|<\delta\\) \\(\Rightarrow\\) \\(|f(x)-L|\leq \epsilon\\).
+    $$\lim_{x\to a}f(x)=L\text{ iff } \forall\; \epsilon>0\; \exists\; \delta \text{ such that } \forall\; x: |x-a|<\delta \Rightarrow |f(x)-L|\leq \epsilon$$
 
     Let us calculate the limit of \\(f(x) = \frac{3x^2}{x^3+x-1}\\) as \\(x\to 1\\).
 
