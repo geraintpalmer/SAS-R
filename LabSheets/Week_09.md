@@ -4,7 +4,6 @@ categories : labsheets
 title      : Week 9 - Differential Equations
 comments   : false
 ---
-# Week 9 - Differential Equations
 
 Sage can be used to solve differential equations. Often complex systems can be modelled simply in terms of differential equations however solving these differential equations is not always straightforward (you will be studying differential equations a lot closer in the Spring semester). At the end of this week you will be able to:
 
@@ -14,7 +13,7 @@ Sage can be used to solve differential equations. Often complex systems can be m
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znzOZOAOVo6k_b-zDxjBr-x4).
 
-1. **TICKABLE** The general syntax for solving a differential equation of the form \\(f(x, y) = g(x, y)\\) is shown below:
+01. **TICKABLE** The general syntax for solving a differential equation of the form \\(f(x, y) = g(x, y)\\) is shown below:
 
         desolve(f(x, y) == g(x, y), y)
 
@@ -30,7 +29,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/fpyxAE_-UsI)
 
-2. Once we have the solution to a differential equation it is very straightforward to plot it:
+02. Once we have the solution to a differential equation it is very straightforward to plot it:
 
         y = function('y', x)
         soln(x) = desolve(diff(y, x) == y, y)
@@ -49,7 +48,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/XUcn_zTa2FM)
 
-3. There is nothing restricting us to only solving first order differential equations. The following differential equation can be used to model the position of a mass on a spring:
+03. There is nothing restricting us to only solving first order differential equations. The following differential equation can be used to model the position of a mass on a spring:
 
     $$m\frac{d^2x}{dt^2}+c\frac{dx}{dt}+kx=0$$
 
@@ -57,14 +56,14 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/DZ5ofuAgDIY)
 
-4. **TICKABLE** Solve the following differential equations and plot their solution (for the given particular value):
+04. **TICKABLE** Solve the following differential equations and plot their solution (for the given particular value):
 
     1. \\(\frac{dy}{dx}+4y=5e^x\\), (\\(y(0)=3\\))
     2. \\(\frac{dy}{dx}+\frac{x(2y-3)}{x^2+1}=\sin(x)\\), (\\(y(0)=4\\))
     3. \\(\frac{d^2y}{dx^2}-y=\sin(5x)\\), (\\(y(3)=1, y'(3)=0\\))
     4. \\(\frac{d^2y}{dx^2}+2\frac{dy}{dx}+2y=\cosh(x)\\), (\\(y(1)=2, y'(1)=72\\))
 
-5. Systems of differential equations often arise and can also be solved using Sage. Take a look at the `desolve_system` function and solve the following system of differential equations:
+05. Systems of differential equations often arise and can also be solved using Sage. Take a look at the `desolve_system` function and solve the following system of differential equations:
 
     $$\begin{cases}
     \frac{dx}{dt} = 1 - y\\
@@ -73,7 +72,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/2Q52rmftdjQ)
 
-6. A battle between two armies can be modelled with the following set of differential equations:
+06. A battle between two armies can be modelled with the following set of differential equations:
 
     $$\begin{cases}
     \frac{dx}{dt} = - y\\
@@ -82,7 +81,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Obtain the solution to this system of equations. Assuming that \\(x(0)=100\\) and that \\(y(0)=700\\) plot the two solutions of the equations, which army wins this battle? When does the battle end?
 
-7. **TICKABLE** The love story between Romero and Juliet can be modelled with the following system of differential equations:
+07. **TICKABLE** The love story between Romero and Juliet can be modelled with the following system of differential equations:
 
     $$\begin{cases}
     \frac{dx}{dt} = -y\\
@@ -95,7 +94,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     Describe the behaviour of the system if Romeo and Juliet are initially indifferent to each other.
 
-8. **TICKABLE** Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:
+08. **TICKABLE** Certain differential equations are much harder to solve than others. Attempt to solve the following differential equation using Sage:
 
     $$\frac{dy}{dx} + y(y-1)==|(x-2)|$$
 
