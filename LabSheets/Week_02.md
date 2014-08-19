@@ -186,7 +186,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     **Spend some time understanding the `elif` statement.**
 
-9. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length strictly more than 10" otherwise "that string has length less than 9".
+09. **TICKABLE**: Find some information on the `raw_input` statement and write some code that prompts a user to input a string. If the length of that string is more than 10 then print "that string has length strictly more than 10" otherwise "that string has length less than 9".
 
     [Video hint](http://www.youtube.com/watch?v=4nH-vtBrKXs)
 
