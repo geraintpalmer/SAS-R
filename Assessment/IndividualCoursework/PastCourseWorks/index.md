@@ -1,6 +1,6 @@
 ---
 layout : post
-title  : 2013-2014: Past Individual Courseworks
+title  : "2013-2014: Past Individual Courseworks"
 ---
 Here are some past reports by your peers:
 
