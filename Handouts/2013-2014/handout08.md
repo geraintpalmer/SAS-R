@@ -28,7 +28,7 @@ Sage makes it very easy to share worksheets. If you know someones username, you 
 
 ## Writing to file
 
-One difficulty that was reported to me was writing data to file. Let's take a quick look at the following example (revisiting the field example from [Handout 5](http://drvinceknight.github.io/Computing_for_mathematics/Handouts/handout05.html)):
+One difficulty that was reported to me was writing data to file. Let's take a quick look at the following example (revisiting the field example from [Handout 5](http://drvinceknight.github.io/Computing_for_mathematics/Handouts/2013-2014/handout05/)):
 
 Let us say that we want to write to file the dimensions of the profitable fields but also this value (let's pretend it's important):
 
@@ -83,7 +83,7 @@ Now let's write our data to file (we saw how to do this in the second sheet).
 
 ## The individual coursework
 
-The individual coursework is now available (**due in week 11**): [http://drvinceknight.github.io/Computing_for_mathematics/Assessment/IndividualCoursework/](http://drvinceknight.github.io/Computing_for_mathematics/Assessment/IndividualCoursework/).
+The individual coursework is now available (**due in week 11**): [{{site.baseurl}}/Assessment/IndividualCoursework/]({{site.baseurl}}/Assessment/IndividualCoursework/).
 
 It requires you to use LaTeX (how mathematicians write mathematics). Take a look at the 9th Lab sheet if you want to get started (in the meantime you can get going with the required coding).
 
@@ -132,7 +132,7 @@ Percentage of marks above given mark:
 
 A picture of the distribution of the marks:
 
-![]({{site.baseurl}}/Handouts/PastHandouts/2013-2014/Images/markdistribution.png)
+![]({{site.baseurl}}/Handouts/2013-2014/Images/markdistribution.png)
 
 ## What you should do next:
 

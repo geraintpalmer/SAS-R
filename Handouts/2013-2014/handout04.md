@@ -119,7 +119,7 @@ Now to do the second half of the problem:
 
 - We saw binary search this week which relies on constantly 'dividing' a list in to two smaller lists:
 
-![]({{site.baseurl}}/Handouts/PastHandouts/2013-2014/Images/binary.svg)
+![]({{site.baseurl}}/Handouts/2013-2014/Images/binary.svg)
 
 ## The class test (8th of November)
 
