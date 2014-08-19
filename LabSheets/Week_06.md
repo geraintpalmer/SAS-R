@@ -17,7 +17,7 @@ Sage allows us to solves equations, differentiate expressions, plot graphs and d
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znyytHl2YQjE41o-TdfewmKr).
 
-1. **TICKABLE** Open Sage
+01. **TICKABLE** Open Sage
 
     Navigate to [sage.maths.cf.ac.uk](https://sage.maths.cf.ac.uk/) where you can setup a user account following these instructions:
 
@@ -31,14 +31,14 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     **If you forget your password DO NOT CREATE ANOTHER ACCOUNT: come and see me (Vince Knight) and I can reset your password.**
 
-2. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
+02. **TICKABLE** It is very easy to get help in Sage. Simply type any command followed by a `?` to get a help file for it:
 
         cos?
         sum?
 
     [Video hint](http://youtu.be/Fbq1GNiF85k)
 
-3. We can use Sage as an advanced calculator. Try out the following commands:
+03. We can use Sage as an advanced calculator. Try out the following commands:
 
         cos(3)
         cos(3.)
@@ -52,11 +52,11 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         sqrt(-53.)
 
 
-4. **TICKABLE** Obtain an exact form for \\(\sum_{i=1}^5\frac{1}{\sqrt{i}}\\). Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
+04. **TICKABLE** Obtain an exact form for \\(\sum_{i=1}^5\frac{1}{\sqrt{i}}\\). Once you have an expression, experiment with the `factor`, `simplify` and `expand` functions.
 
     [Video hint](http://youtu.be/kJwDWY6Wd7s)
 
-5. Sage can also be used to obtain prime factors of numbers:
+05. Sage can also be used to obtain prime factors of numbers:
 
         factor(234398)
 
@@ -73,11 +73,11 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/5e0wAaO4I84)
 
-6. Using the `is_prime` method investigate the following claim:
+06. Using the `is_prime` method investigate the following claim:
 
-   All numbers of the form \\(k^2-79k+1601\\) are prime for \\(k\in\mathbb{Z}\\) and \\(k\geq 3\\).
+    All numbers of the form \\(k^2-79k+1601\\) are prime for \\(k\in\mathbb{Z}\\) and \\(k\geq 3\\).
 
-7. **TICKABLE** A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:
+07. **TICKABLE** A very important aspect of Sage is it's ability to handle symbolic computation. In other words it is capable of simplifying:
 
     $$x^2 - 3x^2 + 4xy - 81 y^2$$
 
@@ -99,7 +99,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/_mmHrQ7FzaY)
 
-8. We can also define functions in Sage. The following code defines \\(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\\):
+08. We can also define functions in Sage. The following code defines \\(f:x\to x^3 + \pi x^2-\frac{23}{2}x^2+15x-\frac{23}{2}\pi x+15\pi\\):
 
         f(x) =  x^3 + pi*x^2 - 23/2*x^2 - 23/2*pi*x  + 15*x+ 15*pi
 
@@ -123,7 +123,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/UA7LVwmMmfk)
 
-9. **TICKABLE** Using Sage obtain the solution to the following equations:
+09. **TICKABLE** Using Sage obtain the solution to the following equations:
 
     1. \\(x^2 = -1\\)
     2. \\(x^2 - 53 x + 2 a = 0\\)
