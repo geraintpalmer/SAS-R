@@ -313,14 +313,14 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     [Video hint](http://www.youtube.com/watch?v=4ZxBLkLRPXQ)
 
-## Writing clear code
+    **Writing clear code**
 
-When writing code it is **very important** to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.
+    When writing code it is **very important** to include comments throughout. How well commented code is will be evaluated throughout this module. Comments should be thought of as messages explaining what instructions are being given by the code. This is useful to the writer of the code but more importantly to anyone who might want to add/modify the code.
 
-There are two ways of writing comments in Python:
+    There are two ways of writing comments in Python:
 
-- Use the `#` to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.
-- Use `"""` to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).
+    - Use the `#` to indicate to the interpreter that everything that is about to follow on a given line is to be ignored.
+    - Use `"""` to indicate the beginning and end of multi line comments (note that this can also be used to write multi line strings).
 
 22. The following is an example of a single line comment in the middle of some code:
 
