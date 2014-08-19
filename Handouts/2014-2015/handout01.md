@@ -2,7 +2,7 @@
 layout     : post
 categories : handouts
 title      : Handout 1 - What you need to know
-comments   : false
+comments   : true
 ---
 
 Lecturer: Vince Knight
