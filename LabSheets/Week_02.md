@@ -54,7 +54,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     Send this code to the interpreter (you will be asked to save the file: choose a name and system that will be helpful to you and that you stick with for the rest of the course: `W02.py`).
 
-**Basic variables**
+    **Basic variables**
 
     A variable is one of the basic building blocks used by a program. Variables may be of various types.
 
