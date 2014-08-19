@@ -38,7 +38,7 @@ Use this function to print to screen \\(X_n\\) for \\(0\leq n<11\\).
 
 ## Q2
 
-The data file [classtestdata.csv]({{site.baseurl}}/assets/Data/classtestdata.csv) contains a collections of names. Write a script that:
+The data file [classtestdata.csv](./Data/classtestdata.csv) contains a collections of names. Write a script that:
 
 - Imports the data;
 - Prints to screen how many total names are in the data file;
@@ -51,11 +51,11 @@ The data file [classtestdata.csv]({{site.baseurl}}/assets/Data/classtestdata.csv
 
 Consider the square on a grid with dimensions as shown:
 
-![\text{A grid}]({{site.baseurl}}/assets/Images/grid.png)
+![\text{A grid}](./Images/grid.png)
 
 On this grid, consider the graph of $f(x) = 1 - x ^ 2$.
 
-![\text{A grid with $f(x)$}]({{site.baseurl}}/assets/Images/gridwithplot.png)
+![\text{A grid with $f(x)$}](./Images/gridwithplot.png)
 
 If we draw points of random coordinates in this square, the probability $P$ of a point landing under the graph would be:
 
@@ -71,6 +71,6 @@ Use the random library and a class to approximate the value of \\(\int_{0}^11-x^
 
 ## Solutions
 
-- [Q1]({{site.baseurl}}/assets/Solutions/classtestq1.py)
-- [Q2]({{site.baseurl}}/assets/Solutions/classtestq2.py)
-- [Q3]({{site.baseurl}}/assets/Solutions/classtestq3.py)
+- [Q1](./Solutions/solutionq1.py)
+- [Q2](./Solutions/solutionq2.py)
+- [Q3](./Solutions/solutionq3.py)
