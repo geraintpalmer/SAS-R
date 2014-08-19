@@ -231,7 +231,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
 11. **TICKABLE**: Modify the above code so that it calculates the sum of the first integers less than 1000 that are not divisible by 3.
 
-   [Video hint](http://www.youtube.com/watch?v=1PvEXo0l1NE)
+    [Video hint](http://www.youtube.com/watch?v=1PvEXo0l1NE)
 
 12. Event based loops are implemented in Python using a `while` command that keep repeating a set of commands until a boolean variable is `False`.
 
@@ -240,31 +240,31 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
             print k
             k += 1
 
-   The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands:
+    The second line of the above checks the boolean variable `k < 10` and as long as this is `True` loops through the rest of the commands:
 
-   ![]({{site.baseurl}}/assets/Images/W02-img02.png)
+    ![]({{site.baseurl}}/assets/Images/W02-img02.png)
 
-   [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
+    [Video hint](http://www.youtube.com/watch?v=Rog3YAETP-Q)
 
 13. **TICKABLE**: Write some code to find $N$ such that $\sum_{i=0}^Ni^2$ is more than 20000.
 
-   [Video hint](http://www.youtube.com/watch?v=tzc4uaJaYHU)
+    [Video hint](http://www.youtube.com/watch?v=tzc4uaJaYHU)
 
 14. It can be shown (you are not required to check this) that the following sequence:
 
-   $$x_{n+1} = \frac{x_n+K/x_n}{2}$$
+    $$x_{n+1} = \frac{x_n+K/x_n}{2}$$
 
-   approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.
+    approaches $\sqrt{K}$ as $n$ increases. Write some code to verify this to any given level of precision.
 
-   [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
+    [Video hint](http://www.youtube.com/watch?v=bHv2vqPliL0)
 
 15. Take a look at the `random` Python library (we will talk about libraries in detail later) and write some code that uses the `input` function to code a simple game:
 
-   - The program chooses a random integer;
-   - The user tries to guess the integer;
-   - At every guess the program indicates if the guess is too high or too low.
+    - The program chooses a random integer;
+    - The user tries to guess the integer;
+    - At every guess the program indicates if the guess is too high or too low.
 
-   [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
+    [Video hint](http://www.youtube.com/watch?v=TpQgPKEhrg0)
 
 ## Functions
 
