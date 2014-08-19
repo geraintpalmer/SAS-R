@@ -4,18 +4,17 @@ categories : labsheets
 title      : Week 8 - Linear Algebra
 comments   : false
 ---
-# Week 8 - Linear Algebra
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znzwLePTdmDWDCKJse3omJe5).
 
-1. Use Sage to solve the following system of equations:
+01. Use Sage to solve the following system of equations:
 
     $$\begin{cases}
     10x+2y=0\\
     2x-y=154
     \end{cases}$$
 
-2. **TICKABLE** Note that the above system of equations is equivalent to the following systems of equations:
+02. **TICKABLE** Note that the above system of equations is equivalent to the following systems of equations:
 
     $$\begin{cases}
     10a+2b=0\\
@@ -60,7 +59,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/zuxPlbRK79w)
 
-3. **TICKABLE** In linear algebra (you will study this next semester) a matrix equation is an equation of the form:
+03. **TICKABLE** In linear algebra (you will study this next semester) a matrix equation is an equation of the form:
 
     $$AX=b$$
 
@@ -84,7 +83,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/-Qxv5XMer60)
 
-4. For reasons that will become clear, the following definition of matrix multiplication is required:
+04. For reasons that will become clear, the following definition of matrix multiplication is required:
 
     $$(AB)_{ij}=\sum_{j'}\sum_{i'}A_{ij'}B_{i'j}$$
 
@@ -110,7 +109,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/NOpEMl_yzMM)
 
-5. **TICKABLE** The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: "the identity matrix".
+05. **TICKABLE** The previous exercise shows that when considering matrix multiplication there exists a matrix which does not have a multiplicative affect: "the identity matrix".
 
     The identity matrix of size \\(n\times n\\) is denoted by \\(I_n\\). The following Sage code gives \\(I_n\\):
 
@@ -134,7 +133,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/NOpEMl_yzMM)
 
-6. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
+06. **TICKABLE** Recalling your basic python knowledge. Lists can be used to hold any sort of object. Obtain a list of the inverses of the following matrices (when the inverse exists, you might need to look up information on `try` and `except`):
 
     $$\left(\begin{array}{rrrrr}
     \frac{1}{2} & 0 & 0 & -1 & 1 \\
@@ -172,7 +171,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/rUvbWGg0QO0)
 
-7. **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
+07. **TICKABLE** The `random_matrix` command can be used to obtain a random matrix:
 
         random_matrix(ZZ, 5) # Gives a random square matrix of size 5 in Z
         random_matrix(QQ, 5) # Gives a random square matrix of size 5 in Q
@@ -181,7 +180,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     [Video hint](http://youtu.be/3qdlespAi9o)
 
-8. **TICKABLE** The file [W08_D01.csv]({{site.baseurl}}/assets/Data/W08_D01.csv) contains 4 columns of data:
+08. **TICKABLE** The file [W08_D01.csv]({{site.baseurl}}/assets/Data/W08_D01.csv) contains 4 columns of data:
 
         a, b, c, d, f, g
 
@@ -200,4 +199,4 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
 
     If there is no solution to the system of equations set `B=C=D=False`. The data set is a randomly sampled set of problems, how often does a solution exist?
 
-8. The file [W08_D02.csv]({{site.baseurl}}/assets/Data/W08_D02.csv) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
+08. The file [W08_D02.csv]({{site.baseurl}}/assets/Data/W08_D02.csv) contains a large number of columns and rows. Investigate the `dimensions` and `plot` methods on this matrix.
