@@ -202,7 +202,7 @@ An important type of programming instruction allows us to make a program repeat 
 
    Note that this gives a list starting at 0 of size 10 (so it goes up to the integer 9). We can include 2 arguments in to this function:
 
-        print range(3,10)
+            print range(3,10)
 
    We can also include 3 arguments:
 
