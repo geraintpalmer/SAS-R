@@ -6,9 +6,9 @@ comments   : true
 ---
 Mathematicians, Computer Scientists, Physicists and others all need to present their research and this is usually through the written medium. Common word processors can be used for this but most prefer to use the typesetting language LaTeX (pronounced Lay-tech).
 
-A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read\text{ as shown in Figure \ref{W10-img01}}.
+A typesetting language is a language that requires the user to write code that is then 'translated' to a form that is nice to read.
 
-![\text{Typesetting languages}\ref{W10-img01}]({{site.baseurl}}/assets/Images/W10-img01.png)
+![]({{site.baseurl}}/assets/Images/W10-img01.png)
 
 A YouTube playlist with all the videos for this lab sheet can be found [here](http://www.youtube.com/playlist?list=PLnC5h3PY-znygZ2rYNaX7_8j2Duwh58cK).
 
@@ -21,7 +21,7 @@ A YouTube playlist with all the videos for this lab sheet can be found [here](ht
         \end{document}
 
     1. Save this document.
-    2. Ensure the dropdown window has "pdfLaTeX" selected\text{ as shown in Figure \ref{W10-S01}}.
+    2. Ensure the dropdown window has "pdfLaTeX" selected.
     3. Click on the green arrow (ctrl+T) to _compile_ this document which creates a pdf corresponding to your code.
 
     ![]({{site.baseurl}}/assets/Screenshots/W10-S01.png)
