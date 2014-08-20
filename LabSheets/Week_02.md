@@ -361,14 +361,14 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
           Use a descriptive `lowercase` (all lowercase characters) for variable and function names.
 
-          Yes:
+      Yes:
 
               myvariable
               sqrtvar
               var
               myfunction
 
-          No:
+      No:
 
               my_variable
               SqrtVAR
@@ -382,30 +382,30 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
         Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
 
-        Yes:
+      Yes:
 
             print 2 + 2
             myfunc(3, 4)
 
-        No:
+      No:
 
             print 2+2
             myfunc(3,4)
 
-        Include 2 whitespaces before an inline comment `#` at the end of a line of code.
+      Include 2 whitespaces before an inline comment `#` at the end of a line of code.
 
-        Yes:
+      Yes:
 
             # Just leave a space after the comment symbol if on a single line
             print 2 + 2  # but if you comment at the end of a line leave 2 whitespaces.
 
-        No:
+      No:
 
             print 2 + 2 # So this is not enough space.
 
-        Also include two blank lines before the definition of a function.
+      Also include two blank lines before the definition of a function.
 
-        Yes:
+      Yes:
 
             print 2 + 2
 
@@ -413,7 +413,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
             def myfunc():
                 print 2 + 2
 
-        No:
+      No:
 
             print 2 + 2
 
@@ -422,7 +422,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     - Comments
 
-        Comment well and comment often. In particular use the following convention for functions:
+      Comment well and comment often. In particular use the following convention for functions:
 
             afunc():
                 """
@@ -433,6 +433,6 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
                 Output: List the expected output of the function.
                 """
 
-        As and when we see new topics on this course we will also discuss the corresponding conventions.
+      As and when we see new topics on this course we will also discuss the corresponding conventions.
 
     Go back through your script and ensure that you have used the above convention.
