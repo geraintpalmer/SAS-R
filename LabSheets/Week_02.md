@@ -380,7 +380,7 @@ and many more. We will be using the simplest Python IDE available: IDLE which co
 
     - White spaces
 
-        Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
+      Include a whitespace between operators (`+`, `-`, etc) and a whitespace after a comma `,`.
 
       Yes:
 
