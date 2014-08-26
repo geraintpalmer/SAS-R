@@ -1,8 +1,8 @@
 # Site settings
-title            : Vincent Knight
+title            : 'SAS-R'
 email            : vincent.knight@gmail.com
-description      : "Class website for Computing for Mathematics"
-baseurl          : "/Computing_for_mathematics"
+description      : "Class website for MAT013"
+baseurl          : "/SAS-R"
 url              : "http://drvinceknight.github.io"
 github_username  : "drvinceknight"
 twitter_username : "@drvinceknight"
