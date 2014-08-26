@@ -2,7 +2,7 @@
 layout      : post
 categories  : problemsheet
 title       : R Problem Sheet
-comments    : false
+comments    : true
 ---
 
 
