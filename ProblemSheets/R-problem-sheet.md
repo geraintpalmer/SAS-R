@@ -199,9 +199,7 @@ Build the function so that it takes two input arguments:
 
     Demonstrate this with \\(k=2341\\) and the file name "classtest".
 
-55. (_Class Test 2012-2013_) Using either SAS or R:
-
-    The files [Game_1.csv](./Data/Game_1.csv), [Game_2.csv](./Data/Game_2.csv), [Game_3.csv](./Data/Game_3.csv), [Game_4.csv](./Data/Game_4.csv), [Game_5.csv](./Data/Game_5.csv), [Game_6.csv](./Data/Game_6.csv) contain data for guesses of the game "2/3rds of the average":
+55. (_Class Test 2012-2013_) The files [Game_1.csv](./Data/Game_1.csv), [Game_2.csv](./Data/Game_2.csv), [Game_3.csv](./Data/Game_3.csv), [Game_4.csv](./Data/Game_4.csv), [Game_5.csv](./Data/Game_5.csv), [Game_6.csv](./Data/Game_6.csv) contain data for guesses of the game "2/3rds of the average":
 
     > "All individuals must guess a number between 0 and 100 (inclusive). The winner of the game is the guess that is closest to two thirds of the average of all guesses."
 
@@ -210,17 +208,13 @@ Build the function so that it takes two input arguments:
     3. Every game is played with a different number of players, obtain a scatter plot of the winning guesses against the number of players (include the overall).
     4. Comment on the relationship (if any) between the number of players and the winning guess.
 
-56. (_Class Test 2013-2014_) Using both SAS and R (in other words attempt this question using SAS and then using R):
+56. (_Class Test 2013-2014_) Create a data set with two variables: "Week" and "Ranking". For every week of the MAT013 course (1-5 including this class test) give a ranking of your enjoyment of each week of the course (1 being the best). Write some code (in both SAS and R) to sort this data set in descending order of the enjoyment ranking.
 
-    Create a data set with two variables: "Week" and "Ranking". For every week of the MAT013 course (1-5 including this class test) give a ranking of your enjoyment of each week of the course (1 being the best). Write some code (in both SAS and R) to sort this data set in descending order of the enjoyment ranking.
-
-57. (_Class Test 2013-2014_) Using R:
-
-    Obtain the profits (income \\(-\\) costs) of each company that is present in **both** data sets [incomes.csv](./Data/incomes.csv) and [costs.csv](./Data/costs.csv).
+57. (_Class Test 2013-2014_) Obtain the profits (income \\(-\\) costs) of each company that is present in **both** data sets [incomes.csv](./Data/incomes.csv) and [costs.csv](./Data/costs.csv).
 
     Draw a histogram of these profits and also obtain a linear relationship between income and profits.
 
-58. (_Class Test 2013-2014_) Using either SAS or R:
+58. (_Class Test 2013-2014_)
 
     1. Write code that will obtain \\(k\\) random points \\((x,y)\\) where \\(x,y\\) are uniformly sampled between 0 and 1.
     2. Identify how many of these points satisfy \\(x^2+y^2\leq 1\\) (this number will be referred to as \\(N=N(k)\\)).

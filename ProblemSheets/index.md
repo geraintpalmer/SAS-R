@@ -6,9 +6,9 @@ title  : 'Problem Sheets'
 The problem sheets for the course contain lists of questions that will be presented (by the students) during contact time.
 
 {% for page in site.pages %}
-    {% if page.categories contains 'problemsheet' %}
-- [{{ page.title }}]({{ page.url | prepend: site.baseurl }})
-    {% endif %}
+{% if page.categories contains 'problemsheet' %}
+<li><a href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a></li>
+{% endif %}
 {% endfor %}
 
 There are a variety of question types:
