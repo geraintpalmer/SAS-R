@@ -218,11 +218,11 @@ comments    : false
     4. Comment on the relationship (if any) between the number of players and the winning guess.
 
 
-2. (_Class Test 2013-2014_) Write a macro that will create a separate pdf file of a scatter plot for every data set in the compressed directory [scatterdata.zip](./Data/scatterdata.zip).
+50. (_Class Test 2013-2014_) Write a macro that will create a separate pdf file of a scatter plot for every data set in the compressed directory [scatterdata.zip](./Data/scatterdata.zip).
     All files in the directory contain two columns of numerical data.
     Use the name of each file as the name of the pdf file.
 
-4. (_Class Test 2013-2014_)
+51. (_Class Test 2013-2014_)
 
     1. Write code that will obtain \\(k\\) random points \\((x,y)\\) where \\(x,y\\) are uniformly sampled between 0 and 1.
     2. Identify how many of these points satisfy \\(x^2+y^2\leq 1\\) (this number will be referred to as \\(N=N(k)\\)).
