@@ -1,9 +1,0 @@
-def fib(n):
-    if n == 0 or n == 1: # We are establishing the "intial" value
-        return 1
-   return fib(n - 1) + fib(n - 2) # Using the recursion and the formula for the fibonacci numbers
-
-print "The first 10 fibonacci numbers:"
-
-for i in range(12): # This showing that 0 <= n <= 11, and we are visualising the output of the function
-    print "f(%s)=%s" % (i, fib(i)) 
