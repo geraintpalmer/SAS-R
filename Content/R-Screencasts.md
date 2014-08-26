@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : R Screencasts
-comments    : false
+comments    : true
 ---
 
 <p>Here are the screencasts for R (view the entire playlist on YouTube <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-zny76REn9WEQgRFkxnVzQAbx" target='_blank'>here</a>):

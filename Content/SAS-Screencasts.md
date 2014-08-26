@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : SAS Screencasts
-comments    : false
+comments    : true
 ---
 
 <p>Here are the screencasts for SAS (view the entire playlist on YouTube <a href="http://www.youtube.com/playlist?list=PLnC5h3PY-znzFmH5llx3Hp4ufKsnwvJqy" target='_blank'>here</a>):
