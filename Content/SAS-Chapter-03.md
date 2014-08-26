@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : SAS Chapter 3 - Manipulating Data
-comments    : false
+comments    : true
 ---
 
 <h2 id="data-steps"><span class="header-section-number">3.1</span> Data steps</h2>

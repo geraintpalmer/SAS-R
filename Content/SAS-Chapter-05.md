@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : SAS Chapter 5 - Further packages
-comments    : false
+comments    : true
 ---
 
 <p>In this chapter we will examine three particular procedures in SAS.</p>

@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : SAS Chapter 2 - Basic Statistical Procedures
-comments    : false
+comments    : true
 ---
 
 <h2 id="procedures"><span class="header-section-number">2.1</span> Procedures</h2>

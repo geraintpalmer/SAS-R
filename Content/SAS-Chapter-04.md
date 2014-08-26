@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : SAS Chapter 4 - Programming
-comments    : false
+comments    : true
 ---
 
 <h2 id="flow-control"><span class="header-section-number">4.1</span> Flow control</h2>

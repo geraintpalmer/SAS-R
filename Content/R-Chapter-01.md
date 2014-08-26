@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : R Chapter 1 - Introduction
-comments    : false
+comments    : true
 ---
 
 <h2 id="the-environment"><span class="header-section-number">1.1</span> The Environment</h2>

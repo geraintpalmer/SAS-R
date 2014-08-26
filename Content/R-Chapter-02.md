@@ -2,7 +2,7 @@
 layout      : post
 categories  : content
 title       : R Chapter 2 - Basic Statistical Procedures
-comments    : false
+comments    : true
 ---
 
 <h2 id="vectors-and-data-frames"><span class="header-section-number">3.1</span> Vectors and data frames</h2>
