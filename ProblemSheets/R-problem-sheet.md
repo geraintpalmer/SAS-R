@@ -6,7 +6,7 @@ comments    : true
 ---
 
 
-01. (_Challenge: C1 + C2_) The datafile [Stock_Report.csv](../Data/C1+C2/Stock_Report.csv) contains data on the stock for a supermarket. There are 4 variables:
+01. (_Challenge: C1 + C2_) The datafile [Stock_Report.csv]({{site.baseurl}}/Data/Stock_Report.csv) contains data on the stock for a supermarket. There are 4 variables:
 
     - The department of the product
     - The name of the product
@@ -22,7 +22,7 @@ comments    : true
 
 02.  Create the data set "first_data_set" from the notes and export to csv.
 
-03.  Download the files [JJJ.csv](../Data/C1+C2/JJJ.csv) and [MMM.csv](../Data/C1+C2/MMM.csv) import them in to R.
+03.  Download the files [JJJ.csv]({{site.baseurl}}/Data/JJJ.csv) and [MMM.csv]({{site.baseurl}}/Data/MMM.csv) import them in to R.
 
 04.  View both the MMM and JJJ data sets.
 
@@ -32,13 +32,13 @@ comments    : true
 
 07.  Obtain the mean age, height in metres and weight in kg for the observations of the MMM and JJJ datasets compartmentalising your output by sex (you'll need to use the by function).
 
-08.  Download the file [math_tests.csv](../Data/C1+C2/math_tests.csv), import it in to R and output a frequency table of teachers against pass\_fail.
+08.  Download the file [math_tests.csv]({{site.baseurl}}/Data/math_tests.csv), import it in to R and output a frequency table of teachers against pass\_fail.
 
 09.  Obtain correlation tables for all the numerical values in JJJ and MMM (using 2 separate approaches (one of which will require you to download a package).
 
 10.  Do a regression analysis of the variable height\_in\_metres against weight\_in\_kg and savings\_in\_poundsfor the data sets JJJ and MMM.
 
-11. Download the data set [math.csv](../Data/C1+C2/math.csv) and run an ANOVA test to see if the grades depends on the professor.
+11. Download the data set [math.csv]({{site.baseurl}}/Data/math.csv) and run an ANOVA test to see if the grades depends on the professor.
 
 12. Obtain a histogram for the variables weight\_in\_kg for the data sets JJJ and MMM.
 
@@ -47,14 +47,14 @@ comments    : true
 14. Output all of the above graphs to a pdf file.
 
 
-    The relevant data can be found [here](../Data/index.html):
+    The relevant data can be found [here]({{site.baseurl}}/Data/index.html):
 
-    - [JJJ.csv](../Data/C1+C2/JJJ.csv)
-    - [MMM.csv](../Data/C1+C2/MMM.csv)
-    - [math_tests.csv](../Data/C1+C2/math_tests.csv)
-    - [math.csv](../Data/C1+C2/math.csv)
+    - [JJJ.csv]({{site.baseurl}}/Data/JJJ.csv)
+    - [MMM.csv]({{site.baseurl}}/Data/MMM.csv)
+    - [math_tests.csv]({{site.baseurl}}/Data/math_tests.csv)
+    - [math.csv]({{site.baseurl}}/Data/math.csv)
 
-15. (_Challenge: C3_) The datafiles [Dates\_1996.csv](../Data/C3/Dates_1996.csv) and [Prices\_1996.csv](../Data/C3/Prices_1996.csv) contain data for holidays taken in 1996. There are 3 variables in Dates_1996.csv:
+15. (_Challenge: C3_) The datafiles [Dates\_1996.csv]({{site.baseurl}}/Data/Dates_1996.csv) and [Prices\_1996.csv]({{site.baseurl}}/Data/Prices_1996.csv) contain data for holidays taken in 1996. There are 3 variables in Dates_1996.csv:
 
     - The ID
     - Start Date
@@ -65,7 +65,7 @@ comments    : true
     - The ID
     - The Price
 
-    The data file [Holidays_1995.csv](../Data/C3/Holidays_1995.csv) contains data for holidays taken in 1995. There are 4 variables:
+    The data file [Holidays_1995.csv]({{site.baseurl}}/Data/Holidays_1995.csv) contains data for holidays taken in 1995. There are 4 variables:
 
     - The ID
     - Start Date
@@ -106,11 +106,11 @@ comments    : true
 
 23. Rename the variable sex as gender in the data sets JJJ and MMM.
 
-24. Download the file [birthday_money.csv](../Data/C3/birthday_money.csv), import it and output a data set with a running total as well as a yearly difference.
+24. Download the file [birthday_money.csv]({{site.baseurl}}/Data/birthday_money.csv), import it and output a data set with a running total as well as a yearly difference.
 
-25. Download the file [birthdays.csv](../Data/C3/birthdays.csv) import it and sort the data set by date of birth.
+25. Download the file [birthdays.csv]({{site.baseurl}}/Data/birthdays.csv) import it and sort the data set by date of birth.
 
-    The relevant data can be found [here](../Data/index.html):
+    The relevant data can be found [here]({{site.baseurl}}/Data/index.html):
 
 26. (_Challenge: C4_) Create a function in R that outputs the first \\(k\\) prime number to a csv file (do so without using any built in test for primality).
 Build the function so that it takes two input arguments:
@@ -134,7 +134,7 @@ Build the function so that it takes two input arguments:
 
 34. Create a function that creates 15 data sets each with updated savings in pounds for observations in the JJJ and MMM data sets for varying values for the number of trips (1 to 15).
 
-35. Download the files [Files_1-200.zip](../Data/C4/Files_1-200.zip) and create a function that automatically imports them.
+35. Download the files [Files_1-200.zip]({{site.baseurl}}/Data/Files_1-200.zip) and create a function that automatically imports them.
 
 36. Include the some of the above code in a script file that could be run using the source command and re run whenever the above data sets get updated.
 
@@ -164,7 +164,7 @@ Build the function so that it takes two input arguments:
     5. Create a copy of the data set ordering by Var1.
     6. Create a data set containing the mean, std, max, min and variance of Var4 and Var2 by Var1.
 
-41. Download the data sets [dogs.csv](../Data/C5/dogs.csv) and [cats.csv](../Data/C5/cats.csv) use sql to:
+41. Download the data sets [dogs.csv]({{site.baseurl}}/Data/dogs.csv) and [cats.csv]({{site.baseurl}}/Data/cats.csv) use sql to:
 
     1. create an inner join.
     2. a left outer join.
@@ -199,7 +199,7 @@ Build the function so that it takes two input arguments:
 
     Demonstrate this with \\(k=2341\\) and the file name "classtest".
 
-55. (_Class Test 2012-2013_) The files [Game_1.csv](./Data/Game_1.csv), [Game_2.csv](./Data/Game_2.csv), [Game_3.csv](./Data/Game_3.csv), [Game_4.csv](./Data/Game_4.csv), [Game_5.csv](./Data/Game_5.csv), [Game_6.csv](./Data/Game_6.csv) contain data for guesses of the game "2/3rds of the average":
+55. (_Class Test 2012-2013_) The files [Game_1.csv]({{site.baseurl}}/Data/Game_1.csv), [Game_2.csv]({{site.baseurl}}/Data/Game_2.csv), [Game_3.csv]({{site.baseurl}}/Data/Game_3.csv), [Game_4.csv]({{site.baseurl}}/Data/Game_4.csv), [Game_5.csv]({{site.baseurl}}/Data/Game_5.csv), [Game_6.csv]({{site.baseurl}}/Data/Game_6.csv) contain data for guesses of the game "2/3rds of the average":
 
     > "All individuals must guess a number between 0 and 100 (inclusive). The winner of the game is the guess that is closest to two thirds of the average of all guesses."
 
@@ -210,7 +210,7 @@ Build the function so that it takes two input arguments:
 
 56. (_Class Test 2013-2014_) Create a data set with two variables: "Week" and "Ranking". For every week of the MAT013 course (1-5 including this class test) give a ranking of your enjoyment of each week of the course (1 being the best). Write some code (in both SAS and R) to sort this data set in descending order of the enjoyment ranking.
 
-57. (_Class Test 2013-2014_) Obtain the profits (income \\(-\\) costs) of each company that is present in **both** data sets [incomes.csv](./Data/incomes.csv) and [costs.csv](./Data/costs.csv).
+57. (_Class Test 2013-2014_) Obtain the profits (income \\(-\\) costs) of each company that is present in **both** data sets [incomes.csv]({{site.baseurl}}/Data/incomes.csv) and [costs.csv]({{site.baseurl}}/Data/costs.csv).
 
     Draw a histogram of these profits and also obtain a linear relationship between income and profits.
 
