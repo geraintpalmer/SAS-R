@@ -1,10 +1,4 @@
-Repo containing the teaching materials for the "Computing for Mathematics" course I teach at Cardiff University.
-
-This is still a work in progress but this repo might be of interest for two reasons:
-
-- The content itself;
-- Some of the scripts I've used to create the teaching materials. I've used a combination of `tikz`, `makefiles`, `sage`, `sed` and `python` to routinely obtain the materials in a variety of formats (.pdf, .html and .docx). I wrote a blog post about it [here](http://goo.gl/usxfF).
-
+Repo for the MAT013 SAS-R course.
 
 # License Information
 
