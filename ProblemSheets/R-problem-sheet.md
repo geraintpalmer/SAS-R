@@ -137,3 +137,91 @@ Build the function so that it takes two input arguments:
 35. Download the files [Files_1-200.zip](../Data/C4/Files_1-200.zip) and create a function that automatically imports them.
 
 36. Include the some of the above code in a script file that could be run using the source command and re run whenever the above data sets get updated.
+
+37. (_Challenge: C5_) Find an example and illustrate the use of one (or more) of the following R packages:
+
+    - sqldf
+    - ggplot2
+    - twitteR
+
+38. Using sql, create a copy of the MMM and JJJ data sets, including all the variables.
+
+39. Using sql, create the previous copies selecting just the variables, Name, Age, Sex, Random\_Number, as well as the bmi of the observations.
+
+40. For the following data set:
+
+        Var1, Var2, Var3, Var4, Var5
+        A, 1, A, 2, B
+        A, 1, A, 2, B
+        B, 1, A, 1, C
+        C, 2, B, 2, D
+        C, 2, C, 1, E
+
+    1. Create a copy of the data set removing complete duplicate rows.
+    2. Create a copy of the data set removing duplicates of Var2.
+    3. Create a copy of the data set removing duplicates of Var3 and Var4.
+    4. Create a copy of the data set selecting only observations where Var2 \\(>\\) Var4.
+    5. Create a copy of the data set ordering by Var1.
+    6. Create a data set containing the mean, std, max, min and variance of Var4 and Var2 by Var1.
+
+41. Download the data sets [dogs.csv](../Data/C5/dogs.csv) and [cats.csv](../Data/C5/cats.csv) use sql to:
+
+    1. create an inner join.
+    2. a left outer join.
+    3. a right outer join (you won't be able to use sql for this in R).
+    4. a full outer join (you won't be able to use sql for this in R).
+
+42. Create a histogram for the Height of people in the JJJ data set.
+
+43. Modify the above plot to be a density plot with your own legends labels and title.
+
+44. Obtain a scatter plot of weight against height for people in the JJJ data set.
+
+45. Modify the above plot so that the points are proportional to the age.
+
+46. Obtain a box plot for the Height of people in the JJJ data set by sex.
+
+47. Obtain a scatter plot of Weight against Height with a smoothed trend line.
+
+48. Obtain histograms of height against weight, compartmentalised by sex.
+
+49. Create a scatter plot with a fitted linear model for Height against Weight for all people in MMM and JJJ. Compartmentalise your graphs based on the data set and the sex.
+
+50. Save the above graph to file.
+
+51. Get all of todays trends on twitter.
+
+52. Search for all tweets with the `orms` hashtag.
+
+53. Find the tweets from INFORMS.
+
+54. (_Class Test 2012-2013_) Create a function that will give all numbers less than \\(k\\) (an input), not divisible by \\(3,7\\) or \\(13\\). Furthermore let your function take as input the name of a file and write those numbers to a csv file with that name.
+
+    Demonstrate this with \\(k=2341\\) and the file name "classtest".
+
+55. (_Class Test 2012-2013_) Using either SAS or R:
+
+    The files [Game_1.csv](./Data/Game_1.csv), [Game_2.csv](./Data/Game_2.csv), [Game_3.csv](./Data/Game_3.csv), [Game_4.csv](./Data/Game_4.csv), [Game_5.csv](./Data/Game_5.csv), [Game_6.csv](./Data/Game_6.csv) contain data for guesses of the game "2/3rds of the average":
+
+    > "All individuals must guess a number between 0 and 100 (inclusive). The winner of the game is the guess that is closest to two thirds of the average of all guesses."
+
+    1. Obtain histograms showing the distribution of guesses in each individual game and over all games (i.e. produce 7 plots).
+    2. Identify the winning guess in each individual game and over all games.
+    3. Every game is played with a different number of players, obtain a scatter plot of the winning guesses against the number of players (include the overall).
+    4. Comment on the relationship (if any) between the number of players and the winning guess.
+
+56. (_Class Test 2013-2014_) Using both SAS and R (in other words attempt this question using SAS and then using R):
+
+    Create a data set with two variables: "Week" and "Ranking". For every week of the MAT013 course (1-5 including this class test) give a ranking of your enjoyment of each week of the course (1 being the best). Write some code (in both SAS and R) to sort this data set in descending order of the enjoyment ranking.
+
+57. (_Class Test 2013-2014_) Using R:
+
+    Obtain the profits (income \\(-\\) costs) of each company that is present in **both** data sets [incomes.csv](./Data/incomes.csv) and [costs.csv](./Data/costs.csv).
+
+    Draw a histogram of these profits and also obtain a linear relationship between income and profits.
+
+58. (_Class Test 2013-2014_) Using either SAS or R:
+
+    1. Write code that will obtain \\(k\\) random points \\((x,y)\\) where \\(x,y\\) are uniformly sampled between 0 and 1.
+    2. Identify how many of these points satisfy \\(x^2+y^2\leq 1\\) (this number will be referred to as \\(N=N(k)\\)).
+    3. Plot \\(\frac{4N(k)}{k}\\) for \\(1\leq k\leq 5000\\) and comment on the result.
