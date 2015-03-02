@@ -10,3 +10,4 @@ The class is taught in a flipped environment using some ideas from Inquiry Based
 3. This is done in groups with students not only presenting their approaches to problems but also validating the approaches of others.
 
 - [Here is a talk describing an overview of the course]({{site.baseurl}}/CourseDescription/overview.pdf)
+- [Here is a talk describing the pedagogic approach]({{site.baseurl}}/CourseDescription/Learning_Methods.html)
