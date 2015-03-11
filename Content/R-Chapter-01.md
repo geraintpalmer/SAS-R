@@ -47,7 +47,7 @@ first_data_set &lt;- data.frame(Name,Age)</code></pre>
 <li>The objects in questions are created using the <code>c</code>(ombine) function that creates a vector. We use this to create 2 vectors: Name and Age.</li>
 <li>Finally we put the 2 vectors into a data frame using the <code>data.frame</code> command.</li>
 </ol>
-<p><img src="http://drvinceknight.github.io/MAT013/Course_Notes/R_Notes/images/image22.png" /><br /> We run this code by highlighting it and pressing ctrl + 'r' (.html + enter on Mac). Note that when we submit code this way it also appears in the console window. We could have in fact directly type this code into the console window. For those familiar with command line commands the console works in a very similar way. We can press the up arrow repeatedly to cycle through previous commands and use tab to autocomplete.</p>
+<p><img src="http://drvinceknight.github.io/MAT013/Course_Notes/R_Notes/images/image22.png" /><br /> We run this code by highlighting it and pressing ctrl + 'r' (cmd + enter on Mac). Note that when we submit code this way it also appears in the console window. We could have in fact directly type this code into the console window. For those familiar with command line commands the console works in a very similar way. We can press the up arrow repeatedly to cycle through previous commands and use tab to autocomplete.</p>
 <p>The data set <code>first_data_set</code> is now saved to memory. To view all the data structures in memory we use the simple line of code:</p>
 <pre><code>ls()</code></pre>
 <p>A screenshot of the output is shown. We see that there are actually 3 objects in memory, the two vectors (Name and Age) as well as the data frame (first_data_set).</p>
