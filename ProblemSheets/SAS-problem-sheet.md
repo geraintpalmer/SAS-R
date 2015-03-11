@@ -63,6 +63,9 @@ comments    : false
     - End Date
     - The Price
 
+    Obtain a report regarding the holidays taken in 1995 and 1996.
+    Pay particular attention to the price per day of a holiday.
+
 16. Create the following data set and execute a command that only
     chooses elements from the data set starting with the letter D:
 
